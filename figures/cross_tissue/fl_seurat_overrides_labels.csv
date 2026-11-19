@@ -1,0 +1,24 @@
+ebcc_label,support,n,total
+Erythroblast,1,65,3517
+Erythroblast,2,3344,3517
+Erythroblast,3,108,3517
+Erythroid progenitor,1,2928,2929
+Erythroid progenitor,2,1,2929
+Megakaryocyte,1,362,378
+Megakaryocyte,2,14,378
+Megakaryocyte,3,2,378
+Fibroblast,1,98,98
+Granulocyte,1,53,81
+Granulocyte,2,21,81
+Granulocyte,3,7,81
+HSPC,1,64,64
+Endothelial,1,40,62
+Endothelial,2,19,62
+Endothelial,3,3,62
+Hepatocyte,1,11,33
+Hepatocyte,2,22,33
+Erythrocyte,1,13,28
+Erythrocyte,2,15,28
+Mono/Macrophage,1,11,21
+Mono/Macrophage,2,9,21
+Mono/Macrophage,3,1,21

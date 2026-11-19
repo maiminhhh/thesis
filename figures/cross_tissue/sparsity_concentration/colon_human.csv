@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+colon,human,1,41886,21,0.05073294179439431,0.4761734231007974,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,2,41885,31,0.06821057657872746,0.4823206398472007,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,3,41884,39,0.08024543978607583,0.4777241906217171,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,4,41883,47,0.09891841558627605,0.4722918606594561,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,5,41882,62,0.16126259490950767,0.4481161358101332,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,1,50136,21,0.16688606988989949,0.565142811552577,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,2,50135,35,0.2141418170938466,0.5631594694325321,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,3,50133,43,0.23309995412203538,0.5464464524365189,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,4,50131,53,0.24964592766950588,0.5257824499810496,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,5,50128,68,0.2699688796680498,0.4821058091286307,Seurat pulls into its dominant label,Stromal/Mesenchymal

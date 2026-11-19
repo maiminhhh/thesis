@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,36663,0.552777752949834,0.5827289946117431,367,11,11,12.433002710342407,13.215340375900269

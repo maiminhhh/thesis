@@ -1,0 +1,13 @@
+alternative,dataset,score,kendall_tau,p,n_methods,top3_ebcc,top3_alt
+human=seurat; mouse=ebcc,full,overall,0.908,1.6055514255897625e-16,26,"Scanorama scVI-latent, Harmony scVI-latent, CCA scVI-latent","Scanorama scVI-latent, Harmony scVI-latent, CCA scVI-latent"
+human=seurat; mouse=ebcc,full,bio,0.877,1.0969121444863042e-14,26,"scANVI, SAMap, scVI","scANVI, SAMap, scVI"
+human=seurat; mouse=ebcc,dissected,overall,0.895,9.630312699035173e-16,26,"scVI, FastMNN scVI-latent, Harmony scVI-latent","scVI, FastMNN scVI-latent, Harmony scVI-latent"
+human=seurat; mouse=ebcc,dissected,bio,0.84,7.011141069670478e-13,26,"scANVI, scVI, SAMap","scANVI, SAMap, scVI"
+human=seurat; mouse=ebcc,genes2,overall,0.895,9.630312699035173e-16,26,"Harmony scVI-latent, FastMNN UINMF, FastMNN scVI-latent","Harmony scVI-latent, FastMNN scVI-latent, FastMNN UINMF"
+human=seurat; mouse=ebcc,genes2,bio,0.828,2.374154477692025e-12,26,"SAMap, scANVI, CCA UINMF","scANVI, SAMap, Unintegrated scVI-latent"
+human=seurat; mouse=ebcc,genes4,overall,0.914,6.17514109682127e-17,26,"Scanorama scVI-latent, scVI, RPCA","Scanorama scVI-latent, scVI, RPCA"
+human=seurat; mouse=ebcc,genes4,bio,0.877,1.0969121444863042e-14,26,"scANVI, SAMap, Unintegrated scVI-latent","scANVI, SAMap, Unintegrated scVI-latent"
+human=seurat; mouse=ebcc,genes6,overall,0.92,2.270824430652899e-17,26,"Scanorama scVI-latent, LIGER UINMF, Harmony UINMF","Scanorama scVI-latent, Harmony UINMF, Scanorama"
+human=seurat; mouse=ebcc,genes6,bio,0.957,1.5851186092911476e-20,26,"SAMap, Unintegrated scVI-latent, scANVI","SAMap, Unintegrated scVI-latent, scANVI"
+human=seurat; mouse=ebcc,genes8,overall,0.945,2.390677494898229e-19,26,"SAMap, RPCA UINMF, Harmony","SAMap, RPCA UINMF, CCA UINMF"
+human=seurat; mouse=ebcc,genes8,bio,0.908,1.6055514255897625e-16,26,"SAMap, CCA UINMF, RPCA UINMF","SAMap, Harmony UINMF, CCA UINMF"

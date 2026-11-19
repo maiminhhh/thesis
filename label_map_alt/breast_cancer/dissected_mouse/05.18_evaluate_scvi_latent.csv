@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,177883,0.7422843196119876,0.8364529927430937,1779,9,9,520.1409256458282,526.8435168266296

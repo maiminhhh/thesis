@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+colon,mouse,1,27834,27,0.3801825105985485,0.5306100452683769,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,2,27834,45,0.4074513185312927,0.5215563699073076,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,3,27834,55,0.42225335920097723,0.5042753466982827,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,4,27832,63,0.4342124173613107,0.4873886174187985,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,5,27832,75,0.44190140845070425,0.45602184535786144,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,1,16535,24,0.05134563048079831,0.8743876625340188,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,2,16534,35,0.010584250635055038,0.9129672190637474,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,3,16534,44,0.0083464376436434,0.8976654167170679,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,4,16532,56,0.009254778611178321,0.8516210984756836,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,5,16530,74,0.014640048396854205,0.6718693284936479,Seurat pulls into its dominant label,Epithelial: Absorptive

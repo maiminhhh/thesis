@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,177883,,,3.528594970703125e-05,7.108649492263794

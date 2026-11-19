@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes4,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,45575,0.4778375233991399,456,21.729974031448364,0.25016765761196114,456,51.402201890945435,52.72281002998352

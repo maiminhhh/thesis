@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,41058,0.5458673778063874,0.5762053267704321,411,11,11,47.462368965148926,48.255900144577026

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,36663,0.5681936605358254,0.5851863796146322,367,11,11,14.380886793136597,15.119073629379272

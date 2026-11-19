@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,176449,0.6827729505274974,1764,589.9296607971191,0.22363383993552993,1764,1258.7426116466522,1264.849845647812

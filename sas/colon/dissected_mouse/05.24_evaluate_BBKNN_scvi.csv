@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+colon,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,309258,,2.0742416381835938e-05,4.23218560218811

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,36663,0.542253739668429,0.5740196445210783,367,11,11,14.689428329467773,15.40453839302063

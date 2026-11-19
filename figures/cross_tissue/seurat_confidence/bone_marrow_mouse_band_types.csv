@@ -1,0 +1,34 @@
+tissue,species,band,type,n_type,auroc
+bone_marrow,mouse,< 0.5,hspc,1363,0.5537549529673179
+bone_marrow,mouse,< 0.5,mkp,221,0.7824258036228111
+bone_marrow,mouse,< 0.5,erythroid,926,0.6333707603656528
+bone_marrow,mouse,< 0.5,granulocyte,1146,0.6560025748130581
+bone_marrow,mouse,< 0.5,monocyte,852,0.6892887696101015
+bone_marrow,mouse,< 0.5,dc,107,0.5990127199394351
+bone_marrow,mouse,< 0.5,b_cell,663,0.5010446084555543
+bone_marrow,mouse,< 0.5,nk_ilc,552,0.5086277902597064
+bone_marrow,mouse,0.5–0.7,hspc,2292,0.656046842188808
+bone_marrow,mouse,0.5–0.7,mkp,298,0.8475084589880234
+bone_marrow,mouse,0.5–0.7,erythroid,1483,0.770357217454229
+bone_marrow,mouse,0.5–0.7,granulocyte,2520,0.7061857832265995
+bone_marrow,mouse,0.5–0.7,monocyte,1000,0.7660821147970318
+bone_marrow,mouse,0.5–0.7,dc,77,0.5964698036176176
+bone_marrow,mouse,0.5–0.7,b_cell,1571,0.5027513401690406
+bone_marrow,mouse,0.5–0.7,nk_ilc,923,0.5430196907347877
+bone_marrow,mouse,0.7–0.9,hspc,2707,0.6245395621615226
+bone_marrow,mouse,0.7–0.9,mkp,393,0.8880201969370312
+bone_marrow,mouse,0.7–0.9,erythroid,1871,0.8910362808878224
+bone_marrow,mouse,0.7–0.9,granulocyte,2421,0.9092697005582463
+bone_marrow,mouse,0.7–0.9,monocyte,345,0.881207091573289
+bone_marrow,mouse,0.7–0.9,b_cell,729,0.5111541707363264
+bone_marrow,mouse,0.7–0.9,nk_ilc,345,0.5059718961551999
+bone_marrow,mouse,0.9–1,hspc,3385,0.6263275913262004
+bone_marrow,mouse,0.9–1,mkp,161,0.9401395234880612
+bone_marrow,mouse,0.9–1,erythroid,3829,0.9731853144149784
+bone_marrow,mouse,0.9–1,granulocyte,1874,0.9425669731790621
+bone_marrow,mouse,0.9–1,b_cell,417,0.5287447920059812
+bone_marrow,mouse,= 1,hspc,1330,0.6227152299741698
+bone_marrow,mouse,= 1,mkp,23,0.9991926849807113
+bone_marrow,mouse,= 1,erythroid,15666,0.9994474884998538
+bone_marrow,mouse,= 1,granulocyte,440,0.9480309503793642
+bone_marrow,mouse,= 1,b_cell,67,0.5481943623995835

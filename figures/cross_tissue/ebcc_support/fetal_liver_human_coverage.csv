@@ -1,0 +1,10 @@
+tissue,species,chosen_frac,labelling,n_cells,labelled
+fetal_liver,human,0,Seurat,224795,1
+fetal_liver,human,0,SingleR,224795,0.9922685113103049
+fetal_liver,human,0,Seurat (cross),224795,1
+fetal_liver,human,0,SingleR (cross),224795,0.9997197446562424
+fetal_liver,human,0,Majority vote,224795,0.7731043839943059
+fetal_liver,human,0,"Vote, ties to Seurat",224795,1
+fetal_liver,human,0,"Vote, ties at random",224795,1
+fetal_liver,human,0,EBCC (f = 0),224795,1
+fetal_liver,human,0,EBCC (chosen f),224795,1

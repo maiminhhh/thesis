@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes4,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,282117,0.8043900776742186,1152,57616,2,391.65072226524353,400.26416397094727

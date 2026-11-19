@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,dissected_mouse,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,177883,0.8790540761173946,1387,69374,2,660.2290420532227,667.7015633583069

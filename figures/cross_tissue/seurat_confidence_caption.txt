@@ -1,0 +1,4 @@
+Prediction score: Seurat TransferData's highest per-type score for the cell (0–1), from the same-species reference. All cells Seurat labels.
+B: marker AUROC of Seurat's labels on the cells in each band (marker score = mean expression of the type's markers). Boxes: one AUROC per cell type with at least 20 cells
+in the band (median, quartiles, whiskers to 1.5 IQR); diamond and line: mean over all the types Seurat calls in the band; dashed line: same mean on all cells.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type, so its labels and scores are not comparable.

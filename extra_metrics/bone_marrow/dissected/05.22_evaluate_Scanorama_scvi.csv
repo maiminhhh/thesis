@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,50042,0.4586911241565415,500,22.850523710250854,0.16887489549973755,500,50.51296615600586,52.60009431838989

@@ -1,0 +1,461 @@
+tissue,species,annotator,celltype,n_markers,n_cells,auroc
+colon,human,seurat,Epithelial: Absorptive,10,65621,0.940524675892768
+colon,human,seurat,Epithelial: Secretory,7,19857,0.9058616958968512
+colon,human,seurat,Epithelial: Stem/Progenitor,8,20651,0.9245900310697424
+colon,human,seurat,Endothelial,3,14140,0.9424444441055658
+colon,human,seurat,Stromal/Mesenchymal,2,75617,0.8357365771260951
+colon,human,seurat,Smooth muscle,3,25397,0.9509654585810166
+colon,human,seurat,Neural/Glial,1,6738,0.6600877593976483
+colon,human,seurat,B/Plasma,5,12774,0.9368655985644536
+colon,human,seurat,Immune,9,34906,0.8745163531556793
+colon,human,singleR,Epithelial: Absorptive,10,73571,0.977871700678088
+colon,human,singleR,Epithelial: Secretory,7,9128,0.875540314593109
+colon,human,singleR,Epithelial: Stem/Progenitor,8,49379,0.7976669268431805
+colon,human,singleR,Endothelial,3,10797,0.957950601354916
+colon,human,singleR,Stromal/Mesenchymal,2,24366,0.825096643422566
+colon,human,singleR,Smooth muscle,3,60338,0.984690501526954
+colon,human,singleR,Neural/Glial,1,19735,0.7309099313544439
+colon,human,singleR,B/Plasma,5,16274,0.9753637794910142
+colon,human,singleR,Immune,9,10152,0.9151046208869272
+colon,human,seurat_cross,Epithelial: Absorptive,10,75223,0.9136552468814004
+colon,human,seurat_cross,Epithelial: Secretory,7,9387,0.8880567197130029
+colon,human,seurat_cross,Epithelial: Stem/Progenitor,8,24546,0.9085842820331236
+colon,human,seurat_cross,Endothelial,3,8980,0.9731122731961626
+colon,human,seurat_cross,Stromal/Mesenchymal,2,61842,0.8364101762204537
+colon,human,seurat_cross,Smooth muscle,3,69896,0.9630667655159292
+colon,human,seurat_cross,Neural/Glial,1,5745,0.6275109294476652
+colon,human,seurat_cross,B/Plasma,5,8730,0.918408460845778
+colon,human,seurat_cross,Immune,9,11352,0.7720803492817842
+colon,human,singleR_cross,Epithelial: Absorptive,10,94944,0.9094755959517796
+colon,human,singleR_cross,Epithelial: Secretory,7,13167,0.8656963571573072
+colon,human,singleR_cross,Epithelial: Stem/Progenitor,8,16243,0.9617740007732364
+colon,human,singleR_cross,Endothelial,3,19448,0.9176436123807958
+colon,human,singleR_cross,Stromal/Mesenchymal,2,26579,0.8255047866091085
+colon,human,singleR_cross,Smooth muscle,3,69797,0.9774739611929248
+colon,human,singleR_cross,Neural/Glial,1,1361,0.8479875241870666
+colon,human,singleR_cross,B/Plasma,5,19749,0.9255315366836062
+colon,human,singleR_cross,Immune,9,13892,0.80228002873347
+colon,human,ebcc,Epithelial: Absorptive,10,66882,0.9598576560858332
+colon,human,ebcc,Epithelial: Secretory,7,13486,0.9036309499353504
+colon,human,ebcc,Epithelial: Stem/Progenitor,8,31591,0.8736797042853058
+colon,human,ebcc,Endothelial,3,13135,0.9705747325926204
+colon,human,ebcc,Stromal/Mesenchymal,2,41438,0.8524058251634342
+colon,human,ebcc,Smooth muscle,3,60393,0.9842478432208064
+colon,human,ebcc,Neural/Glial,1,11661,0.7489430082024432
+colon,human,ebcc,B/Plasma,5,15600,0.9654455830718224
+colon,human,ebcc,Immune,9,21141,0.8724841332949868
+colon,mouse,seurat,Stromal_Mesenchymal,33,25339,0.8863821716167586
+colon,mouse,seurat,Epithelial_Stem_Progenitor,5,13377,0.8816355277838074
+colon,mouse,seurat,Epithelial_Absorptive,18,76126,0.7829830663103549
+colon,mouse,seurat,Epithelial_Secretory,20,38510,0.8171996235758016
+colon,mouse,seurat,Endothelial,21,5514,0.9817889754302028
+colon,mouse,seurat,Smooth_Muscle,11,55816,0.970932028861894
+colon,mouse,seurat,Immune,41,3,0.6268435839788342
+colon,mouse,seurat,Neural_Glial,34,5044,0.8957094904200698
+colon,mouse,seurat,B_Plasma,1,0,NA
+colon,mouse,seurat,Erythroid,7,0,NA
+colon,mouse,singleR,Stromal_Mesenchymal,33,5319,0.8562310462318227
+colon,mouse,singleR,Epithelial_Stem_Progenitor,5,756,0.7315111146290437
+colon,mouse,singleR,Epithelial_Absorptive,18,132262,0.888289558571915
+colon,mouse,singleR,Epithelial_Secretory,20,13548,0.8478786990376875
+colon,mouse,singleR,Endothelial,21,5843,0.97963750323068
+colon,mouse,singleR,Smooth_Muscle,11,53875,0.9831012453328184
+colon,mouse,singleR,Immune,41,454,0.9370693970885012
+colon,mouse,singleR,Neural_Glial,34,965,0.9572762472518848
+colon,mouse,singleR,B_Plasma,1,1905,0.48706742573703343
+colon,mouse,singleR,Erythroid,7,0,NA
+colon,mouse,seurat_cross,Stromal_Mesenchymal,33,53815,0.9189363499485446
+colon,mouse,seurat_cross,Epithelial_Stem_Progenitor,5,26183,0.9240893475087052
+colon,mouse,seurat_cross,Epithelial_Absorptive,18,83298,0.8030849057395503
+colon,mouse,seurat_cross,Epithelial_Secretory,20,16089,0.7780181039471573
+colon,mouse,seurat_cross,Endothelial,21,9829,0.9701670974812698
+colon,mouse,seurat_cross,Smooth_Muscle,11,26096,0.9605829266688474
+colon,mouse,seurat_cross,Immune,41,2290,0.9519413867235084
+colon,mouse,seurat_cross,Neural_Glial,34,748,0.940818840606077
+colon,mouse,seurat_cross,B_Plasma,1,1381,0.34799966629809914
+colon,mouse,seurat_cross,Erythroid,7,0,NA
+colon,mouse,singleR_cross,Stromal_Mesenchymal,33,2412,0.9499310875778824
+colon,mouse,singleR_cross,Epithelial_Stem_Progenitor,5,30123,0.8828416975453713
+colon,mouse,singleR_cross,Epithelial_Absorptive,18,109759,0.8782407887339825
+colon,mouse,singleR_cross,Epithelial_Secretory,20,5226,0.46854129753467655
+colon,mouse,singleR_cross,Endothelial,21,7125,0.9836166430083518
+colon,mouse,singleR_cross,Smooth_Muscle,11,49973,0.9845194441606232
+colon,mouse,singleR_cross,Immune,41,91,0.9332500302000524
+colon,mouse,singleR_cross,Neural_Glial,34,1423,0.9717225830710708
+colon,mouse,singleR_cross,B_Plasma,1,1573,0.4369061545851502
+colon,mouse,singleR_cross,Erythroid,7,158,0.2810671415368498
+colon,mouse,ebcc,Stromal_Mesenchymal,33,25312,0.872899865175697
+colon,mouse,ebcc,Epithelial_Stem_Progenitor,5,19088,0.9247817812488092
+colon,mouse,ebcc,Epithelial_Absorptive,18,94239,0.8166166400817593
+colon,mouse,ebcc,Epithelial_Secretory,20,17420,0.8214727919385392
+colon,mouse,ebcc,Endothelial,21,8523,0.9820379234223794
+colon,mouse,ebcc,Smooth_Muscle,11,50827,0.9799801479617172
+colon,mouse,ebcc,Immune,41,765,0.9687816978419946
+colon,mouse,ebcc,Neural_Glial,34,1914,0.9758196461095237
+colon,mouse,ebcc,B_Plasma,1,1641,0.4441217183270992
+colon,mouse,ebcc,Erythroid,7,0,NA
+bone_marrow,human,seurat,HSPC,3,349,0.766559082713125
+bone_marrow,human,seurat,Erythroid,4,6987,0.8267717535323755
+bone_marrow,human,seurat,Granulocyte,3,1160,0.91668382860148645
+bone_marrow,human,seurat,Monocyte,4,19568,0.5397418443435357
+bone_marrow,human,seurat,DC,4,434,0.7412885256078237
+bone_marrow,human,seurat,B cell,4,751,0.8263061537261437
+bone_marrow,human,seurat,Plasma,3,396,0.9433703085546452
+bone_marrow,human,seurat,T cell,5,2589,0.7241634680647487
+bone_marrow,human,seurat,NK/ILC,4,565,0.8516160142109528
+bone_marrow,human,seurat,MSC,3,979,0.923951924523521
+bone_marrow,human,singleR,HSPC,3,473,0.5635900197292633
+bone_marrow,human,singleR,Erythroid,4,8070,0.8589553262575264
+bone_marrow,human,singleR,Granulocyte,3,8996,0.7314664410639098
+bone_marrow,human,singleR,Monocyte,4,5037,0.7636462421401384
+bone_marrow,human,singleR,DC,4,1074,0.5445538883868023
+bone_marrow,human,singleR,B cell,4,1020,0.6977358657133532
+bone_marrow,human,singleR,Plasma,3,823,0.7442070279055222
+bone_marrow,human,singleR,T cell,5,4399,0.6324539732608647
+bone_marrow,human,singleR,NK/ILC,4,728,0.8726079292608219
+bone_marrow,human,singleR,MSC,3,2475,0.8598894873628444
+bone_marrow,human,seurat_cross,HSPC,3,3371,0.5127264477350055
+bone_marrow,human,seurat_cross,Erythroid,4,11451,0.7222995654107919
+bone_marrow,human,seurat_cross,Granulocyte,3,13429,0.493906145033763
+bone_marrow,human,seurat_cross,Monocyte,4,1609,0.8303763735145269
+bone_marrow,human,seurat_cross,DC,4,446,0.5618953214068132
+bone_marrow,human,seurat_cross,B cell,4,875,0.7833469313830338
+bone_marrow,human,seurat_cross,Plasma,3,0,NA
+bone_marrow,human,seurat_cross,T cell,5,741,0.8181443714650567
+bone_marrow,human,seurat_cross,NK/ILC,4,1842,0.6261804285381357
+bone_marrow,human,seurat_cross,MSC,3,0,NA
+bone_marrow,human,singleR_cross,HSPC,3,1093,0.5553819620331644
+bone_marrow,human,singleR_cross,Erythroid,4,7840,0.8373059089944606
+bone_marrow,human,singleR_cross,Granulocyte,3,6653,0.6176674908441638
+bone_marrow,human,singleR_cross,Monocyte,4,3167,0.5205708265282508
+bone_marrow,human,singleR_cross,DC,4,954,0.5216192787871717
+bone_marrow,human,singleR_cross,B cell,4,6517,0.5182180039767917
+bone_marrow,human,singleR_cross,Plasma,3,0,NA
+bone_marrow,human,singleR_cross,T cell,5,3011,0.7190632840389798
+bone_marrow,human,singleR_cross,NK/ILC,4,3510,0.5267492784989751
+bone_marrow,human,singleR_cross,MSC,3,0,NA
+bone_marrow,human,ebcc,HSPC,3,515,0.606887324368329
+bone_marrow,human,ebcc,Erythroid,4,7031,0.8626009287949662
+bone_marrow,human,ebcc,Granulocyte,3,8510,0.734344111327904
+bone_marrow,human,ebcc,Monocyte,4,8758,0.6300514175512496
+bone_marrow,human,ebcc,DC,4,1210,0.56257707689582
+bone_marrow,human,ebcc,B cell,4,2214,0.6084668689546585
+bone_marrow,human,ebcc,Plasma,3,406,0.9307667116654064
+bone_marrow,human,ebcc,T cell,5,1535,0.8714334514885917
+bone_marrow,human,ebcc,NK/ILC,4,1280,0.7475740376608196
+bone_marrow,human,ebcc,MSC,3,1466,0.8895539052800882
+bone_marrow,mouse,seurat,HSPC,4,11077,0.634932402625445
+bone_marrow,mouse,seurat,MkP,3,1096,0.8644645163984651
+bone_marrow,mouse,seurat,Erythroid,9,23775,0.9350126045340912
+bone_marrow,mouse,seurat,Granulocyte,12,8401,0.8231302707361291
+bone_marrow,mouse,seurat,Monocyte,5,2211,0.7774959405252576
+bone_marrow,mouse,seurat,DC,2,200,0.6026781271096537
+bone_marrow,mouse,seurat,B cell,1,3447,0.5093322954942936
+bone_marrow,mouse,seurat,Plasma,2,0,NA
+bone_marrow,mouse,seurat,T cell,9,5,0.6413143735588009
+bone_marrow,mouse,seurat,NK/ILC,3,1833,0.5254054288268369
+bone_marrow,mouse,seurat,MSC,5,0,NA
+bone_marrow,mouse,singleR,HSPC,4,1329,0.8611682438110784
+bone_marrow,mouse,singleR,MkP,3,3105,0.7601865276552116
+bone_marrow,mouse,singleR,Erythroid,9,27880,0.8650146292184797
+bone_marrow,mouse,singleR,Granulocyte,12,8269,0.8931455427456986
+bone_marrow,mouse,singleR,Monocyte,5,2404,0.8119759314473595
+bone_marrow,mouse,singleR,DC,2,2464,0.5393632651358645
+bone_marrow,mouse,singleR,B cell,1,2429,0.5084908001230429
+bone_marrow,mouse,singleR,Plasma,2,0,NA
+bone_marrow,mouse,singleR,T cell,9,1574,0.5828739839957914
+bone_marrow,mouse,singleR,NK/ILC,3,2591,0.49892021960472194
+bone_marrow,mouse,singleR,MSC,5,0,NA
+bone_marrow,mouse,seurat_cross,HSPC,4,1987,0.7428015660867113
+bone_marrow,mouse,seurat_cross,MkP,3,999,0.9738818962362432
+bone_marrow,mouse,seurat_cross,Erythroid,9,27329,0.9623022427009844
+bone_marrow,mouse,seurat_cross,Granulocyte,12,622,0.9310115308043688
+bone_marrow,mouse,seurat_cross,Monocyte,5,3151,0.7321180760893679
+bone_marrow,mouse,seurat_cross,DC,2,274,0.5275407123481892
+bone_marrow,mouse,seurat_cross,B cell,1,3570,0.49596526263935176
+bone_marrow,mouse,seurat_cross,Plasma,2,1022,0.7912249235821012
+bone_marrow,mouse,seurat_cross,T cell,9,772,0.4588937036117445
+bone_marrow,mouse,seurat_cross,NK/ILC,3,26,0.5062366265580476
+bone_marrow,mouse,seurat_cross,MSC,5,12293,0.9074614108325764
+bone_marrow,mouse,singleR_cross,HSPC,4,149,0.593956369114067
+bone_marrow,mouse,singleR_cross,MkP,3,425,0.8625682931832167
+bone_marrow,mouse,singleR_cross,Erythroid,9,28722,0.9692253182116644
+bone_marrow,mouse,singleR_cross,Granulocyte,12,2049,0.9348584050706488
+bone_marrow,mouse,singleR_cross,Monocyte,5,1308,0.7945646235648619
+bone_marrow,mouse,singleR_cross,DC,2,1138,0.5644724383341717
+bone_marrow,mouse,singleR_cross,B cell,1,1178,0.5151220869177695
+bone_marrow,mouse,singleR_cross,Plasma,2,396,0.6453218070069316
+bone_marrow,mouse,singleR_cross,T cell,9,1012,0.4371353837619911
+bone_marrow,mouse,singleR_cross,NK/ILC,3,719,0.5171937573004802
+bone_marrow,mouse,singleR_cross,MSC,5,14949,0.8588846730598505
+bone_marrow,mouse,ebcc,HSPC,4,1808,0.8064317722490968
+bone_marrow,mouse,ebcc,MkP,3,839,0.9890593008669044
+bone_marrow,mouse,ebcc,Erythroid,9,23670,0.9701890748154228
+bone_marrow,mouse,ebcc,Granulocyte,12,6003,0.9323121098038069
+bone_marrow,mouse,ebcc,Monocyte,5,2007,0.823185649459475
+bone_marrow,mouse,ebcc,DC,2,1019,0.6150529409336893
+bone_marrow,mouse,ebcc,B cell,1,2852,0.5068245272527485
+bone_marrow,mouse,ebcc,Plasma,2,140,0.9243672506089422
+bone_marrow,mouse,ebcc,T cell,9,1126,0.4304598879347155
+bone_marrow,mouse,ebcc,NK/ILC,3,1743,0.5113119911215318
+bone_marrow,mouse,ebcc,MSC,5,10838,0.8761274688695267
+fetal_liver,human,seurat,Hepatocyte,15,90421,0.9448837455866296
+fetal_liver,human,seurat,HSPC,4,430,0.9425794814201734
+fetal_liver,human,seurat,Erythroid progenitor,5,5810,0.7613888077040777
+fetal_liver,human,seurat,Erythroblast,9,45491,0.8591613978418025
+fetal_liver,human,seurat,Erythrocyte,4,61079,0.4818510587499974
+fetal_liver,human,seurat,Megakaryocyte,4,1504,0.9509120716030612
+fetal_liver,human,seurat,Mast cell,8,113,0.9997420149287888
+fetal_liver,human,seurat,Granulocyte,6,809,0.9923884634454848
+fetal_liver,human,seurat,Mono/Macrophage,18,4030,0.9688560205632804
+fetal_liver,human,seurat,Dendritic cell,12,103,0.9697275571531014
+fetal_liver,human,seurat,B cell,5,347,0.99380399863098
+fetal_liver,human,seurat,T/NK/ILC,13,498,0.9991771121096557
+fetal_liver,human,seurat,Endothelial,9,7687,0.9817585183346308
+fetal_liver,human,seurat,Fibroblast,14,6473,0.9770148065122292
+fetal_liver,human,singleR,Hepatocyte,15,33830,0.9503636955447634
+fetal_liver,human,singleR,HSPC,4,55,0.6988700468238769
+fetal_liver,human,singleR,Erythroid progenitor,5,238,0.5169934345097753
+fetal_liver,human,singleR,Erythroblast,9,74787,0.7537769354848843
+fetal_liver,human,singleR,Erythrocyte,4,106235,0.5863654546355287
+fetal_liver,human,singleR,Megakaryocyte,4,292,0.9357432536099072
+fetal_liver,human,singleR,Mast cell,8,57,0.8761802375894894
+fetal_liver,human,singleR,Granulocyte,6,1000,0.9683884790841992
+fetal_liver,human,singleR,Mono/Macrophage,18,412,0.983744252409306
+fetal_liver,human,singleR,Dendritic cell,12,105,0.6504670447963175
+fetal_liver,human,singleR,B cell,5,28,0.9044347531999362
+fetal_liver,human,singleR,T/NK/ILC,13,83,0.9702471658860004
+fetal_liver,human,singleR,Endothelial,9,1958,0.9881626661531704
+fetal_liver,human,singleR,Fibroblast,14,3977,0.979459230473892
+fetal_liver,human,seurat_cross,Hepatocyte,15,116253,0.8897827833428844
+fetal_liver,human,seurat_cross,HSPC,4,2324,0.578641756057536
+fetal_liver,human,seurat_cross,Erythroid progenitor,5,1956,0.2631119624262002
+fetal_liver,human,seurat_cross,Erythroblast,9,28106,0.6103115829081432
+fetal_liver,human,seurat_cross,Erythrocyte,4,23234,0.577385244095632
+fetal_liver,human,seurat_cross,Megakaryocyte,4,24813,0.5836021025352565
+fetal_liver,human,seurat_cross,Mast cell,8,0,NA
+fetal_liver,human,seurat_cross,Granulocyte,6,3002,0.7182812487229143
+fetal_liver,human,seurat_cross,Mono/Macrophage,18,7070,0.9563000125217974
+fetal_liver,human,seurat_cross,Dendritic cell,12,0,NA
+fetal_liver,human,seurat_cross,B cell,5,0,NA
+fetal_liver,human,seurat_cross,T/NK/ILC,13,0,NA
+fetal_liver,human,seurat_cross,Endothelial,9,18037,0.9396643739473044
+fetal_liver,human,seurat_cross,Fibroblast,14,0,NA
+fetal_liver,human,singleR_cross,Hepatocyte,15,34339,0.9192783262105858
+fetal_liver,human,singleR_cross,HSPC,4,143,0.6534889979448707
+fetal_liver,human,singleR_cross,Erythroid progenitor,5,40306,0.3005806583830502
+fetal_liver,human,singleR_cross,Erythroblast,9,140196,0.857288371097279
+fetal_liver,human,singleR_cross,Erythrocyte,4,2124,0.5036743416818235
+fetal_liver,human,singleR_cross,Megakaryocyte,4,1509,0.7531681677925293
+fetal_liver,human,singleR_cross,Mast cell,8,0,NA
+fetal_liver,human,singleR_cross,Granulocyte,6,658,0.8885829361137291
+fetal_liver,human,singleR_cross,Mono/Macrophage,18,172,0.9120406391620616
+fetal_liver,human,singleR_cross,Dendritic cell,12,0,NA
+fetal_liver,human,singleR_cross,B cell,5,0,NA
+fetal_liver,human,singleR_cross,T/NK/ILC,13,0,NA
+fetal_liver,human,singleR_cross,Endothelial,9,5285,0.9474787176723684
+fetal_liver,human,singleR_cross,Fibroblast,14,0,NA
+fetal_liver,human,ebcc,Hepatocyte,15,62126,0.907143110233603
+fetal_liver,human,ebcc,HSPC,4,701,0.6449458741120546
+fetal_liver,human,ebcc,Erythroid progenitor,5,12005,0.40798182685406525
+fetal_liver,human,ebcc,Erythroblast,9,74685,0.8497361851180817
+fetal_liver,human,ebcc,Erythrocyte,4,53315,0.5170084969616808
+fetal_liver,human,ebcc,Megakaryocyte,4,5083,0.6516086084169119
+fetal_liver,human,ebcc,Mast cell,8,10,0.9997593255777744
+fetal_liver,human,ebcc,Granulocyte,6,1671,0.8916766618333897
+fetal_liver,human,ebcc,Mono/Macrophage,18,3187,0.9845744852295436
+fetal_liver,human,ebcc,Dendritic cell,12,4,0.8540772317397048
+fetal_liver,human,ebcc,B cell,5,25,0.9778497130399963
+fetal_liver,human,ebcc,T/NK/ILC,13,74,0.998510946366287
+fetal_liver,human,ebcc,Endothelial,9,8282,0.975083151026468
+fetal_liver,human,ebcc,Fibroblast,14,3627,0.983549225515922
+fetal_liver,mouse,seurat,Hepatocyte,5,53886,0.9322614103161108
+fetal_liver,mouse,seurat,HSPC,5,784,0.8342509216541847
+fetal_liver,mouse,seurat,Erythroid progenitor,4,68,0.3480121474651604
+fetal_liver,mouse,seurat,Erythroblast,5,17270,0.8071474780874921
+fetal_liver,mouse,seurat,Erythrocyte,1,17480,0.5368612923222246
+fetal_liver,mouse,seurat,Megakaryocyte,3,9157,0.6049206832890784
+fetal_liver,mouse,seurat,Mast cell,2,0,NA
+fetal_liver,mouse,seurat,Granulocyte,5,2502,0.9795631420246556
+fetal_liver,mouse,seurat,Mono/Macrophage,5,8461,0.919622616327312
+fetal_liver,mouse,seurat,Dendritic cell,3,0,NA
+fetal_liver,mouse,seurat,B cell,2,0,NA
+fetal_liver,mouse,seurat,T/NK/ILC,4,0,NA
+fetal_liver,mouse,seurat,Endothelial,5,7720,0.9827594795659936
+fetal_liver,mouse,seurat,Fibroblast,5,0,NA
+fetal_liver,mouse,singleR,Hepatocyte,5,22626,0.9340760700757174
+fetal_liver,mouse,singleR,HSPC,5,680,0.8319744613204957
+fetal_liver,mouse,singleR,Erythroid progenitor,4,922,0.09556081709107428
+fetal_liver,mouse,singleR,Erythroblast,5,71529,0.9043222872717348
+fetal_liver,mouse,singleR,Erythrocyte,1,9295,0.3162385154750955
+fetal_liver,mouse,singleR,Megakaryocyte,3,1379,0.9511885974028657
+fetal_liver,mouse,singleR,Mast cell,2,0,NA
+fetal_liver,mouse,singleR,Granulocyte,5,1680,0.9837479692959256
+fetal_liver,mouse,singleR,Mono/Macrophage,5,2488,0.8644704285440656
+fetal_liver,mouse,singleR,Dendritic cell,3,0,NA
+fetal_liver,mouse,singleR,B cell,2,0,NA
+fetal_liver,mouse,singleR,T/NK/ILC,4,0,NA
+fetal_liver,mouse,singleR,Endothelial,5,2349,0.9527305488929512
+fetal_liver,mouse,singleR,Fibroblast,5,0,NA
+fetal_liver,mouse,seurat_cross,Hepatocyte,5,19454,0.9393622228354818
+fetal_liver,mouse,seurat_cross,HSPC,5,1197,0.8915442242447271
+fetal_liver,mouse,seurat_cross,Erythroid progenitor,4,3199,0.6858386181307135
+fetal_liver,mouse,seurat_cross,Erythroblast,5,63625,0.8266164821895525
+fetal_liver,mouse,seurat_cross,Erythrocyte,1,11713,0.6585730028635156
+fetal_liver,mouse,seurat_cross,Megakaryocyte,3,1788,0.9817192947501838
+fetal_liver,mouse,seurat_cross,Mast cell,2,102,0.9007540905567694
+fetal_liver,mouse,seurat_cross,Granulocyte,5,1679,0.9819678849874296
+fetal_liver,mouse,seurat_cross,Mono/Macrophage,5,2769,0.8936456328544347
+fetal_liver,mouse,seurat_cross,Dendritic cell,3,374,0.7674458302039131
+fetal_liver,mouse,seurat_cross,B cell,2,36,0.7869502798334261
+fetal_liver,mouse,seurat_cross,T/NK/ILC,4,10,0.591912579484819
+fetal_liver,mouse,seurat_cross,Endothelial,5,5537,0.9819641443158672
+fetal_liver,mouse,seurat_cross,Fibroblast,5,5845,0.980155048170966
+fetal_liver,mouse,singleR_cross,Hepatocyte,5,13609,0.9551383341506142
+fetal_liver,mouse,singleR_cross,HSPC,5,162,0.8841279122850001
+fetal_liver,mouse,singleR_cross,Erythroid progenitor,4,848,0.5296179453043297
+fetal_liver,mouse,singleR_cross,Erythroblast,5,63866,0.7381813270616439
+fetal_liver,mouse,singleR_cross,Erythrocyte,1,27479,0.6214548210911927
+fetal_liver,mouse,singleR_cross,Megakaryocyte,3,501,0.993448104920574
+fetal_liver,mouse,singleR_cross,Mast cell,2,219,0.8419943545413915
+fetal_liver,mouse,singleR_cross,Granulocyte,5,1342,0.9908307130916671
+fetal_liver,mouse,singleR_cross,Mono/Macrophage,5,1414,0.969536450754475
+fetal_liver,mouse,singleR_cross,Dendritic cell,3,117,0.7982792725005818
+fetal_liver,mouse,singleR_cross,B cell,2,261,0.6053169073296434
+fetal_liver,mouse,singleR_cross,T/NK/ILC,4,13,0.5687821789432318
+fetal_liver,mouse,singleR_cross,Endothelial,5,1771,0.9883814874569264
+fetal_liver,mouse,singleR_cross,Fibroblast,5,3901,0.9870971845923292
+fetal_liver,mouse,ebcc,Hepatocyte,5,25396,0.9469668843894128
+fetal_liver,mouse,ebcc,HSPC,5,872,0.8792189074599502
+fetal_liver,mouse,ebcc,Erythroid progenitor,4,1639,0.7959664755402298
+fetal_liver,mouse,ebcc,Erythroblast,5,55125,0.8060387966063715
+fetal_liver,mouse,ebcc,Erythrocyte,1,15959,0.6702780868626469
+fetal_liver,mouse,ebcc,Megakaryocyte,3,3764,0.7020402405216573
+fetal_liver,mouse,ebcc,Mast cell,2,66,0.9113904088384313
+fetal_liver,mouse,ebcc,Granulocyte,5,2182,0.9795676112340252
+fetal_liver,mouse,ebcc,Mono/Macrophage,5,3351,0.9367431733041096
+fetal_liver,mouse,ebcc,Dendritic cell,3,220,0.8100869981710744
+fetal_liver,mouse,ebcc,B cell,2,6,0.6895460072847945
+fetal_liver,mouse,ebcc,T/NK/ILC,4,0,NA
+fetal_liver,mouse,ebcc,Endothelial,5,4955,0.988839998526243
+fetal_liver,mouse,ebcc,Fibroblast,5,3793,0.9855365241529692
+breast_cancer,human,seurat,B-cells,4,359,0.7635139197192968
+breast_cancer,human,seurat,CAFs,5,16336,0.8695146955374127
+breast_cancer,human,seurat,Cancer Epithelial,5,37084,0.9332334199062928
+breast_cancer,human,seurat,Endothelial,5,2351,0.9685493805498656
+breast_cancer,human,seurat,Myeloid,5,7371,0.9140078284099876
+breast_cancer,human,seurat,Normal Epithelial,4,148,0.7535562595664123
+breast_cancer,human,seurat,Plasmablasts,4,464,0.9809214708563864
+breast_cancer,human,seurat,PVL,4,1442,0.951452392159315
+breast_cancer,human,seurat,T-cells,5,3934,0.7676366554130492
+breast_cancer,human,singleR,B-cells,4,479,0.6707847158734584
+breast_cancer,human,singleR,CAFs,5,15703,0.8762419304308752
+breast_cancer,human,singleR,Cancer Epithelial,5,35733,0.933780572387036
+breast_cancer,human,singleR,Endothelial,5,2182,0.9654731905094186
+breast_cancer,human,singleR,Myeloid,5,8773,0.9287654212915446
+breast_cancer,human,singleR,Normal Epithelial,4,334,0.6450553577943958
+breast_cancer,human,singleR,Plasmablasts,4,611,0.9341777451867692
+breast_cancer,human,singleR,PVL,4,2348,0.8189763489535649
+breast_cancer,human,singleR,T-cells,5,2526,0.8819973707775546
+breast_cancer,human,seurat_cross,B-cells,4,633,0.663731964099907
+breast_cancer,human,seurat_cross,CAFs,5,12132,0.8720720852233029
+breast_cancer,human,seurat_cross,Cancer Epithelial,5,0,NA
+breast_cancer,human,seurat_cross,Endothelial,5,2176,0.9916664793740132
+breast_cancer,human,seurat_cross,Myeloid,5,7637,0.9468316908687932
+breast_cancer,human,seurat_cross,Normal Epithelial,4,37314,0.5025780121149152
+breast_cancer,human,seurat_cross,Plasmablasts,4,0,NA
+breast_cancer,human,seurat_cross,PVL,4,0,NA
+breast_cancer,human,seurat_cross,T-cells,5,9597,0.6111526885032982
+breast_cancer,human,singleR_cross,B-cells,4,1947,0.606484488472724
+breast_cancer,human,singleR_cross,CAFs,5,15267,0.8159508362692628
+breast_cancer,human,singleR_cross,Cancer Epithelial,5,0,NA
+breast_cancer,human,singleR_cross,Endothelial,5,3256,0.907169865568238
+breast_cancer,human,singleR_cross,Myeloid,5,8943,0.8999736306061079
+breast_cancer,human,singleR_cross,Normal Epithelial,4,36983,0.5017263946118404
+breast_cancer,human,singleR_cross,Plasmablasts,4,0,NA
+breast_cancer,human,singleR_cross,PVL,4,0,NA
+breast_cancer,human,singleR_cross,T-cells,5,2846,0.8724417030896671
+breast_cancer,human,ebcc,B-cells,4,932,0.6099095683733238
+breast_cancer,human,ebcc,CAFs,5,15150,0.8692672865254836
+breast_cancer,human,ebcc,Cancer Epithelial,5,34453,0.9331576517071508
+breast_cancer,human,ebcc,Endothelial,5,2681,0.9506938073827312
+breast_cancer,human,ebcc,Myeloid,5,8216,0.9323215866590072
+breast_cancer,human,ebcc,Normal Epithelial,4,2929,0.5073414330460317
+breast_cancer,human,ebcc,Plasmablasts,4,440,0.9828022491274312
+breast_cancer,human,ebcc,PVL,4,1158,0.9628734131677288
+breast_cancer,human,ebcc,T-cells,5,3530,0.8209503053381904
+breast_cancer,mouse,seurat,CAFs,12,28720,0.8856400629721405
+breast_cancer,mouse,seurat,Cancer Epithelial,3,0,NA
+breast_cancer,mouse,seurat,Endothelial,3,6108,0.9519020957743234
+breast_cancer,mouse,seurat,Myeloid,11,2355,0.849411104966216
+breast_cancer,mouse,seurat,Normal Epithelial,5,418671,0.582769112510025
+breast_cancer,mouse,seurat,PVL,3,0,NA
+breast_cancer,mouse,seurat,T-cells,11,17217,0.4606740312608189
+breast_cancer,mouse,singleR,CAFs,12,40891,0.8314717575278733
+breast_cancer,mouse,singleR,Cancer Epithelial,3,0,NA
+breast_cancer,mouse,singleR,Endothelial,3,7002,0.8709893815349815
+breast_cancer,mouse,singleR,Myeloid,11,685,0.7391625854835094
+breast_cancer,mouse,singleR,Normal Epithelial,5,424683,0.5789875541903314
+breast_cancer,mouse,singleR,PVL,3,0,NA
+breast_cancer,mouse,singleR,T-cells,11,1470,0.6637286435826139
+breast_cancer,mouse,seurat_cross,CAFs,12,18656,0.9163895995978808
+breast_cancer,mouse,seurat_cross,Cancer Epithelial,3,424846,0.5831958067881395
+breast_cancer,mouse,seurat_cross,Endothelial,3,14106,0.8447627631304696
+breast_cancer,mouse,seurat_cross,Myeloid,11,5865,0.9058346031237948
+breast_cancer,mouse,seurat_cross,Normal Epithelial,5,7712,0.7684429139558487
+breast_cancer,mouse,seurat_cross,PVL,3,2417,0.8971250764267583
+breast_cancer,mouse,seurat_cross,T-cells,11,1590,0.5352624594361775
+breast_cancer,mouse,singleR_cross,CAFs,12,24048,0.9071276257251184
+breast_cancer,mouse,singleR_cross,Cancer Epithelial,3,361993,0.5916890282808965
+breast_cancer,mouse,singleR_cross,Endothelial,3,13958,0.8102741562650486
+breast_cancer,mouse,singleR_cross,Myeloid,11,2954,0.8079700416058029
+breast_cancer,mouse,singleR_cross,Normal Epithelial,5,59047,0.6217934418174886
+breast_cancer,mouse,singleR_cross,PVL,3,6411,0.7196707219896626
+breast_cancer,mouse,singleR_cross,T-cells,11,1263,0.7164590894547836
+breast_cancer,mouse,ebcc,CAFs,12,26428,0.915160141023936
+breast_cancer,mouse,ebcc,Cancer Epithelial,3,352120,0.5919429893235183
+breast_cancer,mouse,ebcc,Endothelial,3,10691,0.8905452249014134
+breast_cancer,mouse,ebcc,Myeloid,11,3094,0.9068917452748966
+breast_cancer,mouse,ebcc,Normal Epithelial,5,73166,0.6021272528174115
+breast_cancer,mouse,ebcc,PVL,3,2450,0.915361070034509
+breast_cancer,mouse,ebcc,T-cells,11,5490,0.5039921065712392
+bone_marrow,human,ebcc,Mean (all called types),NA,NA,0.7444255833987833
+bone_marrow,human,seurat,Mean (all called types),NA,NA,0.8060452903878358
+bone_marrow,human,seurat_cross,Mean (all called types),NA,NA,0.6686094480608908
+bone_marrow,human,singleR,Mean (all called types),NA,NA,0.7269106201081047
+bone_marrow,human,singleR_cross,Mean (all called types),NA,NA,0.6020720042127448
+bone_marrow,mouse,ebcc,Mean (all called types),NA,NA,0.7623019976287145
+bone_marrow,mouse,seurat,Mean (all called types),NA,NA,0.7015295510898859
+bone_marrow,mouse,seurat_cross,Mean (all called types),NA,NA,0.7299489046808806
+bone_marrow,mouse,singleR,Mean (all called types),NA,NA,0.7023487937485832
+bone_marrow,mouse,singleR_cross,Mean (all called types),NA,NA,0.6993911959568776
+breast_cancer,human,ebcc,Mean (all called types),NA,NA,0.8410352557030087
+breast_cancer,human,seurat,Mean (all called types),NA,NA,0.8780428913464465
+breast_cancer,human,seurat_cross,Mean (all called types),NA,NA,0.7646721533640383
+breast_cancer,human,singleR,Mean (all called types),NA,NA,0.8505836281338464
+breast_cancer,human,singleR_cross,Mean (all called types),NA,NA,0.7672911531029734
+breast_cancer,mouse,ebcc,Mean (all called types),NA,NA,0.7608600757067034
+breast_cancer,mouse,seurat,Mean (all called types),NA,NA,0.7460792814967048
+breast_cancer,mouse,seurat_cross,Mean (all called types),NA,NA,0.7787161746370099
+breast_cancer,mouse,singleR,Mean (all called types),NA,NA,0.7368679844638619
+breast_cancer,mouse,singleR_cross,Mean (all called types),NA,NA,0.7392834435912573
+colon,human,ebcc,Mean (all called types),NA,NA,0.9034743817614003
+colon,human,seurat,Mean (all called types),NA,NA,0.8857325104210911
+colon,human,seurat_cross,Mean (all called types),NA,NA,0.86676502257058885
+colon,human,singleR,Mean (all called types),NA,NA,0.8933550022390221
+colon,human,singleR_cross,Mean (all called types),NA,NA,0.8925963781854772
+colon,mouse,ebcc,Mean (all called types),NA,NA,0.8651680235675021
+colon,mouse,seurat,Mean (all called types),NA,NA,0.8554343084972154
+colon,mouse,seurat_cross,Mean (all called types),NA,NA,0.8439598472135288
+colon,mouse,singleR,Mean (all called types),NA,NA,0.8520069152345985
+colon,mouse,singleR_cross,Mean (all called types),NA,NA,0.777063686795401
+fetal_liver,human,ebcc,Mean (all called types),NA,NA,0.8316789172875345
+fetal_liver,human,seurat,Mean (all called types),NA,NA,0.9159460753274209
+fetal_liver,human,seurat_cross,Mean (all called types),NA,NA,0.6796756740619632
+fetal_liver,human,singleR,Mean (all called types),NA,NA,0.8402283321572176
+fetal_liver,human,singleR_cross,Mean (all called types),NA,NA,0.7483979062286997
+fetal_liver,mouse,ebcc,Mean (all called types),NA,NA,0.8540169317609166
+fetal_liver,mouse,seurat,Mean (all called types),NA,NA,0.7717110190058013
+fetal_liver,mouse,seurat_cross,Mean (all called types),NA,NA,0.8477463811015571
+fetal_liver,mouse,singleR,Mean (all called types),NA,NA,0.7593677439299917
+fetal_liver,mouse,singleR_cross,Mean (all called types),NA,NA,0.8194419281445429

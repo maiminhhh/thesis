@@ -1,0 +1,45 @@
+tissue,species,band,type,n_type,auroc
+colon,human,< 0.5,epithelial_absorptive,1771,0.6293279713852217
+colon,human,< 0.5,epithelial_secretory,1423,0.8080654833244297
+colon,human,< 0.5,epithelial_stem_progenitor,1766,0.841376886563059
+colon,human,< 0.5,endothelial,1136,0.7311237063993882
+colon,human,< 0.5,stromal_mesenchymal,2373,0.6394172705967814
+colon,human,< 0.5,smooth_muscle,652,0.8419688456822417
+colon,human,< 0.5,neural_glial,1325,0.560035005736586
+colon,human,< 0.5,b_plasma,765,0.7399240006079951
+colon,human,< 0.5,immune,1379,0.663133024393516
+colon,human,0.5–0.7,epithelial_absorptive,5522,0.8346930333656135
+colon,human,0.5–0.7,epithelial_secretory,5456,0.8721493114690614
+colon,human,0.5–0.7,epithelial_stem_progenitor,6729,0.9037444846432032
+colon,human,0.5–0.7,endothelial,2124,0.8455138592766246
+colon,human,0.5–0.7,stromal_mesenchymal,14118,0.7093915505234007
+colon,human,0.5–0.7,smooth_muscle,8563,0.8941764722077065
+colon,human,0.5–0.7,neural_glial,2736,0.6397985606745882
+colon,human,0.5–0.7,b_plasma,1896,0.8782017916229019
+colon,human,0.5–0.7,immune,3536,0.7692087837840432
+colon,human,0.7–0.9,epithelial_absorptive,7795,0.8947992675686561
+colon,human,0.7–0.9,epithelial_secretory,6457,0.896072079503818
+colon,human,0.7–0.9,epithelial_stem_progenitor,6920,0.9151572383766561
+colon,human,0.7–0.9,endothelial,2284,0.9251168285951642
+colon,human,0.7–0.9,stromal_mesenchymal,17530,0.7724271650060374
+colon,human,0.7–0.9,smooth_muscle,9366,0.9246250969014098
+colon,human,0.7–0.9,neural_glial,2076,0.6922676444753075
+colon,human,0.7–0.9,b_plasma,2376,0.9248417209031214
+colon,human,0.7–0.9,immune,4591,0.814247624106793
+colon,human,0.9–1,epithelial_absorptive,14562,0.9369876659134208
+colon,human,0.9–1,epithelial_secretory,4548,0.9113853000044367
+colon,human,0.9–1,epithelial_stem_progenitor,4114,0.9294483140852342
+colon,human,0.9–1,endothelial,2795,0.9777383150786395
+colon,human,0.9–1,stromal_mesenchymal,17978,0.8545409719806695
+colon,human,0.9–1,smooth_muscle,5759,0.9705501317299813
+colon,human,0.9–1,neural_glial,583,0.7850557013431037
+colon,human,0.9–1,b_plasma,3175,0.9572368595010624
+colon,human,0.9–1,immune,6896,0.8589047298224192
+colon,human,= 1,epithelial_absorptive,35971,0.9842913245495535
+colon,human,= 1,epithelial_secretory,1973,0.9583173907842132
+colon,human,= 1,epithelial_stem_progenitor,1122,0.9705775990155715
+colon,human,= 1,endothelial,5801,0.9985538688807936
+colon,human,= 1,stromal_mesenchymal,23618,0.9374694897804076
+colon,human,= 1,smooth_muscle,1057,0.9969188570291245
+colon,human,= 1,b_plasma,4562,0.9843567933117711
+colon,human,= 1,immune,18504,0.931315095383287

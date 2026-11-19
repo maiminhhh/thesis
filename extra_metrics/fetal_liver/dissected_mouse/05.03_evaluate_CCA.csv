@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,282334,0.5346686925349421,2823,1274.5474286079407,0.2696045517807302,2823,2743.3801193237305,2751.1013808250427

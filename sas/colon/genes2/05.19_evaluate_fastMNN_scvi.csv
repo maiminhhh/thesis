@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes2,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,307493,0.6506473939101552,770,38495,2,136.6626307964325,142.49694871902466

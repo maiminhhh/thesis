@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,48691,0.531049656924152,487,30.6391499042511,0.4000710143972126,487,73.74001979827881,75.66798377037048

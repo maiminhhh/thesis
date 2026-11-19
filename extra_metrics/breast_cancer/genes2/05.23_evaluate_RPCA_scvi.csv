@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes2,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,177683,0.6109950128512364,1777,662.8607711791992,0.06636809698245355,1777,1362.8219063282013,1371.077173948288

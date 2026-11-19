@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,290766,0.55001171254944,764,38208,2,358.8561472892761,368.23897790908813

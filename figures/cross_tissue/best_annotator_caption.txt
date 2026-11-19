@@ -1,0 +1,5 @@
+Row shading: rank of the four annotators and EBCC (chosen f) by mean marker AUROC on the held-out evaluation half; 1 (darkest) = highest.
+Open circles: the selection half (the half used to choose f), for reference.
+Filled points: the held-out evaluation half; bars: 95% bootstrap intervals (200 resamples of cells).
+SingleR scored on the cells it labels (pruned calls excluded).
+Lead of the chosen labelling over the runner-up on each half: best_annotator.csv (lead_select, lead_eval).

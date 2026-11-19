@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes2,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,48691,0.6049182655782225,487,25.333539724349976,0.15626759792383574,487,62.33056974411011,63.31377840042114

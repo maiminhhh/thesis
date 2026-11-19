@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,176449,0.7104684820666733,1764,1317.3481183052063,0.11559615768675778,1764,2445.6223351955414,2451.1614587306976

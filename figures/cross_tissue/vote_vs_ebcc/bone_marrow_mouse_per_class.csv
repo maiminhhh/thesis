@@ -1,0 +1,99 @@
+tissue,species,chosen_frac,n_held,label_set,celltype,n_markers,n_cells,auroc,n_common
+bone_marrow,mouse,5,26023,Seurat,HSPC,4,4727,0.615104899513681,21820
+bone_marrow,mouse,5,26023,Seurat,MkP,3,435,0.8812576760485785,21820
+bone_marrow,mouse,5,26023,Seurat,Erythroid,9,11612,0.9463390803022924,21820
+bone_marrow,mouse,5,26023,Seurat,Granulocyte,12,2287,0.901122025710484,21820
+bone_marrow,mouse,5,26023,Seurat,Monocyte,5,832,0.7914495096098869,21820
+bone_marrow,mouse,5,26023,Seurat,Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat,DC,2,80,0.6201776678932843,21820
+bone_marrow,mouse,5,26023,Seurat,B cell,1,1299,0.508085447983044,21820
+bone_marrow,mouse,5,26023,Seurat,Plasma,2,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat,T cell,9,1,0.42424034098721297,21820
+bone_marrow,mouse,5,26023,Seurat,NK/ILC,3,547,0.5299639551332804,21820
+bone_marrow,mouse,5,26023,Seurat,MSC,5,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat,Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat,Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR,HSPC,4,228,0.8423329709509045,21820
+bone_marrow,mouse,5,26023,SingleR,MkP,3,1345,0.756204165929073,21820
+bone_marrow,mouse,5,26023,SingleR,Erythroid,9,13072,0.9029092337734549,21820
+bone_marrow,mouse,5,26023,SingleR,Granulocyte,12,2583,0.8795324840496936,21820
+bone_marrow,mouse,5,26023,SingleR,Monocyte,5,988,0.8196817308858374,21820
+bone_marrow,mouse,5,26023,SingleR,Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR,DC,2,1014,0.5374504604478946,21820
+bone_marrow,mouse,5,26023,SingleR,B cell,1,937,0.506979118451835,21820
+bone_marrow,mouse,5,26023,SingleR,Plasma,2,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR,T cell,9,608,0.6086600605292932,21820
+bone_marrow,mouse,5,26023,SingleR,NK/ILC,3,1045,0.49519748501545957,21820
+bone_marrow,mouse,5,26023,SingleR,MSC,5,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR,Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR,Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat (cross),HSPC,4,849,0.7492039458382682,21820
+bone_marrow,mouse,5,26023,Seurat (cross),MkP,3,435,0.9810095162846447,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Erythroid,9,12477,0.9685238456227081,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Granulocyte,12,279,0.9417838517162986,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Monocyte,5,1084,0.7432027005816934,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat (cross),DC,2,67,0.52578954626948,21820
+bone_marrow,mouse,5,26023,Seurat (cross),B cell,1,992,0.49617152797567793,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Plasma,2,269,0.8313581908842843,21820
+bone_marrow,mouse,5,26023,Seurat (cross),T cell,9,194,0.4632154546693985,21820
+bone_marrow,mouse,5,26023,Seurat (cross),NK/ILC,3,7,0.4862467335992298,21820
+bone_marrow,mouse,5,26023,Seurat (cross),MSC,5,5167,0.9109569072495843,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,Seurat (cross),Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR (cross),HSPC,4,57,0.6112277315998262,21820
+bone_marrow,mouse,5,26023,SingleR (cross),MkP,3,202,0.890235745056604,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Erythroid,9,12810,0.9755388149692292,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Granulocyte,12,879,0.9511450693125096,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Monocyte,5,405,0.8195635342712936,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR (cross),DC,2,446,0.5563850887944407,21820
+bone_marrow,mouse,5,26023,SingleR (cross),B cell,1,460,0.5155122842370949,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Plasma,2,110,0.6497707382437922,21820
+bone_marrow,mouse,5,26023,SingleR (cross),T cell,9,215,0.4555584140191493,21820
+bone_marrow,mouse,5,26023,SingleR (cross),NK/ILC,3,331,0.5094214576726461,21820
+bone_marrow,mouse,5,26023,SingleR (cross),MSC,5,5905,0.8747290258924755,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,SingleR (cross),Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,Majority vote,HSPC,4,414,0.8416224107106184,21820
+bone_marrow,mouse,5,26023,Majority vote,MkP,3,385,0.9372743934395439,21820
+bone_marrow,mouse,5,26023,Majority vote,Erythroid,9,12498,0.9739178736308601,21820
+bone_marrow,mouse,5,26023,Majority vote,Granulocyte,12,1949,0.9316220587385868,21820
+bone_marrow,mouse,5,26023,Majority vote,Monocyte,5,487,0.856730099061802,21820
+bone_marrow,mouse,5,26023,Majority vote,Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,Majority vote,DC,2,135,0.6014210198208354,21820
+bone_marrow,mouse,5,26023,Majority vote,B cell,1,907,0.5051505183099343,21820
+bone_marrow,mouse,5,26023,Majority vote,Plasma,2,46,0.8640166173457774,21820
+bone_marrow,mouse,5,26023,Majority vote,T cell,9,75,0.5505725454127386,21820
+bone_marrow,mouse,5,26023,Majority vote,NK/ILC,3,189,0.5189057249063721,21820
+bone_marrow,mouse,5,26023,Majority vote,MSC,5,4735,0.904678434030234,21820
+bone_marrow,mouse,5,26023,Majority vote,Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,Majority vote,Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),HSPC,4,1441,0.7029492539008959,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),MkP,3,405,0.9232382978355428,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Erythroid,9,12275,0.9762792987232735,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Granulocyte,12,1818,0.9342812693428127,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Monocyte,5,662,0.860217214803654,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),DC,2,217,0.5592202055910054,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),B cell,1,920,0.50327257125026,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Plasma,2,67,0.8437353983084166,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),T cell,9,196,0.44722983533035854,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),NK/ILC,3,388,0.5007779940776486,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),MSC,5,3431,0.8705059252614477,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (f = 0),Chondro/Osteo,5,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),HSPC,4,384,0.7693360225399639,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),MkP,3,338,0.9921098109384546,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Erythroid,9,11790,0.9796516134378882,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Granulocyte,12,1749,0.936485980771691,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Monocyte,5,713,0.8587367006193182,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Macrophage,8,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),DC,2,352,0.618091594042719,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),B cell,1,919,0.5101115580945645,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Plasma,2,46,0.8640166173457774,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),T cell,9,209,0.4308279121544296,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),NK/ILC,3,503,0.5108545611446488,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),MSC,5,4817,0.8983674082304541,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Endothelial,6,0,NA,21820
+bone_marrow,mouse,5,26023,EBCC (chosen f),Chondro/Osteo,5,0,NA,21820

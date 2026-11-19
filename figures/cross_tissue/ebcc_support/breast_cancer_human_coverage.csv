@@ -1,0 +1,10 @@
+tissue,species,chosen_frac,labelling,n_cells,labelled
+breast_cancer,human,0.5,Seurat,69489,1
+breast_cancer,human,0.5,SingleR,69489,0.9884873864928262
+breast_cancer,human,0.5,Seurat (cross),69489,1
+breast_cancer,human,0.5,SingleR (cross),69489,0.9964454805796601
+breast_cancer,human,0.5,Majority vote,69489,0.4624904661169394
+breast_cancer,human,0.5,"Vote, ties to Seurat",69489,1
+breast_cancer,human,0.5,"Vote, ties at random",69489,1
+breast_cancer,human,0.5,EBCC (f = 0),69489,1
+breast_cancer,human,0.5,EBCC (chosen f),69489,1

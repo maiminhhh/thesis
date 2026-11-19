@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes6,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,290766,0.6161627828315532,2908,2316.911286830902,0.24344349516405117,2908,6317.064403772354,6324.207568407059

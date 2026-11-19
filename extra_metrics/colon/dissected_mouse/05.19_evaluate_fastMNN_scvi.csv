@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,309258,0.5320609361276123,3093,1402.6355488300323,0.30671531941483554,3093,3554.2290999889374,3560.867460489273

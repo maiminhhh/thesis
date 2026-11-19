@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,280334,0.43891736348587773,1152,57608,2,409.2714421749115,416.8954405784607

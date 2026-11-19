@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,301332,0.5003429258916167,767,38371,2,142.08512163162231,148.1183204650879

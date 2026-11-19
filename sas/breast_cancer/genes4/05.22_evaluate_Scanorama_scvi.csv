@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes4,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,177416,0.8786149994270516,1381,69056,2,470.1870355606079,475.5864362716675

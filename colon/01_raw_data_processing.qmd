@@ -1,0 +1,84 @@
+---
+title: "01_raw_data_processing"
+format: html
+---
+
+```{r}
+#| label: set-up
+source('../library.R')
+source('../source.R')
+```
+
+# Human
+
+<https://www.10xgenomics.com/datasets/human-colon-preview-data-xenium-human-colon-gene-expression-panel-1-standard>
+
+```{r}
+human = LoadXenium(
+  'data/00_raw_data/Xenium_V1_hColon_Non_diseased_Add_on_FFPE_outs/',
+  fov = 'fov')
+human_panel = fromJSON('data/00_raw_data/Xenium_V1_hColon_Non_diseased_Add_on_FFPE_outs/gene_panel.json')
+human_panel = human_panel$payload$targets$type$data
+human_ordered_mapping = data.frame(name = rownames(human[['Xenium']])) %>% 
+  left_join(human_panel, by = join_by('name'))
+human@assays$Xenium@meta.data$gene_name = human_ordered_mapping$name
+human@assays$Xenium@meta.data$ensembl_id = human_ordered_mapping$id
+human = human |> 
+  subset(nCount_Xenium > 0)
+
+human = human |> 
+  NormalizeData() |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(human))
+
+ElbowPlot(human, ndims = 50)
+
+human = human |> 
+  RunUMAP(dims = 1:25, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:25)
+
+SaveSeuratRds(human, 'data/01_processed_data/01_human_processed.rds')
+```
+
+# Mouse
+
+<https://www.10xgenomics.com/datasets/fresh-frozen-mouse-colon-with-xenium-multimodal-cell-segmentation-1-standard>
+
+```{r}
+mouse = LoadXenium(
+  'data/00_raw_data/Xenium_V1_mouse_Colon_FF_outs/',
+  fov = 'fov')
+mouse_panel = fromJSON('data/00_raw_data/Xenium_V1_mouse_Colon_FF_outs/gene_panel.json')
+mouse_panel = mouse_panel$payload$targets$type$data
+mouse_ordered_mapping = data.frame(name = rownames(mouse[['Xenium']])) %>% 
+  left_join(mouse_panel, by = join_by('name'))
+mouse@assays$Xenium@meta.data$gene_name = mouse_ordered_mapping$name
+mouse@assays$Xenium@meta.data$ensembl_id = mouse_ordered_mapping$id
+mouse = mouse |> 
+  subset(nCount_Xenium > 0)
+
+mouse = mouse |> 
+  NormalizeData() |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(mouse))
+
+ElbowPlot(mouse, ndims = 50)
+
+mouse = mouse |> 
+  RunUMAP(dims = 1:20, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+SaveSeuratRds(mouse, 'data/01_processed_data/01_mouse_processed.rds')
+```
+
+```{r}
+mouse = readRDS('data/01_processed_data/01_mouse_processed.rds')
+human = readRDS('data/01_processed_data/01_human_processed.rds')
+ImageDimPlot(human, cols = 'white', alpha = 0.6, 
+             group.by = NULL, split.by = NULL, 
+             axes = TRUE, flip_xy = FALSE)
+
+ImageDimPlot(mouse, cols = 'white', alpha = 0.6, 
+             group.by = NULL, split.by = NULL, 
+             axes = TRUE, flip_xy = FALSE)
+```

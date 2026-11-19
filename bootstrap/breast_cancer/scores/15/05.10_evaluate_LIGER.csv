@@ -1,0 +1,17 @@
+,LIGER
+NMI_cluster/label,0.07550608872659798
+ARI_cluster/label,0.0056937280843359665
+ASW_label,0.5098626856964419
+ASW_label/batch,0.8618582326478818
+PCR_batch,0.980688006965692
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.5258568006799292
+kBET,
+iLISI,0.7519536395501778
+cLISI,0.9227094672541913
+hvg_overlap,
+trajectory,
+_seconds,167.52288484573364
+_n_cells,19991.0

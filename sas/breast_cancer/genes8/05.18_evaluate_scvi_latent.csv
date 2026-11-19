@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,172530,0.15121622841399002,1325,66263,2,695.6925840377808,700.8191084861755

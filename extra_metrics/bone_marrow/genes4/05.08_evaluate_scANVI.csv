@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes4,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,45575,0.6242745223603262,456,47.93595290184021,0.18332188474595623,456,90.33184218406677,91.75279235839844

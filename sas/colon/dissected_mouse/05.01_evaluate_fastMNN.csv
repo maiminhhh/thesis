@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,dissected_mouse,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,309258,0.5515169820998803,769,38474,2,233.27943778038025,238.2971634864807

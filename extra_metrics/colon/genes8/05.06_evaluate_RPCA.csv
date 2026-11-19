@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,268306,0.4667793986440015,2683,434.0976753234863,0.77632920539703,2683,876.6936762332916,881.2212519645691

@@ -1,0 +1,73 @@
+tissue,species,chosen_frac,labelling,n_cells,labelled
+colon,human,0.25,Seurat,275701,1
+colon,human,0.25,SingleR,275701,0.997562576849558
+colon,human,0.25,Seurat (cross),275701,1
+colon,human,0.25,SingleR (cross),275701,0.9981102716348508
+colon,human,0.25,Majority vote,275701,0.8876645351304493
+colon,human,0.25,"Vote, ties to Seurat",275701,1
+colon,human,0.25,"Vote, ties at random",275701,1
+colon,human,0.25,EBCC (f = 0),275701,1
+colon,human,0.25,EBCC (chosen f),275701,1
+colon,mouse,0,Seurat,219729,1
+colon,mouse,0,SingleR,219729,0.9781458068802934
+colon,mouse,0,Seurat (cross),219729,1
+colon,mouse,0,SingleR (cross),219729,0.945997114627564
+colon,mouse,0,Majority vote,219729,0.8573561068406992
+colon,mouse,0,"Vote, ties to Seurat",219729,1
+colon,mouse,0,"Vote, ties at random",219729,1
+colon,mouse,0,EBCC (f = 0),219729,1
+colon,mouse,0,EBCC (chosen f),219729,1
+bone_marrow,human,5,Seurat,34003,1
+bone_marrow,human,5,SingleR,34003,1
+bone_marrow,human,5,Seurat (cross),34003,1
+bone_marrow,human,5,SingleR (cross),34003,0.9999411816604418
+bone_marrow,human,5,Majority vote,34003,0.7031144310796106
+bone_marrow,human,5,"Vote, ties to Seurat",34003,1
+bone_marrow,human,5,"Vote, ties at random",34003,1
+bone_marrow,human,5,EBCC (f = 0),34003,1
+bone_marrow,human,5,EBCC (chosen f),34003,1
+bone_marrow,mouse,5,Seurat,52045,1
+bone_marrow,mouse,5,SingleR,52045,1
+bone_marrow,mouse,5,Seurat (cross),52045,1
+bone_marrow,mouse,5,SingleR (cross),52045,1
+bone_marrow,mouse,5,Majority vote,52045,0.8381208569507157
+bone_marrow,mouse,5,"Vote, ties to Seurat",52045,1
+bone_marrow,mouse,5,"Vote, ties at random",52045,1
+bone_marrow,mouse,5,EBCC (f = 0),52045,1
+bone_marrow,mouse,5,EBCC (chosen f),52045,1
+fetal_liver,human,0,Seurat,224795,1
+fetal_liver,human,0,SingleR,224795,0.9922685113103048
+fetal_liver,human,0,Seurat (cross),224795,1
+fetal_liver,human,0,SingleR (cross),224795,0.9997197446562424
+fetal_liver,human,0,Majority vote,224795,0.7731043839943059
+fetal_liver,human,0,"Vote, ties to Seurat",224795,1
+fetal_liver,human,0,"Vote, ties at random",224795,1
+fetal_liver,human,0,EBCC (f = 0),224795,1
+fetal_liver,human,0,EBCC (chosen f),224795,1
+fetal_liver,mouse,0,Seurat,117328,1
+fetal_liver,mouse,0,SingleR,117328,0.9626687576708032
+fetal_liver,mouse,0,Seurat (cross),117328,1
+fetal_liver,mouse,0,SingleR (cross),117328,0.984445315696168
+fetal_liver,mouse,0,Majority vote,117328,0.8309610664121097
+fetal_liver,mouse,0,"Vote, ties to Seurat",117328,1
+fetal_liver,mouse,0,"Vote, ties at random",117328,1
+fetal_liver,mouse,0,EBCC (f = 0),117328,1
+fetal_liver,mouse,0,EBCC (chosen f),117328,1
+breast_cancer,human,0.5,Seurat,69489,1
+breast_cancer,human,0.5,SingleR,69489,0.9884873864928262
+breast_cancer,human,0.5,Seurat (cross),69489,1
+breast_cancer,human,0.5,SingleR (cross),69489,0.99644548057966
+breast_cancer,human,0.5,Majority vote,69489,0.4624904661169394
+breast_cancer,human,0.5,"Vote, ties to Seurat",69489,1
+breast_cancer,human,0.5,"Vote, ties at random",69489,1
+breast_cancer,human,0.5,EBCC (f = 0),69489,1
+breast_cancer,human,0.5,EBCC (chosen f),69489,1
+breast_cancer,mouse,0,Seurat,477021,1
+breast_cancer,mouse,0,SingleR,477021,0.9990314891797216
+breast_cancer,mouse,0,Seurat (cross),477021,1
+breast_cancer,mouse,0,SingleR (cross),477021,0.9996582959660056
+breast_cancer,mouse,0,Majority vote,477021,0.27033401045237004
+breast_cancer,mouse,0,"Vote, ties to Seurat",477021,1
+breast_cancer,mouse,0,"Vote, ties at random",477021,1
+breast_cancer,mouse,0,EBCC (f = 0),477021,1
+breast_cancer,mouse,0,EBCC (chosen f),477021,1

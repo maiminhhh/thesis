@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.07_evaluate_scVI.py,scVI,embed,X_scvi,282334,0.512552296379698,0.5495614843366368,2823,14,14,2832.376146554947,2838.346038341522

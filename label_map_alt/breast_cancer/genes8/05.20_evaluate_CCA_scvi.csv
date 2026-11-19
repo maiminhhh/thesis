@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+breast_cancer,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,172530,0.6624391531978396,0.7822847834919309,1725,9,9,609.5546185970306,614.3123733997345

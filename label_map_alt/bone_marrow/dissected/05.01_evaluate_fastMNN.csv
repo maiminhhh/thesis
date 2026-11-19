@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,dissected,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,50042,0.5995180553477362,0.6465779490458831,500,11,11,40.17812466621399,42.3065128326416

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+breast_cancer,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,172530,0.6465848530022984,0.762741519918067,1725,9,9,634.033421754837,639.7795269489288

@@ -1,0 +1,129 @@
+seurat,singleR,n,frac,species
+B-cells,B-cells,161,0.44846796657381616,human
+B-cells,CAFs,45,0.12534818941504178,human
+B-cells,Cancer Epithelial,5,0.013927576601671309,human
+B-cells,Endothelial,5,0.013927576601671309,human
+B-cells,Myeloid,72,0.20055710306406685,human
+B-cells,Normal Epithelial,3,0.008356545961002786,human
+B-cells,PVL,17,0.04735376044568245,human
+B-cells,Plasmablasts,13,0.036211699164345405,human
+B-cells,T-cells,29,0.0807799442896936,human
+B-cells,Unassigned,9,0.025069637883008356,human
+CAFs,B-cells,36,0.0022037218413320275,human
+CAFs,CAFs,13755,0.8420053868756121,human
+CAFs,Cancer Epithelial,320,0.019588638589618023,human
+CAFs,Endothelial,51,0.0031219392752203723,human
+CAFs,Myeloid,1144,0.07002938295788443,human
+CAFs,Normal Epithelial,51,0.0031219392752203723,human
+CAFs,PVL,578,0.035381978452497555,human
+CAFs,Plasmablasts,63,0.003856513222331048,human
+CAFs,T-cells,210,0.012855044074436826,human
+CAFs,Unassigned,128,0.007835455435847209,human
+Cancer Epithelial,B-cells,20,5.393161471254449e-4,human
+Cancer Epithelial,CAFs,872,0.023514184014669398,human
+Cancer Epithelial,Cancer Epithelial,35166,0.9482795814906698,human
+Cancer Epithelial,Endothelial,17,4.584187250566282e-4,human
+Cancer Epithelial,Myeloid,240,0.00647179376550534,human
+Cancer Epithelial,Normal Epithelial,147,0.00396397368137202,human
+Cancer Epithelial,PVL,121,0.003262862690108942,human
+Cancer Epithelial,Plasmablasts,15,4.0448711034408373e-4,human
+Cancer Epithelial,T-cells,39,0.0010516664868946177,human
+Cancer Epithelial,Unassigned,447,0.012053715888253694,human
+Endothelial,B-cells,5,0.002126754572522331,human
+Endothelial,CAFs,107,0.045512547851977884,human
+Endothelial,Cancer Epithelial,8,0.0034028073160357296,human
+Endothelial,Endothelial,1971,0.8383666524883029,human
+Endothelial,Myeloid,42,0.01786473840918758,human
+Endothelial,Normal Epithelial,3,0.0012760527435133986,human
+Endothelial,PVL,195,0.0829434283283709,human
+Endothelial,Plasmablasts,2,8.507018290089324e-4,human
+Endothelial,T-cells,6,0.002552105487026797,human
+Endothelial,Unassigned,12,0.005104210974053594,human
+Myeloid,B-cells,78,0.010582010582010581,human
+Myeloid,CAFs,317,0.043006376339709676,human
+Myeloid,Cancer Epithelial,40,0.00542667209333876,human
+Myeloid,Endothelial,14,0.001899335232668566,human
+Myeloid,Myeloid,6606,0.8962148962148963,human
+Myeloid,Normal Epithelial,7,9.49667616334283e-4,human
+Myeloid,PVL,54,0.007326007326007326,human
+Myeloid,Plasmablasts,48,0.006512006512006512,human
+Myeloid,T-cells,137,0.018586351919685253,human
+Myeloid,Unassigned,70,0.00949667616334283,human
+Normal Epithelial,CAFs,17,0.11486486486486487,human
+Normal Epithelial,Cancer Epithelial,30,0.20270270270270271,human
+Normal Epithelial,Myeloid,3,0.02027027027027027,human
+Normal Epithelial,Normal Epithelial,80,0.5405405405405406,human
+Normal Epithelial,PVL,7,0.0472972972972973,human
+Normal Epithelial,Plasmablasts,1,0.006756756756756757,human
+Normal Epithelial,T-cells,1,0.006756756756756757,human
+Normal Epithelial,Unassigned,9,0.060810810810810814,human
+PVL,B-cells,5,0.0034674063800277394,human
+PVL,CAFs,143,0.09916782246879334,human
+PVL,Cancer Epithelial,9,0.0062413314840499305,human
+PVL,Endothelial,66,0.04576976421636616,human
+PVL,Myeloid,29,0.02011095700416089,human
+PVL,Normal Epithelial,6,0.004160887656033287,human
+PVL,PVL,1164,0.8072122052704577,human
+PVL,T-cells,9,0.0062413314840499305,human
+PVL,Unassigned,11,0.0076282940360610264,human
+Plasmablasts,B-cells,3,0.00646551724137931,human
+Plasmablasts,CAFs,27,0.05818965517241379,human
+Plasmablasts,Cancer Epithelial,3,0.00646551724137931,human
+Plasmablasts,Endothelial,1,0.0021551724137931034,human
+Plasmablasts,Myeloid,12,0.02586206896551724,human
+Plasmablasts,PVL,5,0.010775862068965518,human
+Plasmablasts,Plasmablasts,407,0.8771551724137931,human
+Plasmablasts,T-cells,5,0.010775862068965518,human
+Plasmablasts,Unassigned,1,0.0021551724137931034,human
+T-cells,B-cells,171,0.04346720894763599,human
+T-cells,CAFs,420,0.10676156583629894,human
+T-cells,Cancer Epithelial,152,0.03863751906456533,human
+T-cells,Endothelial,57,0.014489069649211999,human
+T-cells,Myeloid,625,0.1588713777325877,human
+T-cells,Normal Epithelial,37,0.009405185561769192,human
+T-cells,PVL,207,0.052618200305033044,human
+T-cells,Plasmablasts,62,0.0157600406710727,human
+T-cells,T-cells,2090,0.5312658871377732,human
+T-cells,Unassigned,113,0.028723945094051857,human
+B-cells,B-cells,419,0.10607594936708861,mouse
+B-cells,CAFs,1790,0.4531645569620253,mouse
+B-cells,Endothelial,177,0.04481012658227848,mouse
+B-cells,Myeloid,94,0.02379746835443038,mouse
+B-cells,Normal Epithelial,1403,0.3551898734177215,mouse
+B-cells,T-cells,37,0.009367088607594937,mouse
+B-cells,Unassigned,30,0.007594936708860759,mouse
+CAFs,B-cells,136,0.004735376044568245,mouse
+CAFs,CAFs,21794,0.7588440111420612,mouse
+CAFs,Endothelial,701,0.02440807799442897,mouse
+CAFs,Myeloid,16,5.571030640668524e-4,mouse
+CAFs,Normal Epithelial,5945,0.20699860724233984,mouse
+CAFs,T-cells,100,0.003481894150417827,mouse
+CAFs,Unassigned,28,9.749303621169916e-4,mouse
+Endothelial,B-cells,7,0.00114603798297315,mouse
+Endothelial,CAFs,800,0.13097576948264572,mouse
+Endothelial,Endothelial,3903,0.6389980353634578,mouse
+Endothelial,Myeloid,1,1.6371971185330714e-4,mouse
+Endothelial,Normal Epithelial,1387,0.227079240340537,mouse
+Endothelial,T-cells,7,0.00114603798297315,mouse
+Endothelial,Unassigned,3,4.911591355599214e-4,mouse
+Myeloid,B-cells,254,0.10785562632696391,mouse
+Myeloid,CAFs,979,0.41571125265392783,mouse
+Myeloid,Endothelial,55,0.02335456475583864,mouse
+Myeloid,Myeloid,232,0.09851380042462846,mouse
+Myeloid,Normal Epithelial,776,0.3295116772823779,mouse
+Myeloid,T-cells,28,0.0118895966029724,mouse
+Myeloid,Unassigned,31,0.013163481953290871,mouse
+Normal Epithelial,B-cells,618,0.0014760993715829374,mouse
+Normal Epithelial,CAFs,8885,0.021221914104392232,mouse
+Normal Epithelial,Endothelial,1104,0.0026369153822452473,mouse
+Normal Epithelial,Myeloid,192,4.585939795209126e-4,mouse
+Normal Epithelial,Normal Epithelial,406863,0.9717964702594639,mouse
+Normal Epithelial,T-cells,741,0.001769886139713522,mouse
+Normal Epithelial,Unassigned,268,6.401207630812738e-4,mouse
+T-cells,B-cells,394,0.022884358482894815,mouse
+T-cells,CAFs,6643,0.3858395771621072,mouse
+T-cells,Endothelial,1062,0.061683220073183484,mouse
+T-cells,Myeloid,150,0.008712319219376197,mouse
+T-cells,Normal Epithelial,8309,0.4826044026253122,mouse
+T-cells,T-cells,557,0.03235174536795028,mouse
+T-cells,Unassigned,102,0.005924377069175815,mouse

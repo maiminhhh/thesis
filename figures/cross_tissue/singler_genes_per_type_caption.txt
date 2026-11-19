@@ -1,0 +1,5 @@
+Number of genes SingleR uses to recognise each cell type of the same-species reference: the genes it selects as
+up-regulated in the type in any pairwise comparison with another type (de.method = t, default number per comparison),
+from the panel genes shared with the reference (in brackets). SingleR retrained exactly as in the annotation; the retrained
+model reproduces the saved SingleR labels for 100% of 3,000 sampled cells per dataset.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type.

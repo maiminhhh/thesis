@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,307493,0.5899987732928399,3075,1490.6284334659576,0.2361559066336395,3075,4037.5994369983673,4048.6642832756042

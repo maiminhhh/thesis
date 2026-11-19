@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,48691,0.5288699963690521,0.5636803492795104,487,11,11,26.837287425994873,28.744717836380005

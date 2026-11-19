@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,50042,0.4782715669303201,500,23.99246644973755,0.1819222002244461,500,53.93597221374512,56.40963578224182

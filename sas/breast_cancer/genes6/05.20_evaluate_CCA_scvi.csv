@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,176449,0.7308703207866833,1367,68328,2,639.1642274856567,646.5578598976135

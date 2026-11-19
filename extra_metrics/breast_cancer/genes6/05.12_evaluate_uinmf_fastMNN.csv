@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,176449,0.7087970249008996,1764,576.5903186798096,0.1352705726317447,1764,1231.32040143013,1236.9612815380096

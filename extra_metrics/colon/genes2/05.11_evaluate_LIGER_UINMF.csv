@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,307493,0.6090832265090156,3075,2536.2218930721283,0.18911840174288752,3075,6199.2747004032135,6207.421766996384

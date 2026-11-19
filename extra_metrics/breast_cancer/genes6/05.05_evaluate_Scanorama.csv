@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,176449,0.6482026009005969,1764,546.0784492492676,0.2864091621011544,1764,1172.915688276291,1178.2789957523346

@@ -1,0 +1,172 @@
+seurat,singleR,n,frac,species
+B/Plasma,B/Plasma,9765,0.7644434006575858,human
+B/Plasma,Endothelial,92,0.007202129325191796,human
+B/Plasma,Epithelial: Absorptive,697,0.05456395803976828,human
+B/Plasma,Epithelial: Secretory,92,0.007202129325191796,human
+B/Plasma,Epithelial: Stem/Progenitor,806,0.06309691560983247,human
+B/Plasma,Erythroid,43,0.003366212619383122,human
+B/Plasma,Immune,446,0.03491467042429936,human
+B/Plasma,Neural/Glial,312,0.024424612494128698,human
+B/Plasma,Smooth muscle,76,0.005949585094723657,human
+B/Plasma,Stromal/Mesenchymal,411,0.0321747299201503,human
+B/Plasma,Unassigned,34,0.0026616564897447943,human
+Endothelial,B/Plasma,329,0.023267326732673267,human
+Endothelial,Endothelial,8144,0.575954738330976,human
+Endothelial,Epithelial: Absorptive,1255,0.08875530410183875,human
+Endothelial,Epithelial: Secretory,76,0.005374823196605375,human
+Endothelial,Epithelial: Stem/Progenitor,355,0.025106082036775106,human
+Endothelial,Erythroid,33,0.002333804809052334,human
+Endothelial,Immune,157,0.011103253182461104,human
+Endothelial,Neural/Glial,1368,0.09674681753889675,human
+Endothelial,Smooth muscle,2009,0.14207920792079207,human
+Endothelial,Stromal/Mesenchymal,376,0.026591230551626592,human
+Endothelial,Unassigned,38,0.0026874115983026876,human
+Epithelial: Absorptive,B/Plasma,46,7.009951082732662e-4,human
+Epithelial: Absorptive,Endothelial,26,3.962146264153244e-4,human
+Epithelial: Absorptive,Epithelial: Absorptive,54331,0.8279514179911919,human
+Epithelial: Absorptive,Epithelial: Secretory,735,0.011200682708279362,human
+Epithelial: Absorptive,Epithelial: Stem/Progenitor,10114,0.15412748967556117,human
+Epithelial: Absorptive,Erythroid,201,0.0030630438426723153,human
+Epithelial: Absorptive,Immune,26,3.962146264153244e-4,human
+Epithelial: Absorptive,Neural/Glial,59,8.991024214809283e-4,human
+Epithelial: Absorptive,Smooth muscle,34,5.181268191585011e-4,human
+Epithelial: Absorptive,Stromal/Mesenchymal,37,5.638438914371924e-4,human
+Epithelial: Absorptive,Unassigned,12,1.828682891147651e-4,human
+Epithelial: Secretory,B/Plasma,17,8.561212670594753e-4,human
+Epithelial: Secretory,Endothelial,2,1.0072014906582061e-4,human
+Epithelial: Secretory,Epithelial: Absorptive,4293,0.21619579996978394,human
+Epithelial: Secretory,Epithelial: Secretory,6392,0.32190159641436267,human
+Epithelial: Secretory,Epithelial: Stem/Progenitor,9061,0.45631263534270033,human
+Epithelial: Secretory,Erythroid,12,6.043208943949237e-4,human
+Epithelial: Secretory,Immune,6,3.0216044719746184e-4,human
+Epithelial: Secretory,Neural/Glial,32,0.0016115223850531298,human
+Epithelial: Secretory,Smooth muscle,28,0.0014100820869214887,human
+Epithelial: Secretory,Stromal/Mesenchymal,7,3.5252052173037217e-4,human
+Epithelial: Secretory,Unassigned,7,3.5252052173037217e-4,human
+Epithelial: Stem/Progenitor,B/Plasma,17,8.232046874243378e-4,human
+Epithelial: Stem/Progenitor,Endothelial,2,9.684761028521622e-5,human
+Epithelial: Stem/Progenitor,Epithelial: Absorptive,145,0.007021451745678175,human
+Epithelial: Stem/Progenitor,Epithelial: Secretory,453,0.021935983729601472,human
+Epithelial: Stem/Progenitor,Epithelial: Stem/Progenitor,19928,0.9649895888818943,human
+Epithelial: Stem/Progenitor,Erythroid,3,1.4527141542782431e-4,human
+Epithelial: Stem/Progenitor,Immune,4,1.9369522057043244e-4,human
+Epithelial: Stem/Progenitor,Neural/Glial,48,0.002324342646845189,human
+Epithelial: Stem/Progenitor,Smooth muscle,13,6.295094668539054e-4,human
+Epithelial: Stem/Progenitor,Stromal/Mesenchymal,36,0.0017432569851338919,human
+Epithelial: Stem/Progenitor,Unassigned,2,9.684761028521622e-5,human
+Immune,B/Plasma,2740,0.07849653354724116,human
+Immune,Endothelial,1445,0.041396894516702,human
+Immune,Epithelial: Absorptive,5658,0.16209247693806222,human
+Immune,Epithelial: Secretory,705,0.020197100784965335,human
+Immune,Epithelial: Stem/Progenitor,3154,0.0903569586890506,human
+Immune,Erythroid,756,0.0216581676502607,human
+Immune,Immune,8641,0.2475505643728872,human
+Immune,Neural/Glial,4177,0.11966424110468114,human
+Immune,Smooth muscle,3279,0.09393800492751962,human
+Immune,Stromal/Mesenchymal,4086,0.1170572394430757,human
+Immune,Unassigned,265,0.007591818025554346,human
+Neural/Glial,B/Plasma,493,0.07316711190264173,human
+Neural/Glial,Endothelial,442,0.06559810032650638,human
+Neural/Glial,Epithelial: Absorptive,254,0.03769664588898783,human
+Neural/Glial,Epithelial: Secretory,49,0.007272187592757494,human
+Neural/Glial,Epithelial: Stem/Progenitor,458,0.06797269219352924,human
+Neural/Glial,Erythroid,29,0.0043039477589789255,human
+Neural/Glial,Immune,150,0.02226179875333927,human
+Neural/Glial,Neural/Glial,3172,0.4707628376372811,human
+Neural/Glial,Smooth muscle,859,0.12748590086078956,human
+Neural/Glial,Stromal/Mesenchymal,784,0.11635500148411991,human
+Neural/Glial,Unassigned,48,0.007123775601068566,human
+Smooth muscle,B/Plasma,138,0.005433712643225578,human
+Smooth muscle,Endothelial,30,0.0011812418789620821,human
+Smooth muscle,Epithelial: Absorptive,163,0.00641808087569398,human
+Smooth muscle,Epithelial: Secretory,63,0.0024806079458203727,human
+Smooth muscle,Epithelial: Stem/Progenitor,418,0.01645863684687168,human
+Smooth muscle,Erythroid,17,6.693703980785132e-4,human
+Smooth muscle,Immune,33,0.0012993660668582903,human
+Smooth muscle,Neural/Glial,305,0.012009292436114502,human
+Smooth muscle,Smooth muscle,24115,0.9495215970390204,human
+Smooth muscle,Stromal/Mesenchymal,81,0.003189353073197622,human
+Smooth muscle,Unassigned,34,0.0013387407961570263,human
+Stromal/Mesenchymal,B/Plasma,2729,0.036089768173823346,human
+Stromal/Mesenchymal,Endothelial,614,0.008119867225623868,human
+Stromal/Mesenchymal,Epithelial: Absorptive,6775,0.08959625481042623,human
+Stromal/Mesenchymal,Epithelial: Secretory,563,0.007445415713397781,human
+Stromal/Mesenchymal,Epithelial: Stem/Progenitor,5085,0.06724678313077748,human
+Stromal/Mesenchymal,Erythroid,195,0.0025787851938056257,human
+Stromal/Mesenchymal,Immune,689,0.009111707684779877,human
+Stromal/Mesenchymal,Neural/Glial,10262,0.13571022389145299,human
+Stromal/Mesenchymal,Smooth muscle,29925,0.395744343203248,human
+Stromal/Mesenchymal,Stromal/Mesenchymal,18548,0.24528875781900894,human
+Stromal/Mesenchymal,Unassigned,232,0.003068093153655924,human
+Endothelial,B/Plasma,13,0.0023576351106274936,mouse
+Endothelial,Endothelial,4147,0.7520856002901705,mouse
+Endothelial,Epithelial: Absorptive,723,0.1311207834602829,mouse
+Endothelial,Epithelial: Secretory,7,0.0012694958287994198,mouse
+Endothelial,Epithelial: Stem/Progenitor,1,1.8135654697134566e-4,mouse
+Endothelial,Immune,4,7.254261878853826e-4,mouse
+Endothelial,Smooth muscle,409,0.07417482771128038,mouse
+Endothelial,Stromal/Mesenchymal,51,0.009249183895538629,mouse
+Endothelial,Unassigned,159,0.02883569096844396,mouse
+Epithelial: Absorptive,B/Plasma,373,0.004899771431573969,mouse
+Epithelial: Absorptive,Endothelial,51,6.699419383653417e-4,mouse
+Epithelial: Absorptive,Epithelial: Absorptive,74201,0.974712975855818,mouse
+Epithelial: Absorptive,Epithelial: Secretory,474,0.0062265191918661165,mouse
+Epithelial: Absorptive,Epithelial: Stem/Progenitor,140,0.0018390563013950556,mouse
+Epithelial: Absorptive,Immune,57,7.487586369965583e-4,mouse
+Epithelial: Absorptive,Neural/Glial,23,3.0213067808633053e-4,mouse
+Epithelial: Absorptive,Smooth muscle,377,0.004952315897328114,mouse
+Epithelial: Absorptive,Stromal/Mesenchymal,62,8.144392191892389e-4,mouse
+Epithelial: Absorptive,Unassigned,368,0.0048340908493812885,mouse
+Epithelial: Secretory,B/Plasma,29,7.530511555440145e-4,mouse
+Epithelial: Secretory,Endothelial,22,5.712801869644248e-4,mouse
+Epithelial: Secretory,Epithelial: Absorptive,25706,0.6675149311867048,mouse
+Epithelial: Secretory,Epithelial: Secretory,12036,0.3125421968319917,mouse
+Epithelial: Secretory,Epithelial: Stem/Progenitor,362,0.009400155803687353,mouse
+Epithelial: Secretory,Immune,9,2.3370553103090107e-4,mouse
+Epithelial: Secretory,Neural/Glial,4,1.038691249026227e-4,mouse
+Epithelial: Secretory,Smooth muscle,65,0.0016878732796676188,mouse
+Epithelial: Secretory,Stromal/Mesenchymal,22,5.712801869644248e-4,mouse
+Epithelial: Secretory,Unassigned,255,0.006621656712542197,mouse
+Epithelial: Stem/Progenitor,B/Plasma,15,0.001121327651939897,mouse
+Epithelial: Stem/Progenitor,Endothelial,1,7.475517679599313e-5,mouse
+Epithelial: Stem/Progenitor,Epithelial: Absorptive,13081,0.977872467668386,mouse
+Epithelial: Stem/Progenitor,Epithelial: Secretory,101,0.007550272856395306,mouse
+Epithelial: Stem/Progenitor,Epithelial: Stem/Progenitor,93,0.006952231442027361,mouse
+Epithelial: Stem/Progenitor,Immune,1,7.475517679599313e-5,mouse
+Epithelial: Stem/Progenitor,Neural/Glial,3,2.2426553038797938e-4,mouse
+Epithelial: Stem/Progenitor,Smooth muscle,30,0.002242655303879794,mouse
+Epithelial: Stem/Progenitor,Stromal/Mesenchymal,8,5.98041414367945e-4,mouse
+Epithelial: Stem/Progenitor,Unassigned,44,0.0032892277790236976,mouse
+Immune,B/Plasma,1,0.3333333333333333,mouse
+Immune,Epithelial: Absorptive,1,0.3333333333333333,mouse
+Immune,Immune,1,0.3333333333333333,mouse
+Neural/Glial,B/Plasma,40,0.007930214115781126,mouse
+Neural/Glial,Endothelial,6,0.0011895321173671688,mouse
+Neural/Glial,Epithelial: Absorptive,1802,0.35725614591593974,mouse
+Neural/Glial,Epithelial: Secretory,326,0.06463124504361618,mouse
+Neural/Glial,Epithelial: Stem/Progenitor,26,0.005154639175257732,mouse
+Neural/Glial,Immune,10,0.0019825535289452814,mouse
+Neural/Glial,Neural/Glial,928,0.18398096748612214,mouse
+Neural/Glial,Smooth muscle,1658,0.3287073750991277,mouse
+Neural/Glial,Stromal/Mesenchymal,122,0.024187153053132435,mouse
+Neural/Glial,Unassigned,126,0.02498017446471055,mouse
+Smooth muscle,B/Plasma,217,0.0038877741149491185,mouse
+Smooth muscle,Endothelial,199,0.003565285939515551,mouse
+Smooth muscle,Epithelial: Absorptive,6292,0.11272753332377813,mouse
+Smooth muscle,Epithelial: Secretory,315,0.00564354307008743,mouse
+Smooth muscle,Epithelial: Stem/Progenitor,77,0.0013795327504658162,mouse
+Smooth muscle,Immune,41,7.345563995986814e-4,mouse
+Smooth muscle,Neural/Glial,1,1.7916009746309302e-5,mouse
+Smooth muscle,Smooth muscle,47572,0.8523004156514261,mouse
+Smooth muscle,Stromal/Mesenchymal,251,0.004496918446323635,mouse
+Smooth muscle,Unassigned,851,0.015246524294109215,mouse
+Stromal/Mesenchymal,B/Plasma,1217,0.04802873041556494,mouse
+Stromal/Mesenchymal,Endothelial,1417,0.055921701724614234,mouse
+Stromal/Mesenchymal,Epithelial: Absorptive,10456,0.41264454003709694,mouse
+Stromal/Mesenchymal,Epithelial: Secretory,289,0.011405343541576227,mouse
+Stromal/Mesenchymal,Epithelial: Stem/Progenitor,57,0.002249496823079048,mouse
+Stromal/Mesenchymal,Immune,331,0.013062867516476577,mouse
+Stromal/Mesenchymal,Neural/Glial,6,2.3678913927147876e-4,mouse
+Stromal/Mesenchymal,Smooth muscle,3764,0.14854572003630767,mouse
+Stromal/Mesenchymal,Stromal/Mesenchymal,4803,0.18954970598681875,mouse
+Stromal/Mesenchymal,Unassigned,2999,0.11835510477919413,mouse

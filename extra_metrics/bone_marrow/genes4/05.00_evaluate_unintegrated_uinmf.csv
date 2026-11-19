@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes4,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,45575,0.589770260157068,456,20.30960774421692,0.16311745856418056,456,50.68847680091858,52.35555052757263

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes2,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,48691,0.3375626875064257,478,23889,2,30.663141012191772,32.02541923522949

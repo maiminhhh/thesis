@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+bone_marrow,human,1,6572,2,0.20237370663420573,0.27723676202069386,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,2,6570,3,0.25068493150684934,0.3345509893455099,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,3,6569,5,0.2682295630994063,0.41360937737859643,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,4,6568,10,0.28288672350791716,0.4942143727161998,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,5,6564,33,0.19195612431444242,0.6281230956733699,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,1,5796,2,0.8083160800552105,0.11628709454796411,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,2,5795,4,0.6723037100949094,0.21432269197584125,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,3,5795,7,0.5397756686798965,0.3432269197584124,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,4,5791,13,0.3313762735278881,0.5423933690208945,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,5,5789,34,0.2249093107617896,0.615132147175678,Seurat pulls into its dominant label,Monocyte

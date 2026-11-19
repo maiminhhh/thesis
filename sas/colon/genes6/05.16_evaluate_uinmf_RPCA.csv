@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes6,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,290766,0.3419877648906618,764,38208,2,385.62406754493713,399.2543179988861

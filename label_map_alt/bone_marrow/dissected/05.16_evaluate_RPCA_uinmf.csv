@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,dissected,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,50042,0.614330298414568,0.6588344060214945,500,11,11,23.685537099838257,24.77164387702942

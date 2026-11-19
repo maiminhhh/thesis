@@ -1,0 +1,5 @@
+tissue,species,annotator,n_select,n_labelled,n_types,mean_auroc,score_col,score_saved,score_na
+colon,mouse,Seurat,109864,109864,8,0.8555374636443525,labelscore_seurat,TRUE,0
+colon,mouse,SingleR,109864,107410,9,0.8539958404295273,labeldelta_singleR,TRUE,0
+colon,mouse,Seurat (cross),109864,109864,9,0.8451517218577024,labelscore_seurat_cross,TRUE,0
+colon,mouse,SingleR (cross),109864,103980,10,0.7793004743440541,labeldelta_singleR_cross,TRUE,0

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes4,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,177416,0.6894306625911798,1774,562.3000559806824,0.10852476926698293,1774,1208.39346408844,1214.0716519355774

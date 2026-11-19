@@ -1,0 +1,2 @@
+"species","M","frac","changed","previous_M","previous_frac","rule"
+"human",5,0.25,TRUE,5,0,"M fixed from the held-out (M, frac) grid; full EBCC fit (R = 10) per frac; cells split 50/50 (set.seed(1)); frac with the highest mean marker AUROC on the selection half (ties -> smaller frac); frac tuned for marker agreement, so marker AUROC is not an independent check"

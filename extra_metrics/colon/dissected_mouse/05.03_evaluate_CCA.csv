@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,309258,0.5489492111425114,3093,2292.606610774994,0.7216024081150607,3093,5801.1584684848785,5806.569322824478

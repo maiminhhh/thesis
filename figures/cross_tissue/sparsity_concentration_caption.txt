@@ -1,0 +1,5 @@
+Same-species reference. For each annotator, the cells the other annotator does not assign to this annotator's dominant label
+(its most frequent label, named in each panel) are split into fifths by the number of panel genes detected (count > 0),
+within each of the other annotator's labels with at least 200 cells, so cell type is roughly held fixed.
+y: share of those cells the annotator assigns to its dominant label. SingleR pruned calls excluded.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type.

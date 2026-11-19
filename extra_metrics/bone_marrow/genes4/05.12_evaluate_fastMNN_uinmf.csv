@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes4,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,45575,0.5685890860175234,456,19.416571617126465,0.15975167565320897,456,51.44450259208679,52.98890733718872

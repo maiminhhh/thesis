@@ -1,0 +1,141 @@
+annotator,celltype,n_markers,n_cells,auroc,species
+seurat,Hepatocyte,15,90421,0.9448837455866296,human
+seurat,HSPC,4,430,0.9425794814201734,human
+seurat,Erythroid progenitor,5,5810,0.7613888077040777,human
+seurat,Erythroblast,9,45491,0.8591613978418025,human
+seurat,Erythrocyte,4,61079,0.4818510587499974,human
+seurat,Megakaryocyte,4,1504,0.9509120716030612,human
+seurat,Mast cell,8,113,0.9997420149287887,human
+seurat,Granulocyte,6,809,0.9923884634454848,human
+seurat,Mono/Macrophage,18,4030,0.9688560205632805,human
+seurat,Dendritic cell,12,103,0.9697275571531014,human
+seurat,B cell,5,347,0.9938039986309801,human
+seurat,T/NK/ILC,13,498,0.9991771121096557,human
+seurat,Endothelial,9,7687,0.9817585183346308,human
+seurat,Fibroblast,14,6473,0.9770148065122292,human
+singleR,Hepatocyte,15,33830,0.9503636955447634,human
+singleR,HSPC,4,55,0.6988700468238769,human
+singleR,Erythroid progenitor,5,238,0.5169934345097753,human
+singleR,Erythroblast,9,74787,0.7537769354848843,human
+singleR,Erythrocyte,4,106235,0.5863654546355287,human
+singleR,Megakaryocyte,4,292,0.9357432536099071,human
+singleR,Mast cell,8,57,0.8761802375894894,human
+singleR,Granulocyte,6,1000,0.9683884790841991,human
+singleR,Mono/Macrophage,18,412,0.9837442524093059,human
+singleR,Dendritic cell,12,105,0.6504670447963175,human
+singleR,B cell,5,28,0.9044347531999362,human
+singleR,T/NK/ILC,13,83,0.9702471658860005,human
+singleR,Endothelial,9,1958,0.9881626661531703,human
+singleR,Fibroblast,14,3977,0.979459230473892,human
+seurat_cross,Hepatocyte,15,116253,0.8897827833428844,human
+seurat_cross,HSPC,4,2324,0.578641756057536,human
+seurat_cross,Erythroid progenitor,5,1956,0.2631119624262002,human
+seurat_cross,Erythroblast,9,28106,0.6103115829081432,human
+seurat_cross,Erythrocyte,4,23234,0.577385244095632,human
+seurat_cross,Megakaryocyte,4,24813,0.5836021025352565,human
+seurat_cross,Mast cell,8,0,NA,human
+seurat_cross,Granulocyte,6,3002,0.7182812487229143,human
+seurat_cross,Mono/Macrophage,18,7070,0.9563000125217974,human
+seurat_cross,Dendritic cell,12,0,NA,human
+seurat_cross,B cell,5,0,NA,human
+seurat_cross,T/NK/ILC,13,0,NA,human
+seurat_cross,Endothelial,9,18037,0.9396643739473044,human
+seurat_cross,Fibroblast,14,0,NA,human
+singleR_cross,Hepatocyte,15,34339,0.9192783262105858,human
+singleR_cross,HSPC,4,143,0.6534889979448707,human
+singleR_cross,Erythroid progenitor,5,40306,0.3005806583830502,human
+singleR_cross,Erythroblast,9,140196,0.857288371097279,human
+singleR_cross,Erythrocyte,4,2124,0.5036743416818235,human
+singleR_cross,Megakaryocyte,4,1509,0.7531681677925293,human
+singleR_cross,Mast cell,8,0,NA,human
+singleR_cross,Granulocyte,6,658,0.8885829361137291,human
+singleR_cross,Mono/Macrophage,18,172,0.9120406391620616,human
+singleR_cross,Dendritic cell,12,0,NA,human
+singleR_cross,B cell,5,0,NA,human
+singleR_cross,T/NK/ILC,13,0,NA,human
+singleR_cross,Endothelial,9,5285,0.9474787176723685,human
+singleR_cross,Fibroblast,14,0,NA,human
+ebcc,Hepatocyte,15,62126,0.907143110233603,human
+ebcc,HSPC,4,701,0.6449458741120546,human
+ebcc,Erythroid progenitor,5,12005,0.40798182685406525,human
+ebcc,Erythroblast,9,74685,0.8497361851180817,human
+ebcc,Erythrocyte,4,53315,0.5170084969616808,human
+ebcc,Megakaryocyte,4,5083,0.6516086084169119,human
+ebcc,Mast cell,8,10,0.9997593255777744,human
+ebcc,Granulocyte,6,1671,0.8916766618333897,human
+ebcc,Mono/Macrophage,18,3187,0.9845744852295435,human
+ebcc,Dendritic cell,12,4,0.8540772317397048,human
+ebcc,B cell,5,25,0.9778497130399965,human
+ebcc,T/NK/ILC,13,74,0.998510946366287,human
+ebcc,Endothelial,9,8282,0.975083151026468,human
+ebcc,Fibroblast,14,3627,0.9835492255159219,human
+seurat,Hepatocyte,5,53886,0.9322614103161107,mouse
+seurat,HSPC,5,784,0.8342509216541847,mouse
+seurat,Erythroid progenitor,4,68,0.3480121474651604,mouse
+seurat,Erythroblast,5,17270,0.8071474780874921,mouse
+seurat,Erythrocyte,1,17480,0.5368612923222246,mouse
+seurat,Megakaryocyte,3,9157,0.6049206832890784,mouse
+seurat,Mast cell,2,0,NA,mouse
+seurat,Granulocyte,5,2502,0.9795631420246556,mouse
+seurat,Mono/Macrophage,5,8461,0.919622616327312,mouse
+seurat,Dendritic cell,3,0,NA,mouse
+seurat,B cell,2,0,NA,mouse
+seurat,T/NK/ILC,4,0,NA,mouse
+seurat,Endothelial,5,7720,0.9827594795659936,mouse
+seurat,Fibroblast,5,0,NA,mouse
+singleR,Hepatocyte,5,22626,0.9340760700757174,mouse
+singleR,HSPC,5,680,0.8319744613204957,mouse
+singleR,Erythroid progenitor,4,922,0.09556081709107427,mouse
+singleR,Erythroblast,5,71529,0.9043222872717349,mouse
+singleR,Erythrocyte,1,9295,0.3162385154750955,mouse
+singleR,Megakaryocyte,3,1379,0.9511885974028657,mouse
+singleR,Mast cell,2,0,NA,mouse
+singleR,Granulocyte,5,1680,0.9837479692959256,mouse
+singleR,Mono/Macrophage,5,2488,0.8644704285440656,mouse
+singleR,Dendritic cell,3,0,NA,mouse
+singleR,B cell,2,0,NA,mouse
+singleR,T/NK/ILC,4,0,NA,mouse
+singleR,Endothelial,5,2349,0.9527305488929511,mouse
+singleR,Fibroblast,5,0,NA,mouse
+seurat_cross,Hepatocyte,5,19454,0.9393622228354818,mouse
+seurat_cross,HSPC,5,1197,0.8915442242447271,mouse
+seurat_cross,Erythroid progenitor,4,3199,0.6858386181307135,mouse
+seurat_cross,Erythroblast,5,63625,0.8266164821895525,mouse
+seurat_cross,Erythrocyte,1,11713,0.6585730028635156,mouse
+seurat_cross,Megakaryocyte,3,1788,0.9817192947501838,mouse
+seurat_cross,Mast cell,2,102,0.9007540905567694,mouse
+seurat_cross,Granulocyte,5,1679,0.9819678849874297,mouse
+seurat_cross,Mono/Macrophage,5,2769,0.8936456328544347,mouse
+seurat_cross,Dendritic cell,3,374,0.7674458302039131,mouse
+seurat_cross,B cell,2,36,0.7869502798334261,mouse
+seurat_cross,T/NK/ILC,4,10,0.591912579484819,mouse
+seurat_cross,Endothelial,5,5537,0.9819641443158671,mouse
+seurat_cross,Fibroblast,5,5845,0.980155048170966,mouse
+singleR_cross,Hepatocyte,5,13609,0.9551383341506142,mouse
+singleR_cross,HSPC,5,162,0.8841279122850001,mouse
+singleR_cross,Erythroid progenitor,4,848,0.5296179453043297,mouse
+singleR_cross,Erythroblast,5,63866,0.7381813270616439,mouse
+singleR_cross,Erythrocyte,1,27479,0.6214548210911927,mouse
+singleR_cross,Megakaryocyte,3,501,0.993448104920574,mouse
+singleR_cross,Mast cell,2,219,0.8419943545413915,mouse
+singleR_cross,Granulocyte,5,1342,0.9908307130916673,mouse
+singleR_cross,Mono/Macrophage,5,1414,0.969536450754475,mouse
+singleR_cross,Dendritic cell,3,117,0.7982792725005818,mouse
+singleR_cross,B cell,2,261,0.6053169073296434,mouse
+singleR_cross,T/NK/ILC,4,13,0.5687821789432318,mouse
+singleR_cross,Endothelial,5,1771,0.9883814874569264,mouse
+singleR_cross,Fibroblast,5,3901,0.9870971845923291,mouse
+ebcc,Hepatocyte,5,25396,0.9469668843894129,mouse
+ebcc,HSPC,5,872,0.8792189074599502,mouse
+ebcc,Erythroid progenitor,4,1639,0.7959664755402298,mouse
+ebcc,Erythroblast,5,55125,0.8060387966063715,mouse
+ebcc,Erythrocyte,1,15959,0.6702780868626469,mouse
+ebcc,Megakaryocyte,3,3764,0.7020402405216573,mouse
+ebcc,Mast cell,2,66,0.9113904088384313,mouse
+ebcc,Granulocyte,5,2182,0.9795676112340252,mouse
+ebcc,Mono/Macrophage,5,3351,0.9367431733041095,mouse
+ebcc,Dendritic cell,3,220,0.8100869981710744,mouse
+ebcc,B cell,2,6,0.6895460072847945,mouse
+ebcc,T/NK/ILC,4,0,NA,mouse
+ebcc,Endothelial,5,4955,0.988839998526243,mouse
+ebcc,Fibroblast,5,3793,0.9855365241529692,mouse

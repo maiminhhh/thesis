@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,282334,0.6004996830563164,2823,1329.7951271533966,0.13182184927055624,2823,3430.130534887314,3435.3164851665497

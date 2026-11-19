@@ -1,0 +1,10 @@
+tissue,species,chosen_frac,labelling,n_cells,labelled
+colon,mouse,0,Seurat,219729,1
+colon,mouse,0,SingleR,219729,0.9781458068802934
+colon,mouse,0,Seurat (cross),219729,1
+colon,mouse,0,SingleR (cross),219729,0.945997114627564
+colon,mouse,0,Majority vote,219729,0.8573561068406992
+colon,mouse,0,"Vote, ties to Seurat",219729,1
+colon,mouse,0,"Vote, ties at random",219729,1
+colon,mouse,0,EBCC (f = 0),219729,1
+colon,mouse,0,EBCC (chosen f),219729,1

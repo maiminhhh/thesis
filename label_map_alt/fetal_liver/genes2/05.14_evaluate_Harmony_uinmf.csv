@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,genes2,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,282299,0.5074829058768009,0.5409449895728367,2823,14,14,1965.7894866466522,1977.618925333023

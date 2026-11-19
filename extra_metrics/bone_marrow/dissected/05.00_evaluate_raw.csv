@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,50042,0.5924427345366821,500,27.695362091064453,0.5037880489373687,500,63.825791120529175,68.47967076301575

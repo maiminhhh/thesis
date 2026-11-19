@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes2,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,307493,0.5337787715553101,3075,2512.5688593387604,0.402242101149776,3075,6665.071729421616,6673.271428823471

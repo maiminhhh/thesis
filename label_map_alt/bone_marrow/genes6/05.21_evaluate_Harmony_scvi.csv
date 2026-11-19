@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes6,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,41058,0.498561011722342,0.5338527178192582,411,11,11,19.72690749168396,21.235260725021362

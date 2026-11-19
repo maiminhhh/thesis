@@ -1,0 +1,21 @@
+tissue_f,pct,mean_diff,uinmf_wins,of
+Bone marrow (123 to 25 genes),20,-0.003,2,6
+Bone marrow (123 to 25 genes),40,-0.011,2,6
+Bone marrow (123 to 25 genes),60,-0.03,0,6
+Bone marrow (123 to 25 genes),80,-0.015,2,6
+Bone marrow (123 to 25 genes),100,-0.026,1,6
+Colon (46 to 9 genes),20,0.119,6,6
+Colon (46 to 9 genes),40,0.09,6,6
+Colon (46 to 9 genes),60,0.049,5,6
+Colon (46 to 9 genes),80,0.075,6,6
+Colon (46 to 9 genes),100,0.07,6,6
+Breast cancer (122 to 24 genes),20,-0.005,3,6
+Breast cancer (122 to 24 genes),40,-0.061,0,6
+Breast cancer (122 to 24 genes),60,-0.102,0,6
+Breast cancer (122 to 24 genes),80,-0.073,1,6
+Breast cancer (122 to 24 genes),100,-0.094,0,6
+Fetal liver (123 to 25 genes),20,-0.014,3,6
+Fetal liver (123 to 25 genes),40,0.01,5,6
+Fetal liver (123 to 25 genes),60,-0.023,0,6
+Fetal liver (123 to 25 genes),80,-0.024,0,6
+Fetal liver (123 to 25 genes),100,-0.018,1,6

@@ -1,0 +1,119 @@
+tissue,group,label,n,pct
+bone_marrow,dissected,Erythroid,16052,64.69
+bone_marrow,dissected,Granulocyte,3858,15.55
+bone_marrow,dissected,MSC,1825,7.35
+bone_marrow,dissected,Monocyte,1100,4.43
+bone_marrow,dissected,MkP,526,2.12
+bone_marrow,dissected,DC,514,2.07
+bone_marrow,dissected,B cell,437,1.76
+bone_marrow,dissected,HSPC,361,1.45
+bone_marrow,dissected,NK/ILC,118,0.48
+bone_marrow,dissected,T cell,17,0.07
+bone_marrow,dissected,Plasma,7,0.03
+bone_marrow,full,Erythroid,23670,45.48
+bone_marrow,full,MSC,10838,20.82
+bone_marrow,full,Granulocyte,6003,11.53
+bone_marrow,full,B cell,2852,5.48
+bone_marrow,full,Monocyte,2007,3.86
+bone_marrow,full,HSPC,1808,3.47
+bone_marrow,full,NK/ILC,1743,3.35
+bone_marrow,full,T cell,1126,2.16
+bone_marrow,full,DC,1019,1.96
+bone_marrow,full,MkP,839,1.61
+bone_marrow,full,Plasma,140,0.27
+bone_marrow,human,Monocyte,8758,25.76
+bone_marrow,human,Granulocyte,8510,25.03
+bone_marrow,human,Erythroid,7031,20.68
+bone_marrow,human,B cell,2214,6.51
+bone_marrow,human,T cell,1535,4.51
+bone_marrow,human,MSC,1466,4.31
+bone_marrow,human,NK/ILC,1280,3.76
+bone_marrow,human,DC,1210,3.56
+bone_marrow,human,MkP,1078,3.17
+bone_marrow,human,HSPC,515,1.51
+bone_marrow,human,Plasma,406,1.19
+breast_cancer,dissected,Cancer Epithelial,88607,81.64
+breast_cancer,dissected,Normal Epithelial,13370,12.32
+breast_cancer,dissected,CAFs,2923,2.69
+breast_cancer,dissected,Endothelial,1785,1.64
+breast_cancer,dissected,T-cells,623,0.57
+breast_cancer,dissected,PVL,439,0.4
+breast_cancer,dissected,Myeloid,351,0.32
+breast_cancer,dissected,B-cells,255,0.23
+breast_cancer,dissected,Other,177,0.16
+breast_cancer,full,Cancer Epithelial,352120,73.82
+breast_cancer,full,Normal Epithelial,73166,15.34
+breast_cancer,full,CAFs,26428,5.54
+breast_cancer,full,Endothelial,10691,2.24
+breast_cancer,full,T-cells,5490,1.15
+breast_cancer,full,Myeloid,3094,0.65
+breast_cancer,full,PVL,2450,0.51
+breast_cancer,full,B-cells,2156,0.45
+breast_cancer,full,Other,1426,0.3
+breast_cancer,human,Cancer Epithelial,34453,49.58
+breast_cancer,human,CAFs,15150,21.8
+breast_cancer,human,Myeloid,8216,11.82
+breast_cancer,human,T-cells,3530,5.08
+breast_cancer,human,Normal Epithelial,2929,4.22
+breast_cancer,human,Endothelial,2681,3.86
+breast_cancer,human,PVL,1158,1.67
+breast_cancer,human,B-cells,932,1.34
+breast_cancer,human,Other,440,0.63
+colon,dissected,Epithelial: Absorptive,14249,36.95
+colon,dissected,Smooth muscle,10207,26.47
+colon,dissected,Stromal/Mesenchymal,4425,11.48
+colon,dissected,Epithelial: Stem/Progenitor,3678,9.54
+colon,dissected,Epithelial: Secretory,3538,9.18
+colon,dissected,Endothelial,1595,4.14
+colon,dissected,Neural/Glial,364,0.94
+colon,dissected,B/Plasma,347,0.9
+colon,dissected,Immune,155,0.4
+colon,full,Epithelial: Absorptive,94239,42.89
+colon,full,Smooth muscle,50827,23.13
+colon,full,Stromal/Mesenchymal,25312,11.52
+colon,full,Epithelial: Stem/Progenitor,19088,8.69
+colon,full,Epithelial: Secretory,17420,7.93
+colon,full,Endothelial,8523,3.88
+colon,full,Neural/Glial,1914,0.87
+colon,full,B/Plasma,1641,0.75
+colon,full,Immune,765,0.35
+colon,human,Epithelial: Absorptive,66882,24.26
+colon,human,Smooth muscle,60393,21.91
+colon,human,Stromal/Mesenchymal,41438,15.03
+colon,human,Epithelial: Stem/Progenitor,31591,11.46
+colon,human,Immune,21141,7.67
+colon,human,B/Plasma,15600,5.66
+colon,human,Epithelial: Secretory,13486,4.89
+colon,human,Endothelial,13135,4.76
+colon,human,Neural/Glial,11661,4.23
+colon,human,Other,374,0.14
+fetal_liver,dissected,Erythroblast,29286,50.79
+fetal_liver,dissected,Hepatocyte,12100,20.98
+fetal_liver,dissected,Erythrocyte,7586,13.16
+fetal_liver,dissected,Endothelial,2165,3.75
+fetal_liver,dissected,Megakaryocyte,1630,2.83
+fetal_liver,dissected,Mono/Macrophage,1525,2.64
+fetal_liver,dissected,Granulocyte,1109,1.92
+fetal_liver,dissected,Fibroblast,969,1.68
+fetal_liver,dissected,Erythroid progenitor,763,1.32
+fetal_liver,dissected,Other,532,0.92
+fetal_liver,full,Erythroblast,55125,46.98
+fetal_liver,full,Hepatocyte,25396,21.65
+fetal_liver,full,Erythrocyte,15959,13.6
+fetal_liver,full,Endothelial,4955,4.22
+fetal_liver,full,Fibroblast,3793,3.23
+fetal_liver,full,Megakaryocyte,3764,3.21
+fetal_liver,full,Mono/Macrophage,3351,2.86
+fetal_liver,full,Granulocyte,2182,1.86
+fetal_liver,full,Erythroid progenitor,1639,1.4
+fetal_liver,full,Other,1164,0.99
+fetal_liver,human,Erythroblast,74685,33.22
+fetal_liver,human,Hepatocyte,62126,27.64
+fetal_liver,human,Erythrocyte,53315,23.72
+fetal_liver,human,Erythroid progenitor,12005,5.34
+fetal_liver,human,Endothelial,8282,3.68
+fetal_liver,human,Megakaryocyte,5083,2.26
+fetal_liver,human,Fibroblast,3627,1.61
+fetal_liver,human,Mono/Macrophage,3187,1.42
+fetal_liver,human,Granulocyte,1671,0.74
+fetal_liver,human,Other,814,0.36

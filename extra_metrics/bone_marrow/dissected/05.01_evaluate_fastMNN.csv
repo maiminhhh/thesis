@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,50042,0.5995180553477362,500,45.12228775024414,0.15720859098612988,500,89.73611330986023,92.38820600509644

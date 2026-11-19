@@ -1,0 +1,6 @@
+Hsu's multiple comparisons with the best (95% simultaneous) for the two components of the overall score, 19 embedding-based methods
+x 4 tissues (graph-based methods excluded), outcome = improvement over unintegrated data. Point: a method's mean improvement minus
+the best mean of the other methods; interval constrained to include zero. Filled: could be the best (interval reaches above zero);
+open: significantly worse than the best. A: batch correction; B: bio-conservation; C: bio-conservation without scANVI (18 methods,
+its row left blank). Rows, order and numbers as in Figure section22 (mean overall improvement). † trained on the EBCC labels.
+Leader and margin (d x SE; a method could be best if it trails the leader by less): A FastMNN scVI-latent, 0.135 (lead 0.011); B scANVI, 0.068 (lead 0.093); C scVI, 0.065 (lead 0.001).

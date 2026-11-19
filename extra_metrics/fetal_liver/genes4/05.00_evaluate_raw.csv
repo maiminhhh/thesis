@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,282117,0.47284909169026695,2821,1750.2055051326752,0.41719402272938755,2821,4047.709114551544,4061.2050852775574

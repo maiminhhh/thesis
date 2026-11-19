@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,309258,0.605788834950636,769,38474,2,110.44700765609741,115.5973596572876

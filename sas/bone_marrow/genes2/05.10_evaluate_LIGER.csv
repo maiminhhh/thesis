@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes2,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,48691,0.8847720524370822,478,23889,2,31.273669481277466,32.83163118362427

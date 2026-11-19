@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,268306,0.4255782877836686,763,38137,2,157.99045324325562,165.3997642993927

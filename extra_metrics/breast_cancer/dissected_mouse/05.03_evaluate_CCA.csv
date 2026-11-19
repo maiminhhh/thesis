@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,177883,0.7060838853494822,1779,420.54281091690063,0.17228551996803343,1779,909.1086630821228,915.3299951553345

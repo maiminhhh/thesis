@@ -1,0 +1,550 @@
+---
+title: "05.01_evaluate_visualisations"
+format: 
+  html:
+    code-fold: True
+    message: False
+    warning: False
+    embed-resources: True
+---
+
+```{r}
+source('../library.R')
+source('../source.R')
+```
+
+# Scores
+
+```{r}
+files = list.files(path = 'data/05_evaluated_score/dissected_mouse', full.names = TRUE)
+list_of_dfs = lapply(files, FUN = function(x) read.csv(x, row.names = 1))
+score_wide = do.call(cbind, list_of_dfs)
+```
+
+```{r}
+score_wide$metric = rownames(score_wide)
+score_wide = score_wide |> 
+  filter(!metric %in% c('cell_cycle_conservation', 'isolated_label_F1', 
+                       'isolated_label_silhouette', 'kBET', 'hvg_overlap',
+                       'trajectory'))
+score_long = score_wide |> 
+  pivot_longer(cols = 1:19, names_to = 'integration',
+               values_to = 'score')
+score_long$score = score_long$score |> 
+  round(digits = 6)
+
+score_long$integration = score_long$integration |> 
+  factor(levels = c(
+  # Baselines
+  "Unintegrated", "Unintegrated.UINMF",
+  # Anchor / MNN-based
+  "CCA",       "CCA.UINMF",
+  "RPCA",      "RPCA.UINMF",
+  "FastMNN",   "FastMNN.UINMF",
+  "Scanorama", "Scanorama.UINMF",
+  # Embedding / factorization
+  "Harmony",   "Harmony.UINMF",
+  "LIGER",     "LIGER.UINMF",
+  # Graph-based
+  "BBKNN",     "BBKNN.UINMF",
+  # Deep learning
+  "scVI",
+  "scANVI",
+  # Cross-species
+  "SAMap"
+))
+
+score_long$uinmf = str_detect(score_long$integration, 'UINMF')
+
+(ggplot(score_long, aes(y = score, x = integration, fill = uinmf)) +
+  geom_col() +
+  facet_wrap(~metric) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5)) ) |> 
+  plotly::ggplotly()
+```
+
+```{r}
+bio = c('NMI_cluster/label',
+        'ARI_cluster/label',
+        'ASW_label',
+        'ASW_label/batch',
+        'graph_conn',
+        'cLISI')
+batch = score_long$metric[!score_long$metric %in% bio] |> unique()
+score_wide['bio_conservation',-20] = score_wide[bio,-20] |> colMeans(na.rm = TRUE)
+score_wide['batch_correction', -20] = score_wide[batch, -20] |> colMeans(na.rm = TRUE)
+score_wide[c(nrow(score_wide) - 1, nrow(score_wide)), 'metric'] = c('bio_conservation', 'batch_correction')
+
+score_long = score_wide |> 
+  pivot_longer(cols = 1:19, names_to = 'integration',
+               values_to = 'score')
+score_long$score = score_long$score |> 
+  round(digits = 6)
+
+score_long$integration = score_long$integration |> 
+  factor(levels = c(
+    # Baselines
+    "Unintegrated", "Unintegrated.UINMF",
+    # Anchor / MNN-based
+    "CCA",       "CCA.UINMF",
+    "RPCA",      "RPCA.UINMF",
+    "FastMNN",   "FastMNN.UINMF",
+    "Scanorama", "Scanorama.UINMF",
+    # Embedding / factorization
+    "Harmony",   "Harmony.UINMF",
+    "LIGER",     "LIGER.UINMF",
+    # Graph-based
+    "BBKNN",     "BBKNN.UINMF",
+    # Deep learning
+    "scVI",
+    "scANVI",
+    # Cross-species
+    "SAMap"
+  ))
+
+score_long$uinmf = str_detect(score_long$integration, 'UINMF')
+
+(ggplot(score_long |> filter(metric %in% 
+                               c('bio_conservation', 'batch_correction')),
+       aes(y = score, x = integration, fill = uinmf)) +
+  geom_col() + 
+  facet_wrap(~metric) +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.5))) |> 
+  plotly::ggplotly()
+```
+
+# Raw
+
+## Ortholog mapping
+
+```{r}
+raw_concat = readRDS('data/03_concatenated_data_subset.rds')
+DimPlot(raw_concat, reduction = 'umap', group.by = 'orig.ident',
+        shuffle = TRUE, )
+DimPlot(raw_concat, reduction = 'umap', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+raw_uinmf = readRDS('data/04_integrated_data/dissected_mouse/04.13_CCA_UINMF.rds')
+raw_uinmf = raw_uinmf |> 
+  RunUMAP(reduction = 'uinmf_H', dims = 1:20, 
+          reduction.name = 'umap_uinmf')
+DimPlot(raw_uinmf, reduction = 'umap_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(raw_uinmf, reduction = 'umap_uinmf', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# FastMNN
+
+## Ortholog mapping
+
+```{r}
+fastmnn = readRDS('data/04_integrated_data/dissected_mouse/04.01_FastMNN.rds')
+DimPlot(fastmnn, reduction = 'umap_mnn', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(fastmnn, reduction = 'umap_mnn', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+fastmnn_uinmf = readRDS('data/04_integrated_data/dissected_mouse/04.12_FastMNN_UINMF.rds')
+DimPlot(fastmnn_uinmf, reduction = 'umap_mnn_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(fastmnn_uinmf, reduction = 'umap_mnn_uinmf', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# SAMap
+
+```{r}
+samap_h5ad = read_h5ad('data/04_integrated_data/dissected_mouse/04.02_SAMap.h5ad')
+counts_matrix = t(samap_h5ad$X) 
+
+
+
+cell_metadata = raw_concat@meta.data
+
+# 4. Create a clean Seurat object
+samap_seurat = CreateSeuratObject(
+  counts = counts_matrix,
+  meta.data = cell_metadata,
+  assay = "RNA"
+)
+
+# 5. Optional: Bring over your SAMap dimensional reductions (e.g., UMAP, PCA) if they exist
+# Look at your reduction names using: names(adata$obsm)
+if ("X_umap" %in% names(adata$obsm)) {
+  umap_coords <- adata$obsm[["X_umap"]]
+  rownames(umap_coords) <- colnames(samap_seurat)
+  colnames(umap_coords) <- c("UMAP_1", "UMAP_2")
+  
+  samap_seurat[["umap"]] <- CreateDimReducObject(
+    embeddings = umap_coords, 
+    key = "UMAP_", 
+    assay = "RNA"
+  )
+}
+
+
+
+samap = samap_h5ad |> as.Seurat()
+samap = samap_h5ad$as_Seurat()
+samap = readRDS('data/04_integrated_data/dissected_mouse/04.02_SAMap.rds')
+DimPlot(samap_h5ad, reduction = 'X_umap', group.by = 'species',
+        shuffle = TRUE)
+DimPlot(samap_h5ad, reduction = 'X_umap', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# Seurat CCA
+
+## Ortholog mapping
+
+```{r}
+#| eval: false
+#| include: false
+cca = readRDS('data/04_integrated_data/04.03_CCA.rds')
+cca = cca |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(cca), reduction.name = 'pca_cca') |> 
+  RunUMAP(reduction = 'pca_cca',
+          dims = 1:20,
+          reduction.name = 'umap_cca')
+cca[['integrated']]$counts = raw_concat[['Xenium']]$counts
+SaveSeuratRds(cca, 'data/04_integrated_data/04.03_CCA.rds')
+as.anndata(cca, file_path = 'data/04_integrated_data/', file_name = '04.03_CCA.h5ad', assay = 'integrated', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+cca = readRDS('data/04_integrated_data/04.03_CCA.rds')
+DimPlot(cca, reduction = 'umap_cca', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(cca, reduction = 'umap_cca', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+#| eval: false
+#| include: false
+cca_uinmf = readRDS('data/04_integrated_data/04.13_UINMF_CCA.rds')
+cca_uinmf = cca_uinmf |> 
+  RunUMAP(reduction = 'uinmf_cca', dims = 1:20,
+          reduction.name = 'umap_cca_uinmf')
+
+SaveSeuratRds(cca_uinmf, 'data/04_integrated_data/04.13_UINMF_CCA.rds')
+as.anndata(cca_uinmf, file_path = 'data/04_integrated_data/', file_name = '04.13_UINMF_CCA.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+cca_uinmf = readRDS('data/04_integrated_data/04.13_UINMF_CCA.rds')
+DimPlot(cca_uinmf, reduction = 'umap_cca_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(cca_uinmf, reduction = 'umap_cca_uinmf', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# Harmony
+
+## Ortholog mapping
+
+```{r}
+#| eval: false
+#| include: false
+harmony = readRDS('data/04_integrated_data/04.04_Harmony.rds')
+harmony = harmony |> 
+  RunUMAP(reduction = 'harmony', dims = 1:20,
+          reduction.name = 'umap_harmony')
+
+SaveSeuratRds(harmony, 'data/04_integrated_data/04.04_Harmony.rds')
+as.anndata(harmony, file_path = 'data/04_integrated_data/', file_name = '04.04_Harmony.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+harmony = readRDS('data/04_integrated_data/04.04_Harmony.rds')
+DimPlot(harmony, reduction = 'umap_harmony', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(harmony, reduction = 'umap_harmony', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+#| eval: false
+#| include: false
+harmony_uinmf = readRDS('data/04_integrated_data/04.14_UINMF_Harmony.rds')
+harmony_uinmf = harmony_uinmf |> 
+  RunUMAP(reduction = 'harmony', 
+          dims = 1:20,
+          reduction.name = 'umap_harmony_uinmf')
+
+SaveSeuratRds(harmony_uinmf, 'data/04_integrated_data/04.14_UINMF_Harmony.rds')
+write_h5ad(harmony_uinmf, 'data/04_integrated_data/04.14_UINMF_Harmony.h5ad', mode = 'w')
+```
+
+```{r}
+harmony_uinmf = readRDS('data/04_integrated_data/04.14_UINMF_Harmony.rds')
+DimPlot(harmony_uinmf, reduction = 'umap_harmony_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(harmony_uinmf, reduction = 'umap_harmony_uinmf', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# Scanorama
+
+## Ortholog mapping
+
+```{r}
+#| eval: false
+#| include: false
+scanorama = read_h5ad('data/04_integrated_data/04.05_Scanorama.h5ad')
+scanorama = scanorama$as_Seurat()
+scanorama[['Xenium']] = scanorama[['RNA']]
+DefaultAssay(scanorama) = 'Xenium'
+scanorama[['RNA']] = NULL
+scanorama[['Xenium']]$counts = scanorama[['Xenium']]$X
+
+SaveSeuratRds(scanorama, 'data/04_integrated_data/04.05_Scanorama.rds')
+
+#as.anndata(scanorama, file_path = 'data/04_integrated_data/', file_name = '04.05_Scanorama.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('logcounts', 'scaledata'))
+```
+
+```{r}
+scanorama = readRDS('data/04_integrated_data/04.05_Scanorama.rds')
+DimPlot(scanorama, reduction = 'umap_scanorama', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(scanorama, reduction = 'umap_scanorama', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+#| eval: false
+#| include: false
+scanorama_uinmf_h5ad = read_h5ad('data/04_integrated_data/04.15_UINMF_Scanorama.h5ad')
+scanorama_uinmf = scanorama_uinmf_h5ad$as_Seurat(assay_name = 'Xenium')
+
+scanorama_uinmf@meta.data = raw_concat@meta.data
+colnames(scanorama_uinmf@assays$Xenium) = colnames(raw_concat)
+rownames(scanorama_uinmf@assays$Xenium) = rownames(raw_concat)
+
+rownames(scanorama_uinmf@reductions$X_pca@cell.embeddings) = names(scanorama_uinmf@active.ident)
+rownames(scanorama_uinmf@reductions$X_uinmf_scanorama@cell.embeddings) = names(scanorama_uinmf@active.ident)
+rownames(scanorama_uinmf@reductions$X_umap@cell.embeddings) = names(scanorama_uinmf@active.ident)
+rownames(scanorama_uinmf@reductions$uinmf_H@cell.embeddings) = names(scanorama_uinmf@active.ident)
+
+scanorama_uinmf = scanorama_uinmf |> 
+  RunUMAP(reduction = 'X_uinmf_scanorama', dims = 1:20, 
+          reduction.name = 'umap_scanorama_uinmf')
+
+SaveSeuratRds(scanorama_uinmf, 'data/04_integrated_data/04.15_UINMF_Scanorama.rds')
+#as.anndata(scanorama_uinmf, file_path = 'data/04_integrated_data/', file_name = '04.15_UINMF_Scanorama.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+scanorama_uinmf = readRDS('data/04_integrated_data/04.15_UINMF_Scanorama.rds')
+DimPlot(scanorama_uinmf, reduction = 'umap_scanorama_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(scanorama_uinmf, reduction = 'umap_scanorama_uinmf', group.by = 'ds_label', shuffle = TRUE)
+```
+
+# RPCA
+
+## Ortholog mapping
+
+```{r}
+#| eval: false
+#| include: false
+rpca = readRDS('data/04_integrated_data/04.06_RPCA.rds')
+rpca = rpca |> 
+  RunUMAP(reduction = 'pca', dims = 1:20,
+          reduction.name = 'umap_rpca')
+
+DefaultAssay(rpca) = 'integrated'
+rpca[['integrated']]$counts = raw_concat[['Xenium']]$counts
+
+SaveSeuratRds(rpca, 'data/04_integrated_data/04.06_RPCA.rds')
+as.anndata(rpca, file_path = 'data/04_integrated_data/', file_name = '04.06_RPCA.h5ad', assay = 'integrated', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+rpca = readRDS('data/04_integrated_data/04.06_RPCA.rds')
+DimPlot(rpca, reduction = 'umap_rpca', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(rpca, reduction = 'umap_rpca', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+#| eval: false
+#| include: false
+rpca_uinmf = readRDS('data/04_integrated_data/04.16_UINMF_RPCA.rds')
+rpca_uinmf = rpca_uinmf |> 
+  RunUMAP(reduction = 'uinmf_rpca', dims = 1:20,
+          reduction.name = 'umap_rpca_uinmf')
+
+SaveSeuratRds(rpca_uinmf, 'data/04_integrated_data/04.16_UINMF_RPCA.rds')
+as.anndata(rpca_uinmf, file_path = 'data/04_integrated_data/', file_name = '04.16_UINMF_RPCA.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+rpca_uinmf = readRDS('data/04_integrated_data/04.16_UINMF_RPCA.rds')
+DimPlot(rpca_uinmf, reduction = 'umap_rpca_uinmf', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(rpca_uinmf, reduction = 'umap_rpca_uinmf', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# scVI
+
+```{r}
+#| eval: false
+#| include: false
+scvi_h5ad = read_h5ad('data/04_integrated_data/04.07_scVI.h5ad')
+scvi = scvi_h5ad$as_Seurat(assay_name = 'Xenium')
+colnames(scvi) = colnames(raw_concat)
+rownames(scvi) = rownames(raw_concat)
+scvi@meta.data = raw_concat@meta.data
+scvi = scvi |> 
+  RunUMAP(reduction = 'scvi', dims = 1:10, 
+          reduction.name = 'umap_scvi')
+scvi[['Xenium']]$counts = scvi[['Xenium']]$X
+SaveSeuratRds(scvi, 'data/04_integrated_data/04.07_scVI.rds')
+as.anndata(scvi, file_path = 'data/04_integrated_data/', file_name = '04.07_scVI.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```
+
+```{r}
+scvi = readRDS('data/04_integrated_data/04.07_scVI.rds')
+DimPlot(scvi, reduction = 'umap_scvi', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(scvi, reduction = 'umap_scvi', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# scANVI
+
+```{r}
+#| eval: false
+#| include: false
+scanvi_h5ad = read_h5ad('data/04_integrated_data/04.08_scANVI.h5ad')
+scanvi = scanvi_h5ad$as_Seurat(assay_name = 'Xenium')
+scanvi[['Xenium']]$counts = scanvi[['Xenium']]$X
+SaveSeuratRds(scanvi, 'data/04_integrated_data/04.08_scANVI.rds')
+as.anndata(scanvi, file_path = 'data/04_integrated_data/', file_name = '04.08_scANVI.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('logcounts', 'scaledata'))
+```
+
+```{r}
+scanvi = readRDS('data/04_integrated_data/04.08_scANVI.rds')
+DimPlot(scanvi, reduction = 'umap_scanvi', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(scanvi, reduction = 'umap_scanvi', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# BBKNN
+
+## Ortholog mapping
+
+```{r}
+#| eval: false
+#| include: false
+bbknn_h5ad = read_h5ad('data/04_integrated_data/04.09_BBKNN.h5ad')
+bbknn = bbknn_h5ad$as_Seurat(assay_name = 'Xenium')
+bbknn[['Xenium']]$counts = bbknn[['Xenium']]$X
+colnames(bbknn) = colnames(raw_concat)
+rownames(bbknn) = rownames(raw_concat)
+bbknn@meta.data = raw_concat@meta.data
+
+SaveSeuratRds(bbknn, 'data/04_integrated_data/04.09_BBKNN.rds')
+#as.anndata(bbknn, file_path = 'data/04_integrated_data/', file_name = '04.09_BBKNN.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('logcounts_Xenium', 'scaledata_Xenium'))
+```
+
+```{r}
+bbknn = readRDS('data/04_integrated_data/04.09_BBKNN.rds')
+DimPlot(bbknn, reduction = 'X_umap', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(bbknn, reduction = 'X_umap', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+## UINMF
+
+```{r}
+#| eval: false
+#| include: false
+bbknn_uinmf_h5ad = read_h5ad('data/04_integrated_data/04.17_UINMF_BBKNN.h5ad')
+bbknn_uinmf = bbknn_uinmf_h5ad$as_Seurat(assay_name = 'Xenium')
+rownames(bbknn_uinmf) = rownames(raw_concat)
+colnames(bbknn_uinmf) = colnames(raw_concat)
+bbknn_uinmf@meta.data = raw_concat@meta.data
+bbknn_uinmf[['Xenium']]$counts = bbknn_uinmf[['Xenium']]$X
+
+SaveSeuratRds(bbknn_uinmf, 'data/04_integrated_data/04.17_UINMF_BBKNN.rds')
+#as.anndata(bbknn_uinmf, file_path = 'data/04_integrated_data/', file_name = '04.17_UINMF_BBKNN.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data_Xenium', 'scale.data_Xenium'))
+```
+
+```{r}
+bbknn_uinmf = readRDS('data/04_integrated_data/04.17_UINMF_BBKNN.rds')
+DimPlot(bbknn_uinmf, reduction = 'X_umap', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(bbknn_uinmf, reduction = 'X_umap', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# LIGER
+
+```{r}
+#| eval: false
+#| include: false
+liger = readRDS('data/04_integrated_data/04.10_LIGER.rds')
+liger = liger |> 
+  RunUMAP(reduction = 'inmfNorm', dims = 1:20,
+          reduction.name = 'umap_liger')
+SaveSeuratRds(liger, 'data/04_integrated_data/04.10_LIGER.rds')
+write_h5ad(liger, 'data/04_integrated_data/04.10_LIGER.h5ad', mode = 'w')
+```
+
+```{r}
+liger = readRDS('data/04_integrated_data/04.10_LIGER.rds')
+DimPlot(liger, reduction = 'umap_liger', group.by = 'orig.ident',
+       shuffle = TRUE)
+DimPlot(liger, reduction = 'umap_liger', group.by = 'ds_label',
+        shuffle = TRUE)
+```
+
+# LIGER UINMF
+
+```{r}
+#| eval: false
+#| include: false
+liger_uinmf = readRDS('data/04_integrated_data/full_mouse/04.11_LIGER_UINMF.rds')
+liger_uinmf = liger_uinmf |> 
+  ligerToSeurat(assay = 'Xenium')
+liger_uinmf@meta.data = raw_concat@meta.data
+liger_uinmf = liger_uinmf |> JoinLayers()
+as.anndata(liger_uinmf, file_path = 'data/04_integrated_data/', file_name = '04.11_LIGER_UINMF.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+DimPlot(liger_uinmf, reduction = 'UMAP', group.by = 'orig.ident',
+        shuffle = TRUE)
+DimPlot(liger_uinmf, reduction = 'UMAP', group.by = 'ds_label',
+        shuffle = TRUE)
+raw_concat = add_reduction(raw_concat, 
+                           emb = liger_uinmf[['inmf']]@cell.embeddings,
+                           loadings = liger_uinmf[['inmf']]@feature.loadings,
+                           key = 'inmf_', name = 'inmf', assay = 'Xenium')
+raw_concat = add_reduction(raw_concat,
+                           emb = liger_uinmf[['UMAP']]@cell.embeddings,
+                           loadings = liger_uinmf[['UMAP']]@feature.loadings,
+                           key = 'umap_', name = 'umap', assay = 'Xenium')
+as.anndata(raw_concat, file_path = 'data/04_integrated_data/', file_name = '04.11_LIGER_UINMF.h5ad', assay = 'Xenium', main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```

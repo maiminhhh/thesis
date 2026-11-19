@@ -1,0 +1,2 @@
+species,M,frac,changed,previous_frac,rule
+human,5,0,FALSE,0,"M from the held-out log-likelihood grid; frac = highest mean marker AUROC on a random half of the cells (seed 1), ties -> smaller frac; AUROC also reported on the other half. frac is tuned for marker agreement."

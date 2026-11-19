@@ -1,0 +1,10 @@
+tissue,species,type,n_singler_genes,n_shared_genes,mean_detect,n_ref_cells,share_singler,share_seurat,reproduction,genes
+colon,mouse,B/Plasma,15,379,0.18537713880886608,1691,0.008863474575088286,0,1,Runx2;Satb1;Ctss;Cybb;Ncf4;Laptm5;Epsti1;Ctse;Slc14a1;Rac2;Ttn;Sdc1;Cubn;Mgll;Cd300lf
+colon,mouse,Endothelial,15,379,0.22677935092773371,1809,0.027185974772829843,0.02491543640398833,1,Vwf;Podxl;Calcrl;Eng;Timp3;Cav1;Kdr;Plvap;Mgll;Cavin2;Tie1;Ndrg1;Cd36;Clec14a;Sox17
+colon,mouse,Epithelial: Absorptive,19,379,0.6062060657973183,124053,0.6153810363518776,0.3524824707924086,1,Oit1;B4galnt2;Slc4a4;Epcam;Hmgcs2;Tfcp2l1;Gpa33;Krt19;Car2;Ppargc1a;Selenbp1;Aqp4;2610528A11Rik;Tm4sf20;Mgat4c;Lipg;Pmp22;Krt8;Cdhr5
+colon,mouse,Epithelial: Secretory,15,379,0.5468390608431295,91186,0.06303535619070662,0.17799066659842644,1,Ptprn2;Oit1;5330417C22Rik;B4galnt2;Tfcp2l1;Scin;Ndrg1;Col8a1;Tspan8;Nupr1;Epcam;Cdx1;Ccn3;Pck1;Hsd11b2
+colon,mouse,Epithelial: Stem/Progenitor,21,379,0.4617068341110229,27443,0.0035174733746807054,0.062035016540499796,1,Slc4a4;B4galnt2;Oit1;Epcam;Hmgcs2;Cenpf;Gpa33;Cdx1;Tspan8;Slc5a1;Epsti1;Stmn1;Ube2c;Cldn2;Aqp1;Aldh1b1;Gpx2;Tm4sf20;2610528A11Rik;Aqp4;Lipg
+colon,mouse,Immune,15,379,0.12913300778079664,3395,0.002112345121832064,1.3958227677304387e-5,1,Epsti1;Emb;Cd8a;F13a1;Ms4a7;Ms4a6c;Mpeg1;Cfh;Plbd1;Ms4a6b;Runx2;Laptm5;Slc14a1;Ctss;Satb1
+colon,mouse,Neural/Glial,14,379,0.15925916534848447,12007,0.0044898965695329114,0.022882187905660992,1,Ptprn2;Chgb;Snap25;5330417C22Rik;Celf3;Cplx2;Neurod1;Scg5;Etv1;Chl1;Oit1;Mapk10;Wif1;Col8a1
+colon,mouse,Smooth muscle,14,379,0.3913492789494592,15094,0.2506665053715913,0.2557379947610119,1,Myh11;Mylk;Des;Tagln;Myl9;Cnn1;Rgs5;Mamdc2;Timp3;Cav1;Satb1;Aspn;Mgll;Itga8
+colon,mouse,Stromal/Mesenchymal,16,379,0.23104995244141646,8144,0.02474793767186068,0.10394226877032667,1,Timp3;Mmrn1;Calcrl;Lyve1;Cp;Dpt;Cavin2;Prox1;Bgn;Cav1;Runx2;Htra3;Mylk;Sfrp1;Nox4;Podxl

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,177883,0.7271616256290326,0.8272991337093967,1779,9,9,569.8211095333099,575.5280320644379

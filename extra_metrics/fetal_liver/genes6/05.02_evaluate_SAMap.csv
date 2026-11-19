@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+fetal_liver,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,281606,,,1.1205673217773438e-05,12.574574708938599

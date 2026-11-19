@@ -1,0 +1,15 @@
+,BBKNN
+NMI_cluster/label,0.09124553780979665
+ARI_cluster/label,0.011753384982632911
+ASW_label,
+ASW_label/batch,
+PCR_batch,
+cell_cycle_conservation,
+isolated_label_F1,0.02531645569620253
+isolated_label_silhouette,
+graph_conn,0.16814536405693778
+kBET,
+iLISI,0.4315152036940335
+cLISI,0.9060872179328179
+hvg_overlap,
+trajectory,

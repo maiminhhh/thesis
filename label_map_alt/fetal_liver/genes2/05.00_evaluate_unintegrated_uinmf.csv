@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,genes2,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,282299,0.5134094007463446,0.5535631109777411,2823,14,14,2281.6775317192078,2291.436096906662

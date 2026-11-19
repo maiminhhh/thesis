@@ -1,0 +1,17 @@
+,Scanorama scVI-latent
+NMI_cluster/label,0.12228229620144151
+ARI_cluster/label,0.16681876360056744
+ASW_label,0.4994642812368075
+ASW_label/batch,0.9378529805532632
+PCR_batch,0.9461276057413881
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.6909908303794772
+kBET,
+iLISI,0.8325205646350096
+cLISI,0.9248652494244396
+hvg_overlap,
+trajectory,
+_seconds,269.81055331230164
+_n_cells,19991.0

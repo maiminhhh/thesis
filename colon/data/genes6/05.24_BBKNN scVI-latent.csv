@@ -1,0 +1,15 @@
+,BBKNN scVI-latent
+NMI_cluster/label,0.18969318134429988
+ARI_cluster/label,0.025312154421131446
+ASW_label,
+ASW_label/batch,
+PCR_batch,
+cell_cycle_conservation,
+isolated_label_F1,0.030508474576271188
+isolated_label_silhouette,
+graph_conn,0.22901441251705687
+kBET,
+iLISI,0.7684408251960231
+cLISI,0.8334220518991917
+hvg_overlap,
+trajectory,

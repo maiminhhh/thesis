@@ -1,0 +1,15 @@
+,scVI
+NMI_cluster/label,0.13387324373203793
+ARI_cluster/label,0.009998442444490954
+ASW_label,0.48972013406455517
+ASW_label/batch,0.8648301474968876
+PCR_batch,0.6415292672704161
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.25705077090218276
+kBET,
+iLISI,0.0246465932701323
+cLISI,0.9715099738028024
+hvg_overlap,
+trajectory,

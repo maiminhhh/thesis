@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,dissected,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,50042,0.3311844205165766,496,24796,2,32.75985407829285,34.21535062789917

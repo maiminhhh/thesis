@@ -1,0 +1,158 @@
+---
+title: "01_raw_data_processing"
+format: html
+---
+
+```{r}
+#| label: set-up
+source('../library.R')
+source('../source.R')
+```
+
+# Human
+
+<https://info.vizgen.com/access-to-merfish-2.0-data-release?submissionGuid=2bb3c99c-3b3a-407c-bdbf-4e14668c4932>
+
+```{r}
+human_metadata = read.csv('data/00_raw_data/202409242358_240916JHHUBC0005XQ-V2V-HubcTMA-V2-BY_VMSC02511_region_R4_cell_metadata.csv', colClasses = c(EntityID = "character"))
+human_cell_by_gene = read.csv('data/00_raw_data/202409242358_240916JHHUBC0005XQ-V2V-HubcTMA-V2-BY_VMSC02511_region_R4_cell_by_gene.csv', colClasses = c(cell = "character"))
+rownames(human_cell_by_gene) = human_cell_by_gene$cell
+human_cell_by_gene = human_cell_by_gene |> 
+  dplyr::select(-cell)
+# human_cell_by_gene = human_cell_by_gene[,!str_detect('Blank', 
+# colnames(human_cell_by_gene))]
+
+human = CreateSeuratObject(counts = t(human_cell_by_gene),
+                           meta.data = human_metadata,
+                           assay = 'MERFISH')
+
+human_probes = human[str_detect(colnames(human_cell_by_gene),
+                                'Blank')]
+
+human = human[!str_detect(colnames(human_cell_by_gene),
+                          'Blank')]
+# recompute after dropping Blank probes (subsetting doesn't update these)
+human$nCount_MERFISH = colSums(x = human[['MERFISH']]$counts)
+human$nFeature_MERFISH = colSums(x = human[['MERFISH']]$counts > 0)
+```
+
+```{r}
+human_parquet = read_parquet('data/00_raw_data/202409242358_240916JHHUBC0005XQ-V2V-HubcTMA-V2-BY_VMSC02511_region_R4_cell_boundaries.parquet')
+human_parquet$area = human_parquet$Geometry |> 
+  as.list() |> 
+  structure(class = 'WKB') |> 
+  st_as_sfc() |> 
+  st_area() |> 
+  as.numeric()
+
+human_parquet = human_parquet |> 
+  filter(ZIndex == 0)
+
+geom = st_as_sfc(structure(as.list(human_parquet$Geometry), class = "WKB"))
+xy = as.data.frame(st_coordinates(geom))
+
+feat_col = tail(grep("^L", names(xy), value = TRUE), 1)
+seg_df = xy |>
+  filter(L1 == 1, if ("L3" %in% names(xy)) L2 == 1 else TRUE) |>
+  mutate(cell = as.character(human_parquet$EntityID)[.data[[feat_col]]]) |>
+  dplyr::select(x = X, y = Y, cell)
+
+# Only cells present in the Seurat object
+cells_keep = intersect(unique(seg_df$cell), colnames(human))
+seg_df = filter(seg_df, cell %in% cells_keep)
+
+cent_all = st_coordinates(st_centroid(geom))
+
+cent_df = data.frame(x = cent_all[, "X"],
+                     y = cent_all[, "Y"],
+                     cell = as.character(human_parquet$EntityID)) |>
+  filter(cell %in% cells_keep)
+
+fov = CreateFOV(
+  coords = list(centroids = CreateCentroids(cent_df),
+                segmentation = CreateSegmentation(seg_df)),
+  type  = c("centroids", "segmentation"),
+  assay = DefaultAssay(human)
+)
+
+human[["R4"]] = fov
+
+ImageDimPlot(human, fov = "R4", boundaries = "segmentation",
+             group.by = NULL, axes = TRUE)
+```
+
+```{r}
+nCount_probe_controls = human_probes@assays$MERFISH$counts |> 
+  colSums()
+
+keep_cells = bg_filter(nCount_probe_controls = nCount_probe_controls,
+                       nCount_transcripts = human$nCount_MERFISH,
+                       cell_areas = human_parquet$area[match(colnames(human), as.character(human_parquet$EntityID))],
+                       n_genes = dim(human)[1], 
+                       n_total_probes = dim(human_probes)[1])
+human = human[,keep_cells]
+
+SaveSeuratRds(human, 'data/01_processed_data/01_human_processed.rds')
+```
+
+-\> Removed 2,730 low quality cells
+
+```{r}
+human = readRDS('data/01_processed_data/01_human_processed.rds')
+ImageDimPlot(human, group.by = NULL, axes = TRUE, boundaries = 'segmentation')
+```
+
+# Mouse
+
+<https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8830801>
+
+```{r}
+mouse_metadata = fread('data/00_raw_data/GSM8830802_T2_cell_metadata.csv',  colClasses = list(character = 1))
+mouse_cell_by_gene = fread('data/00_raw_data/GSM8830802_T2_cell_by_gene.csv',
+                           colClasses = list(character = 1)) |>
+  as.data.frame() # data.table drops rownames
+rownames(mouse_cell_by_gene) = mouse_cell_by_gene$cell
+mouse_cell_by_gene = mouse_cell_by_gene |> 
+  dplyr::select(-cell)
+
+mouse = CreateSeuratObject(counts = t(mouse_cell_by_gene),
+                           meta.data = mouse_metadata, 
+                           assay = 'MERFISH')
+
+mouse_probes = mouse[str_detect(colnames(mouse_cell_by_gene),
+                                'Blank')]
+
+mouse = mouse[!str_detect(colnames(mouse_cell_by_gene),
+                          'Blank')]
+mouse$nCount_MERFISH = colSums(x = mouse[['MERFISH']]$counts)
+mouse$nFeature_MERFISH = colSums(x = mouse[['MERFISH']]$counts > 0)
+
+cent_df = data.frame(x = mouse$center_x, 
+                     y = mouse$center_y, 
+                     cell = colnames(mouse))
+
+mouse[['T2']] = CreateFOV(CreateCentroids(cent_df),
+                          type = 'centroids',
+                          assay = 'MERFISH')
+
+mouse$area = mouse$volume/(1.5*7)
+
+nCount_probe_controls = mouse_probes@assays$MERFISH$counts |> 
+  colSums()
+
+keep_cells = bg_filter(nCount_probe_controls = nCount_probe_controls,
+                       nCount_transcripts = mouse$nCount_MERFISH, 
+                       cell_areas = mouse$area, 
+                       n_genes = dim(mouse)[1],
+                       n_total_probes = dim(mouse_probes)[1])
+mouse = mouse[,keep_cells]
+
+SaveSeuratRds(mouse, 'data/01_processed_data/01_mouse_processed.rds')
+```
+
+-\> Removed 36,942 low quality cells
+
+```{r}
+mouse = readRDS('data/01_processed_data/01_mouse_processed.rds')
+ImageDimPlot(mouse, group.by = NULL, axes = TRUE, cols = 'white')
+```

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+fetal_liver,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,282334,,2.0265579223632812e-05,6.187519073486328

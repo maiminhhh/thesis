@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes6,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,290766,0.34211605824442887,764,38208,2,355.5560564994812,364.71639227867126

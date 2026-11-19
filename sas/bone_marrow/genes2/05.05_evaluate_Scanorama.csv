@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,48691,0.8207184168200521,478,23889,2,34.404372215270996,35.76497983932495

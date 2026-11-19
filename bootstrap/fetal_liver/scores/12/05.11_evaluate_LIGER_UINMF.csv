@@ -1,0 +1,18 @@
+,LIGER UINMF
+NMI_cluster/label,0.19472656322429618
+ARI_cluster/label,0.18829578411592493
+ASW_label,0.5038991829988541
+ASW_label/batch,0.8228090715482346
+PCR_batch,0.9556281593719255
+cell_cycle_conservation,
+isolated_label_F1,0.023880597014925373
+isolated_label_silhouette,0.6267838035003209
+graph_conn,0.6692954686265932
+kBET,
+iLISI,0.4021422131965955
+cLISI,0.9183527772127673
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,167.19731402397156
+_n_cells,20007.0

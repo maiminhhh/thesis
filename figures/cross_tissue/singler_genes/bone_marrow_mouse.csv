@@ -1,0 +1,10 @@
+tissue,species,type,n_singler_genes,n_shared_genes,mean_detect,n_ref_cells,share_singler,share_seurat,reproduction,genes
+bone_marrow,mouse,B cell,28,470,0.18361376830490098,4510,0.04667114996637525,0.06623114612354693,1,Cplx2;Bst1;Cd93;Mmrn1;Arpp21;Maf;Fxyd6;Vegfa;Pygm;Slamf7;Psmb8;Rac2;Laptm5;Satb1;Cd48;Emb;Epsti1;Stmn1;Ctss;Ctla2a;Sdc1;Cenpf;Ube2c;Ccl4;Cd34;Alox5ap;Mpeg1;Trf
+bone_marrow,mouse,DC,28,470,0.1996884564182095,1711,0.04734364492266308,0.0038428283216447303,1,Tyrobp;Mpeg1;Alox5ap;Ms4a6c;Stmn1;Anxa2;Psmb8;Laptm5;Cd48;Ccr2;Rac2;Emb;Cd93;Satb1;Cd34;Ctss;Arpp21;Plbd1;Runx2;Ctla2a;Sdc1;Tnfrsf18;Slamf7;Ccl4;Cenpf;Ube2c;Cd44;Aif1
+bone_marrow,mouse,Erythroid,14,470,0.43508776745398897,6125,0.5356902680372755,0.45681621673551737,1,Car2;Aqp1;Klf1;Gata1;Hmbs;Rhd;Epor;Gatm;Ctse;Hemgn;Isg20;Selenbp1;Tfrc;Stmn1
+bone_marrow,mouse,Granulocyte,18,470,0.2395053425988194,16443,0.15888173695840138,0.1614180036506869,1,Pglyrp1;Hp;S100a9;Tyrobp;C3;Cybb;Alox5ap;Itgam;Anxa2;Lst1;Fcnb;Ifitm6;Ly6g;Rac2;Ncf4;Abca13;Mmp9;Plbd1
+bone_marrow,mouse,HSPC,25,470,0.20163320203669902,24441,0.025535594197329235,0.2128350465942934,1,Kit;Car2;Ctla2a;Cd34;Mpo;Lst1;Ctsg;Ikzf2;Alox5ap;Gng11;Rbp1;Hk1;Psmb8;Laptm5;Rac2;Emb;Cd93;Cd48;Stmn1;Eng;Tyrobp;Ccl9;Satb1;Runx2;Ly6a
+bone_marrow,mouse,MkP,20,470,0.2862004034969738,695,0.05965990969353444,0.021058699202613124,1,Pf4;Slc14a1;Ctla2a;Gng11;Diaph1;Car2;Vwf;Itgb1;Hemgn;Gata1;Mmrn1;Hk1;Laptm5;Psmb8;Alox5ap;Stmn1;Aqp1;Timp3;Rbp1;Ndrg1
+bone_marrow,mouse,Monocyte,20,470,0.21468536843116534,2682,0.04619079642616966,0.042482467095782496,1,Mpo;Ctsg;Tyrobp;Elane;Ms4a6c;F13a1;Hp;Emb;Anxa2;Alox5ap;Ccl9;Lst1;Psmb8;Rac2;Cd48;Cd93;Cd34;Ccr2;Laptm5;Stmn1
+bone_marrow,mouse,NK/ILC,20,470,0.17272744740128734,744,0.04978384090690748,0.03521952156787395,1,Tyrobp;Ikzf2;Ccl5;S100a4;Ccr2;Anxa2;Maf;Pdcd1;Tnfrsf18;Emb;Klrb1c;Ncr1;Ly6a;Igfbp7;Psmb8;Rac2;Laptm5;Ctla2a;Satb1;Itgb1
+bone_marrow,mouse,T cell,23,470,0.15001733449732046,285,0.03024305889134403,9.607070804111827e-5,1,Ikzf2;Anxa2;Cd3d;Ms4a6b;Ccl5;Cd3e;Rac2;Cpa3;Tnfrsf18;S100a4;Pdcd1;Psmb8;Laptm5;Satb1;Emb;Epsti1;Cd48;Arpp21;Ctla2a;Stmn1;Ube2c;Cenpf;Hmgcs2

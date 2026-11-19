@@ -1,0 +1,17 @@
+,CCA UINMF
+NMI_cluster/label,0.20962376628198828
+ARI_cluster/label,0.039010055322266576
+ASW_label,0.4948755798359858
+ASW_label/batch,0.5975430930696117
+PCR_batch,0.9413079254897291
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.7115416472634161
+kBET,
+iLISI,0.00987146512753867
+cLISI,0.965874546452336
+hvg_overlap,
+trajectory,
+_seconds,193.40963888168335
+_n_cells,19991.0

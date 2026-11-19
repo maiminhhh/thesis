@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,309258,0.5502145947025641,3093,1378.277779340744,0.30093300281955515,3093,3538.2106461524963,3549.053821325302

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,309258,0.6373137466321515,3093,1404.2263736724854,0.2107164474682483,3093,3426.178599357605,3432.9323179721832

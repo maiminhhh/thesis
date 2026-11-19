@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,50042,0.597195705551573,500,24.193135738372803,0.14733970269883456,500,54.56901717185974,56.23827028274536

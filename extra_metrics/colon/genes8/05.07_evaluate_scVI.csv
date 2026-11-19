@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,268306,0.45593665907217173,2683,494.93644285202026,0.40196064228210826,2683,995.2294039726257,998.9638235569

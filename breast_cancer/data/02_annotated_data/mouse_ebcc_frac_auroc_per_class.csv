@@ -1,0 +1,85 @@
+"frac","half","celltype","marker_group","n_cells","auroc"
+0,"selection","CAFs","CAF",13175,0.917323900080626
+0,"selection","Cancer Epithelial","Tumour",176318,0.592689411175051
+0,"selection","Endothelial","Endothelial",5314,0.889651986017884
+0,"selection","Myeloid","Myeloid",1511,0.90902815371255
+0,"selection","Normal Epithelial","Basal",36410,0.601743892982514
+0,"selection","PVL","PVL",1178,0.918623632531043
+0,"selection","T-cells","T_cells",2758,0.509345430588666
+0,"heldout","CAFs","CAF",13253,0.913004398098442
+0,"heldout","Cancer Epithelial","Tumour",175802,0.59119759403328
+0,"heldout","Endothelial","Endothelial",5377,0.89142806232825
+0,"heldout","Myeloid","Myeloid",1583,0.904890146784719
+0,"heldout","Normal Epithelial","Basal",36756,0.602506686962075
+0,"heldout","PVL","PVL",1272,0.912314739142262
+0,"heldout","T-cells","T_cells",2732,0.498586937042696
+0.25,"selection","CAFs","CAF",13724,0.911564636807593
+0.25,"selection","Cancer Epithelial","Tumour",169599,0.596525209766803
+0.25,"selection","Endothelial","Endothelial",5207,0.895087987683289
+0.25,"selection","Myeloid","Myeloid",1390,0.908466546095108
+0.25,"selection","Normal Epithelial","Basal",41542,0.583476888291464
+0.25,"selection","PVL","PVL",1251,0.90782585830568
+0.25,"selection","T-cells","T_cells",3399,0.497305865263752
+0.25,"heldout","CAFs","CAF",13813,0.907588689178218
+0.25,"heldout","Cancer Epithelial","Tumour",169133,0.595478910826444
+0.25,"heldout","Endothelial","Endothelial",5307,0.894554955967243
+0.25,"heldout","Myeloid","Myeloid",1427,0.904924902089706
+0.25,"heldout","Normal Epithelial","Basal",41859,0.58503269575621
+0.25,"heldout","PVL","PVL",1323,0.908733248280359
+0.25,"heldout","T-cells","T_cells",3330,0.492721144571634
+0.5,"selection","CAFs","CAF",13185,0.920660013570757
+0.5,"selection","Cancer Epithelial","Tumour",167389,0.596183277626175
+0.5,"selection","Endothelial","Endothelial",4989,0.905749448389061
+0.5,"selection","Myeloid","Myeloid",1396,0.899119219684036
+0.5,"selection","Normal Epithelial","Basal",44152,0.576812847403417
+0.5,"selection","PVL","PVL",1286,0.906095782967417
+0.5,"selection","T-cells","T_cells",3502,0.49187008854223
+0.5,"heldout","CAFs","CAF",13264,0.916897002146626
+0.5,"heldout","Cancer Epithelial","Tumour",166934,0.594976508805238
+0.5,"heldout","Endothelial","Endothelial",5076,0.905789462419811
+0.5,"heldout","Myeloid","Myeloid",1438,0.900974001793207
+0.5,"heldout","Normal Epithelial","Basal",44479,0.57794324910089
+0.5,"heldout","PVL","PVL",1373,0.90427810243613
+0.5,"heldout","T-cells","T_cells",3411,0.488519754501069
+1,"selection","CAFs","CAF",12379,0.928151545893007
+1,"selection","Cancer Epithelial","Tumour",167419,0.596144923073103
+1,"selection","Endothelial","Endothelial",4932,0.906800828612545
+1,"selection","Myeloid","Myeloid",1348,0.901452235744053
+1,"selection","Normal Epithelial","Basal",44208,0.57665371399969
+1,"selection","PVL","PVL",1631,0.854718738207007
+1,"selection","T-cells","T_cells",3924,0.491988774997918
+1,"heldout","CAFs","CAF",12407,0.925091189756319
+1,"heldout","Cancer Epithelial","Tumour",166968,0.594965317271041
+1,"heldout","Endothelial","Endothelial",4989,0.907609706728515
+1,"heldout","Myeloid","Myeloid",1404,0.902380917750034
+1,"heldout","Normal Epithelial","Basal",44501,0.577930646535105
+1,"heldout","PVL","PVL",1744,0.863279590030116
+1,"heldout","T-cells","T_cells",3883,0.486772868890102
+2,"selection","CAFs","CAF",10905,0.937777627632015
+2,"selection","Cancer Epithelial","Tumour",168875,0.595465895496008
+2,"selection","Endothelial","Endothelial",4605,0.923679900019731
+2,"selection","Myeloid","Myeloid",1265,0.916516852669023
+2,"selection","Normal Epithelial","Basal",45314,0.574226542117994
+2,"selection","PVL","PVL",1642,0.85403839019217
+2,"selection","T-cells","T_cells",3190,0.501180518810642
+2,"heldout","CAFs","CAF",10901,0.935865411853935
+2,"heldout","Cancer Epithelial","Tumour",168335,0.593971342416447
+2,"heldout","Endothelial","Endothelial",4708,0.9234471603876
+2,"heldout","Myeloid","Myeloid",1326,0.910597492948574
+2,"heldout","Normal Epithelial","Basal",45660,0.57509367421713
+2,"heldout","PVL","PVL",1767,0.862331267263662
+2,"heldout","T-cells","T_cells",3162,0.492069275916661
+5,"selection","CAFs","CAF",9749,0.947567508309038
+5,"selection","Cancer Epithelial","Tumour",169100,0.595409024581692
+5,"selection","Endothelial","Endothelial",3820,0.945321614521462
+5,"selection","Myeloid","Myeloid",1030,0.927091663109903
+5,"selection","Normal Epithelial","Basal",46983,0.573672859724647
+5,"selection","PVL","PVL",1636,0.844648517447083
+5,"selection","T-cells","T_cells",3262,0.502593068825487
+5,"heldout","CAFs","CAF",9768,0.946094357911332
+5,"heldout","Cancer Epithelial","Tumour",168553,0.594032751385402
+5,"heldout","Endothelial","Endothelial",3907,0.942561357455017
+5,"heldout","Myeloid","Myeloid",1083,0.920814651089015
+5,"heldout","Normal Epithelial","Basal",47375,0.57432838422638
+5,"heldout","PVL","PVL",1769,0.858136945754273
+5,"heldout","T-cells","T_cells",3196,0.494961505012175

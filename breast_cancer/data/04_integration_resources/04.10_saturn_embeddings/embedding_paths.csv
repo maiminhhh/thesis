@@ -1,0 +1,3 @@
+path,species,embedding_path
+data/02_annotated_data/02_human_counts.h5ad,human,data/04_integration_resources/04.10_saturn_embeddings/human_embedding.torch
+data/02_annotated_data/02_mouse_counts.h5ad,mouse,data/04_integration_resources/04.10_saturn_embeddings/mouse_embedding.torch

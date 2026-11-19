@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+breast_cancer,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,177683,,,7.3909759521484375e-06,9.920724630355835

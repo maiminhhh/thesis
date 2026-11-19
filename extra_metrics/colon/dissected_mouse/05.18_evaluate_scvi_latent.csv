@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,309258,0.5542073246494604,3093,1519.4405226707458,0.3353678875350758,3093,3571.6918547153473,3579.5438594818115

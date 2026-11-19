@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,dissected,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,50042,0.5122222970992684,0.5294408698798951,500,11,11,16.58825135231018,17.598062753677368

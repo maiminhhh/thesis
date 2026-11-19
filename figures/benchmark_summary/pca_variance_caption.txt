@@ -1,0 +1,5 @@
+Explained variance of a separate PCA for each species within each tissue (dissected mouse data, evaluation cells).
+Each species' log-normalised expression was scaled within the species (unit variance, clipped at 10) and all components kept,
+so each curve reaches 100% at the number of genes in the panel. A: cumulative variance explained; dotted lines at 10, 20 and 50 PCs.
+B: variance explained by each of the first 30 PCs.
+Variance in the first 10 / 20 / 50 PCs: Colon human: 43% (10 PCs), 64% (20), 100% (all 46); Colon mouse: 48% (10 PCs), 69% (20), 100% (all 46); Bone marrow human: 24% (10 PCs), 35% (20), 63% (50); Bone marrow mouse: 26% (10 PCs), 36% (20), 62% (50); Fetal liver human: 19% (10 PCs), 28% (20), 54% (50); Fetal liver mouse: 31% (10 PCs), 41% (20), 66% (50); Breast cancer human: 22% (10 PCs), 30% (20), 54% (50); Breast cancer mouse: 17% (10 PCs), 25% (20), 50% (50).

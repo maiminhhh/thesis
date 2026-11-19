@@ -1,0 +1,63 @@
+celltype_seurat,ebcc_label,n,pct
+Hepatocyte,Erythroblast,3214,0.4457079461933158
+Hepatocyte,Erythroid progenitor,2921,0.4050755789765636
+Fibroblast,Megakaryocyte,338,0.046872833171543477
+Erythrocyte,Erythroblast,284,0.039384274025793926
+Hepatocyte,Fibroblast,74,0.010262099570101234
+T/NK/ILC,Granulocyte,42,0.005824434891138539
+T/NK/ILC,HSPC,34,0.004715018721397865
+B cell,HSPC,28,0.003882956594092359
+Mono/Macrophage,Endothelial,19,0.0026348634031341006
+Erythrocyte,Hepatocyte,17,0.0023575093606989323
+Erythrocyte,Endothelial,16,0.002218832339481348
+Erythrocyte,Megakaryocyte,16,0.002218832339481348
+Mono/Macrophage,Granulocyte,14,0.0019414782970461795
+Endothelial,Fibroblast,13,0.0018028012758285951
+Megakaryocyte,Endothelial,12,0.001664124254611011
+Erythrocyte,Fibroblast,11,0.0015254472333934266
+Erythrocyte,Mono/Macrophage,10,0.0013867702121758425
+Megakaryocyte,Erythroblast,10,0.0013867702121758425
+B cell,Megakaryocyte,8,0.001109416169740674
+B cell,Granulocyte,7,9.707391485230897e-4
+Megakaryocyte,Erythrocyte,7,9.707391485230897e-4
+T/NK/ILC,Erythrocyte,7,9.707391485230897e-4
+Endothelial,Megakaryocyte,6,8.320621273055055e-4
+Erythrocyte,Granulocyte,6,8.320621273055055e-4
+HSPC,Hepatocyte,6,8.320621273055055e-4
+T/NK/ILC,Endothelial,6,8.320621273055055e-4
+T/NK/ILC,Erythroblast,6,8.320621273055055e-4
+HSPC,Megakaryocyte,5,6.933851060879212e-4
+Hepatocyte,Erythrocyte,5,6.933851060879212e-4
+Hepatocyte,Granulocyte,5,6.933851060879212e-4
+Mast cell,Erythrocyte,5,6.933851060879212e-4
+Fibroblast,Granulocyte,4,5.54708084870337e-4
+T/NK/ILC,Mono/Macrophage,4,5.54708084870337e-4
+Fibroblast,Mono/Macrophage,3,4.1603106365275275e-4
+HSPC,Endothelial,3,4.1603106365275275e-4
+HSPC,Granulocyte,3,4.1603106365275275e-4
+Hepatocyte,Endothelial,3,4.1603106365275275e-4
+Megakaryocyte,Erythroid progenitor,3,4.1603106365275275e-4
+Megakaryocyte,Hepatocyte,3,4.1603106365275275e-4
+Mono/Macrophage,Hepatocyte,3,4.1603106365275275e-4
+B cell,Erythroblast,2,2.773540424351685e-4
+B cell,Erythrocyte,2,2.773540424351685e-4
+B cell,Hepatocyte,2,2.773540424351685e-4
+Fibroblast,Endothelial,2,2.773540424351685e-4
+HSPC,Erythrocyte,2,2.773540424351685e-4
+HSPC,Erythroid progenitor,2,2.773540424351685e-4
+Hepatocyte,Megakaryocyte,2,2.773540424351685e-4
+T/NK/ILC,Megakaryocyte,2,2.773540424351685e-4
+B cell,Endothelial,1,1.3867702121758425e-4
+B cell,Erythroid progenitor,1,1.3867702121758425e-4
+B cell,Mono/Macrophage,1,1.3867702121758425e-4
+Endothelial,Mono/Macrophage,1,1.3867702121758425e-4
+Erythroblast,Megakaryocyte,1,1.3867702121758425e-4
+Erythrocyte,Erythroid progenitor,1,1.3867702121758425e-4
+Fibroblast,Hepatocyte,1,1.3867702121758425e-4
+HSPC,Erythroblast,1,1.3867702121758425e-4
+Hepatocyte,Mono/Macrophage,1,1.3867702121758425e-4
+Megakaryocyte,HSPC,1,1.3867702121758425e-4
+Megakaryocyte,Mono/Macrophage,1,1.3867702121758425e-4
+Mono/Macrophage,HSPC,1,1.3867702121758425e-4
+T/NK/ILC,Erythroid progenitor,1,1.3867702121758425e-4
+T/NK/ILC,Hepatocyte,1,1.3867702121758425e-4

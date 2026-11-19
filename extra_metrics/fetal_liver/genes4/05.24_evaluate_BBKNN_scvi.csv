@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+fetal_liver,genes4,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,282117,,,2.6226043701171875e-05,7.627256393432617

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,282299,0.918745000495739,1153,57664,2,438.8198721408844,446.1048481464386

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes4,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,45575,0.7548220848654568,416,20794,2,20.318352460861206,21.554800510406494

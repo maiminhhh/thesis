@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes8,05.03_evaluate_CCA.py,CCA,embed,X_cca,172530,0.5014459277339385,1325,66263,2,646.2216513156891,652.0269124507904

@@ -1,0 +1,109 @@
+"frac","half","celltype","n_markers","n_cells","auroc"
+0,"selection","Epithelial: Absorptive",10,37751,0.940969787159791
+0,"selection","Epithelial: Secretory",7,6010,0.906408994338925
+0,"selection","Epithelial: Stem/Progenitor",8,13934,0.885245849567374
+0,"selection","Endothelial",3,6712,0.970438609912447
+0,"selection","Stromal/Mesenchymal",2,24090,0.833625806173112
+0,"selection","Smooth muscle",3,29567,0.980917680079932
+0,"selection","Neural/Glial",1,3914,0.792592073124317
+0,"selection","B/Plasma",5,7286,0.95981047580453
+0,"selection","Immune",9,8492,0.858265293266795
+0,"heldout","Epithelial: Absorptive",10,37693,0.941180697212966
+0,"heldout","Epithelial: Secretory",7,5808,0.907528927048954
+0,"heldout","Epithelial: Stem/Progenitor",8,14087,0.887221305402196
+0,"heldout","Endothelial",3,6614,0.968284346940508
+0,"heldout","Stromal/Mesenchymal",2,24177,0.830512214480303
+0,"heldout","Smooth muscle",3,29428,0.981597376605842
+0,"heldout","Neural/Glial",1,3903,0.793580765423129
+0,"heldout","B/Plasma",5,7257,0.958661229794571
+0,"heldout","Immune",9,8774,0.852757551560619
+0.25,"selection","Epithelial: Absorptive",10,33489,0.959365040793458
+0.25,"selection","Epithelial: Secretory",7,6824,0.903068369492509
+0.25,"selection","Epithelial: Stem/Progenitor",8,15736,0.873362455202523
+0.25,"selection","Endothelial",3,6629,0.9717929995423
+0.25,"selection","Stromal/Mesenchymal",2,20692,0.854200356149215
+0.25,"selection","Smooth muscle",3,30230,0.9837010536454
+0.25,"selection","Neural/Glial",1,5824,0.750172377619635
+0.25,"selection","B/Plasma",5,7758,0.96570304546289
+0.25,"selection","Immune",9,10479,0.874952382266514
+0.25,"heldout","Epithelial: Absorptive",10,33393,0.960347551195122
+0.25,"heldout","Epithelial: Secretory",7,6662,0.904207423048698
+0.25,"heldout","Epithelial: Stem/Progenitor",8,15855,0.873998490151137
+0.25,"heldout","Endothelial",3,6506,0.969331172084341
+0.25,"heldout","Stromal/Mesenchymal",2,20746,0.850612137593537
+0.25,"heldout","Smooth muscle",3,30163,0.98479411296978
+0.25,"heldout","Neural/Glial",1,5837,0.747716153263906
+0.25,"heldout","B/Plasma",5,7842,0.965192143555306
+0.25,"heldout","Immune",9,10662,0.870068463671574
+0.5,"selection","Epithelial: Absorptive",10,33544,0.959273796428805
+0.5,"selection","Epithelial: Secretory",7,7176,0.906235098376586
+0.5,"selection","Epithelial: Stem/Progenitor",8,16483,0.846770280757412
+0.5,"selection","Endothelial",3,6496,0.974168378407509
+0.5,"selection","Stromal/Mesenchymal",2,20164,0.852989566077513
+0.5,"selection","Smooth muscle",3,30518,0.983801434018642
+0.5,"selection","Neural/Glial",1,5253,0.766442534694538
+0.5,"selection","B/Plasma",5,7652,0.966474671369282
+0.5,"selection","Immune",9,10388,0.874507265167109
+0.5,"heldout","Epithelial: Absorptive",10,33442,0.960195435666556
+0.5,"heldout","Epithelial: Secretory",7,6970,0.905644818011109
+0.5,"heldout","Epithelial: Stem/Progenitor",8,16615,0.8486937423463
+0.5,"heldout","Endothelial",3,6352,0.972434322536439
+0.5,"heldout","Stromal/Mesenchymal",2,20255,0.850847113895271
+0.5,"heldout","Smooth muscle",3,30477,0.984926894237871
+0.5,"heldout","Neural/Glial",1,5167,0.765623392871222
+0.5,"heldout","B/Plasma",5,7734,0.966298673279942
+0.5,"heldout","Immune",9,10665,0.870227556691117
+1,"selection","Epithelial: Absorptive",10,33503,0.959934464115187
+1,"selection","Epithelial: Secretory",7,7261,0.904444626125407
+1,"selection","Epithelial: Stem/Progenitor",8,16639,0.843504023511743
+1,"selection","Endothelial",3,6336,0.977331650959732
+1,"selection","Stromal/Mesenchymal",2,20259,0.852978681162246
+1,"selection","Smooth muscle",3,30579,0.983169853415743
+1,"selection","Neural/Glial",1,5448,0.768526586067115
+1,"selection","B/Plasma",5,7327,0.965781321659607
+1,"selection","Immune",9,10260,0.875269162905609
+1,"heldout","Epithelial: Absorptive",10,33412,0.960565986312919
+1,"heldout","Epithelial: Secretory",7,7055,0.904506324454294
+1,"heldout","Epithelial: Stem/Progenitor",8,16780,0.84561680082341
+1,"heldout","Endothelial",3,6184,0.976602253341275
+1,"heldout","Stromal/Mesenchymal",2,20345,0.850786834112061
+1,"heldout","Smooth muscle",3,30502,0.984132394963957
+1,"heldout","Neural/Glial",1,5369,0.767457150017595
+1,"heldout","B/Plasma",5,7402,0.965363414381798
+1,"heldout","Immune",9,10565,0.870879245823278
+2,"selection","Epithelial: Absorptive",10,28498,0.967034512341278
+2,"selection","Epithelial: Secretory",7,8970,0.897441225908556
+2,"selection","Epithelial: Stem/Progenitor",8,20558,0.798513270539056
+2,"selection","Endothelial",3,6248,0.978076094941406
+2,"selection","Stromal/Mesenchymal",2,20007,0.851703730065157
+2,"selection","Smooth muscle",3,30510,0.983341880351276
+2,"selection","Neural/Glial",1,6084,0.753545110894941
+2,"selection","B/Plasma",5,7053,0.96836437465156
+2,"selection","Immune",9,9605,0.873623385938009
+2,"heldout","Epithelial: Absorptive",10,28582,0.967053876911766
+2,"heldout","Epithelial: Secretory",7,8766,0.897215914774439
+2,"heldout","Epithelial: Stem/Progenitor",8,20521,0.801088382071316
+2,"heldout","Endothelial",3,6109,0.977349568888942
+2,"heldout","Stromal/Mesenchymal",2,20131,0.850038304153665
+2,"heldout","Smooth muscle",3,30438,0.9842795424208
+2,"heldout","Neural/Glial",1,6075,0.751585027316589
+2,"heldout","B/Plasma",5,7121,0.968914558116413
+2,"heldout","Immune",9,9792,0.869027976604891
+5,"selection","Epithelial: Absorptive",10,28215,0.970202591507928
+5,"selection","Epithelial: Secretory",7,9321,0.888728428136056
+5,"selection","Epithelial: Stem/Progenitor",8,21373,0.791691229411165
+5,"selection","Endothelial",3,6179,0.978915736697232
+5,"selection","Stromal/Mesenchymal",2,15885,0.837375519153682
+5,"selection","Smooth muscle",3,30176,0.983627347204528
+5,"selection","Neural/Glial",1,9739,0.732285654785922
+5,"selection","B/Plasma",5,6786,0.972636410859603
+5,"selection","Immune",9,9711,0.871987466315849
+5,"heldout","Epithelial: Absorptive",10,28341,0.969753143431977
+5,"heldout","Epithelial: Secretory",7,9057,0.889556741304756
+5,"heldout","Epithelial: Stem/Progenitor",8,21326,0.795088002688438
+5,"heldout","Endothelial",3,6028,0.978042911177558
+5,"heldout","Stromal/Mesenchymal",2,16020,0.834511877195556
+5,"heldout","Smooth muscle",3,30130,0.984518731569874
+5,"heldout","Neural/Glial",1,9811,0.731140306319269
+5,"heldout","B/Plasma",5,6845,0.973329682166125
+5,"heldout","Immune",9,9861,0.866921298319475

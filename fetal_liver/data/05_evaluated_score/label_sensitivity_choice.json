@@ -1,0 +1,38 @@
+{
+  "tissue": "fetal_liver",
+  "rule": "per species: EBCC unless another annotator has a strictly higher mean marker AUROC over the types it calls (Mean (all called types), figures/fetal_liver/annotation/marker_auroc.csv)",
+  "choice": {
+    "human": {
+      "species": "human",
+      "obs_species": "hsapiens",
+      "annotator": "seurat",
+      "column": "celltype_seurat",
+      "ebcc_mean_auroc": 0.831678917287535,
+      "best_mean_auroc": 0.915946075327421,
+      "mean_auroc": {
+        "ebcc": 0.831678917287535,
+        "seurat": 0.915946075327421,
+        "seurat_cross": 0.679675674061963,
+        "singleR": 0.840228332157218,
+        "singleR_cross": 0.7483979062287
+      }
+    },
+    "mouse": {
+      "species": "mouse",
+      "obs_species": "mmusculus",
+      "annotator": "ebcc",
+      "column": "ebcc_label",
+      "ebcc_mean_auroc": 0.854016931760917,
+      "best_mean_auroc": 0.854016931760917,
+      "mean_auroc": {
+        "ebcc": 0.854016931760917,
+        "seurat": 0.771711019005801,
+        "seurat_cross": 0.847746381101557,
+        "singleR": 0.759367743929992,
+        "singleR_cross": 0.819441928144543
+      }
+    }
+  },
+  "label_cols": "hsapiens=celltype_seurat,mmusculus=ebcc_label",
+  "run_check": true
+}

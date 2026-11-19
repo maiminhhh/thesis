@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+colon,genes2,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,307493,,,3.337860107421875e-05,13.937599182128906

@@ -1,0 +1,37 @@
+dataset,score,tau,same_top3,tissue,top3
+full,Overall score (0.6 bio + 0.4 batch),0.908,TRUE,bone_marrow,same top 3
+full,Bio-conservation score,0.877,TRUE,bone_marrow,same top 3
+dissected,Overall score (0.6 bio + 0.4 batch),0.895,TRUE,bone_marrow,same top 3
+dissected,Bio-conservation score,0.84,TRUE,bone_marrow,same top 3
+genes2,Overall score (0.6 bio + 0.4 batch),0.895,TRUE,bone_marrow,same top 3
+genes2,Bio-conservation score,0.828,FALSE,bone_marrow,top 3 differ
+genes4,Overall score (0.6 bio + 0.4 batch),0.914,TRUE,bone_marrow,same top 3
+genes4,Bio-conservation score,0.877,TRUE,bone_marrow,same top 3
+genes6,Overall score (0.6 bio + 0.4 batch),0.92,FALSE,bone_marrow,top 3 differ
+genes6,Bio-conservation score,0.957,TRUE,bone_marrow,same top 3
+genes8,Overall score (0.6 bio + 0.4 batch),0.945,FALSE,bone_marrow,top 3 differ
+genes8,Bio-conservation score,0.908,FALSE,bone_marrow,top 3 differ
+full,Overall score (0.6 bio + 0.4 batch),0.926153846153846,FALSE,fetal_liver,top 3 differ
+dissected,Overall score (0.6 bio + 0.4 batch),0.7784615384615384,FALSE,fetal_liver,top 3 differ
+genes2,Overall score (0.6 bio + 0.4 batch),0.8523076923076923,FALSE,fetal_liver,top 3 differ
+genes4,Overall score (0.6 bio + 0.4 batch),0.8707692307692307,TRUE,fetal_liver,same top 3
+genes6,Overall score (0.6 bio + 0.4 batch),0.9076923076923076,TRUE,fetal_liver,same top 3
+genes8,Overall score (0.6 bio + 0.4 batch),0.8892307692307693,TRUE,fetal_liver,same top 3
+full,Bio-conservation score,0.8461538461538461,FALSE,fetal_liver,top 3 differ
+dissected,Bio-conservation score,0.7230769230769231,FALSE,fetal_liver,top 3 differ
+genes2,Bio-conservation score,0.8461538461538461,FALSE,fetal_liver,top 3 differ
+genes4,Bio-conservation score,0.7661538461538462,FALSE,fetal_liver,top 3 differ
+genes6,Bio-conservation score,0.7415384615384616,FALSE,fetal_liver,top 3 differ
+genes8,Bio-conservation score,0.8769230769230769,TRUE,fetal_liver,same top 3
+full,Overall score (0.6 bio + 0.4 batch),0.8892307692307693,TRUE,breast_cancer,same top 3
+dissected,Overall score (0.6 bio + 0.4 batch),0.8953846153846153,TRUE,breast_cancer,same top 3
+genes2,Overall score (0.6 bio + 0.4 batch),0.913846153846154,TRUE,breast_cancer,same top 3
+genes4,Overall score (0.6 bio + 0.4 batch),0.9569230769230768,TRUE,breast_cancer,same top 3
+genes6,Overall score (0.6 bio + 0.4 batch),0.8953846153846153,FALSE,breast_cancer,top 3 differ
+genes8,Overall score (0.6 bio + 0.4 batch),0.9384615384615383,FALSE,breast_cancer,top 3 differ
+full,Bio-conservation score,0.803076923076923,TRUE,breast_cancer,same top 3
+dissected,Bio-conservation score,0.92,TRUE,breast_cancer,same top 3
+genes2,Bio-conservation score,0.9015384615384616,TRUE,breast_cancer,same top 3
+genes4,Bio-conservation score,0.8892307692307693,TRUE,breast_cancer,same top 3
+genes6,Bio-conservation score,0.926153846153846,TRUE,breast_cancer,same top 3
+genes8,Bio-conservation score,0.8646153846153846,FALSE,breast_cancer,top 3 differ

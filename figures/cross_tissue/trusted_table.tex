@@ -1,0 +1,73 @@
+{\footnotesize
+\begin{longtable}{@{} l l cccc cccc @{}}
+\caption{Cell types trusted for each annotator in the EBCC prior, per tissue and species. S: Seurat and R: SingleR with a same-species reference; S$_\times$ and R$_\times$: with the other species' reference. The prior adds $\mathit{frac}\cdot n_k/M$ to the diagonal for each trusted class $k$ of an annotator ($n_k$: cells it gave that label; $M$: subtypes per class); with $\mathit{frac}=0$ the lists have no effect.}
+\label{tab:trusted} \\
+\toprule
+\multicolumn{2}{c}{} & \multicolumn{4}{c}{Human} & \multicolumn{4}{c}{Mouse} \\
+\cmidrule(lr){3-6} \cmidrule(l){7-10}
+Tissue & Cell type & S & R & S$_\times$ & R$_\times$ & S & R & S$_\times$ & R$_\times$ \\
+\midrule
+\endfirsthead
+\toprule
+\multicolumn{2}{c}{} & \multicolumn{4}{c}{Human} & \multicolumn{4}{c}{Mouse} \\
+\cmidrule(lr){3-6} \cmidrule(l){7-10}
+Tissue & Cell type & S & R & S$_\times$ & R$_\times$ & S & R & S$_\times$ & R$_\times$ \\
+\midrule
+\endhead
+\midrule \multicolumn{10}{r}{\textit{continued on next page}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+Colon & B/Plasma & \checkmark & \checkmark & \checkmark & \checkmark &  &  &  &  \\
+ & Endothelial & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & Epithelial: Absorptive & \checkmark & \checkmark & \checkmark & \checkmark &  &  &  &  \\
+ & Epithelial: Secretory &  &  &  &  &  &  &  &  \\
+ & Epithelial: Stem/Progenitor &  &  &  &  &  &  &  &  \\
+ & Erythroid &  &  &  &  &  &  &  &  \\
+ & Immune &  & \checkmark &  & \checkmark & \checkmark &  &  &  \\
+ & Neural/Glial &  & \checkmark &  &  &  & \checkmark & \checkmark & \checkmark \\
+ & Smooth muscle & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & Stromal/Mesenchymal & \checkmark & \checkmark & \checkmark & \checkmark &  &  &  & \checkmark \\
+ & $\mathit{frac}$ & \multicolumn{4}{c}{0.25} & \multicolumn{4}{c}{0} \\
+\midrule
+Bone marrow & B cell & \checkmark & \checkmark &  &  &  &  &  &  \\
+ & DC &  &  &  &  &  &  &  &  \\
+ & Erythroid & \checkmark & \checkmark & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark \\
+ & Granulocyte & \checkmark & \checkmark &  &  & \checkmark & \checkmark &  &  \\
+ & HSPC & \checkmark & \checkmark &  &  &  & \checkmark &  &  \\
+ & MSC & \checkmark & \checkmark &  &  &  &  &  & \checkmark \\
+ & MkP &  &  &  &  & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & Monocyte &  & \checkmark &  &  &  & \checkmark &  &  \\
+ & NK/ILC & \checkmark & \checkmark &  &  &  &  &  &  \\
+ & Plasma & \checkmark & \checkmark &  &  &  &  & \checkmark & \checkmark \\
+ & T cell & \checkmark & \checkmark & \checkmark & \checkmark &  &  &  &  \\
+ & $\mathit{frac}$ & \multicolumn{4}{c}{5} & \multicolumn{4}{c}{5} \\
+\midrule
+Fetal liver & B cell & \checkmark & \checkmark &  &  &  &  &  &  \\
+ & Dendritic cell & \checkmark &  &  &  &  &  &  &  \\
+ & Endothelial & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & Erythroblast &  &  &  &  &  & \checkmark &  &  \\
+ & Erythrocyte &  &  &  &  &  &  &  &  \\
+ & Erythroid progenitor &  &  &  &  &  &  &  &  \\
+ & Fibroblast & \checkmark & \checkmark &  &  &  &  & \checkmark & \checkmark \\
+ & Granulocyte & \checkmark & \checkmark &  &  & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & HSPC &  &  &  &  &  & \checkmark &  & \checkmark \\
+ & Hepatocyte & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & Mast cell & \checkmark & \checkmark &  &  &  &  & \checkmark & \checkmark \\
+ & Megakaryocyte & \checkmark & \checkmark &  &  &  & \checkmark & \checkmark &  \\
+ & Mono/Macrophage & \checkmark & \checkmark & \checkmark &  & \checkmark & \checkmark & \checkmark & \checkmark \\
+ & T/NK/ILC & \checkmark & \checkmark &  &  &  &  &  &  \\
+ & $\mathit{frac}$ & \multicolumn{4}{c}{0} & \multicolumn{4}{c}{0} \\
+\midrule
+Breast cancer & B-cells & \checkmark &  &  &  &  &  &  &  \\
+ & CAFs & \checkmark & \checkmark &  &  &  & \checkmark & \checkmark & \checkmark \\
+ & Cancer Epithelial & \checkmark & \checkmark &  &  &  &  & \checkmark & \checkmark \\
+ & Endothelial &  &  &  &  & \checkmark & \checkmark &  & \checkmark \\
+ & Myeloid & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  \\
+ & Normal Epithelial & \checkmark & \checkmark &  &  &  &  & \checkmark &  \\
+ & PVL & \checkmark & \checkmark &  &  &  &  & \checkmark & \checkmark \\
+ & Plasmablasts & \checkmark & \checkmark &  &  &  &  &  &  \\
+ & T-cells & \checkmark & \checkmark &  & \checkmark &  &  &  & \checkmark \\
+ & $\mathit{frac}$ & \multicolumn{4}{c}{0.5} & \multicolumn{4}{c}{0} \\
+\end{longtable}
+}

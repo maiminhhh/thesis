@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,172530,0.458718126937854,1325,66263,2,698.8591697216034,705.3197553157806

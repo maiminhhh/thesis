@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,309258,0.5433893731711142,3093,1108.9004232883453,0.33858919557660117,3093,2785.8931319713593,2792.309455394745

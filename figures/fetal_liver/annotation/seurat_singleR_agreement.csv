@@ -1,0 +1,226 @@
+seurat,singleR,n,frac,species
+B cell,B cell,19,0.05475504322766571,human
+B cell,Erythroblast,95,0.2737752161383285,human
+B cell,Erythrocyte,168,0.484149855907781,human
+B cell,Fibroblast,13,0.037463976945244955,human
+B cell,Granulocyte,24,0.069164265129683,human
+B cell,Hepatocyte,5,0.01440922190201729,human
+B cell,Unassigned,23,0.06628242074927954,human
+Dendritic cell,Dendritic cell,6,0.05825242718446602,human
+Dendritic cell,Erythroblast,16,0.1553398058252427,human
+Dendritic cell,Erythrocyte,56,0.5436893203883495,human
+Dendritic cell,Erythroid progenitor,1,0.009708737864077669,human
+Dendritic cell,Granulocyte,4,0.038834951456310676,human
+Dendritic cell,HSPC,2,0.019417475728155338,human
+Dendritic cell,Hepatocyte,1,0.009708737864077669,human
+Dendritic cell,Unassigned,17,0.1650485436893204,human
+Endothelial,Endothelial,1841,0.23949525172368935,human
+Endothelial,Erythroblast,1546,0.20111877195264732,human
+Endothelial,Erythrocyte,3209,0.4174580460517757,human
+Endothelial,Fibroblast,414,0.05385716144139456,human
+Endothelial,Granulocyte,7,9.106283335501497e-4,human
+Endothelial,HSPC,5,6.504488096786782e-4,human
+Endothelial,Hepatocyte,358,0.046572134772993365,human
+Endothelial,Megakaryocyte,17,0.002211525952907506,human
+Endothelial,Mono/Macrophage,1,1.3008976193573565e-4,human
+Endothelial,Unassigned,289,0.03759594119942761,human
+Erythroblast,Erythroblast,30081,0.6612516761557231,human
+Erythroblast,Erythrocyte,15353,0.3374953287463454,human
+Erythroblast,Erythroid progenitor,33,7.254182145918973e-4,human
+Erythroblast,Fibroblast,3,6.59471104174452e-5,human
+Erythroblast,Granulocyte,1,2.1982370139148404e-5,human
+Erythroblast,HSPC,1,2.1982370139148404e-5,human
+Erythroblast,Hepatocyte,6,1.318942208348904e-4,human
+Erythroblast,Megakaryocyte,1,2.1982370139148404e-5,human
+Erythroblast,Unassigned,12,2.637884416697808e-4,human
+Erythrocyte,B cell,5,8.186119615579822e-5,human
+Erythrocyte,Dendritic cell,22,3.601892630855122e-4,human
+Erythrocyte,Endothelial,71,0.001162428985412335,human
+Erythrocyte,Erythroblast,10735,0.1757559881464988,human
+Erythrocyte,Erythrocyte,49156,0.8047937916468836,human
+Erythrocyte,Erythroid progenitor,37,6.057728515529069e-4,human
+Erythrocyte,Fibroblast,204,0.0033399368031565677,human
+Erythrocyte,Granulocyte,111,0.0018173185546587207,human
+Erythrocyte,HSPC,23,3.7656150231667185e-4,human
+Erythrocyte,Hepatocyte,124,0.002030157664663796,human
+Erythrocyte,Mast cell,16,2.6195582769855436e-4,human
+Erythrocyte,Megakaryocyte,28,4.5842269847247007e-4,human
+Erythrocyte,Mono/Macrophage,48,7.85867483095663e-4,human
+Erythrocyte,T/NK/ILC,13,2.128391100050754e-4,human
+Erythrocyte,Unassigned,486,0.007956908266343588,human
+Erythroid progenitor,Erythroblast,5221,0.8986230636833047,human
+Erythroid progenitor,Erythrocyte,400,0.06884681583476764,human
+Erythroid progenitor,Erythroid progenitor,106,0.018244406196213425,human
+Erythroid progenitor,Fibroblast,2,3.4423407917383823e-4,human
+Erythroid progenitor,HSPC,1,1.7211703958691912e-4,human
+Erythroid progenitor,Hepatocyte,50,0.008605851979345954,human
+Erythroid progenitor,Mast cell,2,3.4423407917383823e-4,human
+Erythroid progenitor,Megakaryocyte,1,1.7211703958691912e-4,human
+Erythroid progenitor,Unassigned,27,0.004647160068846815,human
+Fibroblast,B cell,2,3.089757454039858e-4,human
+Fibroblast,Dendritic cell,4,6.179514908079716e-4,human
+Fibroblast,Endothelial,5,7.724393635099645e-4,human
+Fibroblast,Erythroblast,891,0.13764869457747567,human
+Fibroblast,Erythrocyte,2760,0.4263865286575004,human
+Fibroblast,Erythroid progenitor,7,0.0010814151089139502,human
+Fibroblast,Fibroblast,2505,0.3869921211184922,human
+Fibroblast,Granulocyte,105,0.016221226633709254,human
+Fibroblast,HSPC,3,4.634636181059787e-4,human
+Fibroblast,Hepatocyte,9,0.001390390854317936,human
+Fibroblast,Mast cell,1,1.544878727019929e-4,human
+Fibroblast,Megakaryocyte,4,6.179514908079716e-4,human
+Fibroblast,Mono/Macrophage,27,0.0041711725629538085,human
+Fibroblast,T/NK/ILC,1,1.544878727019929e-4,human
+Fibroblast,Unassigned,149,0.023018693032596942,human
+Granulocyte,Dendritic cell,1,0.0012360939431396785,human
+Granulocyte,Erythroblast,121,0.14956736711990112,human
+Granulocyte,Erythrocyte,234,0.2892459826946848,human
+Granulocyte,Erythroid progenitor,2,0.002472187886279357,human
+Granulocyte,Fibroblast,17,0.021013597033374538,human
+Granulocyte,Granulocyte,410,0.5067985166872683,human
+Granulocyte,HSPC,1,0.0012360939431396785,human
+Granulocyte,Hepatocyte,3,0.003708281829419036,human
+Granulocyte,Unassigned,20,0.024721878862793572,human
+HSPC,Endothelial,1,0.002325581395348837,human
+HSPC,Erythroblast,161,0.3744186046511628,human
+HSPC,Erythrocyte,170,0.3953488372093023,human
+HSPC,Erythroid progenitor,5,0.011627906976744186,human
+HSPC,Fibroblast,1,0.002325581395348837,human
+HSPC,Granulocyte,11,0.02558139534883721,human
+HSPC,HSPC,13,0.030232558139534883,human
+HSPC,Hepatocyte,20,0.046511627906976744,human
+HSPC,Megakaryocyte,2,0.004651162790697674,human
+HSPC,Unassigned,46,0.10697674418604651,human
+Hepatocyte,Dendritic cell,5,5.529688899702503e-5,human
+Hepatocyte,Endothelial,23,2.543656893863151e-4,human
+Hepatocyte,Erythroblast,24964,0.27608630738434653,human
+Hepatocyte,Erythrocyte,31081,0.34373652138330696,human
+Hepatocyte,Erythroid progenitor,30,3.3178133398215016e-4,human
+Hepatocyte,Fibroblast,766,0.008471483394344234,human
+Hepatocyte,Granulocyte,23,2.543656893863151e-4,human
+Hepatocyte,HSPC,3,3.3178133398215014e-5,human
+Hepatocyte,Hepatocyte,33182,0.3669722741398569,human
+Hepatocyte,Mast cell,1,1.1059377799405006e-5,human
+Hepatocyte,Megakaryocyte,8,8.847502239524005e-5,human
+Hepatocyte,Mono/Macrophage,11,1.2165315579345506e-4,human
+Hepatocyte,T/NK/ILC,6,6.635626679643003e-5,human
+Hepatocyte,Unassigned,318,0.0035168821402107916,human
+Mast cell,Erythroblast,20,0.17699115044247787,human
+Mast cell,Erythrocyte,54,0.4778761061946903,human
+Mast cell,Fibroblast,1,0.008849557522123894,human
+Mast cell,Granulocyte,2,0.017699115044247787,human
+Mast cell,Hepatocyte,1,0.008849557522123894,human
+Mast cell,Mast cell,30,0.26548672566371684,human
+Mast cell,Unassigned,5,0.04424778761061947,human
+Megakaryocyte,B cell,1,6.648936170212766e-4,human
+Megakaryocyte,Endothelial,4,0.0026595744680851063,human
+Megakaryocyte,Erythroblast,483,0.3211436170212766,human
+Megakaryocyte,Erythrocyte,714,0.4747340425531915,human
+Megakaryocyte,Erythroid progenitor,4,0.0026595744680851063,human
+Megakaryocyte,Fibroblast,3,0.0019946808510638296,human
+Megakaryocyte,Granulocyte,2,0.0013297872340425532,human
+Megakaryocyte,Hepatocyte,40,0.026595744680851064,human
+Megakaryocyte,Mast cell,1,6.648936170212766e-4,human
+Megakaryocyte,Megakaryocyte,219,0.1456117021276596,human
+Megakaryocyte,T/NK/ILC,1,6.648936170212766e-4,human
+Megakaryocyte,Unassigned,32,0.02127659574468085,human
+Mono/Macrophage,B cell,1,2.4813895781637717e-4,human
+Mono/Macrophage,Dendritic cell,67,0.01662531017369727,human
+Mono/Macrophage,Endothelial,12,0.002977667493796526,human
+Mono/Macrophage,Erythroblast,305,0.07568238213399504,human
+Mono/Macrophage,Erythrocyte,2631,0.6528535980148883,human
+Mono/Macrophage,Erythroid progenitor,13,0.0032258064516129032,human
+Mono/Macrophage,Fibroblast,48,0.011910669975186104,human
+Mono/Macrophage,Granulocyte,298,0.07394540942928039,human
+Mono/Macrophage,HSPC,3,7.444168734491315e-4,human
+Mono/Macrophage,Hepatocyte,24,0.005955334987593052,human
+Mono/Macrophage,Mast cell,6,0.001488833746898263,human
+Mono/Macrophage,Megakaryocyte,11,0.002729528535980149,human
+Mono/Macrophage,Mono/Macrophage,325,0.08064516129032258,human
+Mono/Macrophage,T/NK/ILC,2,4.962779156327543e-4,human
+Mono/Macrophage,Unassigned,284,0.07047146401985112,human
+T/NK/ILC,Endothelial,1,0.002008032128514056,human
+T/NK/ILC,Erythroblast,148,0.2971887550200803,human
+T/NK/ILC,Erythrocyte,249,0.5,human
+T/NK/ILC,Granulocyte,2,0.004016064257028112,human
+T/NK/ILC,Hepatocyte,7,0.014056224899598393,human
+T/NK/ILC,Megakaryocyte,1,0.002008032128514056,human
+T/NK/ILC,T/NK/ILC,60,0.12048192771084337,human
+T/NK/ILC,Unassigned,30,0.060240963855421686,human
+Endothelial,Endothelial,1926,0.2494818652849741,mouse
+Endothelial,Erythroblast,4020,0.5207253886010362,mouse
+Endothelial,Erythrocyte,319,0.041321243523316065,mouse
+Endothelial,Erythroid progenitor,58,0.007512953367875648,mouse
+Endothelial,HSPC,4,5.181347150259067e-4,mouse
+Endothelial,Hepatocyte,263,0.03406735751295337,mouse
+Endothelial,Megakaryocyte,22,0.002849740932642487,mouse
+Endothelial,Mono/Macrophage,9,0.00116580310880829,mouse
+Endothelial,Unassigned,1099,0.14235751295336788,mouse
+Erythroblast,Endothelial,3,1.7371163867979154e-4,mouse
+Erythroblast,Erythroblast,17060,0.9878401852924146,mouse
+Erythroblast,Erythrocyte,6,3.474232773595831e-4,mouse
+Erythroblast,Erythroid progenitor,139,0.008048639258830342,mouse
+Erythroblast,Granulocyte,1,5.7903879559930515e-5,mouse
+Erythroblast,Hepatocyte,10,5.790387955993051e-4,mouse
+Erythroblast,Unassigned,51,0.0029530978575564564,mouse
+Erythrocyte,Endothelial,3,1.7162471395881006e-4,mouse
+Erythrocyte,Erythroblast,12981,0.7426201372997712,mouse
+Erythrocyte,Erythrocyte,4188,0.23958810068649886,mouse
+Erythrocyte,Erythroid progenitor,9,5.148741418764302e-4,mouse
+Erythrocyte,Granulocyte,13,7.437070938215103e-4,mouse
+Erythrocyte,HSPC,14,8.009153318077803e-4,mouse
+Erythrocyte,Hepatocyte,95,0.005434782608695652,mouse
+Erythrocyte,Megakaryocyte,14,8.009153318077803e-4,mouse
+Erythrocyte,Mono/Macrophage,1,5.7208237986270026e-5,mouse
+Erythrocyte,Unassigned,162,0.009267734553775744,mouse
+Erythroid progenitor,Erythroblast,61,0.8970588235294118,mouse
+Erythroid progenitor,Erythroid progenitor,5,0.07352941176470588,mouse
+Erythroid progenitor,Hepatocyte,1,0.014705882352941176,mouse
+Erythroid progenitor,Unassigned,1,0.014705882352941176,mouse
+Granulocyte,Erythroblast,396,0.15827338129496402,mouse
+Granulocyte,Erythrocyte,20,0.007993605115907274,mouse
+Granulocyte,Erythroid progenitor,19,0.007593924860111911,mouse
+Granulocyte,Granulocyte,1455,0.5815347721822542,mouse
+Granulocyte,HSPC,154,0.06155075939248601,mouse
+Granulocyte,Hepatocyte,39,0.015587529976019185,mouse
+Granulocyte,Mono/Macrophage,76,0.030375699440447643,mouse
+Granulocyte,Unassigned,343,0.13709032773780974,mouse
+HSPC,Erythroblast,179,0.22831632653061223,mouse
+HSPC,Erythrocyte,10,0.012755102040816327,mouse
+HSPC,Erythroid progenitor,5,0.006377551020408163,mouse
+HSPC,Granulocyte,16,0.02040816326530612,mouse
+HSPC,HSPC,358,0.45663265306122447,mouse
+HSPC,Hepatocyte,7,0.008928571428571428,mouse
+HSPC,Megakaryocyte,4,0.00510204081632653,mouse
+HSPC,Mono/Macrophage,22,0.02806122448979592,mouse
+HSPC,Unassigned,183,0.23341836734693877,mouse
+Hepatocyte,Endothelial,5,9.278847938239989e-5,mouse
+Hepatocyte,Erythroblast,27522,0.5107449059124819,mouse
+Hepatocyte,Erythrocyte,4399,0.08163530416063541,mouse
+Hepatocyte,Erythroid progenitor,69,0.0012804810154771183,mouse
+Hepatocyte,Granulocyte,84,0.001558846453624318,mouse
+Hepatocyte,HSPC,57,0.0010577886649593587,mouse
+Hepatocyte,Hepatocyte,21336,0.3959469992205768,mouse
+Hepatocyte,Megakaryocyte,32,5.938462680473592e-4,mouse
+Hepatocyte,Mono/Macrophage,22,4.082693092825595e-4,mouse
+Hepatocyte,Unassigned,360,0.006680770515532792,mouse
+Megakaryocyte,Endothelial,394,0.04302719231189254,mouse
+Megakaryocyte,Erythroblast,4141,0.45222234356230206,mouse
+Megakaryocyte,Erythrocyte,189,0.02063994758108551,mouse
+Megakaryocyte,Erythroid progenitor,498,0.05438462378508245,mouse
+Megakaryocyte,Granulocyte,69,0.007535218958174075,mouse
+Megakaryocyte,HSPC,69,0.007535218958174075,mouse
+Megakaryocyte,Hepatocyte,805,0.0879108878453642,mouse
+Megakaryocyte,Megakaryocyte,1281,0.13989297804957956,mouse
+Megakaryocyte,Mono/Macrophage,329,0.03592879764114885,mouse
+Megakaryocyte,Unassigned,1382,0.15092279130719669,mouse
+Mono/Macrophage,Endothelial,18,0.0021274081077886776,mouse
+Mono/Macrophage,Erythroblast,5169,0.6109206949533152,mouse
+Mono/Macrophage,Erythrocyte,164,0.019383051648741285,mouse
+Mono/Macrophage,Erythroid progenitor,120,0.014182720718591182,mouse
+Mono/Macrophage,Granulocyte,42,0.004963952251506914,mouse
+Mono/Macrophage,HSPC,24,0.0028365441437182364,mouse
+Mono/Macrophage,Hepatocyte,70,0.008273253752511523,mouse
+Mono/Macrophage,Megakaryocyte,26,0.003072922822361423,mouse
+Mono/Macrophage,Mono/Macrophage,2029,0.23980616948351258,mouse
+Mono/Macrophage,Unassigned,799,0.09443328211795296,mouse

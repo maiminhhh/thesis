@@ -1,0 +1,6 @@
+A: coverage, the share of all cells each labelling labels; unlabelled = SingleR pruned calls, majority vote ties.
+B: all cells; C: consensus cells (the four annotators give a majority and SingleR labels the cell);
+D: hard cells (the four annotators tie, no majority).
+B-D: evaluation half of cells (not used to choose f).
+Mean AUROC over the types each labelling calls. Majority vote: in B and D ties are broken by drawing one tied label at random (seed 3), C has no ties.
+Rows: majority vote, EBCC with f = 0 (no trusted prior) and EBCC with the chosen f (the single annotators: best_annotator.png).

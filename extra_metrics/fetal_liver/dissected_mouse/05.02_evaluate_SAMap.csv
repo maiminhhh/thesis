@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,282332,,,8.106231689453125e-06,10.529360294342041

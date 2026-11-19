@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,280334,0.4472687952303135,2803,1021.4987258911133,0.25273452566161936,2803,2860.269330739975,2865.4445362091064

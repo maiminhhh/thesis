@@ -1,0 +1,6 @@
+Evaluation half of cells (not used to choose f); breast cancer mouse excluded. Best annotator: highest mean marker AUROC on the selection half
+among the four annotators (named in A); EBCC uses its labels, not its scores. Cells it leaves unlabelled (SingleR pruned calls) are excluded.
+A: distribution of the best annotator's confidence score (Seurat: prediction score; SingleR: Δ, margin to the next-best label);
+dashed lines mark the quintile boundaries used in B–C. Many Seurat scores are exactly 1, so the top quintiles split tied cells.
+C: cells where EBCC changes the annotator's label, per 100 cells of the fifth: supported by cell markers if the cell's marker score is at a higher percentile
+(among evaluation cells) for EBCC's type than for the annotator's, not supported if lower (no ties occurred); line: net effect (supported minus not supported).

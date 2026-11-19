@@ -1,0 +1,71 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+bone_marrow,human,1,6572,2,0.20237370663420573,0.27723676202069386,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,2,6570,3,0.25068493150684934,0.3345509893455099,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,3,6569,5,0.2682295630994063,0.4136093773785964,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,4,6568,10,0.28288672350791716,0.4942143727161998,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,5,6564,33,0.1919561243144424,0.6281230956733699,SingleR pulls into its dominant label,Granulocyte
+bone_marrow,human,1,5796,2,0.8083160800552105,0.11628709454796413,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,2,5795,4,0.6723037100949094,0.21432269197584125,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,3,5795,7,0.5397756686798965,0.3432269197584124,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,4,5791,13,0.3313762735278881,0.5423933690208945,Seurat pulls into its dominant label,Monocyte
+bone_marrow,human,5,5789,34,0.2249093107617896,0.615132147175678,Seurat pulls into its dominant label,Monocyte
+bone_marrow,mouse,1,5657,16,0.3715750397737317,0.16528195156443343,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,2,5654,33,0.17757339936328262,0.3956490979837283,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,3,5652,43,0.17126680820948337,0.4002123142250531,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,4,5651,53,0.1812068660414086,0.4232879136436029,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,5,5651,70,0.19235533533887808,0.4045301716510352,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,1,4835,19,0.13174767321613237,0.3811789038262668,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,2,4834,34,0.12019031857674804,0.42718245759205625,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,3,4834,44,0.10095159288374016,0.4429044269755896,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,4,4834,53,0.05916425320645428,0.4439387670666115,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,5,4828,69,0.01843413421706711,0.3972659486329743,Seurat pulls into its dominant label,Erythroid
+breast_cancer,human,1,6386,22,0.04008769182586909,0.7237707485123708,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,2,6383,44,0.01331662227792574,0.8284505718314272,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,3,6383,67,0.01065329782234059,0.8502271659094469,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,4,6381,90,0.00924619965522645,0.8558219714778248,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,5,6380,127,0.01081504702194357,0.8394984326018808,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,1,6595,22,0.06429112964366945,0.7176648976497346,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,2,6593,44,0.05278325496738965,0.7755194903685727,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,3,6592,65,0.03231189320388349,0.8244842233009708,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,4,6589,89,0.02913947488237972,0.8543026255881013,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,5,6587,128,0.04463336875664187,0.8082586913617732,Seurat pulls into its dominant label,Cancer Epithelial
+colon,human,1,41886,21,0.05073294179439431,0.4761734231007974,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,2,41885,31,0.06821057657872746,0.4823206398472007,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,3,41884,39,0.08024543978607583,0.4777241906217171,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,4,41883,47,0.09891841558627604,0.4722918606594561,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,5,41882,62,0.16126259490950767,0.4481161358101332,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,human,1,50136,21,0.16688606988989949,0.565142811552577,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,2,50135,35,0.2141418170938466,0.5631594694325321,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,3,50133,43,0.23309995412203535,0.5464464524365189,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,4,50131,53,0.24964592766950588,0.5257824499810496,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,human,5,50128,68,0.2699688796680498,0.4821058091286307,Seurat pulls into its dominant label,Stromal/Mesenchymal
+colon,mouse,1,27834,27,0.3801825105985485,0.5306100452683769,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,2,27834,45,0.4074513185312927,0.5215563699073076,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,3,27834,55,0.4222533592009772,0.5042753466982827,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,4,27832,63,0.4342124173613107,0.4873886174187985,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,5,27832,75,0.44190140845070425,0.45602184535786144,SingleR pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,1,16535,24,0.05134563048079831,0.8743876625340188,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,2,16534,35,0.01058425063505503,0.9129672190637474,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,3,16534,44,0.0083464376436434,0.8976654167170679,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,4,16532,56,0.00925477861117832,0.8516210984756836,Seurat pulls into its dominant label,Epithelial: Absorptive
+colon,mouse,5,16530,74,0.0146400483968542,0.6718693284936479,Seurat pulls into its dominant label,Epithelial: Absorptive
+fetal_liver,human,1,32458,37,0.4927290652535584,0.30944605336126685,SingleR pulls into its dominant label,Erythrocyte
+fetal_liver,human,2,32457,47,0.42795082724835937,0.35468465970360785,SingleR pulls into its dominant label,Erythrocyte
+fetal_liver,human,3,32456,55,0.3561437022430367,0.42334237121025386,SingleR pulls into its dominant label,Erythrocyte
+fetal_liver,human,4,32452,63,0.27834956243066683,0.4836373721188216,SingleR pulls into its dominant label,Erythrocyte
+fetal_liver,human,5,32447,76,0.2001417696551299,0.5476623416648688,SingleR pulls into its dominant label,Erythrocyte
+fetal_liver,human,1,37783,28,0.07416033665934416,0.6619908424423683,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,human,2,37783,38,0.20477463409469868,0.6207818330995422,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,human,3,37779,45,0.32197781836469996,0.497445670875354,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,human,4,37777,55,0.4366678137491066,0.3155094369589962,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,human,5,37777,70,0.4687243560896842,0.1446382719644228,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,1,19136,38,0.7503658026755853,0.2135242474916388,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,2,19133,47,0.7296817017718079,0.2372340981550201,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,3,19132,54,0.6292076102864311,0.3085406648546937,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,4,19131,62,0.462704511003084,0.41315142961685225,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,5,19130,74,0.27171981181390487,0.5301097752221642,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,1,18066,32,0.1596368869699989,0.7278866378833168,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,2,18066,40,0.3235912764308646,0.4074504594265471,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,3,18065,47,0.4127318018267368,0.21096042070301688,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,4,18064,53,0.458204162976085,0.13468777679362268,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,5,18061,66,0.4278279165051769,0.08565417197275899,Seurat pulls into its dominant label,Hepatocyte

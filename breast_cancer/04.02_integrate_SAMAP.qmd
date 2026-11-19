@@ -1,0 +1,34 @@
+---
+title: "04.02_integrate_SAMAP"
+format: html
+---
+
+```{r}
+source('../library.R')
+source('../source.R')
+data_samap_adata = zellkonverter::readH5AD("data/04_integrated_data/04.02_SAMap.h5ad", 
+                                           reader = 'R')
+data_samap = as.Seurat(data_samap_adata,
+                       counts = 'X', data = NULL)
+data_samap@meta.data[data_samap@meta.data == 'unassigned'] = NA
+data_samap$celltype_seurat = coalesce(data_samap$mm_celltype_seurat, 
+                                      data_samap$hs_celltype_seurat)
+data_samap$celltype_singleR = coalesce(data_samap$mm_celltype_singleR, 
+                                       data_samap$hs_celltype_singleR)
+data_samap$celltype_seurat_cross = coalesce(data_samap$mm_celltype_seurat_cross,
+                                            data_samap$hs_celltype_seurat_cross)
+data_samap$celltype_singleR_cross = coalesce(data_samap$mm_celltype_singleR_cross,
+                                             data_samap$hs_celltype_singleR_cross)
+data_samap$leiden_clusters = coalesce(data_samap$hs_leiden_clusters, 
+                                      data_samap$mm_leiden_clusters)
+data_samap$orig.ident = case_when(
+  data_samap$orig.ident == 'mm' ~ 'mmusculus',
+  TRUE ~ 'hsapiens'
+)
+SaveSeuratRds(data_samap, 'data/04_integrated_data/04.02_SAMap.rds')
+```
+
+```{r}
+DimPlot(data_samap, group.by = 'orig.ident')
+DimPlot(data_samap, group.by = 'ds_label')
+```

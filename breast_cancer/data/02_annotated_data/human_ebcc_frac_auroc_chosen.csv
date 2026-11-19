@@ -1,0 +1,2 @@
+"species","M","frac","changed","previous_frac","rule"
+"human",3,0.5,TRUE,0,"M: 1-SE rule on the frac = 0 column of the held-out grid; frac: highest mean marker AUROC on the selection half (50/50, seed 1), ties -> smaller frac; frac was tuned for marker agreement, so the marker AUROC is not an independent validation"

@@ -1,0 +1,106 @@
+```{r}
+setwd(file.path(Sys.getenv('PROJECT_ROOT', '..'), 'bone_marrow'))
+source('../library.R')
+source('../source.R')
+```
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+rownames(mouse) = mouse[['Xenium']]@meta.data$gene_name
+markers = list(
+  "B cell"      = c("Cd79a", "Cd79b", "Cd19", "Pax5", "Ebf1", "Vpreb1", "Ms4a1"),
+  "DC"          = c("Xcr1", "Clec9a", "Cd209a", "H2-Ab1", "Siglech", "Flt3"),
+  "Erythroid"   = c("Klf1", "Gata1", "Gypa", "Car1", "Car2", "Alas2", "Slc4a1"),
+  "Granulocyte" = c("S100a8", "S100a9", "Ltf", "Camp", "Ngp", "Ly6g", "Mpo", "Elane"),
+  "HSPC"        = c("Kit", "Procr", "Hlf", "Mecom", "Cd34", "Meis1"),
+  "Mac"         = c("Adgre1", "C1qa", "C1qb", "Mrc1", "Hmox1", "Spic"),
+  "Mast"        = c("Cpa3", "Cma1", "Mcpt4", "Tpsb2", "Fcer1a"),
+  "MkP"         = c("Pf4", "Itga2b", "Gp9", "Gp1bb", "Ppbp"),
+  "Monocyte"    = c("Ly6c2", "Ccr2", "Csf1r", "Lyz2", "Ms4a6c", "F13a1"),
+  "MSC"         = c("Lepr", "Cxcl12", "Kitl", "Adipoq", "Ebf3", "Angpt1"),
+  "NK/ILC"      = c("Nkg7", "Ncr1", "Klrb1c", "Gzma", "Prf1", "Klrd1"),
+  "Plasma"      = c("Jchain", "Sdc1", "Xbp1", "Prdm1", "Tnfrsf17"),
+  "T cell"      = c("Cd3e", "Cd3g", "Cd2", "Trbc2", "Cd4", "Cd8a", "Lck")
+)
+
+markers = lapply(markers, intersect, rownames(mouse))
+DotPlot(mouse, features = markers, group.by = "celltype_singleR") + RotatedAxis()
+DotPlot(mouse, features = markers, group.by = "celltype_seurat") + RotatedAxis()
+DotPlot(mouse, features = markers, group.by = "celltype_singleR_cross") + RotatedAxis()
+DotPlot(mouse, features = markers, group.by = "celltype_seurat_cross") + RotatedAxis()
+DotPlot(mouse, features = markers, group.by = "celltype") + RotatedAxis()
+
+ImageDimPlot(mouse, group.by = 'celltype', axes = TRUE)
+ImageDimPlot(mouse, group.by = 'celltype_seurat')
+ImageDimPlot(mouse, group.by = 'celltype_singleR')
+ImageDimPlot(mouse, group.by = 'celltype_seurat_cross')
+ImageDimPlot(mouse, group.by = 'celltype_singleR_cross')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+ImageDimPlot(human, group.by = 'celltype', axes = TRUE)
+ImageDimPlot(human, group.by = 'celltype_seurat')
+ImageDimPlot(human, group.by = 'celltype_singleR')
+ImageDimPlot(human, group.by = 'celltype_seurat_cross')
+ImageDimPlot(human, group.by = 'celltype_singleR_cross')
+```
+
+# Dissect
+
+```{r}
+coords = GetTissueCoordinates(mouse)   # has its own `cell` column; row order need not match colnames(mouse)
+coords$celltype = mouse$celltype[match(coords$cell, colnames(mouse))]
+p = plot_ly(
+  coords,
+  x = ~x,
+  y = ~y,
+  color = ~celltype,
+  type = "scattergl",
+  mode = "markers",
+  marker = list(size = 3),
+  text = ~paste0(
+    "x: ", x,
+    "<br>y: ", y
+  ),
+  hovertemplate = "%{text}<extra></extra>"
+) |>
+  layout(
+    dragmode = "drawclosedpath",
+    newshape = list(line = list(width = 2))
+  ) |>
+  config(
+    modeBarButtonsToAdd = c(
+      "drawclosedpath",
+      "eraseshape"
+    )
+  )
+
+p
+
+# option A: right femur marrow cavity only (excludes epiphyses / growth-plate
+# cartilage and cortical stroma; chosen from the hematopoietic bin map)
+xmin = 500;  xmax = 4750
+ymin = 2500; ymax = 3500
+
+ggplot(coords, aes(x, y, color = celltype)) +
+  geom_point(size = 0.025) +
+  annotate("rect", xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax,
+           fill = NA, color = "black", linewidth = 0.5) +
+  coord_fixed() +
+  guides(color = guide_legend(override.aes = list(size = 3)))
+```
+
+```{r}
+coords$keep = coords$y >= ymin & coords$y <= ymax &
+  coords$x >= xmin & coords$x <= xmax
+
+mouse_subset = mouse |> 
+  subset(cells = coords$cell[coords$keep])
+
+SaveSeuratRds(mouse_subset, 'data/02_annotated_data/02_mouse_subset_annotated.rds')
+
+as.anndata(mouse_subset, file_path = 'data/02_annotated_data/',
+           file_name = '02_mouse_subset_annotated', assay = 'Xenium',
+           main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```

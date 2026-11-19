@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes6,05.03_evaluate_CCA.py,CCA,embed,X_cca,281608,0.45122465039131904,2816,1721.1150090694427,0.29817174028460025,2816,4017.5725564956665,4024.59294629097

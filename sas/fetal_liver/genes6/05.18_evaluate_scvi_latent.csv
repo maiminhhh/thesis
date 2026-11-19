@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,281608,0.34460351813691026,1153,57651,2,354.49143838882446,362.02656078338623

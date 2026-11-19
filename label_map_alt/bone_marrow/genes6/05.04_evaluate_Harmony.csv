@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,41058,0.5142290001463529,0.5484295057150046,411,11,11,20.67083239555359,21.776484489440918

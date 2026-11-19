@@ -1,0 +1,17 @@
+,Scanorama
+NMI_cluster/label,0.12272370552376706
+ARI_cluster/label,0.018111997051292256
+ASW_label,0.47382307708982074
+ASW_label/batch,0.8601476224636077
+PCR_batch,0.9051961056169603
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.5566007326962322
+kBET,
+iLISI,0.6182364661342143
+cLISI,0.8410118341284797
+hvg_overlap,
+trajectory,
+_seconds,106.2515606880188
+_n_cells,19990.0

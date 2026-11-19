@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,dissected,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,50042,0.5848706858590034,500,22.44238805770874,0.14719397239997684,500,50.41184329986572,52.53458642959595

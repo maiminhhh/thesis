@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes4,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,301332,0.5461525838603734,767,38371,2,131.27616572380066,135.93695068359375

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,307493,0.6052943627355889,770,38495,2,170.61770486831665,178.31400609016418

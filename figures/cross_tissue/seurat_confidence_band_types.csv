@@ -1,0 +1,309 @@
+tissue,species,band,type,n_type,auroc
+Colon,human,< 0.5,epithelial_absorptive,1771,0.6293279713852217
+Colon,human,< 0.5,epithelial_secretory,1423,0.8080654833244297
+Colon,human,< 0.5,epithelial_stem_progenitor,1766,0.841376886563059
+Colon,human,< 0.5,endothelial,1136,0.7311237063993882
+Colon,human,< 0.5,stromal_mesenchymal,2373,0.6394172705967814
+Colon,human,< 0.5,smooth_muscle,652,0.8419688456822417
+Colon,human,< 0.5,neural_glial,1325,0.560035005736586
+Colon,human,< 0.5,b_plasma,765,0.7399240006079951
+Colon,human,< 0.5,immune,1379,0.663133024393516
+Colon,human,0.5–0.7,epithelial_absorptive,5522,0.8346930333656135
+Colon,human,0.5–0.7,epithelial_secretory,5456,0.8721493114690614
+Colon,human,0.5–0.7,epithelial_stem_progenitor,6729,0.9037444846432032
+Colon,human,0.5–0.7,endothelial,2124,0.8455138592766246
+Colon,human,0.5–0.7,stromal_mesenchymal,14118,0.7093915505234007
+Colon,human,0.5–0.7,smooth_muscle,8563,0.8941764722077065
+Colon,human,0.5–0.7,neural_glial,2736,0.6397985606745882
+Colon,human,0.5–0.7,b_plasma,1896,0.8782017916229019
+Colon,human,0.5–0.7,immune,3536,0.7692087837840432
+Colon,human,0.7–0.9,epithelial_absorptive,7795,0.8947992675686561
+Colon,human,0.7–0.9,epithelial_secretory,6457,0.896072079503818
+Colon,human,0.7–0.9,epithelial_stem_progenitor,6920,0.915157238376656
+Colon,human,0.7–0.9,endothelial,2284,0.9251168285951642
+Colon,human,0.7–0.9,stromal_mesenchymal,17530,0.7724271650060374
+Colon,human,0.7–0.9,smooth_muscle,9366,0.9246250969014098
+Colon,human,0.7–0.9,neural_glial,2076,0.6922676444753075
+Colon,human,0.7–0.9,b_plasma,2376,0.9248417209031214
+Colon,human,0.7–0.9,immune,4591,0.814247624106793
+Colon,human,0.9–1,epithelial_absorptive,14562,0.9369876659134208
+Colon,human,0.9–1,epithelial_secretory,4548,0.9113853000044368
+Colon,human,0.9–1,epithelial_stem_progenitor,4114,0.9294483140852342
+Colon,human,0.9–1,endothelial,2795,0.9777383150786396
+Colon,human,0.9–1,stromal_mesenchymal,17978,0.8545409719806695
+Colon,human,0.9–1,smooth_muscle,5759,0.9705501317299812
+Colon,human,0.9–1,neural_glial,583,0.7850557013431037
+Colon,human,0.9–1,b_plasma,3175,0.9572368595010624
+Colon,human,0.9–1,immune,6896,0.8589047298224192
+Colon,human,= 1,epithelial_absorptive,35971,0.9842913245495536
+Colon,human,= 1,epithelial_secretory,1973,0.9583173907842132
+Colon,human,= 1,epithelial_stem_progenitor,1122,0.9705775990155716
+Colon,human,= 1,endothelial,5801,0.9985538688807936
+Colon,human,= 1,stromal_mesenchymal,23618,0.9374694897804076
+Colon,human,= 1,smooth_muscle,1057,0.9969188570291244
+Colon,human,= 1,b_plasma,4562,0.9843567933117712
+Colon,human,= 1,immune,18504,0.931315095383287
+Colon,mouse,< 0.5,stromal_mesenchymal,4390,0.794419623990132
+Colon,mouse,< 0.5,epithelial_stem_progenitor,4537,0.7350927396138279
+Colon,mouse,< 0.5,epithelial_absorptive,7152,0.51149574760683
+Colon,mouse,< 0.5,epithelial_secretory,6629,0.650696857629191
+Colon,mouse,< 0.5,endothelial,933,0.9519613431234282
+Colon,mouse,< 0.5,smooth_muscle,4545,0.7928031417245545
+Colon,mouse,< 0.5,neural_glial,860,0.7558184497169026
+Colon,mouse,0.5–0.7,stromal_mesenchymal,7069,0.8745080421808471
+Colon,mouse,0.5–0.7,epithelial_stem_progenitor,6266,0.8069413892828031
+Colon,mouse,0.5–0.7,epithelial_absorptive,11443,0.6279131915383219
+Colon,mouse,0.5–0.7,epithelial_secretory,13048,0.7314354478766416
+Colon,mouse,0.5–0.7,endothelial,1533,0.9685234335859348
+Colon,mouse,0.5–0.7,smooth_muscle,7384,0.9047473208595578
+Colon,mouse,0.5–0.7,neural_glial,857,0.8757695166282143
+Colon,mouse,0.7–0.9,stromal_mesenchymal,7541,0.9059475574137484
+Colon,mouse,0.7–0.9,epithelial_stem_progenitor,2485,0.8902188558788117
+Colon,mouse,0.7–0.9,epithelial_absorptive,19036,0.7969917863784728
+Colon,mouse,0.7–0.9,epithelial_secretory,12722,0.8179980045419974
+Colon,mouse,0.7–0.9,endothelial,1582,0.9836658998404828
+Colon,mouse,0.7–0.9,smooth_muscle,8441,0.9628438972765572
+Colon,mouse,0.7–0.9,neural_glial,978,0.915462644249502
+Colon,mouse,0.9–1,stromal_mesenchymal,5991,0.9215896273968108
+Colon,mouse,0.9–1,epithelial_stem_progenitor,89,0.975887874491869
+Colon,mouse,0.9–1,epithelial_absorptive,28724,0.8848131923902471
+Colon,mouse,0.9–1,epithelial_secretory,5706,0.8737272400361022
+Colon,mouse,0.9–1,endothelial,1142,0.9941446769358862
+Colon,mouse,0.9–1,smooth_muscle,9966,0.9943753973145448
+Colon,mouse,0.9–1,neural_glial,1184,0.9642204773790412
+Colon,mouse,= 1,stromal_mesenchymal,348,0.8619743533805853
+Colon,mouse,= 1,epithelial_absorptive,9771,0.9845142789429188
+Colon,mouse,= 1,epithelial_secretory,405,0.9238750479340428
+Colon,mouse,= 1,endothelial,324,0.9995688694514776
+Colon,mouse,= 1,smooth_muscle,25480,0.999226541079712
+Colon,mouse,= 1,neural_glial,1165,0.99643338991525
+Bone marrow,human,< 0.5,hspc,118,0.624744910192403
+Bone marrow,human,< 0.5,erythroid,540,0.5573866000832293
+Bone marrow,human,< 0.5,granulocyte,197,0.900814768268057
+Bone marrow,human,< 0.5,monocyte,1329,0.4811441754229164
+Bone marrow,human,< 0.5,dc,159,0.6597664543524416
+Bone marrow,human,< 0.5,b_cell,156,0.5716039713812542
+Bone marrow,human,< 0.5,plasma,36,0.7801997139646542
+Bone marrow,human,< 0.5,t_cell,487,0.5329348991269449
+Bone marrow,human,< 0.5,nk_ilc,101,0.733809497272429
+Bone marrow,human,< 0.5,msc,142,0.795068637992032
+Bone marrow,human,0.5–0.7,hspc,119,0.7654120067270894
+Bone marrow,human,0.5–0.7,erythroid,829,0.6147117017377607
+Bone marrow,human,0.5–0.7,granulocyte,316,0.8947867749986087
+Bone marrow,human,0.5–0.7,monocyte,3450,0.47123694088207696
+Bone marrow,human,0.5–0.7,dc,153,0.7043863017205126
+Bone marrow,human,0.5–0.7,b_cell,112,0.7109728903002849
+Bone marrow,human,0.5–0.7,plasma,83,0.912692252661206
+Bone marrow,human,0.5–0.7,t_cell,640,0.6201640764758497
+Bone marrow,human,0.5–0.7,nk_ilc,180,0.7934816345270891
+Bone marrow,human,0.5–0.7,msc,316,0.8807902723852006
+Bone marrow,human,0.7–0.9,hspc,78,0.8861920674253345
+Bone marrow,human,0.7–0.9,erythroid,1143,0.724828129839296
+Bone marrow,human,0.7–0.9,granulocyte,381,0.9188242931588144
+Bone marrow,human,0.7–0.9,monocyte,8645,0.4779102406644869
+Bone marrow,human,0.7–0.9,dc,70,0.8377689282323787
+Bone marrow,human,0.7–0.9,b_cell,127,0.8572969521481107
+Bone marrow,human,0.7–0.9,plasma,85,0.9294564974278684
+Bone marrow,human,0.7–0.9,t_cell,709,0.7169059351219484
+Bone marrow,human,0.7–0.9,nk_ilc,152,0.8578847297513666
+Bone marrow,human,0.7–0.9,msc,226,0.9385634700856156
+Bone marrow,human,0.9–1,hspc,33,0.9509116621669654
+Bone marrow,human,0.9–1,erythroid,1734,0.849821207076955
+Bone marrow,human,0.9–1,granulocyte,246,0.9247352590818564
+Bone marrow,human,0.9–1,monocyte,4903,0.5921011711166088
+Bone marrow,human,0.9–1,dc,27,0.8842708044703057
+Bone marrow,human,0.9–1,b_cell,183,0.9310060648511026
+Bone marrow,human,0.9–1,plasma,97,0.992660312520262
+Bone marrow,human,0.9–1,t_cell,493,0.9006019405379309
+Bone marrow,human,0.9–1,nk_ilc,96,0.9863362312916616
+Bone marrow,human,0.9–1,msc,193,0.9720864323119732
+Bone marrow,human,= 1,erythroid,2741,0.9794311379560402
+Bone marrow,human,= 1,granulocyte,20,0.9926631578947368
+Bone marrow,human,= 1,monocyte,1241,0.8660484134107883
+Bone marrow,human,= 1,dc,25,0.9988619599578504
+Bone marrow,human,= 1,b_cell,173,0.9906976276309885
+Bone marrow,human,= 1,plasma,95,0.9888443568815086
+Bone marrow,human,= 1,t_cell,260,0.9602950707828756
+Bone marrow,human,= 1,nk_ilc,36,0.9999706614091912
+Bone marrow,human,= 1,msc,102,0.9898663407093772
+Bone marrow,mouse,< 0.5,hspc,1363,0.5537549529673179
+Bone marrow,mouse,< 0.5,mkp,221,0.7824258036228111
+Bone marrow,mouse,< 0.5,erythroid,926,0.6333707603656528
+Bone marrow,mouse,< 0.5,granulocyte,1146,0.6560025748130581
+Bone marrow,mouse,< 0.5,monocyte,852,0.6892887696101015
+Bone marrow,mouse,< 0.5,dc,107,0.5990127199394351
+Bone marrow,mouse,< 0.5,b_cell,663,0.5010446084555543
+Bone marrow,mouse,< 0.5,nk_ilc,552,0.5086277902597064
+Bone marrow,mouse,0.5–0.7,hspc,2292,0.656046842188808
+Bone marrow,mouse,0.5–0.7,mkp,298,0.8475084589880234
+Bone marrow,mouse,0.5–0.7,erythroid,1483,0.770357217454229
+Bone marrow,mouse,0.5–0.7,granulocyte,2520,0.7061857832265995
+Bone marrow,mouse,0.5–0.7,monocyte,1000,0.7660821147970318
+Bone marrow,mouse,0.5–0.7,dc,77,0.5964698036176176
+Bone marrow,mouse,0.5–0.7,b_cell,1571,0.5027513401690406
+Bone marrow,mouse,0.5–0.7,nk_ilc,923,0.5430196907347877
+Bone marrow,mouse,0.7–0.9,hspc,2707,0.6245395621615226
+Bone marrow,mouse,0.7–0.9,mkp,393,0.8880201969370312
+Bone marrow,mouse,0.7–0.9,erythroid,1871,0.8910362808878224
+Bone marrow,mouse,0.7–0.9,granulocyte,2421,0.9092697005582464
+Bone marrow,mouse,0.7–0.9,monocyte,345,0.881207091573289
+Bone marrow,mouse,0.7–0.9,b_cell,729,0.5111541707363264
+Bone marrow,mouse,0.7–0.9,nk_ilc,345,0.5059718961551999
+Bone marrow,mouse,0.9–1,hspc,3385,0.6263275913262004
+Bone marrow,mouse,0.9–1,mkp,161,0.9401395234880612
+Bone marrow,mouse,0.9–1,erythroid,3829,0.9731853144149784
+Bone marrow,mouse,0.9–1,granulocyte,1874,0.942566973179062
+Bone marrow,mouse,0.9–1,b_cell,417,0.5287447920059812
+Bone marrow,mouse,= 1,hspc,1330,0.6227152299741698
+Bone marrow,mouse,= 1,mkp,23,0.9991926849807112
+Bone marrow,mouse,= 1,erythroid,15666,0.9994474884998538
+Bone marrow,mouse,= 1,granulocyte,440,0.9480309503793642
+Bone marrow,mouse,= 1,b_cell,67,0.5481943623995835
+Fetal liver,human,< 0.5,hepatocyte,6153,0.6607518987860981
+Fetal liver,human,< 0.5,hspc,87,0.8569246016583524
+Fetal liver,human,< 0.5,erythroid_progenitor,2622,0.6836293998701634
+Fetal liver,human,< 0.5,erythroblast,4615,0.6503005726667699
+Fetal liver,human,< 0.5,erythrocyte,3873,0.4446609346660419
+Fetal liver,human,< 0.5,megakaryocyte,199,0.8760405625660832
+Fetal liver,human,< 0.5,mast_cell,21,0.9974623883145122
+Fetal liver,human,< 0.5,granulocyte,212,0.9773441521961684
+Fetal liver,human,< 0.5,mono_macrophage,389,0.9107992973086242
+Fetal liver,human,< 0.5,dendritic_cell,36,0.944341637823698
+Fetal liver,human,< 0.5,b_cell,33,0.9623419786600133
+Fetal liver,human,< 0.5,t_nk_ilc,25,0.9953269971744156
+Fetal liver,human,< 0.5,endothelial,533,0.9207783963727132
+Fetal liver,human,< 0.5,fibroblast,692,0.92156791523142
+Fetal liver,human,0.5–0.7,hepatocyte,11013,0.8300081072837989
+Fetal liver,human,0.5–0.7,hspc,99,0.9445574320957104
+Fetal liver,human,0.5–0.7,erythroid_progenitor,2849,0.7439422432307647
+Fetal liver,human,0.5–0.7,erythroblast,12835,0.7343673032173131
+Fetal liver,human,0.5–0.7,erythrocyte,15469,0.4600585024099157
+Fetal liver,human,0.5–0.7,megakaryocyte,273,0.9323052294557096
+Fetal liver,human,0.5–0.7,mast_cell,25,0.9994093167438108
+Fetal liver,human,0.5–0.7,granulocyte,324,0.9933497774432766
+Fetal liver,human,0.5–0.7,mono_macrophage,1162,0.9599115144430804
+Fetal liver,human,0.5–0.7,dendritic_cell,35,0.9718029464589096
+Fetal liver,human,0.5–0.7,b_cell,64,0.9980035035806116
+Fetal liver,human,0.5–0.7,t_nk_ilc,55,0.9980030825807148
+Fetal liver,human,0.5–0.7,endothelial,1500,0.963268767945992
+Fetal liver,human,0.5–0.7,fibroblast,1420,0.9647340699118898
+Fetal liver,human,0.7–0.9,hepatocyte,12506,0.9224523421051416
+Fetal liver,human,0.7–0.9,hspc,77,0.9545378564873636
+Fetal liver,human,0.7–0.9,erythroid_progenitor,335,0.7001405213541582
+Fetal liver,human,0.7–0.9,erythroblast,13367,0.8466930888956815
+Fetal liver,human,0.7–0.9,erythrocyte,18181,0.48162972641792023
+Fetal liver,human,0.7–0.9,megakaryocyte,264,0.9339013794284916
+Fetal liver,human,0.7–0.9,mast_cell,39,0.9999710362763016
+Fetal liver,human,0.7–0.9,granulocyte,245,0.996287220887758
+Fetal liver,human,0.7–0.9,mono_macrophage,1409,0.972000283825671
+Fetal liver,human,0.7–0.9,dendritic_cell,32,0.9946544097249742
+Fetal liver,human,0.7–0.9,b_cell,73,0.9911760415367828
+Fetal liver,human,0.7–0.9,t_nk_ilc,94,0.9989508594468236
+Fetal liver,human,0.7–0.9,endothelial,2026,0.9817772625872324
+Fetal liver,human,0.7–0.9,fibroblast,1852,0.9793636729831224
+Fetal liver,human,0.9–1,hepatocyte,13582,0.9741680987160608
+Fetal liver,human,0.9–1,hspc,109,0.9679567855983032
+Fetal liver,human,0.9–1,erythroblast,10876,0.9336496188601784
+Fetal liver,human,0.9–1,erythrocyte,17725,0.4800627840399578
+Fetal liver,human,0.9–1,megakaryocyte,354,0.970814969714127
+Fetal liver,human,0.9–1,mast_cell,28,0.9999925847049156
+Fetal liver,human,0.9–1,granulocyte,28,0.997729436645202
+Fetal liver,human,0.9–1,mono_macrophage,918,0.989594188154864
+Fetal liver,human,0.9–1,b_cell,137,0.998920694146093
+Fetal liver,human,0.9–1,t_nk_ilc,268,0.9997144439727784
+Fetal liver,human,0.9–1,endothelial,2015,0.9897583407276336
+Fetal liver,human,0.9–1,fibroblast,2147,0.9928200196268392
+Fetal liver,human,= 1,hepatocyte,47167,0.997242623764888
+Fetal liver,human,= 1,hspc,58,0.99709031961229
+Fetal liver,human,= 1,erythroblast,3798,0.9794698910156936
+Fetal liver,human,= 1,erythrocyte,5831,0.461512453871384
+Fetal liver,human,= 1,megakaryocyte,414,0.9869659174847466
+Fetal liver,human,= 1,mono_macrophage,152,0.9968389698440984
+Fetal liver,human,= 1,b_cell,40,0.999369228440228
+Fetal liver,human,= 1,t_nk_ilc,56,0.9998599911067312
+Fetal liver,human,= 1,endothelial,1613,0.9985897447625204
+Fetal liver,human,= 1,fibroblast,362,0.9951588665254704
+Fetal liver,mouse,< 0.5,hepatocyte,1273,0.7351111922819081
+Fetal liver,mouse,< 0.5,hspc,153,0.7433750325351379
+Fetal liver,mouse,< 0.5,erythroid_progenitor,21,0.29930356172887407
+Fetal liver,mouse,< 0.5,erythroblast,1630,0.589307350769936
+Fetal liver,mouse,< 0.5,erythrocyte,2224,0.4710705132851673
+Fetal liver,mouse,< 0.5,megakaryocyte,733,0.5784909953329795
+Fetal liver,mouse,< 0.5,granulocyte,171,0.9526675713403276
+Fetal liver,mouse,< 0.5,mono_macrophage,771,0.8111266750519768
+Fetal liver,mouse,< 0.5,endothelial,409,0.9021323195419574
+Fetal liver,mouse,0.5–0.7,hepatocyte,6055,0.8015367044647062
+Fetal liver,mouse,0.5–0.7,hspc,222,0.7876736581984751
+Fetal liver,mouse,0.5–0.7,erythroid_progenitor,23,0.30230062156323834
+Fetal liver,mouse,0.5–0.7,erythroblast,4938,0.6999783934600374
+Fetal liver,mouse,0.5–0.7,erythrocyte,6643,0.47870664059755935
+Fetal liver,mouse,0.5–0.7,megakaryocyte,1675,0.6188512322513419
+Fetal liver,mouse,0.5–0.7,granulocyte,402,0.9742109568827088
+Fetal liver,mouse,0.5–0.7,mono_macrophage,1598,0.8822228740326257
+Fetal liver,mouse,0.5–0.7,endothelial,788,0.9505871202666082
+Fetal liver,mouse,0.7–0.9,hepatocyte,11548,0.8827569065790828
+Fetal liver,mouse,0.7–0.9,hspc,197,0.8721699998861774
+Fetal liver,mouse,0.7–0.9,erythroid_progenitor,22,0.2419726495936432
+Fetal liver,mouse,0.7–0.9,erythroblast,5403,0.7588680256423866
+Fetal liver,mouse,0.7–0.9,erythrocyte,5388,0.45841246668498525
+Fetal liver,mouse,0.7–0.9,megakaryocyte,2123,0.6087932643377465
+Fetal liver,mouse,0.7–0.9,granulocyte,623,0.9824536420572308
+Fetal liver,mouse,0.7–0.9,mono_macrophage,2134,0.9237873406586844
+Fetal liver,mouse,0.7–0.9,endothelial,2193,0.977966907076027
+Fetal liver,mouse,0.9–1,hepatocyte,13652,0.9466681500124507
+Fetal liver,mouse,0.9–1,hspc,194,0.8669080519895672
+Fetal liver,mouse,0.9–1,erythroblast,4018,0.84688631570054
+Fetal liver,mouse,0.9–1,erythrocyte,2412,0.4617027272221316
+Fetal liver,mouse,0.9–1,megakaryocyte,2207,0.6657560341359131
+Fetal liver,mouse,0.9–1,granulocyte,853,0.9809958236934064
+Fetal liver,mouse,0.9–1,mono_macrophage,2379,0.9546995281693118
+Fetal liver,mouse,0.9–1,endothelial,2857,0.993986012828658
+Fetal liver,mouse,= 1,hepatocyte,21358,0.992420025001269
+Fetal liver,mouse,= 1,erythroblast,1281,0.924411624404277
+Fetal liver,mouse,= 1,erythrocyte,813,0.5222305755124309
+Fetal liver,mouse,= 1,megakaryocyte,2419,0.5406889158695392
+Fetal liver,mouse,= 1,granulocyte,453,0.9911382470830318
+Fetal liver,mouse,= 1,mono_macrophage,1579,0.9616614547146468
+Fetal liver,mouse,= 1,endothelial,1473,0.9986587120148636
+Breast cancer,human,< 0.5,b_cells,62,0.6141600870324888
+Breast cancer,human,< 0.5,cafs,555,0.6146310244670901
+Breast cancer,human,< 0.5,cancer_epithelial,342,0.5597165991902834
+Breast cancer,human,< 0.5,endothelial,107,0.813181871505103
+Breast cancer,human,< 0.5,myeloid,331,0.711532266147392
+Breast cancer,human,< 0.5,plasmablasts,31,0.9046456156292594
+Breast cancer,human,< 0.5,pvl,166,0.8250248701226927
+Breast cancer,human,< 0.5,t_cells,406,0.5581711402734555
+Breast cancer,human,0.5–0.7,b_cells,76,0.6426055923992287
+Breast cancer,human,0.5–0.7,cafs,1509,0.6635812248864138
+Breast cancer,human,0.5–0.7,cancer_epithelial,783,0.6840556167186299
+Breast cancer,human,0.5–0.7,endothelial,202,0.9004694434960737
+Breast cancer,human,0.5–0.7,myeloid,676,0.7949883900928792
+Breast cancer,human,0.5–0.7,normal_epithelial,44,0.5795681414858433
+Breast cancer,human,0.5–0.7,plasmablasts,64,0.9588050774286988
+Breast cancer,human,0.5–0.7,pvl,467,0.909716962092997
+Breast cancer,human,0.5–0.7,t_cells,731,0.6359514755915452
+Breast cancer,human,0.7–0.9,b_cells,81,0.7265018454880998
+Breast cancer,human,0.7–0.9,cafs,2617,0.7647152800303528
+Breast cancer,human,0.7–0.9,cancer_epithelial,3556,0.8755570337629331
+Breast cancer,human,0.7–0.9,endothelial,332,0.9537217959133742
+Breast cancer,human,0.7–0.9,myeloid,1298,0.8654045136195658
+Breast cancer,human,0.7–0.9,normal_epithelial,58,0.8634274052047356
+Breast cancer,human,0.7–0.9,plasmablasts,106,0.969694399353123
+Breast cancer,human,0.7–0.9,pvl,464,0.9650695042500028
+Breast cancer,human,0.7–0.9,t_cells,881,0.7390337764459389
+Breast cancer,human,0.9–1,b_cells,95,0.8814277184136375
+Breast cancer,human,0.9–1,cafs,4847,0.8785781920465617
+Breast cancer,human,0.9–1,cancer_epithelial,17436,0.9453860559723778
+Breast cancer,human,0.9–1,endothelial,472,0.971400097507815
+Breast cancer,human,0.9–1,myeloid,2613,0.9307175095200496
+Breast cancer,human,0.9–1,plasmablasts,194,0.9985236973760886
+Breast cancer,human,0.9–1,pvl,252,0.991552939156892
+Breast cancer,human,0.9–1,t_cells,1141,0.8399402012726439
+Breast cancer,human,= 1,b_cells,45,0.9750766667928672
+Breast cancer,human,= 1,cafs,6808,0.9477502892869636
+Breast cancer,human,= 1,cancer_epithelial,14967,0.9589114384834928
+Breast cancer,human,= 1,endothelial,1238,0.9902400875526386
+Breast cancer,human,= 1,myeloid,2453,0.9646509895300552
+Breast cancer,human,= 1,plasmablasts,69,0.9994425652761554
+Breast cancer,human,= 1,pvl,93,0.9944415555813854
+Breast cancer,human,= 1,t_cells,775,0.8764959625609007

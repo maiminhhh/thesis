@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,282334,0.5115792606956556,2823,1298.857774734497,0.10832331735734191,2823,2923.7830772399902,2930.5934665203094

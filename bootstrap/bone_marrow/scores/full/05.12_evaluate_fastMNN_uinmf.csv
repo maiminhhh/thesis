@@ -1,0 +1,17 @@
+,FastMNN UINMF
+NMI_cluster/label,0.18955982843323238
+ARI_cluster/label,0.15108757310266316
+ASW_label,0.5446476561901418
+ASW_label/batch,0.8516658648863593
+PCR_batch,0.9264910727937596
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.6085240447845218
+kBET,
+iLISI,0.4056135770719018
+cLISI,0.9104264811884736
+hvg_overlap,
+trajectory,
+_seconds,458.9622280597687
+_n_cells,

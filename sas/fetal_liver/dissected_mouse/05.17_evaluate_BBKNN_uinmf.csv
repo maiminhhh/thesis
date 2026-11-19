@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+fetal_liver,dissected_mouse,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,282334,,3.457069396972656e-05,6.62172794342041

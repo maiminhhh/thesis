@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,268306,0.48930376416596416,763,38137,2,304.37883257865906,311.428701877594

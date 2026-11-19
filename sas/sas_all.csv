@@ -1,0 +1,521 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,dissected,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,50042,0.2339138580494252,496.0,24796.0,2.0,39.908198595047,42.27687406539917
+bone_marrow,dissected,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,50042,0.601660558219588,496.0,24796.0,2.0,34.83623170852661,36.12337684631348
+bone_marrow,dissected,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,50042,0.3779558536366427,496.0,24796.0,2.0,74.14351463317871,75.38524270057678
+bone_marrow,dissected,05.02_evaluate_SAMap.py,SAMap,knn,,50042,,,,,4.76837158203125e-06,1.4803094863891602
+bone_marrow,dissected,05.03_evaluate_CCA.py,CCA,embed,X_cca,50042,0.6876032009910547,496.0,24796.0,2.0,31.192660331726078,32.52723479270935
+bone_marrow,dissected,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,50042,0.7563710401066248,496.0,24796.0,2.0,37.62327408790589,38.94901585578919
+bone_marrow,dissected,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,50042,0.780769506593155,496.0,24796.0,2.0,37.72898316383362,38.74745917320252
+bone_marrow,dissected,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,50042,0.5279888934024217,496.0,24796.0,2.0,31.885490894317627,33.20377993583679
+bone_marrow,dissected,05.07_evaluate_scVI.py,scVI,embed,X_scvi,50042,0.671824832569249,496.0,24796.0,2.0,207.59879159927368,208.63812828063965
+bone_marrow,dissected,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,50042,0.2629433394238925,496.0,24796.0,2.0,132.46890115737915,133.50315260887146
+bone_marrow,dissected,05.09_evaluate_BBKNN.py,BBKNN,knn,,50042,,,,,1.52587890625e-05,0.9886314868927002
+bone_marrow,dissected,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,50042,0.8745344673828765,496.0,24796.0,2.0,33.35509014129639,34.79443311691284
+bone_marrow,dissected,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,50042,0.9128040861819544,496.0,24796.0,2.0,33.71901273727417,34.729026079177856
+bone_marrow,dissected,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,50042,0.6728791617014191,496.0,24796.0,2.0,34.23655295372009,35.61662769317627
+bone_marrow,dissected,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,50042,0.2473255352385139,496.0,24796.0,2.0,38.328431129455566,39.71575522422791
+bone_marrow,dissected,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,50042,0.6643770018187117,496.0,24796.0,2.0,33.66405963897705,35.06258702278137
+bone_marrow,dissected,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,50042,0.636084197047911,496.0,24796.0,2.0,34.22784614562988,35.34575915336609
+bone_marrow,dissected,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,50042,0.5013726727841119,496.0,24796.0,2.0,34.70023441314697,35.62119221687317
+bone_marrow,dissected,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,50042,,,,,1.52587890625e-05,1.022876262664795
+bone_marrow,dissected,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,50042,0.3311844205165766,496.0,24796.0,2.0,32.75985407829285,34.21535062789917
+bone_marrow,dissected,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,50042,0.7760560244173098,496.0,24796.0,2.0,32.12198233604431,33.45117998123169
+bone_marrow,dissected,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,50042,0.6511951028456723,496.0,24796.0,2.0,32.49534869194031,33.87665605545044
+bone_marrow,dissected,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,50042,0.7714143987518798,496.0,24796.0,2.0,31.66145396232605,33.06173658370972
+bone_marrow,dissected,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,50042,0.8115925955799321,496.0,24796.0,2.0,32.23334741592407,33.39147067070007
+bone_marrow,dissected,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,50042,0.6400839316565107,496.0,24796.0,2.0,31.405069828033447,32.31565618515015
+bone_marrow,dissected,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,50042,,,,,1.71661376953125e-05,1.0591506958007812
+bone_marrow,genes2,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,48691,0.2818519657950797,478.0,23889.0,2.0,35.44100093841553,37.41471648216248
+bone_marrow,genes2,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,48691,0.5496442665178614,478.0,23889.0,2.0,31.116268157958984,32.42298245429993
+bone_marrow,genes2,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,48691,0.3675731516982922,478.0,23889.0,2.0,70.05990719795227,71.3234486579895
+bone_marrow,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,48691,,,,,5.245208740234375e-06,1.9619011878967283
+bone_marrow,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,48691,0.636313745178844,478.0,23889.0,2.0,33.78502583503723,35.14004421234131
+bone_marrow,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,48691,0.755219025545449,478.0,23889.0,2.0,33.66460418701172,35.019155740737915
+bone_marrow,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,48691,0.8207184168200521,478.0,23889.0,2.0,34.404372215271,35.76497983932495
+bone_marrow,genes2,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,48691,0.6077678869023068,478.0,23889.0,2.0,29.45661211013794,30.74780011177063
+bone_marrow,genes2,05.07_evaluate_scVI.py,scVI,embed,X_scvi,48691,0.6517718760634742,478.0,23889.0,2.0,178.72523522377014,179.97412037849426
+bone_marrow,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,48691,0.2715282203902953,478.0,23889.0,2.0,113.32635736465454,114.87051844596864
+bone_marrow,genes2,05.09_evaluate_BBKNN.py,BBKNN,knn,,48691,,,,,1.811981201171875e-05,1.2274580001831057
+bone_marrow,genes2,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,48691,0.8847720524370822,478.0,23889.0,2.0,31.273669481277462,32.83163118362427
+bone_marrow,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,48691,0.8921113050578592,478.0,23889.0,2.0,31.41646981239319,32.411179542541504
+bone_marrow,genes2,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,48691,0.6376625128667788,478.0,23889.0,2.0,31.85772132873535,33.23128819465637
+bone_marrow,genes2,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,48691,0.3375626875064257,478.0,23889.0,2.0,30.66314101219177,32.02541923522949
+bone_marrow,genes2,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,48691,0.6765610158979701,478.0,23889.0,2.0,31.32215881347656,32.41901755332947
+bone_marrow,genes2,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,48691,0.5984576986204151,478.0,23889.0,2.0,33.00355768203735,34.70482134819031
+bone_marrow,genes2,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,48691,0.5507677725309402,478.0,23889.0,2.0,32.479785680770874,33.69559097290039
+bone_marrow,genes2,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,48691,,,,,1.931190490722656e-05,1.56148362159729
+bone_marrow,genes2,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,48691,0.3450365629320124,478.0,23889.0,2.0,29.69053316116333,30.98457407951355
+bone_marrow,genes2,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,48691,0.7645730445079763,478.0,23889.0,2.0,29.755911588668823,31.230217456817627
+bone_marrow,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,48691,0.6734028205064883,478.0,23889.0,2.0,30.04933333396912,31.66723656654358
+bone_marrow,genes2,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,48691,0.7658671223656272,478.0,23889.0,2.0,30.26579260826111,31.662420749664307
+bone_marrow,genes2,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,48691,0.8074252413227074,478.0,23889.0,2.0,30.835340976715088,32.50866413116455
+bone_marrow,genes2,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,48691,0.6422569840533389,478.0,23889.0,2.0,28.773993968963623,29.897903203964237
+bone_marrow,genes2,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,48691,,,,,1.430511474609375e-05,1.8337173461914065
+bone_marrow,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,45575,0.2952819346002176,416.0,20794.0,2.0,27.4388964176178,29.2242443561554
+bone_marrow,genes4,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,45575,0.5217221845613749,416.0,20794.0,2.0,23.756457805633545,25.21062994003296
+bone_marrow,genes4,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,45575,0.3182277755787542,416.0,20794.0,2.0,61.98500180244446,63.240431785583496
+bone_marrow,genes4,05.02_evaluate_SAMap.py,SAMap,knn,,45575,,,,,6.67572021484375e-06,1.9422826766967771
+bone_marrow,genes4,05.03_evaluate_CCA.py,CCA,embed,X_cca,45575,0.5138645127385117,416.0,20794.0,2.0,25.40537047386169,26.635490655899048
+bone_marrow,genes4,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,45575,0.7042781386642596,416.0,20794.0,2.0,26.488826990127563,28.00859951972961
+bone_marrow,genes4,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,45575,0.8044816112821006,416.0,20794.0,2.0,25.241418838500977,26.45088839530945
+bone_marrow,genes4,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,45575,0.5578168986893408,416.0,20794.0,2.0,24.255213737487797,25.36656856536865
+bone_marrow,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,45575,0.6301417557117067,416.0,20794.0,2.0,126.7167193889618,128.01108503341675
+bone_marrow,genes4,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,45575,0.3019449374264766,416.0,20794.0,2.0,96.13329648971558,97.53849411010742
+bone_marrow,genes4,05.09_evaluate_BBKNN.py,BBKNN,knn,,45575,,,,,1.4781951904296877e-05,0.9280405044555664
+bone_marrow,genes4,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,45575,0.8001232095426936,416.0,20794.0,2.0,25.035340785980225,26.408981561660767
+bone_marrow,genes4,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,45575,0.8646380809275604,416.0,20794.0,2.0,24.486366987228397,25.49962043762207
+bone_marrow,genes4,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,45575,0.6022101650994,416.0,20794.0,2.0,23.7145791053772,24.94210290908813
+bone_marrow,genes4,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,45575,0.3152816941462404,416.0,20794.0,2.0,22.59474539756775,23.825061559677124
+bone_marrow,genes4,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,45575,0.6476444642870355,416.0,20794.0,2.0,22.59455442428589,23.66779112815857
+bone_marrow,genes4,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,45575,0.5710980215261798,416.0,20794.0,2.0,22.57025146484375,23.812997102737427
+bone_marrow,genes4,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,45575,0.4358262148937193,416.0,20794.0,2.0,22.86217832565308,23.86543369293213
+bone_marrow,genes4,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,45575,,,,,1.5974044799804688e-05,1.103671312332153
+bone_marrow,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,45575,0.4230268381319315,416.0,20794.0,2.0,20.822287797927856,22.241762399673465
+bone_marrow,genes4,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,45575,0.7583304297744912,416.0,20794.0,2.0,21.06112027168274,22.45047640800476
+bone_marrow,genes4,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,45575,0.7548220848654568,416.0,20794.0,2.0,20.31835246086121,21.55480051040649
+bone_marrow,genes4,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,45575,0.722713039911661,416.0,20794.0,2.0,21.08063006401062,22.339879035949707
+bone_marrow,genes4,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,45575,0.7521348093662372,416.0,20794.0,2.0,20.952330827713013,22.21307635307312
+bone_marrow,genes4,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,45575,0.6982488707911306,416.0,20794.0,2.0,20.47777390480041,21.678805351257324
+bone_marrow,genes4,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,45575,,,,,1.4781951904296877e-05,1.5580463409423828
+bone_marrow,genes6,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,41058,0.3302151564167085,326.0,16313.0,2.0,15.493454933166504,17.121092557907104
+bone_marrow,genes6,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,41058,0.5255736232046481,326.0,16313.0,2.0,13.914628028869627,15.514245748519896
+bone_marrow,genes6,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,41058,0.4056390251442356,326.0,16313.0,2.0,33.51626253128052,34.500826358795166
+bone_marrow,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,41058,,,,,5.0067901611328125e-06,1.2871475219726562
+bone_marrow,genes6,05.03_evaluate_CCA.py,CCA,embed,X_cca,41058,0.4964781654437219,326.0,16313.0,2.0,13.657325267791748,14.625614643096924
+bone_marrow,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,41058,0.6515840992486326,326.0,16313.0,2.0,14.76263189315796,15.993556022644045
+bone_marrow,genes6,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,41058,0.7503952585521202,326.0,16313.0,2.0,14.48052215576172,15.688760042190552
+bone_marrow,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,41058,0.489043139593963,326.0,16313.0,2.0,13.588468551635742,14.61753249168396
+bone_marrow,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,41058,0.5966613533036056,326.0,16313.0,2.0,63.85313081741333,64.95708274841309
+bone_marrow,genes6,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,41058,0.3239930778982774,326.0,16313.0,2.0,34.98030996322632,35.8924560546875
+bone_marrow,genes6,05.09_evaluate_BBKNN.py,BBKNN,knn,,41058,,,,,1.0013580322265623e-05,0.8807127475738525
+bone_marrow,genes6,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,41058,0.8086779372392601,326.0,16313.0,2.0,12.882964372634888,14.023189783096312
+bone_marrow,genes6,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,41058,0.865622058360621,326.0,16313.0,2.0,12.99194073677063,13.73093318939209
+bone_marrow,genes6,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,41058,0.6136999679205,326.0,16313.0,2.0,13.146335124969482,14.085872888565063
+bone_marrow,genes6,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,41058,0.362241300269009,326.0,16313.0,2.0,12.51616382598877,13.499353408813477
+bone_marrow,genes6,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,41058,0.6695083318321531,326.0,16313.0,2.0,12.689520835876465,13.511837005615234
+bone_marrow,genes6,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,41058,0.5845491796034552,326.0,16313.0,2.0,12.95899748802185,14.066935539245604
+bone_marrow,genes6,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,41058,0.472004430957432,326.0,16313.0,2.0,12.738443851470947,13.740825414657593
+bone_marrow,genes6,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,41058,,,,,1.52587890625e-05,1.2966787815093994
+bone_marrow,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,41058,0.4675321989049344,326.0,16313.0,2.0,11.302597045898438,12.669727325439451
+bone_marrow,genes6,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,41058,0.73399047731513,326.0,16313.0,2.0,11.691434860229492,13.07699465751648
+bone_marrow,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,41058,0.6623157826250959,326.0,16313.0,2.0,11.845481395721436,13.034876108169556
+bone_marrow,genes6,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,41058,0.7024993522047042,326.0,16313.0,2.0,12.288303136825562,13.48171854019165
+bone_marrow,genes6,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,41058,0.68257043293034,326.0,16313.0,2.0,11.822944402694702,13.462276458740234
+bone_marrow,genes6,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,41058,0.6472938892125253,326.0,16313.0,2.0,10.714218616485596,11.73548674583435
+bone_marrow,genes6,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,41058,,,,,1.2636184692382812e-05,1.2571167945861816
+bone_marrow,genes8,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,36663,0.4345178191636109,243.0,12157.0,2.0,7.078083038330078,8.044725894927979
+bone_marrow,genes8,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,36663,0.2731746786132462,243.0,12157.0,2.0,7.27741003036499,8.204070091247559
+bone_marrow,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,36663,0.4106948155324491,243.0,12157.0,2.0,8.988431453704834,9.881072521209717
+bone_marrow,genes8,05.02_evaluate_SAMap.py,SAMap,knn,,36663,,,,,6.198883056640625e-06,1.2262279987335205
+bone_marrow,genes8,05.03_evaluate_CCA.py,CCA,embed,X_cca,36663,0.3410735436340255,243.0,12157.0,2.0,7.1215009689331055,7.752625703811645
+bone_marrow,genes8,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,36663,0.4507469320288638,243.0,12157.0,2.0,6.760865449905396,7.382958173751831
+bone_marrow,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,36663,0.4361413820755947,243.0,12157.0,2.0,6.410430669784546,7.084591865539551
+bone_marrow,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,36663,0.3107418171921476,243.0,12157.0,2.0,7.087289094924927,7.749501943588257
+bone_marrow,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,36663,0.4983775372348942,243.0,12157.0,2.0,22.64374041557312,23.52289056777954
+bone_marrow,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,36663,0.3849281062477849,243.0,12157.0,2.0,17.841068029403687,18.747289419174194
+bone_marrow,genes8,05.09_evaluate_BBKNN.py,BBKNN,knn,,36663,,,,,9.298324584960938e-06,0.657402515411377
+bone_marrow,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,36663,0.4739403131390372,243.0,12157.0,2.0,6.657518148422241,7.520334720611572
+bone_marrow,genes8,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,36663,0.6347572449749521,243.0,12157.0,2.0,7.052338123321533,7.662265062332153
+bone_marrow,genes8,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,36663,0.3389261415547141,243.0,12157.0,2.0,7.399799346923828,8.045682907104492
+bone_marrow,genes8,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,36663,0.252689097476737,243.0,12157.0,2.0,7.1961963176727295,7.88828182220459
+bone_marrow,genes8,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,36663,0.3548757324862541,243.0,12157.0,2.0,6.275534629821777,6.822218179702759
+bone_marrow,genes8,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,36663,0.3021575403559263,243.0,12157.0,2.0,7.121856689453125,8.307790756225586
+bone_marrow,genes8,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,36663,0.3073439712458841,243.0,12157.0,2.0,7.066649913787842,8.058798789978027
+bone_marrow,genes8,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,36663,,,,,1.1205673217773438e-05,0.953890323638916
+bone_marrow,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,36663,0.4584916275437512,243.0,12157.0,2.0,6.354527950286865,7.58693790435791
+bone_marrow,genes8,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,36663,0.5470026752187008,243.0,12157.0,2.0,6.406215667724609,7.774401426315308
+bone_marrow,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,36663,0.4267735467821381,243.0,12157.0,2.0,6.499798536300659,7.444114685058594
+bone_marrow,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,36663,0.5480706639572588,243.0,12157.0,2.0,5.710159063339233,6.360188722610474
+bone_marrow,genes8,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,36663,0.4916635947180764,243.0,12157.0,2.0,6.217490196228027,7.173633098602295
+bone_marrow,genes8,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,36663,0.4114969072332457,243.0,12157.0,2.0,6.189953088760376,6.936514616012573
+bone_marrow,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,36663,,,,,1.049041748046875e-05,0.828239917755127
+breast_cancer,dissected_mouse,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,177883,0.0964894621836908,1387.0,69374.0,2.0,1443.079880952835,1480.1136105060575
+breast_cancer,dissected_mouse,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,177883,0.3583011148686589,1387.0,69374.0,2.0,1376.269634723663,1401.138709306717
+breast_cancer,dissected_mouse,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,177883,0.4821462199113467,1387.0,69374.0,2.0,1369.422296524048,1391.4481282234192
+breast_cancer,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,177883,,,,,8.106231689453125e-06,30.82899808883667
+breast_cancer,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,177883,0.6667281539853291,1387.0,69374.0,2.0,1223.074588060379,1242.5542027950287
+breast_cancer,dissected_mouse,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,177883,0.7820231900197023,1387.0,69374.0,2.0,1240.583714723587,1258.179884672165
+breast_cancer,dissected_mouse,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,177883,0.7608798128339773,1387.0,69374.0,2.0,1186.4354305267334,1207.5740315914154
+breast_cancer,dissected_mouse,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,177883,0.601038335537028,1387.0,69374.0,2.0,699.689713716507,703.5810987949371
+breast_cancer,dissected_mouse,05.07_evaluate_scVI.py,scVI,embed,X_scvi,177883,0.551476172151453,1387.0,69374.0,2.0,3514.1709842681885,3518.637834787369
+breast_cancer,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,177883,0.527837189450891,1387.0,69374.0,2.0,2636.6283609867096,2642.764799118042
+breast_cancer,dissected_mouse,05.09_evaluate_BBKNN.py,BBKNN,knn,,177883,,,,,3.218650817871094e-05,6.8508384227752686
+breast_cancer,dissected_mouse,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,177883,0.8790540761173946,1387.0,69374.0,2.0,660.2290420532227,667.7015633583069
+breast_cancer,dissected_mouse,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,177883,0.7451535691446355,1387.0,69374.0,2.0,714.8843080997467,719.8802859783173
+breast_cancer,dissected_mouse,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,177883,0.4451600167521397,1387.0,69374.0,2.0,761.4058566093445,767.5058906078339
+breast_cancer,dissected_mouse,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,177883,0.2598266204669885,1387.0,69374.0,2.0,686.2484991550446,694.573431968689
+breast_cancer,dissected_mouse,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,177883,0.5472480007584151,1387.0,69374.0,2.0,694.2110586166382,702.9662358760834
+breast_cancer,dissected_mouse,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,177883,0.3875180341265505,1387.0,69374.0,2.0,746.1126346588135,752.3026351928711
+breast_cancer,dissected_mouse,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,177883,0.672327250002489,1387.0,69374.0,2.0,727.5307173728943,735.0539200305939
+breast_cancer,dissected_mouse,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,177883,,,,,3.719329833984375e-05,6.897635459899902
+breast_cancer,dissected_mouse,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,177883,0.1447939939517617,1387.0,69374.0,2.0,770.9295723438263,778.596184015274
+breast_cancer,dissected_mouse,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,177883,0.7696813141122019,1387.0,69374.0,2.0,693.3479340076447,702.3568263053894
+breast_cancer,dissected_mouse,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,177883,0.7385119150518773,1387.0,69374.0,2.0,633.6006908416748,642.309408903122
+breast_cancer,dissected_mouse,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,177883,0.6295613939128807,1387.0,69374.0,2.0,725.2013177871704,734.0729923248291
+breast_cancer,dissected_mouse,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,177883,0.8798884899584749,1387.0,69374.0,2.0,720.9231901168823,726.4461064338684
+breast_cancer,dissected_mouse,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,177883,0.7707697298088713,1387.0,69374.0,2.0,721.2569377422333,729.6445641517639
+breast_cancer,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,177883,,,,,3.504753112792969e-05,6.512375593185425
+breast_cancer,genes2,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,177683,0.1224999477283306,1385.0,69237.0,2.0,797.4294486045837,809.5672602653503
+breast_cancer,genes2,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,177683,0.4036186308013667,1385.0,69237.0,2.0,779.3073852062225,788.7074022293091
+breast_cancer,genes2,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,177683,0.4720715703175964,1385.0,69237.0,2.0,708.020186662674,716.2572605609894
+breast_cancer,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,177683,,,,,7.867813110351562e-06,10.215004205703735
+breast_cancer,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,177683,0.6174000916331489,1385.0,69237.0,2.0,701.3222732543945,709.1511688232422
+breast_cancer,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,177683,0.8285449851029653,1385.0,69237.0,2.0,730.2667636871338,739.7218296527863
+breast_cancer,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,177683,0.8336072108103131,1385.0,69237.0,2.0,678.953644990921,685.5552184581757
+breast_cancer,genes2,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,177683,0.6593847538478856,1385.0,69237.0,2.0,755.0776844024658,761.9845435619354
+breast_cancer,genes2,05.07_evaluate_scVI.py,scVI,embed,X_scvi,177683,0.477783171796929,1385.0,69237.0,2.0,28622.614130973816,28630.040392160416
+breast_cancer,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,177683,0.505049325945743,1385.0,69237.0,2.0,27946.345674037933,27953.665322065357
+breast_cancer,genes2,05.09_evaluate_BBKNN.py,BBKNN,knn,,177683,,,,,2.765655517578125e-05,6.624445199966431
+breast_cancer,genes2,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,177683,0.8931921377777965,1385.0,69237.0,2.0,26748.37138271332,26756.8436062336
+breast_cancer,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,177683,0.7610033089400614,1385.0,69237.0,2.0,26734.982439756397,26741.08714413643
+breast_cancer,genes2,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,177683,0.5028968307413102,1385.0,69237.0,2.0,26693.991149187088,26703.495440721512
+breast_cancer,genes2,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,177683,0.3137731547201265,1385.0,69237.0,2.0,26633.652932167053,26642.55652809143
+breast_cancer,genes2,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,177683,0.597834946559583,1385.0,69237.0,2.0,490.035050868988,495.208690404892
+breast_cancer,genes2,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,177683,0.4365115420799453,1385.0,69237.0,2.0,478.0047507286072,484.4077064990997
+breast_cancer,genes2,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,177683,0.6174130956773858,1385.0,69237.0,2.0,466.1211721897125,473.3165955543518
+breast_cancer,genes2,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,177683,,,,,2.312660217285156e-05,5.376495122909546
+breast_cancer,genes2,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,177683,0.2199995786981659,1385.0,69237.0,2.0,451.636195898056,457.7932689189911
+breast_cancer,genes2,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,177683,0.8021820150105463,1385.0,69237.0,2.0,515.5815222263336,521.87637591362
+breast_cancer,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,177683,0.7153714294474026,1385.0,69237.0,2.0,403.96769547462463,409.6811428070069
+breast_cancer,genes2,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,177683,0.7250822281590324,1385.0,69237.0,2.0,520.8608679771423,527.1201660633087
+breast_cancer,genes2,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,177683,0.9016276928578232,1385.0,69237.0,2.0,447.9925503730774,453.2113130092621
+breast_cancer,genes2,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,177683,0.7870745353335368,1385.0,69237.0,2.0,435.4413356781006,441.0736894607544
+breast_cancer,genes2,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,177683,,,,,2.1696090698242188e-05,5.076950788497925
+breast_cancer,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,177416,0.1574889801784981,1381.0,69056.0,2.0,518.5722117424011,525.5010454654694
+breast_cancer,genes4,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,177416,0.4324073827267517,1381.0,69056.0,2.0,516.562911272049,523.3438265323639
+breast_cancer,genes4,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,177416,0.4959024246249746,1381.0,69056.0,2.0,476.1948835849762,481.9158811569214
+breast_cancer,genes4,05.02_evaluate_SAMap.py,SAMap,knn,,177416,,,,,7.390975952148437e-06,7.434713363647461
+breast_cancer,genes4,05.03_evaluate_CCA.py,CCA,embed,X_cca,177416,0.5804693414036584,1381.0,69056.0,2.0,491.7480316162109,498.0099308490753
+breast_cancer,genes4,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,177416,0.829713941196189,1381.0,69056.0,2.0,503.7261545658112,508.6065354347229
+breast_cancer,genes4,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,177416,0.8336517510749286,1381.0,69056.0,2.0,482.93815636634827,488.0792808532715
+breast_cancer,genes4,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,177416,0.6640597159987357,1381.0,69056.0,2.0,493.6029603481293,498.12760829925537
+breast_cancer,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,177416,0.4226465930283827,1381.0,69056.0,2.0,1888.0828783512115,1892.5351645946505
+breast_cancer,genes4,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,177416,0.4708644804179118,1381.0,69056.0,2.0,1601.8781113624573,1607.2724514007568
+breast_cancer,genes4,05.09_evaluate_BBKNN.py,BBKNN,knn,,177416,,,,,2.2172927856445312e-05,4.601473569869995
+breast_cancer,genes4,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,177416,0.8643053613803512,1381.0,69056.0,2.0,478.1735947132111,483.5064880847931
+breast_cancer,genes4,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,177416,0.7688231699496141,1381.0,69056.0,2.0,481.8579170703888,485.8521218299866
+breast_cancer,genes4,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,177416,0.5294163629186719,1381.0,69056.0,2.0,543.3090391159058,549.1184773445129
+breast_cancer,genes4,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,177416,0.2720359126516091,1381.0,69056.0,2.0,438.2961850166321,443.6363708972931
+breast_cancer,genes4,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,177416,0.5836552061725429,1381.0,69056.0,2.0,505.4341650009155,510.92709255218506
+breast_cancer,genes4,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,177416,0.4701137542916611,1381.0,69056.0,2.0,513.19886302948,518.5655481815338
+breast_cancer,genes4,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,177416,0.5973330463277944,1381.0,69056.0,2.0,460.7748312950134,466.166734457016
+breast_cancer,genes4,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,177416,,,,,2.0742416381835938e-05,4.619123220443726
+breast_cancer,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,177416,0.1743822028561525,1381.0,69056.0,2.0,530.1443178653717,534.9322690963745
+breast_cancer,genes4,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,177416,0.7772184148922321,1381.0,69056.0,2.0,496.8603904247284,502.89957070350647
+breast_cancer,genes4,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,177416,0.7007665655729921,1381.0,69056.0,2.0,421.9167284965515,428.4114837646485
+breast_cancer,genes4,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,177416,0.6602512337267523,1381.0,69056.0,2.0,501.1336209774017,506.4435520172119
+breast_cancer,genes4,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,177416,0.8786149994270516,1381.0,69056.0,2.0,470.1870355606079,475.5864362716675
+breast_cancer,genes4,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,177416,0.7753254591850943,1381.0,69056.0,2.0,453.2276093959808,459.0772566795349
+breast_cancer,genes4,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,177416,,,,,4.863739013671875e-05,4.7217442989349365
+breast_cancer,genes6,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,176449,0.1927094909343434,1367.0,68328.0,2.0,564.1695144176483,569.6757724285126
+breast_cancer,genes6,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,176449,0.5572959906075493,1367.0,68328.0,2.0,541.5842111110687,547.0474178791046
+breast_cancer,genes6,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,176449,0.4028617593890889,1367.0,68328.0,2.0,632.2693195343018,637.2880358695984
+breast_cancer,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,176449,,,,,5.4836273193359375e-06,6.850877285003662
+breast_cancer,genes6,05.03_evaluate_CCA.py,CCA,embed,X_cca,176449,0.528010280267811,1367.0,68328.0,2.0,544.763726234436,550.502161026001
+breast_cancer,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,176449,0.797302077153216,1367.0,68328.0,2.0,678.1529121398926,682.53897356987
+breast_cancer,genes6,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,176449,0.8038788353984614,1367.0,68328.0,2.0,722.6704909801483,727.2783861160278
+breast_cancer,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,176449,0.6259820739019765,1367.0,68328.0,2.0,655.4553368091583,660.6957774162292
+breast_cancer,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,176449,0.335511210416951,1367.0,68328.0,2.0,2967.5976700782776,2972.468253135681
+breast_cancer,genes6,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,176449,0.3847228876086062,1367.0,68328.0,2.0,1894.8792388439176,1901.6576750278475
+breast_cancer,genes6,05.09_evaluate_BBKNN.py,BBKNN,knn,,176449,,,,,4.6253204345703125e-05,5.979281902313232
+breast_cancer,genes6,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,176449,0.8754715865774854,1367.0,68328.0,2.0,699.504967212677,708.5226674079895
+breast_cancer,genes6,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,176449,0.8742937295571677,1367.0,68328.0,2.0,686.6352603435516,692.7395057678223
+breast_cancer,genes6,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,176449,0.6092423014527714,1367.0,68328.0,2.0,562.7323060035706,571.3742461204529
+breast_cancer,genes6,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,176449,0.3550165251358245,1367.0,68328.0,2.0,600.4102077484131,607.0060679912567
+breast_cancer,genes6,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,176449,0.6220596318742069,1367.0,68328.0,2.0,635.0808291435242,641.2386357784271
+breast_cancer,genes6,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,176449,0.5852998739587961,1367.0,68328.0,2.0,647.4798383712769,652.7449390888214
+breast_cancer,genes6,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,176449,0.5070293253712224,1367.0,68328.0,2.0,642.9291243553162,650.4975607395172
+breast_cancer,genes6,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,176449,,,,,3.457069396972656e-05,4.421520948410034
+breast_cancer,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,176449,0.1884231285908916,1367.0,68328.0,2.0,695.3573789596558,700.8819673061371
+breast_cancer,genes6,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,176449,0.7167522831050228,1367.0,68328.0,2.0,628.7028436660767,635.6314127445221
+breast_cancer,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,176449,0.7308703207866833,1367.0,68328.0,2.0,639.1642274856567,646.5578598976135
+breast_cancer,genes6,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,176449,0.6143194217153166,1367.0,68328.0,2.0,659.9582893848419,665.8595814704895
+breast_cancer,genes6,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,176449,0.805665389810002,1367.0,68328.0,2.0,631.8641674518585,637.5646200180054
+breast_cancer,genes6,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,176449,0.7300675184640171,1367.0,68328.0,2.0,594.2117297649384,602.5351531505585
+breast_cancer,genes6,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,176449,,,,,3.981590270996094e-05,7.007415533065796
+breast_cancer,genes8,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,172530,0.1736301769478342,1325.0,66263.0,2.0,656.3910553455353,661.4695863723755
+breast_cancer,genes8,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,172530,0.3125996664520654,1325.0,66263.0,2.0,617.2804825305939,621.9195833206177
+breast_cancer,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,172530,0.3173787813512706,1325.0,66263.0,2.0,570.3442454338074,576.5043416023254
+breast_cancer,genes8,05.02_evaluate_SAMap.py,SAMap,knn,,172530,,,,,9.298324584960938e-06,7.5014448165893555
+breast_cancer,genes8,05.03_evaluate_CCA.py,CCA,embed,X_cca,172530,0.5014459277339385,1325.0,66263.0,2.0,646.2216513156891,652.0269124507904
+breast_cancer,genes8,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,172530,0.6189701728873993,1325.0,66263.0,2.0,552.4645390510559,558.4074170589447
+breast_cancer,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,172530,0.5845158130593955,1325.0,66263.0,2.0,535.5757052898407,540.1264510154724
+breast_cancer,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,172530,0.4590365464776011,1325.0,66263.0,2.0,626.3346889019012,631.1977803707123
+breast_cancer,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,172530,0.2211621187042258,1325.0,66263.0,2.0,1627.0215811729431,1632.520761013031
+breast_cancer,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,172530,0.170054351741303,1325.0,66263.0,2.0,1110.0743277072906,1114.0724048614502
+breast_cancer,genes8,05.09_evaluate_BBKNN.py,BBKNN,knn,,172530,,,,,3.695487976074219e-05,4.485188245773315
+breast_cancer,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,172530,0.6585912682424153,1325.0,66263.0,2.0,465.89106965065,470.17336106300354
+breast_cancer,genes8,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,172530,0.6665023993867776,1325.0,66263.0,2.0,510.0462813377381,514.1273329257965
+breast_cancer,genes8,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,172530,0.3976656940795385,1325.0,66263.0,2.0,556.0331070423126,561.0683286190033
+breast_cancer,genes8,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,172530,0.4445486524680526,1325.0,66263.0,2.0,574.1725308895111,578.757310628891
+breast_cancer,genes8,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,172530,0.3981298764016118,1325.0,66263.0,2.0,579.3878610134125,582.8351197242737
+breast_cancer,genes8,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,172530,0.3321916297521113,1325.0,66263.0,2.0,695.2994210720062,699.8576600551605
+breast_cancer,genes8,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,172530,0.3830646517493612,1325.0,66263.0,2.0,735.8352015018463,741.276246547699
+breast_cancer,genes8,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,172530,,,,,4.2438507080078125e-05,5.410806894302368
+breast_cancer,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,172530,0.15121622841399,1325.0,66263.0,2.0,695.6925840377808,700.8191084861755
+breast_cancer,genes8,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,172530,0.5065991863753898,1325.0,66263.0,2.0,710.506854057312,716.063803434372
+breast_cancer,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,172530,0.5567034136982447,1325.0,66263.0,2.0,660.4050426483154,667.1768383979797
+breast_cancer,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,172530,0.458718126937854,1325.0,66263.0,2.0,698.8591697216034,705.3197553157806
+breast_cancer,genes8,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,172530,0.4434047288406775,1325.0,66263.0,2.0,643.6320159435272,649.0788061618805
+breast_cancer,genes8,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,172530,0.539399576701076,1325.0,66263.0,2.0,592.8160722255707,599.8952460289001
+breast_cancer,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,172530,,,,,4.553794860839844e-05,4.900347471237183
+colon,dissected_mouse,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,309258,0.4377105985411051,769.0,38474.0,2.0,111.98919939994812,118.54266142845154
+colon,dissected_mouse,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,309258,0.7032077900648356,769.0,38474.0,2.0,107.31726336479188,112.7364695072174
+colon,dissected_mouse,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,309258,0.5515169820998803,769.0,38474.0,2.0,233.27943778038025,238.2971634864807
+colon,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,309256,,,,,7.867813110351562e-06,8.89723014831543
+colon,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,309258,0.605788834950636,769.0,38474.0,2.0,110.4470076560974,115.5973596572876
+colon,dissected_mouse,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,309258,0.621072457829255,769.0,38474.0,2.0,107.5330364704132,113.45342540740968
+colon,dissected_mouse,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,309258,0.5702561076323105,769.0,38474.0,2.0,117.06254982948305,121.42471885681152
+colon,dissected_mouse,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,309258,0.5482555966561242,769.0,38474.0,2.0,101.41672325134276,106.1614441871643
+colon,dissected_mouse,05.07_evaluate_scVI.py,scVI,embed,X_scvi,309258,0.4832874571265698,769.0,38474.0,2.0,421.0990016460418,425.4691522121429
+colon,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,309258,0.4855378411360909,769.0,38474.0,2.0,311.44122552871704,315.6914141178131
+colon,dissected_mouse,05.09_evaluate_BBKNN.py,BBKNN,knn,,309258,,,,,1.71661376953125e-05,3.947679281234741
+colon,dissected_mouse,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,309258,0.9121198190823884,769.0,38474.0,2.0,108.04578948020936,113.68541288375854
+colon,dissected_mouse,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,309258,0.8769502471836317,769.0,38474.0,2.0,101.42531418800354,106.44725155830383
+colon,dissected_mouse,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,309258,0.7439382838919878,769.0,38474.0,2.0,96.48354601860046,101.7634575366974
+colon,dissected_mouse,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,309258,0.358195176882326,769.0,38474.0,2.0,104.35238122940063,108.13875341415404
+colon,dissected_mouse,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,309258,0.6950834867084339,769.0,38474.0,2.0,100.50676083564758,106.07258152961732
+colon,dissected_mouse,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,309258,0.7253646899028902,769.0,38474.0,2.0,101.09948706626892,105.52227306365968
+colon,dissected_mouse,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,309258,0.526653527456064,769.0,38474.0,2.0,109.41508793830872,114.8793044090271
+colon,dissected_mouse,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,309258,,,,,1.8358230590820312e-05,3.9610581398010254
+colon,dissected_mouse,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,309258,0.3713202397065743,769.0,38474.0,2.0,110.24117517471312,116.0951442718506
+colon,dissected_mouse,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,309258,0.6897532949649411,769.0,38474.0,2.0,105.83063960075378,111.29011869430542
+colon,dissected_mouse,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,309258,0.5542261394434341,769.0,38474.0,2.0,102.92727160453796,108.64406514167786
+colon,dissected_mouse,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,309258,0.7083677437274951,769.0,38474.0,2.0,109.23132848739624,114.81534671783449
+colon,dissected_mouse,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,309258,0.6367834630422397,769.0,38474.0,2.0,104.4982602596283,109.12017750740053
+colon,dissected_mouse,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,309258,0.6575465855954739,769.0,38474.0,2.0,129.1443133354187,132.89862632751465
+colon,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,309258,,,,,2.0742416381835938e-05,4.23218560218811
+colon,genes2,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,307493,0.4138608572879256,770.0,38495.0,2.0,128.02310156822205,134.2174310684204
+colon,genes2,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,307493,0.629938354281126,770.0,38495.0,2.0,127.5590753555298,132.8158209323883
+colon,genes2,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,307493,0.5227794974216589,770.0,38495.0,2.0,314.68727111816406,320.9302477836609
+colon,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,307491,,,,,1.0251998901367188e-05,12.730299949645996
+colon,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,307493,0.6052943627355889,770.0,38495.0,2.0,170.61770486831665,178.31400609016418
+colon,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,307493,0.6011002693890082,770.0,38495.0,2.0,185.34242749214167,192.84421968460083
+colon,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,307493,0.5190682547741907,770.0,38495.0,2.0,189.32272696495056,195.7714123725891
+colon,genes2,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,307493,0.490640714007385,770.0,38495.0,2.0,179.50943636894226,190.2113881111145
+colon,genes2,05.07_evaluate_scVI.py,scVI,embed,X_scvi,307493,0.4537208829616935,770.0,38495.0,2.0,681.4234089851379,694.9609634876251
+colon,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,307493,0.4574114702027418,770.0,38495.0,2.0,351.4009437561035,361.2806949615479
+colon,genes2,05.09_evaluate_BBKNN.py,BBKNN,knn,,307493,,,,,3.337860107421875e-05,7.974535226821899
+colon,genes2,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,307493,0.8287988404633424,770.0,38495.0,2.0,178.2145869731903,186.50558519363403
+colon,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,307493,0.8439438668877557,770.0,38495.0,2.0,162.47022914886475,168.47467494010925
+colon,genes2,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,307493,0.693467451499014,770.0,38495.0,2.0,168.58302998542786,176.24407529830933
+colon,genes2,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,307493,0.4034573726053139,770.0,38495.0,2.0,149.33480763435364,154.61097264289856
+colon,genes2,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,307493,0.7048073792683482,770.0,38495.0,2.0,151.7943184375763,157.35291290283203
+colon,genes2,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,307493,0.6623870531339033,770.0,38495.0,2.0,151.48328185081482,157.98930430412292
+colon,genes2,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,307493,0.4305132644988469,770.0,38495.0,2.0,149.41372919082642,156.94086384773254
+colon,genes2,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,307493,,,,,2.384185791015625e-05,8.710798263549805
+colon,genes2,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,307493,0.3769758848762615,770.0,38495.0,2.0,140.57676696777344,149.4817202091217
+colon,genes2,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,307493,0.6506473939101552,770.0,38495.0,2.0,136.6626307964325,142.49694871902466
+colon,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,307493,0.4990396880687827,770.0,38495.0,2.0,139.80347299575806,146.77302742004397
+colon,genes2,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,307493,0.7020882793009043,770.0,38495.0,2.0,127.24316430091858,133.45768690109253
+colon,genes2,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,307493,0.5681404230267719,770.0,38495.0,2.0,136.12357449531555,142.3608200550079
+colon,genes2,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,307493,0.5917503959866605,770.0,38495.0,2.0,138.31768441200256,143.0040521621704
+colon,genes2,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,307493,,,,,2.5510787963867188e-05,6.813572406768799
+colon,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,301332,0.5003429258916167,767.0,38371.0,2.0,142.08512163162231,148.1183204650879
+colon,genes4,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,301332,0.3768122788161977,767.0,38371.0,2.0,127.06731271743774,132.59793877601624
+colon,genes4,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,301332,0.548538165621534,767.0,38371.0,2.0,211.71292757987976,216.85320043563843
+colon,genes4,05.02_evaluate_SAMap.py,SAMap,knn,,301330,,,,,7.867813110351562e-06,9.562339544296265
+colon,genes4,05.03_evaluate_CCA.py,CCA,embed,X_cca,301332,0.5298201797539883,767.0,38371.0,2.0,144.2985692024231,149.4927945137024
+colon,genes4,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,301332,0.6595221082631906,767.0,38371.0,2.0,130.31607174873352,137.0821030139923
+colon,genes4,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,301332,0.5600862226290858,767.0,38371.0,2.0,133.0347011089325,137.30832386016846
+colon,genes4,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,301332,0.5461525838603734,767.0,38371.0,2.0,131.27616572380066,135.93695068359375
+colon,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,301332,0.5264735645336238,767.0,38371.0,2.0,414.5645232200623,420.19749426841736
+colon,genes4,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,301332,0.5117851235367377,767.0,38371.0,2.0,253.77054119110107,258.793390750885
+colon,genes4,05.09_evaluate_BBKNN.py,BBKNN,knn,,301332,,,,,1.7881393432617188e-05,4.4831154346466064
+colon,genes4,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,301332,0.8107651173574458,767.0,38371.0,2.0,146.23579359054563,152.4374418258667
+colon,genes4,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,301332,0.7309806521840547,767.0,38371.0,2.0,130.3231701850891,135.53528547286987
+colon,genes4,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,301332,0.4578715839458968,767.0,38371.0,2.0,140.5867202281952,147.96181774139404
+colon,genes4,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,301332,0.4089818364633737,767.0,38371.0,2.0,144.16514801979065,149.51753497123718
+colon,genes4,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,301332,0.4623991486127836,767.0,38371.0,2.0,137.46421694755554,142.36210250854492
+colon,genes4,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,301332,0.3988624221417216,767.0,38371.0,2.0,144.4459638595581,150.043452501297
+colon,genes4,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,301332,0.4334934435661548,767.0,38371.0,2.0,149.76381659507751,157.48856043815613
+colon,genes4,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,301332,,,,,2.8371810913085938e-05,5.0109570026397705
+colon,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,301332,0.4828905378855045,767.0,38371.0,2.0,134.4776577949524,139.49914860725403
+colon,genes4,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,301332,0.6627229481249709,767.0,38371.0,2.0,137.51641726493835,143.6587462425232
+colon,genes4,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,301332,0.4888434833224528,767.0,38371.0,2.0,163.9784734249115,170.99760341644287
+colon,genes4,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,301332,0.7258622305381445,767.0,38371.0,2.0,195.6430377960205,201.6363615989685
+colon,genes4,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,301332,0.5811983103140046,767.0,38371.0,2.0,302.6859498023987,310.1882586479187
+colon,genes4,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,301332,0.5638923857268485,767.0,38371.0,2.0,348.1481409072876,354.56851291656494
+colon,genes4,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,301332,,,,,1.8596649169921875e-05,5.1186628341674805
+colon,genes6,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,290766,0.4659816469591631,764.0,38208.0,2.0,313.56675601005554,322.1049330234528
+colon,genes6,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,290766,0.3421160582444288,764.0,38208.0,2.0,355.5560564994812,364.71639227867126
+colon,genes6,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,290766,0.5411548892340191,764.0,38208.0,2.0,339.8131325244904,351.6737334728241
+colon,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,290764,,,,,8.58306884765625e-06,23.61883044242859
+colon,genes6,05.03_evaluate_CCA.py,CCA,embed,X_cca,290766,0.4802402199698318,764.0,38208.0,2.0,435.0129578113556,443.9663014411926
+colon,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,290766,0.5774091350760127,764.0,38208.0,2.0,398.453604221344,410.6072859764099
+colon,genes6,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,290766,0.491675765388899,764.0,38208.0,2.0,338.5391047000885,348.88807821273804
+colon,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,290766,0.4005085983610241,764.0,38208.0,2.0,413.4820728302002,429.9938933849335
+colon,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,290766,0.5265801219228778,764.0,38208.0,2.0,623.4223823547363,636.1778590679169
+colon,genes6,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,290766,0.4865967017405965,764.0,38208.0,2.0,537.9735140800476,554.6176285743713
+colon,genes6,05.09_evaluate_BBKNN.py,BBKNN,knn,,290766,,,,,2.4557113647460938e-05,7.891876697540283
+colon,genes6,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,290766,0.8750540236632552,764.0,38208.0,2.0,393.7239618301392,406.6996383666992
+colon,genes6,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,290766,0.7605736076351434,764.0,38208.0,2.0,390.6667513847351,409.3645644187927
+colon,genes6,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,290766,0.3912586389901075,764.0,38208.0,2.0,415.8615262508392,425.3262128829956
+colon,genes6,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,290766,0.348619717671034,764.0,38208.0,2.0,418.7677090167999,429.5638146400452
+colon,genes6,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,290766,0.4448421823888203,764.0,38208.0,2.0,337.4069049358368,355.1886134147644
+colon,genes6,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,290766,0.3653508838641287,764.0,38208.0,2.0,375.88845133781433,385.689218044281
+colon,genes6,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,290766,0.3419877648906618,764.0,38208.0,2.0,385.62406754493713,399.2543179988861
+colon,genes6,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,290766,,,,,1.883506774902344e-05,11.053282976150513
+colon,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,290766,0.4856260400497251,764.0,38208.0,2.0,330.92575550079346,340.9671370983124
+colon,genes6,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,290766,0.6234712108343857,764.0,38208.0,2.0,317.2650372982025,330.97282338142395
+colon,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,290766,0.55001171254944,764.0,38208.0,2.0,358.8561472892761,368.2389779090881
+colon,genes6,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,290766,0.6785532343079929,764.0,38208.0,2.0,306.7244436740875,319.0652151107788
+colon,genes6,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,290766,0.5236525241143546,764.0,38208.0,2.0,281.1625821590424,291.409218788147
+colon,genes6,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,290766,0.4628449344097232,764.0,38208.0,2.0,293.52871465682983,303.3544850349426
+colon,genes6,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,290766,,,,,3.147125244140625e-05,10.86036729812622
+colon,genes8,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,268306,0.4216023997912471,763.0,38137.0,2.0,180.0749156475067,189.1223785877228
+colon,genes8,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,268306,0.2137790907726579,763.0,38137.0,2.0,309.7563533782959,320.7862648963928
+colon,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,268306,0.5852973041834998,763.0,38137.0,2.0,145.85990142822266,156.767822265625
+colon,genes8,05.02_evaluate_SAMap.py,SAMap,knn,,268304,,,,,8.821487426757812e-06,16.231452226638794
+colon,genes8,05.03_evaluate_CCA.py,CCA,embed,X_cca,268306,0.2946788018268001,763.0,38137.0,2.0,146.04778456687927,152.2554280757904
+colon,genes8,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,268306,0.5174782534554752,763.0,38137.0,2.0,133.28633880615234,144.14032411575317
+colon,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,268306,0.4255782877836686,763.0,38137.0,2.0,157.99045324325562,165.3997642993927
+colon,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,268306,0.2234989542942907,763.0,38137.0,2.0,167.71388244628906,174.61264181137085
+colon,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,268306,0.4963063599327403,763.0,38137.0,2.0,198.90242457389832,204.85897374153137
+colon,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,268306,0.4763232463521956,763.0,38137.0,2.0,188.8702137470245,197.50738430023196
+colon,genes8,05.09_evaluate_BBKNN.py,BBKNN,knn,,268306,,,,,2.1457672119140625e-05,4.810522794723511
+colon,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,268306,0.8256311976711127,763.0,38137.0,2.0,214.72644233703613,220.68337225914
+colon,genes8,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,268306,0.7086090359681732,763.0,38137.0,2.0,258.31693053245544,267.6482033729553
+colon,genes8,05.12_evaluate_uinmf_fastMNN.py,FastMNN UINMF,embed,X_mnn_uinmf,268306,0.2940044636617567,763.0,38137.0,2.0,255.62061834335327,262.63560724258423
+colon,genes8,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,268306,0.1583477186528762,763.0,38137.0,2.0,253.91623640060425,260.45855617523193
+colon,genes8,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,268306,0.3397339800418104,763.0,38137.0,2.0,237.26007747650144,242.2922806739807
+colon,genes8,05.15_evaluate_uinmf_Scanorama.py,Scanorama UINMF,embed,X_scanorama_uinmf,268306,0.2498346308272401,763.0,38137.0,2.0,235.87528777122495,243.29959321022037
+colon,genes8,05.16_evaluate_uinmf_RPCA.py,RPCA UINMF,embed,X_rpca_uinmf,268306,0.1866176337217848,763.0,38137.0,2.0,229.8656759262085,237.62121653556824
+colon,genes8,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,268306,,,,,3.790855407714844e-05,5.338681697845459
+colon,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,268306,0.4893037641659641,763.0,38137.0,2.0,304.37883257865906,311.428701877594
+colon,genes8,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,268306,0.5472764673240721,763.0,38137.0,2.0,265.9475772380829,271.18456768989563
+colon,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,268306,0.518785321155903,763.0,38137.0,2.0,278.0003273487091,284.4145033359528
+colon,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,268306,0.54091769271789,763.0,38137.0,2.0,347.84299874305725,354.900646686554
+colon,genes8,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,268306,0.4923909818677788,763.0,38137.0,2.0,351.787703037262,360.1966257095337
+colon,genes8,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,268306,0.2281179761273859,763.0,38137.0,2.0,363.1065924167633,373.4646899700165
+colon,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,268306,,,,,2.002716064453125e-05,6.046977758407593
+fetal_liver,dissected_mouse,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,282334,0.2589660295717969,1153.0,57664.0,2.0,526.0626864433289,547.6703925132751
+fetal_liver,dissected_mouse,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,282334,0.7224817072891929,1153.0,57664.0,2.0,458.0005853176117,467.07826805114746
+fetal_liver,dissected_mouse,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,282334,0.5768781471006967,1153.0,57664.0,2.0,1301.342306613922,1314.0136330127716
+fetal_liver,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,282332,,,,,1.0013580322265623e-05,17.00282907485962
+fetal_liver,dissected_mouse,05.03_evaluate_CCA.py,CCA,embed,X_cca,282334,0.6494836319780085,1153.0,57664.0,2.0,437.5273778438568,446.0137405395508
+fetal_liver,dissected_mouse,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,282334,0.7989439773059808,1153.0,57664.0,2.0,462.0679314136505,473.78473711013794
+fetal_liver,dissected_mouse,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,282334,0.8580140752288823,1153.0,57664.0,2.0,546.3450396060944,554.0554804801941
+fetal_liver,dissected_mouse,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,282334,0.7591752822884952,1153.0,57664.0,2.0,460.4764051437378,470.9987905025482
+fetal_liver,dissected_mouse,05.07_evaluate_scVI.py,scVI,embed,X_scvi,282334,0.524819180835739,1153.0,57664.0,2.0,1982.30411195755,1992.040001630783
+fetal_liver,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,282334,0.5774765910696702,1153.0,57664.0,2.0,1174.3358845710754,1182.296667098999
+fetal_liver,dissected_mouse,05.09_evaluate_BBKNN.py,BBKNN,knn,,282334,,,,,3.8623809814453125e-05,7.3381688594818115
+fetal_liver,dissected_mouse,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,282334,0.9285163503342148,1153.0,57664.0,2.0,442.0711212158203,454.7739388942719
+fetal_liver,dissected_mouse,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,282334,0.943637451743654,1153.0,57664.0,2.0,437.8507702350617,444.8320620059967
+fetal_liver,dissected_mouse,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,282334,0.7733662450317802,1153.0,57664.0,2.0,408.2218108177185,416.5504720211029
+fetal_liver,dissected_mouse,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,282334,0.391175618536742,1153.0,57664.0,2.0,473.9329452514648,479.3935768604279
+fetal_liver,dissected_mouse,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,282334,0.8311848500220917,1153.0,57664.0,2.0,442.3482341766357,451.2670998573303
+fetal_liver,dissected_mouse,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,282334,0.7382117623053983,1153.0,57664.0,2.0,454.0653123855591,461.3774406909943
+fetal_liver,dissected_mouse,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,282334,0.6108065292322398,1153.0,57664.0,2.0,480.2634484767914,489.6749291419983
+fetal_liver,dissected_mouse,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,282334,,,,,3.457069396972656e-05,6.62172794342041
+fetal_liver,dissected_mouse,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,282334,0.2263044442103455,1153.0,57664.0,2.0,447.43372869491577,456.1897163391113
+fetal_liver,dissected_mouse,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,282334,0.8349189262099643,1153.0,57664.0,2.0,419.8166284561157,428.1960797309876
+fetal_liver,dissected_mouse,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,282334,0.7633851874976536,1153.0,57664.0,2.0,448.9589169025421,460.1102919578552
+fetal_liver,dissected_mouse,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,282334,0.7936768401364294,1153.0,57664.0,2.0,427.9482736587525,436.835902929306
+fetal_liver,dissected_mouse,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,282334,0.7925838453262877,1153.0,57664.0,2.0,425.2246828079224,432.4329390525818
+fetal_liver,dissected_mouse,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,282334,0.7841248315149014,1153.0,57664.0,2.0,402.2582423686981,408.1038181781769
+fetal_liver,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,282334,,,,,2.026557922363281e-05,6.187519073486328
+fetal_liver,genes2,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,282299,0.2848375203228945,1153.0,57664.0,2.0,433.61931443214417,446.1017858982086
+fetal_liver,genes2,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,282299,0.7042901597362669,1153.0,57664.0,2.0,383.6583650112152,392.9832429885864
+fetal_liver,genes2,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,282299,0.549082110420098,1153.0,57664.0,2.0,1164.523376941681,1173.7787075042725
+fetal_liver,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,282297,,,,,8.344650268554688e-06,13.723504304885864
+fetal_liver,genes2,05.03_evaluate_CCA.py,CCA,embed,X_cca,282299,0.6416966371204589,1153.0,57664.0,2.0,380.4458651542664,389.523384809494
+fetal_liver,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,282299,0.770891873958587,1153.0,57664.0,2.0,420.7335338592529,432.0957753658295
+fetal_liver,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,282299,0.8497968319687674,1153.0,57664.0,2.0,378.3864214420319,385.6777577400208
+fetal_liver,genes2,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,282299,0.7467370338368373,1153.0,57664.0,2.0,384.5791189670563,394.144106388092
+fetal_liver,genes2,05.07_evaluate_scVI.py,scVI,embed,X_scvi,282299,0.5675500934083071,1153.0,57664.0,2.0,2111.441531896591,2120.93555355072
+fetal_liver,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,282299,0.5082345775821988,1153.0,57664.0,2.0,910.3961160182952,918.7963299751282
+fetal_liver,genes2,05.09_evaluate_BBKNN.py,BBKNN,knn,,282299,,,,,3.266334533691406e-05,7.927873611450195
+fetal_liver,genes2,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,282299,0.9137233000301774,1153.0,57664.0,2.0,417.9469487667084,426.319616317749
+fetal_liver,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,282299,0.918745000495739,1153.0,57664.0,2.0,438.8198721408844,446.1048481464386
+fetal_liver,genes2,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,282299,0.7787975017579485,1153.0,57664.0,2.0,366.5552334785461,376.3117077350617
+fetal_liver,genes2,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,282299,0.4086920863683312,1153.0,57664.0,2.0,395.4350011348725,402.86019682884216
+fetal_liver,genes2,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,282299,0.8461904093384724,1153.0,57664.0,2.0,369.75802993774414,377.5317306518554
+fetal_liver,genes2,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,282299,0.7293065495070044,1153.0,57664.0,2.0,389.373587846756,399.09727478027344
+fetal_liver,genes2,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,282299,0.5568060888126135,1153.0,57664.0,2.0,396.2283310890198,405.4966363906861
+fetal_liver,genes2,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,282299,,,,,2.7418136596679688e-05,6.485559940338135
+fetal_liver,genes2,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,282299,0.2474412021298971,1153.0,57664.0,2.0,504.3015024662018,511.5697045326233
+fetal_liver,genes2,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,282299,0.8197325936032336,1153.0,57664.0,2.0,474.21019887924194,485.5531446933746
+fetal_liver,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,282299,0.759626580047899,1153.0,57664.0,2.0,531.7449903488159,542.9269866943359
+fetal_liver,genes2,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,282299,0.780144980208942,1153.0,57664.0,2.0,582.8616631031036,594.3098766803741
+fetal_liver,genes2,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,282299,0.7913290735371126,1153.0,57664.0,2.0,572.3136122226715,581.6630775928497
+fetal_liver,genes2,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,282299,0.7769258085900989,1153.0,57664.0,2.0,629.7280557155609,638.2096674442291
+fetal_liver,genes2,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,282299,,,,,3.24249267578125e-05,10.19558882713318
+fetal_liver,genes4,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,282117,0.3017444675921907,1152.0,57616.0,2.0,663.7832686901093,678.2676780223846
+fetal_liver,genes4,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,282117,0.7891496468055267,1152.0,57616.0,2.0,523.2242341041565,534.138023853302
+fetal_liver,genes4,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,282117,0.5344454142572761,1152.0,57616.0,2.0,1350.7122490406036,1361.350356578827
+fetal_liver,genes4,05.02_evaluate_SAMap.py,SAMap,knn,,282116,,,,,1.2636184692382812e-05,16.174498558044434
+fetal_liver,genes4,05.03_evaluate_CCA.py,CCA,embed,X_cca,282117,0.6150578214553635,1152.0,57616.0,2.0,517.0870592594147,527.3464825153351
+fetal_liver,genes4,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,282117,0.746165446392929,1152.0,57616.0,2.0,426.69473457336426,437.9567115306854
+fetal_liver,genes4,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,282117,0.8280853758311735,1152.0,57616.0,2.0,433.1224684715271,441.6105995178223
+fetal_liver,genes4,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,282117,0.7486017903917026,1152.0,57616.0,2.0,381.2856369018554,391.3464167118073
+fetal_liver,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,282117,0.5661454423648234,1152.0,57616.0,2.0,2159.779049873352,2169.344011068344
+fetal_liver,genes4,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,282117,0.5335311844920585,1152.0,57616.0,2.0,922.7887122631072,932.303970336914
+fetal_liver,genes4,05.09_evaluate_BBKNN.py,BBKNN,knn,,282117,,,,,3.647804260253906e-05,8.785084962844849
+fetal_liver,genes4,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,282117,0.8786458868184281,1152.0,57616.0,2.0,416.951575756073,427.7372181415558
+fetal_liver,genes4,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,282117,0.9482915030173428,1152.0,57616.0,2.0,423.4319965839386,430.9457097053528
+fetal_liver,genes4,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,282117,0.8288673806489901,1152.0,57616.0,2.0,453.7254898548126,462.4975781440735
+fetal_liver,genes4,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,282117,0.2469255260884322,1152.0,57616.0,2.0,441.08992290496826,448.8413996696472
+fetal_liver,genes4,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,282117,0.8010434550274423,1152.0,57616.0,2.0,394.04583621025085,403.10611963272095
+fetal_liver,genes4,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,282117,0.8051808359681146,1152.0,57616.0,2.0,451.9081540107727,461.34745359420776
+fetal_liver,genes4,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,282117,0.6030153284364489,1152.0,57616.0,2.0,396.49103689193726,405.92601704597473
+fetal_liver,genes4,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,282117,,,,,3.528594970703125e-05,8.440297842025757
+fetal_liver,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,282117,0.272194517696425,1152.0,57616.0,2.0,472.2291510105133,479.42209792137146
+fetal_liver,genes4,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,282117,0.8043900776742186,1152.0,57616.0,2.0,391.65072226524353,400.26416397094727
+fetal_liver,genes4,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,282117,0.7228541599169984,1152.0,57616.0,2.0,481.5339133739472,491.17917108535767
+fetal_liver,genes4,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,282117,0.7722240248959105,1152.0,57616.0,2.0,402.23266077041626,411.4639656543732
+fetal_liver,genes4,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,282117,0.7608953356658259,1152.0,57616.0,2.0,420.2214152812958,428.4491078853607
+fetal_liver,genes4,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,282117,0.7664661774121385,1152.0,57616.0,2.0,436.34635615348816,443.133891582489
+fetal_liver,genes4,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,282117,,,,,4.100799560546875e-05,8.35543966293335
+fetal_liver,genes6,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,281608,0.3730648146096311,1153.0,57651.0,2.0,476.8994662761688,490.26851058006287
+fetal_liver,genes6,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,281608,0.6504660117794963,1153.0,57651.0,2.0,426.981064081192,434.2832844257355
+fetal_liver,genes6,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,281608,0.5770035664703317,1153.0,57651.0,2.0,998.20641374588,1007.058918952942
+fetal_liver,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,281606,,,,,8.106231689453125e-06,10.223286628723145
+fetal_liver,genes6,05.03_evaluate_CCA.py,CCA,embed,X_cca,281608,0.5581562663683618,1153.0,57651.0,2.0,438.9177503585816,447.0856702327728
+fetal_liver,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,281608,0.7397328224505133,1153.0,57651.0,2.0,421.7423548698425,431.94318175315857
+fetal_liver,genes6,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,281608,0.781647171951006,1153.0,57651.0,2.0,428.0263936519623,436.8304541110992
+fetal_liver,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,281608,0.6662698656447326,1153.0,57651.0,2.0,412.6225872039795,419.91290497779846
+fetal_liver,genes6,05.07_evaluate_scVI.py,scVI,embed,X_scvi,281608,0.4765650792263878,1153.0,57651.0,2.0,1660.3874113559723,1668.3235883712769
+fetal_liver,genes6,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,281608,0.506023899408594,1153.0,57651.0,2.0,995.7246446609496,1002.6623389720916
+fetal_liver,genes6,05.09_evaluate_BBKNN.py,BBKNN,knn,,281608,,,,,2.789497375488281e-05,6.507331848144531
+fetal_liver,genes6,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,281608,0.8886096104828404,1153.0,57651.0,2.0,391.7405323982239,398.1786630153656
+fetal_liver,genes6,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,281608,0.945934439101762,1153.0,57651.0,2.0,412.7844169139862,419.139347076416
+fetal_liver,genes6,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,281608,0.7068486523485826,1153.0,57651.0,2.0,385.834988117218,394.5245461463928
+fetal_liver,genes6,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,281608,0.2479849477979341,1153.0,57651.0,2.0,400.8045074939728,406.63014793396
+fetal_liver,genes6,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,281608,0.7408380387637108,1153.0,57651.0,2.0,370.6517879962921,379.3019237518311
+fetal_liver,genes6,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,281608,0.6771451148846221,1153.0,57651.0,2.0,384.3549566268921,391.53897738456726
+fetal_liver,genes6,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,281608,0.564872739717139,1153.0,57651.0,2.0,340.2710919380188,347.4436318874359
+fetal_liver,genes6,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,281608,,,,,2.264976501464844e-05,7.219866037368774
+fetal_liver,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,281608,0.3446035181369102,1153.0,57651.0,2.0,354.49143838882446,362.02656078338623
+fetal_liver,genes6,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,281608,0.780740814991328,1153.0,57651.0,2.0,383.107914686203,391.7980375289917
+fetal_liver,genes6,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,281608,0.6328150759355089,1153.0,57651.0,2.0,400.2218136787415,408.13674545288086
+fetal_liver,genes6,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,281608,0.7076561889142345,1153.0,57651.0,2.0,370.54426980018616,378.4798829555512
+fetal_liver,genes6,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,281608,0.6456625997119402,1153.0,57651.0,2.0,414.7482178211212,422.2417905330658
+fetal_liver,genes6,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,281608,0.6569392647263224,1153.0,57651.0,2.0,386.75216269493103,392.4506433010101
+fetal_liver,genes6,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,281608,,,,,2.2172927856445312e-05,6.145417928695679
+fetal_liver,genes8,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,280334,0.3949728081687632,1152.0,57608.0,2.0,410.0009195804596,415.2975597381592
+fetal_liver,genes8,05.00_evaluate_unintegrated_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,280334,0.1328941439038656,1152.0,57608.0,2.0,430.8376543521881,435.85121607780457
+fetal_liver,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,280334,0.4513689874103616,1152.0,57608.0,2.0,394.5972566604614,399.8751783370972
+fetal_liver,genes8,05.02_evaluate_SAMap.py,SAMap,knn,,280332,,,,,8.106231689453125e-06,10.364058256149292
+fetal_liver,genes8,05.03_evaluate_CCA.py,CCA,embed,X_cca,280334,0.4468036002908547,1152.0,57608.0,2.0,362.2891476154328,366.3789625167847
+fetal_liver,genes8,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,280334,0.5300084611608727,1152.0,57608.0,2.0,357.4033668041229,363.25966358184814
+fetal_liver,genes8,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,280334,0.5237376834597626,1152.0,57608.0,2.0,373.6200261116028,378.5094311237335
+fetal_liver,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,280334,0.3902592203930491,1152.0,57608.0,2.0,376.6353275775909,381.3360576629639
+fetal_liver,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,280334,0.3954403102108214,1152.0,57608.0,2.0,1037.0303583145142,1042.0734338760376
+fetal_liver,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,280334,0.3710517809725019,1152.0,57608.0,2.0,868.9122800827026,874.3690075874329
+fetal_liver,genes8,05.09_evaluate_BBKNN.py,BBKNN,knn,,280334,,,,,2.9802322387695312e-05,4.879966735839844
+fetal_liver,genes8,05.10_evaluate_LIGER.py,LIGER,embed,X_inmfnorm,280334,0.6651106407686914,1152.0,57608.0,2.0,450.73210048675537,457.2275483608246
+fetal_liver,genes8,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,280334,0.7045516644040083,1152.0,57608.0,2.0,484.43874192237854,491.2534427642822
+fetal_liver,genes8,05.12_evaluate_fastMNN_uinmf.py,FastMNN UINMF,embed,X_mnn_uinmf,280334,0.2517483352825707,1152.0,57608.0,2.0,451.2992837429047,457.7876663208008
+fetal_liver,genes8,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,280334,0.2709220555787004,1152.0,57608.0,2.0,496.8761389255524,502.8436634540558
+fetal_liver,genes8,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,280334,0.2965975357938808,1152.0,57608.0,2.0,548.4795074462891,555.1807637214661
+fetal_liver,genes8,05.15_evaluate_Scanorama_uinmf.py,Scanorama UINMF,embed,X_scanorama_uinmf,280334,0.175840506153177,1152.0,57608.0,2.0,501.3231389522553,508.7798085212708
+fetal_liver,genes8,05.16_evaluate_RPCA_uinmf.py,RPCA UINMF,embed,X_rpca_uinmf,280334,0.307652839135961,1152.0,57608.0,2.0,518.7164244651794,526.1151559352875
+fetal_liver,genes8,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,280334,,,,,3.027915954589844e-05,6.373608589172363
+fetal_liver,genes8,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,280334,0.3608438669904064,1152.0,57608.0,2.0,462.5013179779053,469.4240436553955
+fetal_liver,genes8,05.19_evaluate_fastMNN_scvi.py,FastMNN scVI-latent,embed,X_mnn_scvi,280334,0.5198429757899172,1152.0,57608.0,2.0,435.2575752735138,442.6773145198822
+fetal_liver,genes8,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,280334,0.4389173634858777,1152.0,57608.0,2.0,409.2714421749115,416.8954405784607
+fetal_liver,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,280334,0.5327429875974498,1152.0,57608.0,2.0,448.027979850769,456.07261395454407
+fetal_liver,genes8,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,280334,0.439983476988632,1152.0,57608.0,2.0,470.57217669487,476.7532823085785
+fetal_liver,genes8,05.23_evaluate_RPCA_scvi.py,RPCA scVI-latent,embed,X_rpca_scvi,280334,0.471209638912516,1152.0,57608.0,2.0,476.36624789237976,480.99780440330505
+fetal_liver,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,280334,,,,,3.695487976074219e-05,6.9149391651153564

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,282117,0.5661454423648234,1152,57616,2,2159.779049873352,2169.344011068344

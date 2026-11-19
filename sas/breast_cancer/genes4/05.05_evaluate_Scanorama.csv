@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes4,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,177416,0.8336517510749286,1381,69056,2,482.93815636634827,488.0792808532715

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,genes2,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,282299,0.4639211763144854,0.4952587921892908,2823,14,14,2058.5614104270935,2067.6405758857727

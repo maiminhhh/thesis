@@ -1,0 +1,15 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+bone_marrow,mouse,477,HSPC,4,4,2,11077,,Kit;Slamf1
+bone_marrow,mouse,477,MkP,3,3,3,1096,,
+bone_marrow,mouse,477,Erythroid,9,9,9,23775,,
+bone_marrow,mouse,477,Granulocyte,12,12,10,8401,,Ctsg;Cpa3
+bone_marrow,mouse,477,Monocyte,5,5,5,2211,,
+bone_marrow,mouse,477,Macrophage,8,8,0,0,,
+bone_marrow,mouse,477,DC,2,2,1,200,,Lamp3
+bone_marrow,mouse,477,B cell,1,1,0,3447,,Cxcr5
+bone_marrow,mouse,477,Plasma,2,2,0,0,,
+bone_marrow,mouse,477,T cell,9,9,2,5,,Cd3d;Cd4;Cd8a;Satb1;Ctla4;Foxp3;Il2ra
+bone_marrow,mouse,477,NK/ILC,3,3,0,1833,,Ncr1;Klrb1c;Klra8
+bone_marrow,mouse,477,MSC,5,5,0,0,,
+bone_marrow,mouse,477,Endothelial,6,6,0,0,,
+bone_marrow,mouse,477,Chondro/Osteo,5,5,0,0,,

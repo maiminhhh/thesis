@@ -1,0 +1,527 @@
+---
+title: "02_mouse_annotate"
+format: html
+---
+
+```{r}
+setwd(file.path(Sys.getenv('PROJECT_ROOT', '..'), 'colon'))
+Sys.setenv(RETICULATE_PYTHON = file.path(Sys.getenv('CONDA_ENVS', path.expand('~/miniconda3/envs')), 'torch/bin/python'))   # anndata, for as.anndata()
+source('../library.R')
+source('../source.R')
+mouse = readRDS('data/01_processed_data/01_mouse_processed.rds')
+```
+
+# Within-species reference-based annotation
+
+Reference: <https://www.parsebiosciences.com/datasets/5-million-mouse-single-cell-atlas-from-7-tissues/>
+
+```{r}
+mouse_ref_adata = read_h5ad('data/02_annotation_refs/mouse.h5ad')
+mouse_count_matrix = t(mouse_ref_adata$X)
+colnames(mouse_count_matrix) = mouse_ref_adata$obs$cell_ids
+rownames(mouse_count_matrix) = mouse_ref_adata$var |> rownames()
+mouse_metadata = as.data.frame(mouse_ref_adata$obs)
+# the obs index (0, 1, ..., "0-1") is not cell_ids, and CreateSeuratObject matches
+# meta.data rows to cells by name: name them like the count matrix columns
+rownames(mouse_metadata) = mouse_ref_adata$obs$cell_ids
+stopifnot(identical(rownames(mouse_metadata), colnames(mouse_count_matrix)))
+mouse_metadata$barcode = mouse_metadata$barcode |> 
+  str_remove('_5d84e6de$')
+mouse_ref = CreateSeuratObject(counts = mouse_count_matrix,
+                               meta.data = mouse_metadata)
+# transfer dimensional reduction (umap)
+mouse_umap_coords = mouse_ref_adata$obsm$X_umap
+rownames(mouse_umap_coords) = mouse_ref_adata$obs$cell_ids
+colnames(mouse_umap_coords) = c('UMAP_1', 'UMAP_2')
+mouse_ref[['umap']] = CreateDimReducObject(embeddings = mouse_umap_coords,
+                                           key = 'UMAP_',
+                                           assay = 'RNA')
+mouse_ref = mouse_ref |> 
+  NormalizeData()
+
+rownames(mouse) = mouse@assays$Xenium@meta.data$ensembl_id
+mouse_shared_genes = rownames(mouse) |> 
+  intersect(rownames(mouse_ref))
+mouse_ref = mouse_ref[mouse_shared_genes,]
+mouse_ref$nCount_RNA = colSums(x = mouse_ref[['RNA']]$counts)
+mouse_ref = mouse_ref |> 
+  subset(nCount_RNA > 0)
+mouse_ref@meta.data = mouse_ref@meta.data |> 
+  mutate(across(c(`B Cell`, `Colonocyte/DCC`, `Enteric Glial`, `Enteric Neuron`, Enterocyte,
+                  Fibroblast, Goblet, Immune, PCC, Mesothelial, `Plasma Cell`, 
+                  `Smooth Muscle`, `Stem/TA`, Tuft, `Vascular Endothelial`, Unknown), 
+                ~ na_if(.x, 'None'))) |> 
+  mutate(cell_type_detailed = coalesce(`B Cell`, `Colonocyte/DCC`, `Enteric Glial`, 
+                                       Enterocyte, `Enteric Neuron`,Fibroblast, Goblet, 
+                                       Immune, PCC, Mesothelial, `Plasma Cell`, 
+                                       `Smooth Muscle`, `Stem/TA`, Tuft, 
+                                       `Vascular Endothelial`, Unknown))
+mouse_ref = mouse_ref |> 
+  subset(!is.na(cell_type_detailed) & !cell_type_detailed == 'Unknown')
+
+mouse_cells = mouse_ref$cell_type_detailed
+mouse_ref$cell_type_regroup = case_when(
+  mouse_cells %in% c('Colonocyte/DCC', 'PCC', 'Enterocyte') ~ 'Epithelial: Absorptive',
+  
+  mouse_cells %in% c('Goblet', 'Tuft') ~ 'Epithelial: Secretory',
+  
+  mouse_cells %in% c('Stem/TA') ~ 'Epithelial: Stem/Progenitor',
+  
+  mouse_cells %in% c('Vascular Endothelial') ~ 'Endothelial',
+  
+  mouse_cells %in% c('Fibroblast', 'Mesothelial') ~ 'Stromal/Mesenchymal',
+  
+  mouse_cells %in% c('Smooth Muscle') ~ 'Smooth muscle',
+  
+  mouse_cells %in% c('Enteric Glial', 'Enteric Neuron') ~ 'Neural/Glial',
+  
+  mouse_cells %in% c('B Cell', 'Plasma Cell') ~ 'B/Plasma',
+  
+  mouse_cells %in% c('Immune') ~ 'Immune'
+)
+
+SaveSeuratRds(mouse_ref, 'data/02_annotation_refs/mouse_processed_mouse_use.rds')
+```
+
+## Seurats
+
+```{r}
+mouse_ref = readRDS('data/02_annotation_refs/mouse_processed_mouse_use.rds')
+mouse = readRDS('data/01_processed_data/01_mouse_processed.rds')
+rownames(mouse) = mouse@assays$Xenium@meta.data$ensembl_id
+
+# background QC before annotation
+mouse_cells = fread("data/00_raw_data/Xenium_V1_mouse_Colon_FF_outs/cells.csv.gz",
+                    select = c("cell_id", "cell_area"))
+mouse$area = mouse_cells$cell_area[match(colnames(mouse), mouse_cells$cell_id)]
+keep_cells = bg_filter(nCount_probe_controls = mouse$nCount_ControlProbe,
+                       nCount_transcripts =  mouse$nCount_Xenium,
+                       cell_areas = mouse$area,
+                       n_genes = dim(mouse)[1],
+                       n_total_probes = 20)
+mouse = mouse[,keep_cells]
+
+mouse = mouse |>
+  NormalizeData() |>
+  ScaleData() |>
+  RunPCA(features = rownames(mouse)) |>
+  RunUMAP(dims = 1:20, return.model = TRUE) |>
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+mouse_seurat_label = LabelTransfer(data = mouse, ref = mouse_ref)
+mouse$celltype_seurat = mouse_seurat_label$cell_type_transfer
+mouse$labelscore_seurat = mouse_seurat_label$score_transfer
+SaveSeuratRds(mouse, 'data/02_annotated_data/02_mouse_annotated.rds')
+```
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+ImageDimPlot(mouse, group.by = 'celltype_seurat')
+ImageFeaturePlot(mouse, features = 'labelscore_seurat')
+ggplot(mouse@meta.data, aes(x = labelscore_seurat)) +
+  geom_histogram()
+ggplot(mouse@meta.data, aes(x = celltype_seurat, y = labelscore_seurat)) +
+  geom_boxplot()
+DimPlot(mouse, reduction = 'umap', group.by = 'celltype_seurat',
+        shuffle = TRUE)
+```
+
+## SingleR
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+mouse_ref = readRDS('data/02_annotation_refs/mouse_processed_mouse_use.rds')
+mouse_singleR_label = LabelSingleR(data = mouse, ref = mouse_ref) 
+mouse$celltype_singleR = mouse_singleR_label$cell_type_singleR
+mouse$labeldelta_singleR = mouse_singleR_label$delta_singleR
+SaveSeuratRds(mouse, 'data/02_annotated_data/02_mouse_annotated.rds')
+```
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+ImageDimPlot(mouse, group.by = 'celltype_singleR')
+ImageFeaturePlot(mouse, features = 'labeldelta_singleR')
+ggplot(mouse@meta.data, aes(x = labeldelta_singleR)) +
+  geom_histogram()
+ggplot(mouse@meta.data, aes(x = celltype_singleR, y = labeldelta_singleR)) +
+  geom_boxplot()
+DimPlot(mouse, reduction = 'umap', group.by = 'celltype_singleR',
+        shuffle = TRUE)
+```
+
+# Cross-species reference-based annotation
+
+Reference: <https://cellxgene.cziscience.com/collections/f11cb29c-b546-4738-9bd8-66ea621a7bd5>
+
+```{r}
+mouse_ref = read_h5ad('data/02_annotation_refs/human.h5ad')
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+rownames(mouse) = mouse@assays$Xenium@meta.data$ensembl_id
+mouse_ref = mouse_ref$as_Seurat()
+mouse_ref = mouse_ref |> 
+  subset(control_vs_disease == 'control') |> 
+  subset(organ_unified |> str_detect('colon')) |> 
+  subset(donor_disease %in% c('control', 'organ_donor')) |> 
+  subset(!sample_retrieval %in% c('Medical_termination', 'Oral sample', 'Unspecified')) |> 
+  subset(sample_category == 'Non_pathological')
+# human.h5ad (CELLxGENE) X is log1p(CP10k): undo the log so NormalizeData() below gives back X
+mouse_ref@assays$RNA$counts = expm1(mouse_ref@assays$RNA$X)
+mouse_ref = mouse_ref |> 
+  NormalizeData()
+
+homology_tbl = read.csv('../homology_tbl.csv')
+mouse_ref_mouse = concatenate(mouse_ref, mouse, homology_tbl)
+rownames(mouse_ref_mouse) = mouse_ref_mouse@assays$Xenium@meta.data$mmusculus_homolog_ensembl_gene
+DefaultAssay(mouse_ref_mouse) = 'RNA'
+DefaultLayer(mouse_ref_mouse[['RNA']]) = 'data'
+mouse_ref_mouse = mouse_ref_mouse |> 
+  subset(orig.ident == 'hsapiens')
+
+mouse_ref_mouse$nCount_RNA = colSums(x = mouse_ref_mouse[['RNA']]$counts)
+mouse_ref_mouse = mouse_ref_mouse |> 
+  subset(nCount_RNA > 0)
+
+mouse_cells = mouse_ref_mouse$level_2_annot
+mouse_ref_mouse$cell_type_regroup = case_when(
+  mouse_cells %in% c('Absorptive') ~ 'Epithelial: Absorptive',
+  
+  mouse_cells %in% c('Secretory', 'Enteroendocrine') ~ 'Epithelial: Secretory',
+  
+  mouse_cells %in% c('Epithelial_stem', 'Transit_amplifying') ~ 'Epithelial: Stem/Progenitor',
+  
+  mouse_cells %in% c('Vascular_endothelia', 'Lymphatic_endothelia', 'Cycling_endothelia') ~ 'Endothelial',
+  
+  mouse_cells %in% c('Fibroblast', 'Myofibroblast', 'Pericyte', 'Mesothelium', 'Lymphoid_stromal_cell') ~ 'Stromal/Mesenchymal',
+  
+  mouse_cells %in% c('Smooth_muscle') ~ 'Smooth muscle',
+  
+  mouse_cells %in% c('Glia', 'Neuron', 'Neuron_progenitor') ~ 'Neural/Glial',
+  
+  mouse_cells %in% c('Mature_B', 'Immature_B', 'B_plasma') ~ 'B/Plasma',
+  
+  mouse_cells %in% c('Conventional_CD4', 'Conventional_CD8', 'Treg', 'NK', 'Unconventional_T/ILC', 'Cycling_T/NK', 'DC', 'Macrophage', 'Monocyte', 'Granulocyte') ~ 'Immune',
+  
+  mouse_cells %in% c('Erythrocyte') ~ 'Erythroid'
+)
+
+SaveSeuratRds(mouse_ref_mouse, 'data/02_annotation_refs/human_processed_mouse_use.rds')
+```
+
+## Seurats
+
+```{r}
+mouse_ref = readRDS('data/02_annotation_refs/human_processed_mouse_use.rds')
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+rownames(mouse) = mouse@assays$Xenium@meta.data$ensembl_id
+
+mouse_seurat_label = LabelTransfer(data = mouse, ref = mouse_ref)
+mouse$celltype_seurat_cross = mouse_seurat_label$cell_type_transfer
+mouse$labelscore_seurat_cross = mouse_seurat_label$score_transfer
+SaveSeuratRds(mouse, 'data/02_annotated_data/02_mouse_annotated.rds')
+```
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+ImageDimPlot(mouse, group.by = 'celltype_seurat_cross')
+ImageFeaturePlot(mouse, features = 'labelscore_seurat_cross')
+ggplot(mouse@meta.data, aes(x = labelscore_seurat_cross)) +
+  geom_histogram()
+ggplot(mouse@meta.data, aes(x = celltype_seurat_cross, y = labelscore_seurat_cross)) +
+  geom_boxplot()
+DimPlot(mouse, reduction = 'umap', group.by = 'celltype_seurat_cross',
+        shuffle = TRUE)
+```
+
+## SingleR
+
+```{r}
+mouse_ref = readRDS('data/02_annotation_refs/human_processed_mouse_use.rds')
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+
+mouse_singleR_label = LabelSingleR(data = mouse, ref = mouse_ref) 
+mouse$celltype_singleR_cross = mouse_singleR_label$cell_type_singleR
+mouse$labeldelta_singleR_cross = mouse_singleR_label$delta_singleR
+SaveSeuratRds(mouse, 'data/02_annotated_data/02_mouse_annotated.rds')
+```
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+ImageDimPlot(mouse, group.by = 'celltype_singleR_cross')
+ImageFeaturePlot(mouse, features = 'labeldelta_singleR_cross')
+ggplot(mouse@meta.data, aes(x = labeldelta_singleR_cross)) +
+  geom_histogram()
+ggplot(mouse@meta.data, aes(x = celltype_singleR_cross, y = labeldelta_singleR_cross)) +
+  geom_boxplot()
+DimPlot(mouse, reduction = 'umap', group.by = 'celltype_singleR_cross',
+        shuffle = TRUE)
+```
+
+# Evaluation
+
+```{r}
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+# markers given by claude
+markers = list(
+  Stromal_Mesenchymal = c(
+    "Pi16", "Dpt", "Lum", "Bgn", "Aspn", "Mfap4", "Mfap5", "Fbln5", "Ccdc80",
+    "Col8a1", "Pcolce2", "Htra3", "Sfrp1", "Sostdc1", "Wif1", "F3", "Thbs4",
+    "Ccn3", "Igfbp6", "Nbl1", "Fibin", "Colec11", "Serpinf1", "Cfh", "C3",
+    "Dnase1l3", "Ecrg4", "Timp3", "Sod3", "Itga8", "Nox4", "Coch", "Otor"
+  ),
+  
+  Epithelial_Stem_Progenitor = c(
+    "Sox9", "Cdx1", "Stmn1", "Cenpf", "Ube2c"
+  ),
+  
+  Epithelial_Absorptive = c(
+    "Car2", "Car3", "Guca2b", "Slc5a1", "Cd36", "Slc27a2", "Rbp2", "Selenbp1",
+    "Cndp2", "Prap1", "Ttc36", "Mettl7a2", "Fmo5", "Ace2", "Cdhr5", "Hmgcs2",
+    "Hsd11b2", "Aldh1b1"
+  ),
+  
+  Epithelial_Secretory = c(
+    "Tff2", "Ctse", "B4galnt2", "Gpx2", "Chgb", "Scg2", "Scg3", "Scg5",
+    "Neurod1", "Insm1", "Ascl1", "Sct", "Nts", "Ppp1r1a", "Cplx2", "Ptprn2",
+    "Alox5ap", "Ltc4s", "Gp2", "Reg3g"
+  ),
+  
+  Endothelial = c(
+    "Kdr", "Tie1", "Eng", "Plvap", "Gpihbp1", "Aqp1", "Clec14a", "Cavin2", "Vwf",
+    "Sox17", "Calcrl", "Gng11", "Podxl", "Tmem100", "Angpt2", "Ackr3", "Cav1",
+    "Lipg", "Prox1", "Lyve1", "Mmrn1"
+  ),
+  
+  Smooth_Muscle = c(
+    "Myh11", "Tagln", "Cnn1", "Myl9", "Mylk", "Des", "Pln", "Mustn1",
+    "Rgs5", "Higd1b", "Ndufa4l2"
+  ),
+  
+  Immune = c(
+    "Marco", "Folr2", "Mpeg1", "Ms4a6b", "Ms4a6c", "Ms4a7", "Cd300lf", "C5ar1",
+    "Cybb", "Ncf4", "Lst1", "Laptm5", "Rac2", "Plbd1", "F13a1", "Ctss", "Clec4a3",
+    "Retnla", "Ccl12", "Ccl9", "Il1r2", "Lamp3", "Mpo", "Mmp8", "Mmp9", "Csf3r",
+    "Cxcr2", "Pglyrp1", "Bst1", "Fcnb", "Stfa2l1", "Prg2", "Cpa3", "Mrgpra2a",
+    "Ctsg", "Cd3d", "Cd8a", "Ctla4", "Ctla2a", "Satb1", "Klra8"
+  ),
+  
+  Neural_Glial = c(
+    "Plp1", "Gfap", "Sox2", "Mlc1", "Fxyd1", "Cryab", "Ptn", "Aif1l", "Prx",
+    "Pmp22", "Cldn11", "Chl1", "Emb", "Snap25", "Tubb3", "Gad1", "Slc17a7",
+    "Gap43", "Myt1l", "Celf3", "Nnat", "Kcna1", "Pvalb", "Calb1", "Hap1",
+    "Pnmal2", "Ly6h", "Etv1", "Arpp21", "Rab3b", "Sez6l", "Chodl", "Mapk10", "Vsnl1"
+  ),
+  
+  B_Plasma = c(
+    "Sdc1"
+  ),
+  Erythroid = c("Fech", "Hemgn", "Hmbs", "Rhd", "Slc25a37", "Slc4a1", "Slc14a1")
+)
+
+rownames(mouse) = mouse@assays$Xenium@meta.data$gene_name
+Idents(mouse) = 'celltype_seurat'
+DotPlot(mouse, features = markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+mouse_singleR = subset(mouse, 
+                       subset = !is.na(celltype_singleR))
+Idents(mouse_singleR) = 'celltype_singleR'
+DotPlot(mouse_singleR, features = markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+Idents(mouse) = 'celltype_seurat_cross'
+DotPlot(mouse, features = markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+mouse_singleR_cross = subset(mouse, 
+                             subset = !is.na(celltype_singleR_cross))
+Idents(mouse_singleR_cross) = 'celltype_singleR_cross'
+DotPlot(mouse_singleR_cross, features = markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+```
+
+```{r}
+library(Seurat)
+library(ggplot2)
+
+rownames(mouse) <- mouse@assays$Xenium@meta.data$gene_name
+
+annotators <- c("celltype_seurat", "celltype_singleR",
+                "celltype_seurat_cross", "celltype_singleR_cross")
+n_per_type <- 3
+dir.create("dotplots", showWarnings = FALSE)
+
+# match names regardless of spaces, underscores, colons, slashes, case
+key <- function(x) tolower(gsub("[^A-Za-z]", "", x))
+
+short <- c("B/Plasma" = "B/Pl", "Endothelial" = "Endo",
+           "Epithelial: Absorptive" = "Abs", "Epithelial: Secretory" = "Sec",
+           "Epithelial: Stem/Progenitor" = "Stem", "Erythroid" = "Ery",
+           "Immune" = "Imm", "Neural/Glial" = "Neur",
+           "Smooth muscle" = "SMC", "Stromal/Mesenchymal" = "Strom")
+short_by_key <- setNames(unname(short), key(names(short)))
+
+# ---- marker list: genes present, each once, first n per type ----
+markers <- lapply(markers, \(g) intersect(g, rownames(mouse)))
+seen <- character(0)
+for (n in names(markers)) {
+  markers[[n]] <- head(setdiff(markers[[n]], seen), n_per_type)
+  seen <- c(seen, markers[[n]])
+}
+markers <- markers[lengths(markers) > 0]
+panel_keys <- key(names(markers))                 # remember order for rows
+names(markers) <- ifelse(panel_keys %in% names(short_by_key),
+                         short_by_key[panel_keys], names(markers))
+
+# ---- one slide-sized plot per annotator ----
+plots <- list()
+for (ann in annotators) {
+  keep <- colnames(mouse)[!is.na(mouse[[ann, drop = TRUE]])]
+  obj  <- subset(mouse, cells = keep)
+  Idents(obj) <- ann
+
+  # order rows to follow the panels (top row = first panel)
+  lv  <- levels(factor(Idents(obj)))
+  pos <- match(key(lv), panel_keys)
+  lv  <- lv[order(is.na(pos), pos)]
+  Idents(obj) <- factor(Idents(obj), levels = rev(lv))
+
+  p <- DotPlot(obj, features = markers, dot.scale = 7) +
+    labs(title = sub("celltype_", "", ann), x = NULL, y = NULL) +
+    theme(plot.title      = element_text(size = 20, face = "bold"),
+          axis.text.x     = element_text(size = 13, angle = 90, hjust = 1, vjust = 0.5,
+                                         face = "italic"),
+          axis.text.y     = element_text(size = 15),
+          strip.text.x    = element_text(size = 13, face = "bold"),
+          panel.spacing.x = unit(6, "pt"),
+          legend.title    = element_text(size = 13),
+          legend.text     = element_text(size = 12))
+
+  plots[[ann]] <- p
+  ggsave(file.path("dotplots", paste0(ann, "_slide.png")), p,
+         width = 13.33, height = 7.5, dpi = 300, bg = "white")
+}
+```
+
+# EBCC
+
+```{r}
+print('EBCC')
+mouse = readRDS('data/02_annotated_data/02_mouse_annotated.rds')
+rownames(mouse) = mouse[['Xenium']]@meta.data$gene_name
+markers <- list(
+  Pan_epithelial  = c("Epcam","Krt8","Krt19","Cldn7","Cdx1"),
+  Stem_Progenitor = c("Sox9","Gpx2","Stmn1","Cenpf","Ube2c"),
+  Absorptive      = c("Cdhr5","Selenbp1","Hsd11b2","Car2","Tspan8","Fxyd4"),
+  Secretory       = c("Chgb","Neurod1","Insm1","Scg5","Nts","Ltc4s"),
+  Endothelial     = c("Kdr","Clec14a","Plvap","Tie1","Eng","Vwf"),
+  Lymphatic       = c("Lyve1","Prox1","Mmrn1"),
+  Smooth_muscle   = c("Myh11","Des","Cnn1","Tagln","Pln"),
+  Pericyte        = c("Rgs5","Higd1b","Ndufa4l2"),
+  Stromal         = c("Lum","Dpt","Pi16","Sfrp1","Mfap4","Sod3","Bmp2"),
+  Neural_Glial    = c("Plp1","Gfap","Sox2","Snap25","Tubb3","Gap43"),
+  Immune          = c("Laptm5","Rac2","Ctss","Lst1","Cybb"),
+  T_cell          = c("Cd3d","Cd8a"),
+  Myeloid         = c("C5ar1","Ms4a7","Mpeg1","Csf3r","Cxcr2","Cpa3"),
+  B_Plasma        = c("Sdc1"),
+  Erythroid       = c("Slc4a1","Rhd","Hemgn","Slc25a37","Fech")
+)
+
+# keep genes on the panel, each gene once (first group wins)
+present = lapply(markers, intersect, rownames(mouse))
+seen = character(0)
+for (g in names(present)) { present[[g]] = setdiff(present[[g]], seen); seen = c(seen, present[[g]]) }
+present = present[lengths(present) > 0]
+setdiff(unlist(markers), rownames(mouse))   # markers not on your panel
+
+ann_cols = c("celltype_seurat", "celltype_singleR", 
+  'celltype_seurat_cross', 'celltype_singleR_cross')
+# hide one random annotator's label for 10% of cells
+set.seed(1)
+meta_ho = mouse@meta.data
+ho = data.frame(cell = sample(nrow(meta_ho), round(0.1 * nrow(meta_ho))))
+ho$ann   = sample(ann_cols, nrow(ho), replace = TRUE)
+ho$truth = mapply(function(i, a) as.character(meta_ho[[a]][i]), ho$cell, ho$ann)
+for (a in ann_cols) {
+  meta_ho[[a]] = as.character(meta_ho[[a]])
+  meta_ho[[a]][ho$cell[ho$ann == a]] = NA
+}
+
+DotPlot(mouse, features = markers, group.by = 'celltype_seurat') + RotatedAxis()
+DotPlot(mouse[,!is.na(mouse$celltype_singleR)], features = markers, group.by = 'celltype_singleR') + RotatedAxis()
+DotPlot(mouse, features = markers, group.by = 'celltype_seurat_cross') + RotatedAxis()
+DotPlot(mouse[,!is.na(mouse$celltype_singleR_cross)], features = markers, group.by = 'celltype_singleR_cross') + RotatedAxis()
+
+trusted = list(
+celltype_seurat = c('Endothelial', 'Immune','Smooth muscle'),
+celltype_singleR = c('Endothelial', 'Neural/Glial', 'Smooth muscle'),
+celltype_seurat_cross = c('Endothelial', 'Neural/Glial', 'Smooth muscle'),
+celltype_singleR_cross = c('Endothelial', 'Neural/Glial', 'Smooth muscle', 'Stromal/Mesenchymal')
+)
+frac = 0   # chosen by the held-out (M, frac) grid, 1-SE rule (see mouse_ebcc_heldout_grid.csv)
+n_k = list(
+  celltype_seurat = table(mouse$celltype_seurat),
+  celltype_singleR = table(mouse$celltype_singleR),
+  celltype_seurat_cross = table(mouse$celltype_seurat_cross),
+  celltype_singleR_cross = table(mouse$celltype_singleR_cross)
+)
+# every label any annotator gives, so the prior covers all classes run_ebcc sees
+all_classes = mouse@meta.data[ann_cols] |> lapply(as.character) |> unlist() |> na.omit() |> unique()
+
+# fit with M subtypes, then score how well the hidden labels are predicted
+heldout_ll = function(M, R = 3) {
+  beta = make_beta_prior(all_classes, ann_cols)
+  for (a in names(trusted)) {for (k in trusted[[a]]){
+  beta[[a]][k, k] = 4 + frac * n_k[[a]][[k]] / M }}
+  f = run_ebcc(meta_ho, ann_cols, M = M, R = R, keep_rho = TRUE, beta = beta)
+  lp = unlist(lapply(ann_cols, function(a) {
+    s = ho[ho$ann == a, ]
+    l = match(s$truth, f$classes); ok = !is.na(l)
+    # P(hidden label) = sum over class-subtypes of P(cell in it) x P(annotator gives that label)
+    log(rowSums(f$rho[s$cell[ok], , drop = FALSE] *
+                t(f$par$v[[a]][, l[ok], drop = FALSE])))
+  }))
+  lp
+}
+
+Ms = c(1, 2, 3, 5, 10)
+ll = sapply(Ms, heldout_ll)
+mean(ll[,1])
+mean(ll[,2])
+mean(ll[,3])
+mean(ll[,4])
+mean(ll[,5])
+mean(ll[,5]) - sd(ll[,5])/sqrt(dim(ll)[1])
+
+# ---- fit ----
+M = 5   # chosen by the held-out (M, frac) grid, 1-SE rule (see mouse_ebcc_heldout_grid.csv)
+beta = make_beta_prior(all_classes, ann_cols)
+for (a in names(trusted)) for (k in trusted[[a]])
+beta[[a]][k, k] = 4 + frac * n_k[[a]][[k]] / M 
+fit = run_ebcc(mouse@meta.data, ann_cols, M = M, R = 10, beta = beta)
+
+# ---- diagnostics ----
+# 1. restarts: distance of each restart's ELBO from the best (large spread = many local optima)
+round(fit$elbo_restarts - max(fit$elbo_restarts), 1)
+
+# ---- save ----
+mouse$ebcc_label   = fit$label
+mouse$ebcc_maxpost = rowMaxs(fit$posterior)
+mouse$ebcc_entropy = -rowSums(fit$posterior * log(fit$posterior + 1e-12))
+mouse$celltype   = mouse$ebcc_label   # switch over only once the diagnostics look sound
+
+save_marker_dotplots(mouse, markers, c(ann_cols, 'ebcc_label'), prefix = 'mouse',
+                     out_dir = '../figures/colon/annotation',
+                     file_names = c('seurat', 'singleR', 'seurat_cross', 'singleR_cross', 'ebcc'))
+
+VariableFeatures(mouse) = rownames(mouse)
+mouse = mouse |> 
+NormalizeData()  |> 
+ScaleData()
+mouse$celltype = mouse$ebcc_label
+saveRDS(fit$par,       'data/02_annotated_data/mouse_ebcc_params.rds')
+saveRDS(fit$posterior, 'data/02_annotated_data/mouse_ebcc_posterior.rds')
+SaveSeuratRds(mouse, 'data/02_annotated_data/02_mouse_annotated.rds')
+as.anndata(mouse, file_path = 'data/02_annotated_data/',
+           file_name = '02_mouse_annotated.h5ad', assay = 'Xenium',
+           main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```

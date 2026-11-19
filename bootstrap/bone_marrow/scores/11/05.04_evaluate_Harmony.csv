@@ -1,0 +1,17 @@
+,Harmony
+NMI_cluster/label,0.1328688413241381
+ARI_cluster/label,0.036346978583358405
+ASW_label,0.4803011273195528
+ASW_label/batch,0.8396823507726275
+PCR_batch,0.9724705640170311
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.6207022288246766
+kBET,
+iLISI,0.5389411730428078
+cLISI,0.8275940336260937
+hvg_overlap,
+trajectory,
+_seconds,108.42645311355591
+_n_cells,19990.0

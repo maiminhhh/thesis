@@ -1,0 +1,1 @@
+Improvement of each metric over unintegrated data (log-normalised joint PCA) in the same tissue (dissected mouse data). Point: one tissue; black bar: mean over the four tissues. Rows, order and numbers as in benchmark_improvement_graph_metrics (place by mean overall improvement). Shading: input (scVI-latent, UINMF). † trained on the EBCC labels; ‡ graph-based (no embedding).

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes8,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,280334,0.41657527273233064,2803,1732.315325498581,0.49713794664393207,2803,3774.351573228836,3781.87318444252

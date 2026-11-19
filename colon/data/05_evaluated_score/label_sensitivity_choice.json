@@ -1,0 +1,34 @@
+{
+  "tissue": "colon",
+  "source": "figures/colon/annotation/marker_auroc.csv",
+  "rule": "per species: annotator with the highest mean marker AUROC over the types it calls; EBCC if it is highest (ties -> EBCC)",
+  "species": {
+    "human": {
+      "mean_auroc": {
+        "ebcc": 0.9034743817614,
+        "singleR": 0.893355002239022,
+        "singleR_cross": 0.892596378185477,
+        "seurat": 0.885732510421091,
+        "seurat_cross": 0.866765022570589
+      },
+      "best": "ebcc",
+      "use": "ebcc",
+      "obs_column": "ebcc_label"
+    },
+    "mouse": {
+      "mean_auroc": {
+        "ebcc": 0.865168023567502,
+        "seurat": 0.855434308497215,
+        "singleR": 0.852006915234598,
+        "seurat_cross": 0.843959847213529,
+        "singleR_cross": 0.777063686795401
+      },
+      "best": "ebcc",
+      "use": "ebcc",
+      "obs_column": "ebcc_label"
+    }
+  },
+  "skip": true,
+  "label_set": "best_annotator",
+  "label_cols": {}
+}

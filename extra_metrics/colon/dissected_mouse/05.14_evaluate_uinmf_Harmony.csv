@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,309258,0.6352205950840074,3093,1330.284675836563,0.20813016929357553,3093,3521.149404525757,3527.465295791626

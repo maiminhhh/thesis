@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.22_evaluate_Scanorama_scvi.py,Scanorama scVI-latent,embed,X_scanorama_scvi,177883,0.6367209031372052,1779,405.80404901504517,0.043426224284566634,1779,870.1298570632935,874.8544628620148

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,dissected_mouse,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,309258,0.8769502471836317,769,38474,2,101.42531418800354,106.44725155830383

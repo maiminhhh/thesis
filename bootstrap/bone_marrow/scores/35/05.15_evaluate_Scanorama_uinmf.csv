@@ -1,0 +1,17 @@
+,Scanorama UINMF
+NMI_cluster/label,0.204199123011572
+ARI_cluster/label,0.03505131946681676
+ASW_label,0.5538603623833724
+ASW_label/batch,0.8451350990850192
+PCR_batch,0.7507043908178413
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.5870866351351091
+kBET,
+iLISI,0.38551495869336194
+cLISI,0.9079160454211019
+hvg_overlap,
+trajectory,
+_seconds,185.39216876029968
+_n_cells,19990.0

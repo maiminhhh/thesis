@@ -1,0 +1,72 @@
+tissue,species,type,n_singler,n_shared_set,n_handpicked,n_handpicked_in_panel,n_in_type_set,n_in_shared_set,in_type_set,has_handpicked
+colon,human,B/Plasma,16,132,13,5,5,5,MS4A1;CD79A;CD79B;BANK1;DERL3,TRUE
+colon,human,Endothelial,14,132,10,3,3,3,PECAM1;VWF;PLVAP,TRUE
+colon,human,Epithelial: Absorptive,20,132,12,10,8,8,CA1;CA2;CA4;SLC26A3;GUCA2A;MS4A12;CEACAM7;SELENBP1,TRUE
+colon,human,Epithelial: Secretory,20,132,16,7,1,1,CLCA1,TRUE
+colon,human,Epithelial: Stem/Progenitor,22,132,9,8,1,1,MKI67,TRUE
+colon,human,Erythroid,21,132,23,0,0,0,,TRUE
+colon,human,Immune,14,132,14,9,3,4,CD3D;CD3E;CD2,TRUE
+colon,human,Neural/Glial,17,132,8,1,1,1,NRXN1,TRUE
+colon,human,Smooth muscle,17,132,9,3,3,3,ACTA2;TAGLN;PLN,TRUE
+colon,human,Stromal/Mesenchymal,18,132,10,2,2,2,COL1A1;PDGFRA,TRUE
+colon,mouse,B/Plasma,15,104,1,1,1,1,Sdc1,TRUE
+colon,mouse,Endothelial,15,104,21,21,11,16,Kdr;Tie1;Eng;Plvap;Clec14a;Cavin2;Vwf;Sox17;Calcrl;Podxl;Cav1,TRUE
+colon,mouse,Epithelial: Absorptive,19,104,18,18,4,8,Car2;Selenbp1;Cdhr5;Hmgcs2,TRUE
+colon,mouse,Epithelial: Secretory,15,104,20,20,2,8,B4galnt2;Ptprn2,TRUE
+colon,mouse,Epithelial: Stem/Progenitor,21,104,5,5,4,4,Cdx1;Stmn1;Cenpf;Ube2c,TRUE
+colon,mouse,Immune,15,104,41,41,10,14,Mpeg1;Ms4a6b;Ms4a6c;Ms4a7;Laptm5;Plbd1;F13a1;Ctss;Cd8a;Satb1,TRUE
+colon,mouse,Neural/Glial,14,104,34,34,5,7,Chl1;Snap25;Celf3;Etv1;Mapk10,TRUE
+colon,mouse,Smooth muscle,14,104,11,11,7,7,Myh11;Tagln;Cnn1;Myl9;Mylk;Des;Rgs5,TRUE
+colon,mouse,Stromal/Mesenchymal,16,104,33,33,6,12,Dpt;Bgn;Htra3;Sfrp1;Timp3;Nox4,TRUE
+bone_marrow,human,B cell,20,118,5,4,4,4,MS4A1;CD79A;CD19;PAX5,TRUE
+bone_marrow,human,DC,25,118,6,4,1,1,FCER1A,TRUE
+bone_marrow,human,Erythroid,16,118,5,4,4,4,GYPA;CA1;AHSP;KLF1,TRUE
+bone_marrow,human,Granulocyte,23,118,8,3,2,2,MPO;ELANE,TRUE
+bone_marrow,human,HSPC,26,118,4,3,3,3,CD34;PROM1;CRHBP,TRUE
+bone_marrow,human,MSC,14,118,5,3,1,1,CXCL12,TRUE
+bone_marrow,human,MkP,25,118,4,0,0,0,,TRUE
+bone_marrow,human,Monocyte,20,118,5,4,3,3,CD14;FCN1;VCAN,TRUE
+bone_marrow,human,NK/ILC,12,118,5,4,4,4,NKG7;GNLY;KLRD1;PRF1,TRUE
+bone_marrow,human,Plasma,16,118,5,3,3,3,MZB1;TNFRSF17;PRDM1,TRUE
+bone_marrow,human,T cell,21,118,5,5,3,3,CD3E;CD3D;IL7R,TRUE
+bone_marrow,mouse,B cell,28,93,1,1,0,0,,TRUE
+bone_marrow,mouse,DC,28,93,2,2,0,0,,TRUE
+bone_marrow,mouse,Erythroid,14,93,9,9,6,6,Gata1;Epor;Klf1;Hemgn;Tfrc;Rhd,TRUE
+bone_marrow,mouse,Granulocyte,18,93,12,12,4,8,Ly6g;S100a9;Mmp9;Fcnb,TRUE
+bone_marrow,mouse,HSPC,25,93,4,4,3,3,Cd34;Kit;Ly6a,TRUE
+bone_marrow,mouse,MkP,20,93,3,3,2,2,Pf4;Vwf,TRUE
+bone_marrow,mouse,Monocyte,20,93,5,5,3,4,Ccr2;Ms4a6c;F13a1,TRUE
+bone_marrow,mouse,NK/ILC,20,93,3,3,2,2,Ncr1;Klrb1c,TRUE
+bone_marrow,mouse,T cell,23,93,9,9,4,4,Cd3e;Cd3d;Satb1;Pdcd1,TRUE
+fetal_liver,human,B cell,22,150,5,5,4,5,CD79A;CD19;PAX5;MS4A1,TRUE
+fetal_liver,human,Dendritic cell,26,150,12,12,3,3,CD1C;CLEC10A;PLD4,TRUE
+fetal_liver,human,Endothelial,15,150,9,9,5,7,KDR;EGFL7;RAMP2;FCN2;DNASE1L3,TRUE
+fetal_liver,human,Erythroblast,27,150,9,9,9,9,GYPA;GYPB;ALAS2;SLC4A1;AHSP;HEMGN;RHAG;MKI67;TOP2A,TRUE
+fetal_liver,human,Erythrocyte,21,150,4,4,2,4,SNCA;BNIP3L,TRUE
+fetal_liver,human,Erythroid progenitor,25,150,5,5,4,4,GATA1;KLF1;TFRC;EPOR,TRUE
+fetal_liver,human,Fibroblast,20,150,14,14,5,5,COL1A1;COL1A2;BGN;PDGFRB;PCOLCE,TRUE
+fetal_liver,human,Granulocyte,28,150,6,6,3,3,MPO;CTSG;MNDA,TRUE
+fetal_liver,human,HSPC,31,150,4,4,2,3,CD34;HOXA9,TRUE
+fetal_liver,human,Hepatocyte,13,150,15,15,7,7,GPC3;APOE;HPX;PLG;KNG1;HMGCS2;CFHR1,TRUE
+fetal_liver,human,Mast cell,22,150,8,8,7,7,CPA3;KIT;GATA2;HPGDS;IL1RL1;SLC18A2;VWA5A,TRUE
+fetal_liver,human,Megakaryocyte,25,150,4,4,2,2,GNG11;MMRN1,TRUE
+fetal_liver,human,Mono/Macrophage,18,150,18,18,9,12,FCGR3A;CD68;AIF1;CD163;C1QA;C1QB;C1QC;CD5L;FOLR2,TRUE
+fetal_liver,human,T/NK/ILC,23,150,13,13,8,9,CD3E;CD3D;CD247;KLRB1;NKG7;KLRD1;GZMA;PRF1,TRUE
+fetal_liver,mouse,Endothelial,13,100,5,5,3,3,Kdr;Clec14a;Oit3,TRUE
+fetal_liver,mouse,Erythroblast,12,100,5,5,5,5,Gypa;Tfrc;Slc4a1;Rhd;Fech,TRUE
+fetal_liver,mouse,Erythrocyte,24,100,1,1,0,1,,TRUE
+fetal_liver,mouse,Erythroid progenitor,19,100,4,4,1,4,Car2,TRUE
+fetal_liver,mouse,Granulocyte,22,100,5,5,3,3,Mpo;Ctsg;S100a9,TRUE
+fetal_liver,mouse,HSPC,21,100,5,5,2,3,Kit;Cd34,TRUE
+fetal_liver,mouse,Hepatocyte,13,100,5,5,3,3,Ambp;Hpx;Trf,TRUE
+fetal_liver,mouse,Megakaryocyte,18,100,3,3,3,3,Pf4;Ppbp;Gng11,TRUE
+fetal_liver,mouse,Mono/Macrophage,24,100,5,5,2,2,Adgre1;Cd68,TRUE
+breast_cancer,human,B-cells,17,138,4,4,3,3,MS4A1;CD19;CD79A,TRUE
+breast_cancer,human,CAFs,18,138,5,5,4,4,FAP;POSTN;FN1;FBLN1,TRUE
+breast_cancer,human,Cancer Epithelial,22,138,5,5,2,2,CEACAM6;S100P,TRUE
+breast_cancer,human,Endothelial,14,138,5,5,3,3,PECAM1;VWF;CLDN5,TRUE
+breast_cancer,human,Myeloid,13,138,5,5,4,4,CD68;CD14;LYZ;C1QA,TRUE
+breast_cancer,human,Normal Epithelial,25,138,4,4,2,2,KRT5;KRT14,TRUE
+breast_cancer,human,PVL,19,138,4,4,4,4,RGS5;PDGFRB;MCAM;MYH11,TRUE
+breast_cancer,human,Plasmablasts,16,138,4,4,4,4,MZB1;DERL3;TNFRSF17;IGHG3,TRUE
+breast_cancer,human,T-cells,19,138,5,5,3,3,PTPRC;CD3E;CD2,TRUE

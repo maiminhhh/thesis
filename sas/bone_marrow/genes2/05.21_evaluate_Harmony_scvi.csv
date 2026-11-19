@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes2,05.21_evaluate_Harmony_scvi.py,Harmony scVI-latent,embed,X_harmony,48691,0.7658671223656272,478,23889,2,30.26579260826111,31.662420749664307

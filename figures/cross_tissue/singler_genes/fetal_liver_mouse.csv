@@ -1,0 +1,10 @@
+tissue,species,type,n_singler_genes,n_shared_genes,mean_detect,n_ref_cells,share_singler,share_seurat,reproduction,genes
+fetal_liver,mouse,Endothelial,13,306,0.21867165290729998,46,0.020797181003647695,0.058619895881290504,1,Plvap;Gng11;Lyve1;Oit3;Anxa2;Eng;Gatm;Gap43;Kdr;Ctla2a;Clec14a;Ndufs8;Aqp1
+fetal_liver,mouse,Erythroblast,12,306,0.9009692201918269,7432,0.6332914261430038,0.1524506852710982,1,Hbb-bt;Gypa;Fech;Car2;Slc25a37;Rhd;Slc4a1;Hmbs;Hemgn;Klf1;Tfrc;Ube2c
+fetal_liver,mouse,Erythrocyte,24,306,0.6865770177053503,1750,0.08229450720685626,0.15332719481531323,1,Klf1;Car2;Gata1;Hmbs;Rac2;Fech;Tfrc;Rhd;Hk1;Epor;Tmem147;Stmn1;Selenbp1;Ndufs8;Itgb1;Cd44;Aqp1;Cndp2;Ube2c;Gypa;Hemgn;Slc14a1;Tspan8;Slc40a1
+fetal_liver,mouse,Erythroid progenitor,19,306,0.46653600881379775,288,0.008163048482487516,5.931933279031058e-4,1,Hbb-bt;Slc4a1;Fech;Car2;Rhd;Slc25a37;Ackr3;Gypa;Ncf4;Hmbs;Ndrg1;Rsad2;Myl9;Cyp4b1;Il1b;P2rx7;Slc22a8;Podxl;Plek2
+fetal_liver,mouse,Granulocyte,22,306,0.16923109108265252,287,0.014874101356376386,0.019114990969295604,1,Rac2;Tyrobp;Hp;Alox5ap;Lst1;Ncf4;Laptm5;Mpo;Pglyrp1;S100a9;Emb;Stmn1;Stfa2l1;Cybb;Fcnb;Anxa2;C3;Cd3d;Ikzf2;Cpa3;Ctsg;Asprv1
+fetal_liver,mouse,Hepatocyte,13,306,0.4495457835496019,64,0.20032227219605483,0.47389949357226335,1,Trf;Ambp;Hpx;Krt8;Serpinf1;C3;Rbp1;Serpina10;Gamt;Slc27a2;Tmem147;Ndufs8;Tm4sf4
+fetal_liver,mouse,HSPC,21,306,0.21125310890754775,421,0.006020469596628537,0.005321032687608457,1,Rac2;Laptm5;Psmb8;Alox5ap;Mpo;Tyrobp;Stmn1;Cd48;Lst1;Cd34;Emb;Ctla2a;Ndufs8;Tmem147;Rbp1;Cd93;Satb1;Eng;Gng11;Ikzf2;Kit
+fetal_liver,mouse,Megakaryocyte,18,306,0.3568173553343334,135,0.012209158196692283,0.06883698693203952,1,Pf4;Slc14a1;Rac2;Gata1;Myl9;Diaph1;Mmrn1;Vwf;Laptm5;Ppbp;Ctla2a;Itgb1;Gng11;Tmem147;Timp3;Ndufs8;Stmn1;Epor
+fetal_liver,mouse,Mono/Macrophage,24,306,0.1946629676348925,114,0.02202783581825265,0.06783652654318802,1,Tyrobp;Rac2;Ctss;Laptm5;Lst1;Psmb8;Alox5ap;Ncf4;Ms4a6c;Cybb;Emb;Cd68;Stmn1;Ndufs8;Aif1;Mpeg1;C1qb;C1qc;Ccr2;Adgre1;Hpgd;Anxa2;F13a1;Cd48

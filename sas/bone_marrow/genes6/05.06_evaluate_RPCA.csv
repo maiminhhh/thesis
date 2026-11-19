@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,41058,0.48904313959396306,326,16313,2,13.588468551635742,14.61753249168396

@@ -1,0 +1,5 @@
+tissue,species,annotator,n_select,n_labelled,n_types,mean_auroc,score_col,score_saved,score_na
+fetal_liver,human,Seurat,112397,112397,14,0.9157866683211113,labelscore_seurat,TRUE,0
+fetal_liver,human,SingleR,112397,111521,14,0.8411018291560376,labeldelta_singleR,TRUE,0
+fetal_liver,human,Seurat (cross),112397,112397,9,0.6779291393777647,labelscore_seurat_cross,TRUE,0
+fetal_liver,human,SingleR (cross),112397,112359,9,0.7501343907083571,labeldelta_singleR_cross,TRUE,0

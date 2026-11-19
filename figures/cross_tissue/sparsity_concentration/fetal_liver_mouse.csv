@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+fetal_liver,mouse,1,19136,38,0.7503658026755853,0.21352424749163879,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,2,19133,47,0.7296817017718079,0.2372340981550201,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,3,19132,54,0.6292076102864311,0.3085406648546937,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,4,19131,62,0.462704511003084,0.41315142961685225,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,5,19130,74,0.27171981181390487,0.5301097752221642,SingleR pulls into its dominant label,Erythroblast
+fetal_liver,mouse,1,18066,32,0.1596368869699989,0.7278866378833168,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,2,18066,40,0.3235912764308646,0.4074504594265471,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,3,18065,47,0.4127318018267368,0.21096042070301688,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,4,18064,53,0.458204162976085,0.13468777679362268,Seurat pulls into its dominant label,Hepatocyte
+fetal_liver,mouse,5,18061,66,0.4278279165051769,0.08565417197275899,Seurat pulls into its dominant label,Hepatocyte

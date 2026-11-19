@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,282334,0.5112735658284611,2823,1225.5682339668274,0.11125780156823596,2823,2897.747617006302,2909.3754992485046

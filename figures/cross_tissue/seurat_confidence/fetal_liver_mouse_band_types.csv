@@ -1,0 +1,43 @@
+tissue,species,band,type,n_type,auroc
+fetal_liver,mouse,< 0.5,hepatocyte,1273,0.7351111922819081
+fetal_liver,mouse,< 0.5,hspc,153,0.7433750325351379
+fetal_liver,mouse,< 0.5,erythroid_progenitor,21,0.29930356172887407
+fetal_liver,mouse,< 0.5,erythroblast,1630,0.589307350769936
+fetal_liver,mouse,< 0.5,erythrocyte,2224,0.47107051328516725
+fetal_liver,mouse,< 0.5,megakaryocyte,733,0.5784909953329795
+fetal_liver,mouse,< 0.5,granulocyte,171,0.9526675713403275
+fetal_liver,mouse,< 0.5,mono_macrophage,771,0.8111266750519768
+fetal_liver,mouse,< 0.5,endothelial,409,0.9021323195419574
+fetal_liver,mouse,0.5–0.7,hepatocyte,6055,0.8015367044647062
+fetal_liver,mouse,0.5–0.7,hspc,222,0.7876736581984751
+fetal_liver,mouse,0.5–0.7,erythroid_progenitor,23,0.30230062156323834
+fetal_liver,mouse,0.5–0.7,erythroblast,4938,0.6999783934600374
+fetal_liver,mouse,0.5–0.7,erythrocyte,6643,0.47870664059755935
+fetal_liver,mouse,0.5–0.7,megakaryocyte,1675,0.6188512322513419
+fetal_liver,mouse,0.5–0.7,granulocyte,402,0.9742109568827089
+fetal_liver,mouse,0.5–0.7,mono_macrophage,1598,0.8822228740326257
+fetal_liver,mouse,0.5–0.7,endothelial,788,0.9505871202666082
+fetal_liver,mouse,0.7–0.9,hepatocyte,11548,0.8827569065790828
+fetal_liver,mouse,0.7–0.9,hspc,197,0.8721699998861774
+fetal_liver,mouse,0.7–0.9,erythroid_progenitor,22,0.2419726495936432
+fetal_liver,mouse,0.7–0.9,erythroblast,5403,0.7588680256423866
+fetal_liver,mouse,0.7–0.9,erythrocyte,5388,0.45841246668498525
+fetal_liver,mouse,0.7–0.9,megakaryocyte,2123,0.6087932643377465
+fetal_liver,mouse,0.7–0.9,granulocyte,623,0.9824536420572307
+fetal_liver,mouse,0.7–0.9,mono_macrophage,2134,0.9237873406586844
+fetal_liver,mouse,0.7–0.9,endothelial,2193,0.977966907076027
+fetal_liver,mouse,0.9–1,hepatocyte,13652,0.9466681500124507
+fetal_liver,mouse,0.9–1,hspc,194,0.8669080519895672
+fetal_liver,mouse,0.9–1,erythroblast,4018,0.84688631570054
+fetal_liver,mouse,0.9–1,erythrocyte,2412,0.46170272722213157
+fetal_liver,mouse,0.9–1,megakaryocyte,2207,0.6657560341359131
+fetal_liver,mouse,0.9–1,granulocyte,853,0.9809958236934065
+fetal_liver,mouse,0.9–1,mono_macrophage,2379,0.9546995281693118
+fetal_liver,mouse,0.9–1,endothelial,2857,0.993986012828658
+fetal_liver,mouse,= 1,hepatocyte,21358,0.992420025001269
+fetal_liver,mouse,= 1,erythroblast,1281,0.924411624404277
+fetal_liver,mouse,= 1,erythrocyte,813,0.5222305755124309
+fetal_liver,mouse,= 1,megakaryocyte,2419,0.5406889158695392
+fetal_liver,mouse,= 1,granulocyte,453,0.9911382470830318
+fetal_liver,mouse,= 1,mono_macrophage,1579,0.9616614547146469
+fetal_liver,mouse,= 1,endothelial,1473,0.9986587120148636

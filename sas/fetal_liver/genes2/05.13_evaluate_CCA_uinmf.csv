@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes2,05.13_evaluate_CCA_uinmf.py,CCA UINMF,embed,X_cca_uinmf,282299,0.40869208636833126,1153,57664,2,395.43500113487244,402.86019682884216

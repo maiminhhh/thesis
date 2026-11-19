@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes2,05.14_evaluate_uinmf_Harmony.py,Harmony UINMF,embed,X_harmony,307493,0.6250422551941529,3075,2523.232754468918,0.2348371687228333,3075,6359.22235250473,6367.638515472412

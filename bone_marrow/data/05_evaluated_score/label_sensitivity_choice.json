@@ -1,0 +1,22 @@
+{
+ "means": {
+  "human": {
+   "ebcc": 0.7444,
+   "seurat": 0.806,
+   "seurat_cross": 0.6686,
+   "singleR": 0.7269,
+   "singleR_cross": 0.6021
+  },
+  "mouse": {
+   "ebcc": 0.7623,
+   "seurat": 0.7015,
+   "seurat_cross": 0.7299,
+   "singleR": 0.7023,
+   "singleR_cross": 0.6994
+  }
+ },
+ "choice": {
+  "human": "seurat",
+  "mouse": "ebcc"
+ }
+}

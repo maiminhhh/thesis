@@ -1,0 +1,17 @@
+,Unintegrated
+NMI_cluster/label,0.1980923951191451
+ARI_cluster/label,0.041266326247036966
+ASW_label,0.5103825805708766
+ASW_label/batch,0.8472377893876579
+PCR_batch,0.0
+cell_cycle_conservation,
+isolated_label_F1,0.03076923076923077
+isolated_label_silhouette,0.4297780469059944
+graph_conn,0.7322127559201613
+kBET,
+iLISI,0.032782034035378604
+cLISI,0.8564934260654188
+hvg_overlap,
+trajectory,
+_seconds,126.34291386604309
+_n_cells,19989.0

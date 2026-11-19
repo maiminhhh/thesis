@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+breast_cancer,genes6,05.09_evaluate_BBKNN.py,BBKNN,knn,,176449,,,2.384185791015625e-05,4.615195274353027

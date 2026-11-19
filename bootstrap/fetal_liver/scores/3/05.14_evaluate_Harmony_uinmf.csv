@@ -1,0 +1,18 @@
+,Harmony UINMF
+NMI_cluster/label,0.19049326962051524
+ARI_cluster/label,0.1725174552118467
+ASW_label,0.50726847351154
+ASW_label/batch,0.86956718218282
+PCR_batch,0.9689416720646256
+cell_cycle_conservation,
+isolated_label_F1,0.019801980198019802
+isolated_label_silhouette,0.7310797574502123
+graph_conn,0.6993501729896359
+kBET,
+iLISI,0.32867970205162633
+cLISI,0.9239269039929278
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,549.1832914352417
+_n_cells,20007.0

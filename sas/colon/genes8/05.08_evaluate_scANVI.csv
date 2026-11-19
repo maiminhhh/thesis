@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,268306,0.4763232463521956,763,38137,2,188.87021374702454,197.50738430023193

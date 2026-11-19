@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,45575,0.42302683813193154,416,20794,2,20.822287797927856,22.241762399673462

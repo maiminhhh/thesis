@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,genes2,05.20_evaluate_CCA_scvi.py,CCA scVI-latent,embed,X_cca_scvi,282299,0.5057980479494089,0.5278363532564465,2823,14,14,1906.1173944473267,1917.9353682994843

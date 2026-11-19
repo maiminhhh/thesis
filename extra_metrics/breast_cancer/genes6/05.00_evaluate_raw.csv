@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.00_evaluate_raw.py,Unintegrated,embed,X_pca,176449,0.7142027667873158,1764,579.847734451294,0.5664126038109797,1764,1221.9223787784576,1231.205862045288

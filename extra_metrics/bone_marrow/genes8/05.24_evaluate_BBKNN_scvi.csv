@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+bone_marrow,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,36663,,,1.811981201171875e-05,0.9341602325439453

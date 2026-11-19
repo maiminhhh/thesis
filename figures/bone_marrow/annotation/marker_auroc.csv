@@ -1,0 +1,126 @@
+annotator,celltype,n_markers,n_cells,auroc,species
+seurat,HSPC,3,349,0.766559082713125,human
+seurat,MkP,0,225,NA,human
+seurat,Erythroid,4,6987,0.8267717535323755,human
+seurat,Granulocyte,3,1160,0.91668382860148645,human
+seurat,Monocyte,4,19568,0.5397418443435357,human
+seurat,DC,4,434,0.7412885256078237,human
+seurat,B cell,4,751,0.8263061537261437,human
+seurat,Plasma,3,396,0.9433703085546451,human
+seurat,T cell,5,2589,0.7241634680647487,human
+seurat,NK/ILC,4,565,0.8516160142109528,human
+seurat,MSC,3,979,0.923951924523521,human
+singleR,HSPC,3,473,0.5635900197292633,human
+singleR,MkP,0,908,NA,human
+singleR,Erythroid,4,8070,0.8589553262575264,human
+singleR,Granulocyte,3,8996,0.7314664410639098,human
+singleR,Monocyte,4,5037,0.7636462421401384,human
+singleR,DC,4,1074,0.5445538883868023,human
+singleR,B cell,4,1020,0.6977358657133532,human
+singleR,Plasma,3,823,0.7442070279055222,human
+singleR,T cell,5,4399,0.6324539732608647,human
+singleR,NK/ILC,4,728,0.8726079292608219,human
+singleR,MSC,3,2475,0.8598894873628444,human
+seurat_cross,HSPC,3,3371,0.5127264477350055,human
+seurat_cross,MkP,0,239,NA,human
+seurat_cross,Erythroid,4,11451,0.7222995654107919,human
+seurat_cross,Granulocyte,3,13429,0.493906145033763,human
+seurat_cross,Monocyte,4,1609,0.8303763735145269,human
+seurat_cross,DC,4,446,0.5618953214068132,human
+seurat_cross,B cell,4,875,0.7833469313830338,human
+seurat_cross,Plasma,3,0,NA,human
+seurat_cross,T cell,5,741,0.8181443714650567,human
+seurat_cross,NK/ILC,4,1842,0.6261804285381357,human
+seurat_cross,MSC,3,0,NA,human
+singleR_cross,HSPC,3,1093,0.5553819620331644,human
+singleR_cross,MkP,0,1256,NA,human
+singleR_cross,Erythroid,4,7840,0.8373059089944606,human
+singleR_cross,Granulocyte,3,6653,0.6176674908441638,human
+singleR_cross,Monocyte,4,3167,0.5205708265282508,human
+singleR_cross,DC,4,954,0.5216192787871717,human
+singleR_cross,B cell,4,6517,0.5182180039767917,human
+singleR_cross,Plasma,3,0,NA,human
+singleR_cross,T cell,5,3011,0.7190632840389798,human
+singleR_cross,NK/ILC,4,3510,0.5267492784989751,human
+singleR_cross,MSC,3,0,NA,human
+ebcc,HSPC,3,515,0.606887324368329,human
+ebcc,MkP,0,1078,NA,human
+ebcc,Erythroid,4,7031,0.8626009287949662,human
+ebcc,Granulocyte,3,8510,0.734344111327904,human
+ebcc,Monocyte,4,8758,0.6300514175512496,human
+ebcc,DC,4,1210,0.56257707689582,human
+ebcc,B cell,4,2214,0.6084668689546585,human
+ebcc,Plasma,3,406,0.9307667116654065,human
+ebcc,T cell,5,1535,0.8714334514885917,human
+ebcc,NK/ILC,4,1280,0.7475740376608196,human
+ebcc,MSC,3,1466,0.8895539052800882,human
+seurat,HSPC,4,11077,0.634932402625445,mouse
+seurat,MkP,3,1096,0.8644645163984651,mouse
+seurat,Erythroid,9,23775,0.9350126045340912,mouse
+seurat,Granulocyte,12,8401,0.8231302707361291,mouse
+seurat,Monocyte,5,2211,0.7774959405252576,mouse
+seurat,Macrophage,8,0,NA,mouse
+seurat,DC,2,200,0.6026781271096537,mouse
+seurat,B cell,1,3447,0.5093322954942936,mouse
+seurat,Plasma,2,0,NA,mouse
+seurat,T cell,9,5,0.6413143735588009,mouse
+seurat,NK/ILC,3,1833,0.5254054288268369,mouse
+seurat,MSC,5,0,NA,mouse
+seurat,Endothelial,6,0,NA,mouse
+seurat,Chondro/Osteo,5,0,NA,mouse
+singleR,HSPC,4,1329,0.8611682438110784,mouse
+singleR,MkP,3,3105,0.7601865276552116,mouse
+singleR,Erythroid,9,27880,0.8650146292184797,mouse
+singleR,Granulocyte,12,8269,0.8931455427456986,mouse
+singleR,Monocyte,5,2404,0.8119759314473595,mouse
+singleR,Macrophage,8,0,NA,mouse
+singleR,DC,2,2464,0.5393632651358645,mouse
+singleR,B cell,1,2429,0.5084908001230429,mouse
+singleR,Plasma,2,0,NA,mouse
+singleR,T cell,9,1574,0.5828739839957914,mouse
+singleR,NK/ILC,3,2591,0.49892021960472194,mouse
+singleR,MSC,5,0,NA,mouse
+singleR,Endothelial,6,0,NA,mouse
+singleR,Chondro/Osteo,5,0,NA,mouse
+seurat_cross,HSPC,4,1987,0.7428015660867113,mouse
+seurat_cross,MkP,3,999,0.9738818962362433,mouse
+seurat_cross,Erythroid,9,27329,0.9623022427009845,mouse
+seurat_cross,Granulocyte,12,622,0.9310115308043687,mouse
+seurat_cross,Monocyte,5,3151,0.7321180760893679,mouse
+seurat_cross,Macrophage,8,0,NA,mouse
+seurat_cross,DC,2,274,0.5275407123481892,mouse
+seurat_cross,B cell,1,3570,0.49596526263935176,mouse
+seurat_cross,Plasma,2,1022,0.7912249235821012,mouse
+seurat_cross,T cell,9,772,0.4588937036117445,mouse
+seurat_cross,NK/ILC,3,26,0.5062366265580476,mouse
+seurat_cross,MSC,5,12293,0.9074614108325765,mouse
+seurat_cross,Endothelial,6,0,NA,mouse
+seurat_cross,Chondro/Osteo,5,0,NA,mouse
+singleR_cross,HSPC,4,149,0.593956369114067,mouse
+singleR_cross,MkP,3,425,0.8625682931832167,mouse
+singleR_cross,Erythroid,9,28722,0.9692253182116645,mouse
+singleR_cross,Granulocyte,12,2049,0.9348584050706487,mouse
+singleR_cross,Monocyte,5,1308,0.7945646235648619,mouse
+singleR_cross,Macrophage,8,0,NA,mouse
+singleR_cross,DC,2,1138,0.5644724383341717,mouse
+singleR_cross,B cell,1,1178,0.5151220869177695,mouse
+singleR_cross,Plasma,2,396,0.6453218070069316,mouse
+singleR_cross,T cell,9,1012,0.4371353837619911,mouse
+singleR_cross,NK/ILC,3,719,0.5171937573004802,mouse
+singleR_cross,MSC,5,14949,0.8588846730598505,mouse
+singleR_cross,Endothelial,6,0,NA,mouse
+singleR_cross,Chondro/Osteo,5,0,NA,mouse
+ebcc,HSPC,4,1808,0.8064317722490968,mouse
+ebcc,MkP,3,839,0.9890593008669043,mouse
+ebcc,Erythroid,9,23670,0.9701890748154228,mouse
+ebcc,Granulocyte,12,6003,0.9323121098038069,mouse
+ebcc,Monocyte,5,2007,0.823185649459475,mouse
+ebcc,Macrophage,8,0,NA,mouse
+ebcc,DC,2,1019,0.6150529409336893,mouse
+ebcc,B cell,1,2852,0.5068245272527485,mouse
+ebcc,Plasma,2,140,0.9243672506089422,mouse
+ebcc,T cell,9,1126,0.4304598879347155,mouse
+ebcc,NK/ILC,3,1743,0.5113119911215318,mouse
+ebcc,MSC,5,10838,0.8761274688695267,mouse
+ebcc,Endothelial,6,0,NA,mouse
+ebcc,Chondro/Osteo,5,0,NA,mouse

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,177883,,,3.1948089599609375e-05,4.852370500564575

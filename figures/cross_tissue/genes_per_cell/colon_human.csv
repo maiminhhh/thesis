@@ -1,0 +1,2 @@
+tissue,species,n_cells,n_genes,q25_genes,median_genes,q75_genes,median_pct_panel,mean_genes,zero_genes,zero_gene_names
+colon,human,275701,425,29,41,55,9.647058823529411,43.247840958139435,0,

@@ -1,0 +1,2 @@
+"species","M","frac","changed","previous_frac","rule"
+"human",5,5,TRUE,0,"highest mean marker AUROC on the selection half of cells (seed 1); ties to smaller frac"

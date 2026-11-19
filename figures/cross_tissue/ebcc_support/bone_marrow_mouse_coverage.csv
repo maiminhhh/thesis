@@ -1,0 +1,10 @@
+tissue,species,chosen_frac,labelling,n_cells,labelled
+bone_marrow,mouse,5,Seurat,52045,1
+bone_marrow,mouse,5,SingleR,52045,1
+bone_marrow,mouse,5,Seurat (cross),52045,1
+bone_marrow,mouse,5,SingleR (cross),52045,1
+bone_marrow,mouse,5,Majority vote,52045,0.8381208569507157
+bone_marrow,mouse,5,"Vote, ties to Seurat",52045,1
+bone_marrow,mouse,5,"Vote, ties at random",52045,1
+bone_marrow,mouse,5,EBCC (f = 0),52045,1
+bone_marrow,mouse,5,EBCC (chosen f),52045,1

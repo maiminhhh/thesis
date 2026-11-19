@@ -1,0 +1,4 @@
+Per cell type Seurat assigns (same-species reference), all cells it labels. Open point: median prediction score; thick bar: 25–75%; thin bar: 10–90% of cells.
+Right: cells assigned the type · % with a score of exactly 1 · marker AUROC of the type (its marker score separating the cells Seurat gives it from all others; – = no markers).
+Types ordered by median score within each panel.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type, so its labels and scores are not comparable.

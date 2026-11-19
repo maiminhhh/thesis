@@ -1,0 +1,17 @@
+,Harmony scVI-latent
+NMI_cluster/label,0.27173033261543494
+ARI_cluster/label,0.37009309813907837
+ASW_label,0.5037383414274041
+ASW_label/batch,0.9453630484998422
+PCR_batch,0.8919937370836784
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.8078070232099807
+kBET,
+iLISI,0.5823930398608943
+cLISI,0.9438207037602024
+hvg_overlap,
+trajectory,
+_seconds,312.66354537010193
+_n_cells,19991.0

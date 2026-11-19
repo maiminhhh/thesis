@@ -1,0 +1,71 @@
+tissue,species,chosen_frac,n_held,label_set,celltype,n_markers,n_cells,auroc,n_common
+colon,mouse,0,109865,Seurat,Stromal_Mesenchymal,33,4339,0.8822177819861959,88844
+colon,mouse,0,109865,Seurat,Epithelial_Stem_Progenitor,5,4369,0.881844998638813,88844
+colon,mouse,0,109865,Seurat,Epithelial_Absorptive,18,36832,0.8189572805552191,88844
+colon,mouse,0,109865,Seurat,Epithelial_Secretory,20,13954,0.8288965309265495,88844
+colon,mouse,0,109865,Seurat,Endothelial,21,2216,0.9889391049891907,88844
+colon,mouse,0,109865,Seurat,Smooth_Muscle,11,25022,0.9845023487225072,88844
+colon,mouse,0,109865,Seurat,Immune,41,0,NA,88844
+colon,mouse,0,109865,Seurat,Neural_Glial,34,2112,0.9050174938053691,88844
+colon,mouse,0,109865,Seurat,B_Plasma,1,0,NA,88844
+colon,mouse,0,109865,Seurat,Erythroid,7,0,NA,88844
+colon,mouse,0,109865,SingleR,Stromal_Mesenchymal,33,1548,0.8956435294311267,88844
+colon,mouse,0,109865,SingleR,Epithelial_Stem_Progenitor,5,303,0.7926326052150963,88844
+colon,mouse,0,109865,SingleR,Epithelial_Absorptive,18,55145,0.91996818753564,88844
+colon,mouse,0,109865,SingleR,Epithelial_Secretory,20,3961,0.8543642574167678,88844
+colon,mouse,0,109865,SingleR,Endothelial,21,2513,0.9877405581234845,88844
+colon,mouse,0,109865,SingleR,Smooth_Muscle,11,24522,0.9906700691710122,88844
+colon,mouse,0,109865,SingleR,Immune,41,121,0.9496935070364324,88844
+colon,mouse,0,109865,SingleR,Neural_Glial,34,351,0.965992803268068,88844
+colon,mouse,0,109865,SingleR,B_Plasma,1,380,0.45397143411295465,88844
+colon,mouse,0,109865,SingleR,Erythroid,7,0,NA,88844
+colon,mouse,0,109865,Seurat (cross),Stromal_Mesenchymal,33,17108,0.916523938497349,88844
+colon,mouse,0,109865,Seurat (cross),Epithelial_Stem_Progenitor,5,8366,0.9294175272505327,88844
+colon,mouse,0,109865,Seurat (cross),Epithelial_Absorptive,18,40599,0.8390642648874304,88844
+colon,mouse,0,109865,Seurat (cross),Epithelial_Secretory,20,5653,0.7995152270582312,88844
+colon,mouse,0,109865,Seurat (cross),Endothelial,21,3454,0.9799683312093773,88844
+colon,mouse,0,109865,Seurat (cross),Smooth_Muscle,11,12415,0.9625440908526144,88844
+colon,mouse,0,109865,Seurat (cross),Immune,41,617,0.9541830994782338,88844
+colon,mouse,0,109865,Seurat (cross),Neural_Glial,34,270,0.9502421912959994,88844
+colon,mouse,0,109865,Seurat (cross),B_Plasma,1,362,0.3343484444381171,88844
+colon,mouse,0,109865,Seurat (cross),Erythroid,7,0,NA,88844
+colon,mouse,0,109865,SingleR (cross),Stromal_Mesenchymal,33,884,0.9659333016447212,88844
+colon,mouse,0,109865,SingleR (cross),Epithelial_Stem_Progenitor,5,10725,0.9043593130330032,88844
+colon,mouse,0,109865,SingleR (cross),Epithelial_Absorptive,18,47808,0.8924935145164438,88844
+colon,mouse,0,109865,SingleR (cross),Epithelial_Secretory,20,1784,0.49500539999217075,88844
+colon,mouse,0,109865,SingleR (cross),Endothelial,21,2897,0.9858547941774282,88844
+colon,mouse,0,109865,SingleR (cross),Smooth_Muscle,11,23521,0.9889033813659843,88844
+colon,mouse,0,109865,SingleR (cross),Immune,41,25,0.9020810862540672,88844
+colon,mouse,0,109865,SingleR (cross),Neural_Glial,34,637,0.9729364487797978,88844
+colon,mouse,0,109865,SingleR (cross),B_Plasma,1,501,0.41209564390004727,88844
+colon,mouse,0,109865,SingleR (cross),Erythroid,7,62,0.2875308566615872,88844
+colon,mouse,0,109865,Majority vote,Stromal_Mesenchymal,33,3035,0.9182398101388466,88844
+colon,mouse,0,109865,Majority vote,Epithelial_Stem_Progenitor,5,5610,0.9439491681571064,88844
+colon,mouse,0,109865,Majority vote,Epithelial_Absorptive,18,48002,0.8780698103084319,88844
+colon,mouse,0,109865,Majority vote,Epithelial_Secretory,20,4828,0.8323306089604269,88844
+colon,mouse,0,109865,Majority vote,Endothelial,21,2671,0.9896003282957351,88844
+colon,mouse,0,109865,Majority vote,Smooth_Muscle,11,23764,0.9913478527767464,88844
+colon,mouse,0,109865,Majority vote,Immune,41,49,0.9875875526177587,88844
+colon,mouse,0,109865,Majority vote,Neural_Glial,34,654,0.9865056264050408,88844
+colon,mouse,0,109865,Majority vote,B_Plasma,1,231,0.4130545179601187,88844
+colon,mouse,0,109865,Majority vote,Erythroid,7,0,NA,88844
+colon,mouse,0,109865,EBCC (f = 0),Stromal_Mesenchymal,33,4405,0.8634023024284508,88844
+colon,mouse,0,109865,EBCC (f = 0),Epithelial_Stem_Progenitor,5,7197,0.9387545852655496,88844
+colon,mouse,0,109865,EBCC (f = 0),Epithelial_Absorptive,18,43924,0.8586210361489768,88844
+colon,mouse,0,109865,EBCC (f = 0),Epithelial_Secretory,20,5547,0.8347947655421138,88844
+colon,mouse,0,109865,EBCC (f = 0),Endothelial,21,2832,0.9890332975808658,88844
+colon,mouse,0,109865,EBCC (f = 0),Smooth_Muscle,11,23778,0.9906019729129144,88844
+colon,mouse,0,109865,EBCC (f = 0),Immune,41,184,0.9790282429702135,88844
+colon,mouse,0,109865,EBCC (f = 0),Neural_Glial,34,710,0.9874790851446756,88844
+colon,mouse,0,109865,EBCC (f = 0),B_Plasma,1,267,0.376154938979222,88844
+colon,mouse,0,109865,EBCC (f = 0),Erythroid,7,0,NA,88844
+colon,mouse,0,109865,EBCC (chosen f),Stromal_Mesenchymal,33,4405,0.8634023024284508,88844
+colon,mouse,0,109865,EBCC (chosen f),Epithelial_Stem_Progenitor,5,7197,0.9387545852655496,88844
+colon,mouse,0,109865,EBCC (chosen f),Epithelial_Absorptive,18,43924,0.8586210361489768,88844
+colon,mouse,0,109865,EBCC (chosen f),Epithelial_Secretory,20,5547,0.8347947655421138,88844
+colon,mouse,0,109865,EBCC (chosen f),Endothelial,21,2832,0.9890332975808658,88844
+colon,mouse,0,109865,EBCC (chosen f),Smooth_Muscle,11,23778,0.9906019729129144,88844
+colon,mouse,0,109865,EBCC (chosen f),Immune,41,184,0.9790282429702135,88844
+colon,mouse,0,109865,EBCC (chosen f),Neural_Glial,34,710,0.9874790851446756,88844
+colon,mouse,0,109865,EBCC (chosen f),B_Plasma,1,267,0.376154938979222,88844
+colon,mouse,0,109865,EBCC (chosen f),Erythroid,7,0,NA,88844

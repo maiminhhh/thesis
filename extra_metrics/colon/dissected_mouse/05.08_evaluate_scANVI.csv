@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,309258,0.607784873805945,3093,27251.56318283081,0.2046161531371562,3093,28855.271685361862,28862.453933238983

@@ -1,0 +1,35 @@
+tissue,species,band,type,n_type,auroc
+colon,mouse,< 0.5,stromal_mesenchymal,4390,0.794419623990132
+colon,mouse,< 0.5,epithelial_stem_progenitor,4537,0.7350927396138279
+colon,mouse,< 0.5,epithelial_absorptive,7152,0.51149574760683
+colon,mouse,< 0.5,epithelial_secretory,6629,0.650696857629191
+colon,mouse,< 0.5,endothelial,933,0.9519613431234282
+colon,mouse,< 0.5,smooth_muscle,4545,0.7928031417245545
+colon,mouse,< 0.5,neural_glial,860,0.7558184497169026
+colon,mouse,0.5–0.7,stromal_mesenchymal,7069,0.8745080421808471
+colon,mouse,0.5–0.7,epithelial_stem_progenitor,6266,0.8069413892828031
+colon,mouse,0.5–0.7,epithelial_absorptive,11443,0.6279131915383219
+colon,mouse,0.5–0.7,epithelial_secretory,13048,0.7314354478766416
+colon,mouse,0.5–0.7,endothelial,1533,0.9685234335859348
+colon,mouse,0.5–0.7,smooth_muscle,7384,0.9047473208595578
+colon,mouse,0.5–0.7,neural_glial,857,0.8757695166282143
+colon,mouse,0.7–0.9,stromal_mesenchymal,7541,0.9059475574137484
+colon,mouse,0.7–0.9,epithelial_stem_progenitor,2485,0.8902188558788117
+colon,mouse,0.7–0.9,epithelial_absorptive,19036,0.7969917863784728
+colon,mouse,0.7–0.9,epithelial_secretory,12722,0.8179980045419974
+colon,mouse,0.7–0.9,endothelial,1582,0.9836658998404827
+colon,mouse,0.7–0.9,smooth_muscle,8441,0.9628438972765573
+colon,mouse,0.7–0.9,neural_glial,978,0.915462644249502
+colon,mouse,0.9–1,stromal_mesenchymal,5991,0.9215896273968107
+colon,mouse,0.9–1,epithelial_stem_progenitor,89,0.975887874491869
+colon,mouse,0.9–1,epithelial_absorptive,28724,0.8848131923902471
+colon,mouse,0.9–1,epithelial_secretory,5706,0.8737272400361022
+colon,mouse,0.9–1,endothelial,1142,0.9941446769358862
+colon,mouse,0.9–1,smooth_muscle,9966,0.9943753973145448
+colon,mouse,0.9–1,neural_glial,1184,0.9642204773790413
+colon,mouse,= 1,stromal_mesenchymal,348,0.8619743533805853
+colon,mouse,= 1,epithelial_absorptive,9771,0.9845142789429188
+colon,mouse,= 1,epithelial_secretory,405,0.9238750479340427
+colon,mouse,= 1,endothelial,324,0.9995688694514777
+colon,mouse,= 1,smooth_muscle,25480,0.9992265410797121
+colon,mouse,= 1,neural_glial,1165,0.99643338991525

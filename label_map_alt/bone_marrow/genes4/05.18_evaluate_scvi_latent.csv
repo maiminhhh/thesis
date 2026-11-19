@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,genes4,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,45575,0.5428536381609499,0.5963177831450299,456,11,11,25.515414237976074,27.067747116088867

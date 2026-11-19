@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,dissected_mouse,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,309258,0.541287021550857,3093,1605.8617882728577,0.6917018164809344,3093,29758.743681430817,29765.96722793579

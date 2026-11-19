@@ -1,0 +1,2 @@
+tissue,species,n_cells,n_genes,q25_genes,median_genes,q75_genes,median_pct_panel,mean_genes,zero_genes,zero_gene_names
+bone_marrow,mouse,52045,477,31,42,53,8.80503144654088,42.095436641368046,0,

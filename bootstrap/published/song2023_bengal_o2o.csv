@@ -1,0 +1,10 @@
+published_method,our_method,rank,source
+scANVI O2O,scANVI,1,"Song et al. 2023 (BENGAL), Fig. 2a: strategies ordered by median integrated score; O2O strategies only, unintegrated removed"
+SeuratV4 CCA O2O,CCA,2,
+SeuratV4 RPCA O2O,RPCA,3,
+Harmony O2O,Harmony,4,
+scVI O2O,scVI,5,
+fastMNN O2O,FastMNN,6,
+Scanorama O2O,Scanorama,7,
+LIGER O2O,LIGER,8,
+LIGER UINMF O2O,LIGER UINMF,9,

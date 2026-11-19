@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes4,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,45575,0.3182277755787542,416,20794,2,61.98500180244446,63.240431785583496

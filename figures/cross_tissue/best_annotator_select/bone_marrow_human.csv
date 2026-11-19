@@ -1,0 +1,5 @@
+tissue,species,annotator,n_select,n_labelled,n_types,mean_auroc,score_col,score_saved,score_na
+bone_marrow,human,Seurat,17001,17001,10,0.8066145620141713,labelscore_seurat,TRUE,0
+bone_marrow,human,SingleR,17001,17001,10,0.7269021698034475,labeldelta_singleR,TRUE,0
+bone_marrow,human,Seurat (cross),17001,17001,8,0.6697932567420135,labelscore_seurat_cross,TRUE,0
+bone_marrow,human,SingleR (cross),17001,17000,8,0.6026288021299799,labeldelta_singleR_cross,TRUE,0

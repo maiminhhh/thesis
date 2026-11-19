@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,48691,0.4985154635446222,487,33.81379008293152,0.48735067154376566,487,75.75203800201416,77.90788292884827

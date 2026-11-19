@@ -1,0 +1,92 @@
+tissue,label,species,type,n_specified,on_panel,n_on_panel,not_on_panel
+colon,B/Plasma,human,B/Plasma,13,"MS4A1, CD79A, CD79B, BANK1, DERL3",5,"CD19, MZB1, JCHAIN, XBP1, PRDM1, SDC1, IGHA1, IGHG1"
+colon,B/Plasma,mouse,B_Plasma,1,Sdc1,1,
+colon,Endothelial,human,Endothelial,10,"PECAM1, VWF, PLVAP",3,"CDH5, CLDN5, KDR, FLT1, EGFL7, CLEC14A, RAMP2"
+colon,Endothelial,mouse,Endothelial,21,"Kdr, Tie1, Eng, Plvap, Gpihbp1, Aqp1, Clec14a, Cavin2, Vwf, Sox17, Calcrl, Gng11, Podxl, Tmem100, Angpt2, Ackr3, Cav1, Lipg, Prox1, Lyve1, Mmrn1",21,
+colon,Epithelial: Absorptive,human,Epithelial: Absorptive,12,"CA1, CA2, CA4, SLC26A3, GUCA2A, GUCA2B, MS4A12, CEACAM7, AQP8, SELENBP1",10,"FABP1, KRT20"
+colon,Epithelial: Absorptive,mouse,Epithelial_Absorptive,18,"Car2, Car3, Guca2b, Slc5a1, Cd36, Slc27a2, Rbp2, Selenbp1, Cndp2, Prap1, Ttc36, Mettl7a2, Fmo5, Ace2, Cdhr5, Hmgcs2, Hsd11b2, Aldh1b1",18,
+colon,Epithelial: Secretory,human,Epithelial: Secretory,16,"CLCA1, REG4, CHGA, CHGB, NEUROD1, TRPM5, AVIL",7,"MUC2, TFF3, FCGBP, SPINK4, ZG16, AGR2, PYY, POU2F3, DCLK1"
+colon,Epithelial: Secretory,mouse,Epithelial_Secretory,20,"Tff2, Ctse, B4galnt2, Gpx2, Chgb, Scg2, Scg3, Scg5, Neurod1, Insm1, Ascl1, Sct, Nts, Ppp1r1a, Cplx2, Ptprn2, Alox5ap, Ltc4s, Gp2, Reg3g",20,
+colon,Epithelial: Stem/Progenitor,human,Epithelial: Stem/Progenitor,9,"LGR5, OLFM4, ASCL2, SMOC2, RGMB, SOX9, MKI67, TOP2A",8,PCNA
+colon,Epithelial: Stem/Progenitor,mouse,Epithelial_Stem_Progenitor,5,"Sox9, Cdx1, Stmn1, Cenpf, Ube2c",5,
+colon,Erythroid,human,Erythroid,23,,0,"SLC4A1, SPTA1, SPTB, ANK1, EPB41, EPB42, RHAG, RHCE, GYPB, GYPC, DMTN, ADD2, TMOD1, ALAS2, SLC25A37, FECH, UROD, BLVRB, AHSP, KLF1, GATA1, TAL1, HEMGN"
+colon,Erythroid,mouse,Erythroid,7,"Fech, Hemgn, Hmbs, Rhd, Slc25a37, Slc4a1, Slc14a1",7,
+colon,Immune,human,Immune,14,"CD3D, CD3E, CD2, CD8A, NKG7, CD14, C1QA, CPA3, MS4A2",9,"PTPRC, LYZ, CD68, ITGAM, TPSAB1"
+colon,Immune,mouse,Immune,41,"Marco, Folr2, Mpeg1, Ms4a6b, Ms4a6c, Ms4a7, Cd300lf, C5ar1, Cybb, Ncf4, Lst1, Laptm5, Rac2, Plbd1, F13a1, Ctss, Clec4a3, Retnla, Ccl12, Ccl9, Il1r2, Lamp3, Mpo, Mmp8, Mmp9, Csf3r, Cxcr2, Pglyrp1, Bst1, Fcnb, Stfa2l1, Prg2, Cpa3, Mrgpra2a, Ctsg, Cd3d, Cd8a, Ctla4, Ctla2a, Satb1, Klra8",41,
+colon,Neural/Glial,human,Neural/Glial,8,NRXN1,1,"S100B, PLP1, SOX10, GFAP, ELAVL4, STMN2, KCNMB4"
+colon,Neural/Glial,mouse,Neural_Glial,34,"Plp1, Gfap, Sox2, Mlc1, Fxyd1, Cryab, Ptn, Aif1l, Prx, Pmp22, Cldn11, Chl1, Emb, Snap25, Tubb3, Gad1, Slc17a7, Gap43, Myt1l, Celf3, Nnat, Kcna1, Pvalb, Calb1, Hap1, Pnmal2, Ly6h, Etv1, Arpp21, Rab3b, Sez6l, Chodl, Mapk10, Vsnl1",34,
+colon,Smooth muscle,human,Smooth muscle,9,"ACTA2, TAGLN, PLN",3,"MYH11, DES, MYLK, CNN1, ACTG2, DSTN"
+colon,Smooth muscle,mouse,Smooth_Muscle,11,"Myh11, Tagln, Cnn1, Myl9, Mylk, Des, Pln, Mustn1, Rgs5, Higd1b, Ndufa4l2",11,
+colon,Stromal/Mesenchymal,human,Stromal/Mesenchymal,10,"COL1A1, PDGFRA",2,"COL1A2, COL3A1, COL6A2, DCN, LUM, DPT, FBLN1, THY1"
+colon,Stromal/Mesenchymal,mouse,Stromal_Mesenchymal,33,"Pi16, Dpt, Lum, Bgn, Aspn, Mfap4, Mfap5, Fbln5, Ccdc80, Col8a1, Pcolce2, Htra3, Sfrp1, Sostdc1, Wif1, F3, Thbs4, Ccn3, Igfbp6, Nbl1, Fibin, Colec11, Serpinf1, Cfh, C3, Dnase1l3, Ecrg4, Timp3, Sod3, Itga8, Nox4, Coch, Otor",33,
+bone_marrow,B cell,human,B cell,5,"MS4A1, CD79A, CD19, PAX5",4,VPREB1
+bone_marrow,B cell,mouse,B cell,1,Cxcr5,1,
+bone_marrow,Chondro/Osteo,mouse,Chondro/Osteo,5,"Col2a1, Acan, Comp, Ucma, Runx2",5,
+bone_marrow,DC,human,DC,6,"LILRA4, IL3RA, CD1C, FCER1A",4,"CLEC4C, CLEC9A"
+bone_marrow,DC,mouse,DC,2,"Lamp3, Clec4a3",2,
+bone_marrow,Endothelial,mouse,Endothelial,6,"Kdr, Plvap, Emb, Tie1, Clec14a, Lyve1",6,
+bone_marrow,Erythroid,human,Erythroid,5,"GYPA, CA1, AHSP, KLF1",4,HBB
+bone_marrow,Erythroid,mouse,Erythroid,9,"Gata1, Epor, Klf1, Hemgn, Tfrc, Gypa, Slc4a1, Hbb-bt, Rhd",9,
+bone_marrow,Granulocyte,human,Granulocyte,8,"MPO, ELANE, CAMP",3,"AZU1, LTF, CSF3R, FCGR3B, CXCR2"
+bone_marrow,Granulocyte,mouse,Granulocyte,12,"Mpo, Elane, Ctsg, Ly6g, S100a9, Mmp8, Mmp9, Csf3r, Cxcr2, Fcnb, Prg2, Cpa3",12,
+bone_marrow,HSPC,human,HSPC,4,"CD34, PROM1, CRHBP",3,SPINK2
+bone_marrow,HSPC,mouse,HSPC,4,"Cd34, Kit, Ly6a, Slamf1",4,
+bone_marrow,MSC,human,MSC,5,"CXCL12, PDGFRA, COL1A1",3,"LEPR, KITLG"
+bone_marrow,MSC,mouse,MSC,5,"Col1a1, Col1a2, Pdgfra, Pdgfrb, Vcam1",5,
+bone_marrow,Macrophage,mouse,Macrophage,8,"Adgre1, C1qa, C1qb, Cd68, Siglec1, Spic, Timd4, Mrc1",8,
+bone_marrow,MkP,human,MkP,4,,0,"ITGA2B, PF4, GP9, PPBP"
+bone_marrow,MkP,mouse,MkP,3,"Pf4, Ppbp, Vwf",3,
+bone_marrow,Monocyte,human,Monocyte,5,"CD14, FCN1, VCAN, FCGR3A",4,CSF1R
+bone_marrow,Monocyte,mouse,Monocyte,5,"Ly6c1, Ccr2, Ms4a6c, F13a1, Plbd1",5,
+bone_marrow,NK/ILC,human,NK/ILC,5,"NKG7, GNLY, KLRD1, PRF1",4,KLRF1
+bone_marrow,NK/ILC,mouse,NK/ILC,3,"Ncr1, Klrb1c, Klra8",3,
+bone_marrow,Plasma,human,Plasma,5,"MZB1, TNFRSF17, PRDM1",3,"JCHAIN, SDC1"
+bone_marrow,Plasma,mouse,Plasma,2,"Sdc1, Slamf7",2,
+bone_marrow,T cell,human,T cell,5,"CD3E, CD3D, CD4, CD8A, IL7R",5,
+bone_marrow,T cell,mouse,T cell,9,"Cd3e, Cd3d, Cd4, Cd8a, Satb1, Ctla4, Foxp3, Il2ra, Pdcd1",9,
+fetal_liver,B cell,human,B cell,5,"CD79A, CD19, PAX5, MS4A1, BANK1",5,
+fetal_liver,B cell,mouse,B cell,2,"Cd93, Cxcr5",2,
+fetal_liver,Dendritic cell,human,Dendritic cell,12,"IRF8, CD1C, CD1E, CD1A, FCER1A, CLEC10A, LILRA4, IL3RA, PLD4, LAMP3, CCR7, FLT3",12,
+fetal_liver,Dendritic cell,mouse,Dendritic cell,3,"Plbd1, Lamp3, Clec4a3",3,
+fetal_liver,Endothelial,human,Endothelial,9,"PECAM1, KDR, EGFL7, CLEC14A, RAMP2, ERG, FCN2, DNASE1L3, ACKR1",9,
+fetal_liver,Endothelial,mouse,Endothelial,5,"Kdr, Clec14a, Tie1, Dnase1l3, Oit3",5,
+fetal_liver,Erythroblast,human,Erythroblast,9,"GYPA, GYPB, ALAS2, SLC4A1, AHSP, HEMGN, RHAG, MKI67, TOP2A",9,
+fetal_liver,Erythroblast,mouse,Erythroblast,5,"Gypa, Tfrc, Slc4a1, Rhd, Fech",5,
+fetal_liver,Erythrocyte,human,Erythrocyte,4,"SNCA, CA2, ICAM4, BNIP3L",4,
+fetal_liver,Erythrocyte,mouse,Erythrocyte,1,Hbb-bt,1,
+fetal_liver,Erythroid progenitor,human,Erythroid progenitor,5,"GATA1, KLF1, TFRC, CA1, EPOR",5,
+fetal_liver,Erythroid progenitor,mouse,Erythroid progenitor,4,"Gata1, Klf1, Epor, Car2",4,
+fetal_liver,Fibroblast,human,Fibroblast,14,"COL1A1, COL1A2, BGN, PDGFRA, PDGFRB, PCOLCE, OGN, DPT, FBLN1, SFRP2, RBP5, DES, ACTA2, MYH11",14,
+fetal_liver,Fibroblast,mouse,Fibroblast,5,"Col1a1, Col1a2, Pdgfrb, Des, Colec11",5,
+fetal_liver,Granulocyte,human,Granulocyte,6,"MPO, ELANE, CTSG, CAMP, S100A12, MNDA",6,
+fetal_liver,Granulocyte,mouse,Granulocyte,5,"Mpo, Elane, Ctsg, Ly6g, S100a9",5,
+fetal_liver,HSPC,human,HSPC,4,"CD34, PROM1, CRHBP, HOXA9",4,
+fetal_liver,HSPC,mouse,HSPC,5,"Kit, Ly6a, Cd34, Slamf1, Hemgn",5,
+fetal_liver,Hepatocyte,human,Hepatocyte,15,"GPC3, APOE, HAMP, TAT, HPX, CRP, PLG, KNG1, SELENOP, HMGCS2, ADH4, ADH1C, APOA5, CFHR1, CYP3A4",15,
+fetal_liver,Hepatocyte,mouse,Hepatocyte,5,"Ambp, Hpx, Trf, Gc, Igfbp1",5,
+fetal_liver,Mast cell,human,Mast cell,8,"CPA3, MS4A2, KIT, GATA2, HPGDS, IL1RL1, SLC18A2, VWA5A",8,
+fetal_liver,Mast cell,mouse,Mast cell,2,"Cpa3, Ltc4s",2,
+fetal_liver,Megakaryocyte,human,Megakaryocyte,4,"GNG11, CAVIN2, VWF, MMRN1",4,
+fetal_liver,Megakaryocyte,mouse,Megakaryocyte,3,"Pf4, Ppbp, Gng11",3,
+fetal_liver,Mono/Macrophage,human,Mono/Macrophage,18,"CD14, LYZ, FCN1, VCAN, FCGR3A, CD68, AIF1, CD163, C1QA, C1QB, C1QC, MARCO, VCAM1, CD5L, FOLR2, LYVE1, MRC1, SIGLEC1",18,
+fetal_liver,Mono/Macrophage,mouse,Mono/Macrophage,5,"Adgre1, C1qa, Cd68, Clec4f, Vcam1",5,
+fetal_liver,T/NK/ILC,human,T/NK/ILC,13,"CD3E, CD3D, CD2, CD247, CD8A, IL7R, KLRB1, NKG7, GNLY, KLRD1, GZMA, GZMB, PRF1",13,
+fetal_liver,T/NK/ILC,mouse,T/NK/ILC,4,"Cd3e, Cd3d, Ncr1, Klrb1c",4,
+breast_cancer,B-cells,human,B-cells,4,"MS4A1, CD19, CD79A, PAX5",4,
+breast_cancer,B-cells,mouse,B-cells,13,,0,"Cd79b, Cd22, Ebf1, Cr2, Fcer2a, Bank1, Blk, Cd37, Cd72, Ighm, Ighd, Spib, Tnfrsf13c"
+breast_cancer,CAFs,human,CAFs,5,"PDGFRA, FAP, POSTN, FN1, FBLN1",5,
+breast_cancer,CAFs,mouse,CAFs,22,"Pdgfra, Col1a1, Postn, Dpt, Sfrp1, Sfrp2, Sfrp4, Mmp2, Fn1, Pi16, Prrx1, Twist1",12,"Col1a2, Col5a1, Col6a3, Col14a1, Fbln1, Fbln2, Pdpn, Cxcl12, Ly6a, Twist2"
+breast_cancer,Cancer Epithelial,human,Cancer Epithelial,5,"ERBB2, MKI67, TOP2A, CEACAM6, S100P",5,
+breast_cancer,Cancer Epithelial,mouse,Cancer Epithelial,10,"Mki67, Top2a, Wap",3,"Lalba, Csn3, Ccnb1, Birc5, Pcna, Mcm2, Cdk1"
+breast_cancer,Endothelial,human,Endothelial,5,"PECAM1, VWF, CDH5, CLDN5, KDR",5,
+breast_cancer,Endothelial,mouse,Endothelial,16,"Pecam1, Cdh5, Lyve1",3,"Flt1, Tek, Plvap, Vwf, Esam, Ptprb, Cd34, Egfl7, Ramp2, Sox17, Clec14a, Prox1, Flt4"
+breast_cancer,Myeloid,human,Myeloid,5,"CD68, CD163, CD14, LYZ, C1QA",5,
+breast_cancer,Myeloid,mouse,Myeloid,29,"Adgre1, Cd14, Cd163, Fcer1g, Cx3cr1, Ccr2, Ly6c2, Arg1, S100a8, S100a9, Csf3r",11,"Itgam, Fcgr1, Fcgr3, Mrc1, Itgax, C1qb, C1qc, Tyrobp, Aif1, Spp1, Trem2, Apoe, Ly6g, H2-Ab1, Cd74, Marco, Msr1, Mertk"
+breast_cancer,Normal Epithelial,human,Normal Epithelial,4,"KRT5, KRT14, TP63, ACTG2",4,
+breast_cancer,Normal Epithelial,mouse,Normal Epithelial,10,"Krt5, Krt14, Krt17, Trp63, Acta2",5,"Myh11, Cnn1, Cdh3, Itga6, Itgb4"
+breast_cancer,PVL,human,PVL,4,"RGS5, PDGFRB, MCAM, MYH11",4,
+breast_cancer,PVL,mouse,PVL,9,"Rgs5, Pdgfrb, Notch3",3,"Cspg4, Des, Mcam, Higd1b, Ndufa4l2, Vtn"
+breast_cancer,Plasmablasts,human,Plasmablasts,4,"MZB1, DERL3, TNFRSF17, IGHG3",4,
+breast_cancer,Plasmablasts,mouse,Plasmablasts,14,,0,"Prdm1, Tnfrsf17, Igkc, Ighg1, Ighg2b, Ighg2c, Igha, Derl3, Sec11c, Fkbp11, Txndc5, Slamf7, Irf4, Pou2af1"
+breast_cancer,T-cells,human,T-cells,5,"PTPRC, CD3E, CD2, NKG7, GNLY",5,
+breast_cancer,T-cells,mouse,T-cells,24,"Ptprc, Cd8a, Cd4, Cd3g, Cd7, Foxp3, Ctla4, Pdcd1, Gzma, Gzmb, Tcf7",11,"Cd8b1, Cd247, Trac, Trbc2, Cd5, Cd6, Cd28, Lck, Zap70, Itk, Il7r, Nkg7, Cd27"

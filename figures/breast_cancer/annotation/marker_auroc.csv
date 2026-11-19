@@ -1,0 +1,91 @@
+annotator,celltype,n_markers,n_cells,auroc,species
+seurat,B-cells,4,359,0.7635139197192968,human
+seurat,CAFs,5,16336,0.8695146955374127,human
+seurat,Cancer Epithelial,5,37084,0.9332334199062929,human
+seurat,Endothelial,5,2351,0.9685493805498655,human
+seurat,Myeloid,5,7371,0.9140078284099877,human
+seurat,Normal Epithelial,4,148,0.7535562595664123,human
+seurat,Plasmablasts,4,464,0.9809214708563864,human
+seurat,PVL,4,1442,0.951452392159315,human
+seurat,T-cells,5,3934,0.7676366554130492,human
+singleR,B-cells,4,479,0.6707847158734584,human
+singleR,CAFs,5,15703,0.8762419304308752,human
+singleR,Cancer Epithelial,5,35733,0.933780572387036,human
+singleR,Endothelial,5,2182,0.9654731905094186,human
+singleR,Myeloid,5,8773,0.9287654212915446,human
+singleR,Normal Epithelial,4,334,0.6450553577943958,human
+singleR,Plasmablasts,4,611,0.9341777451867692,human
+singleR,PVL,4,2348,0.8189763489535649,human
+singleR,T-cells,5,2526,0.8819973707775546,human
+seurat_cross,B-cells,4,633,0.663731964099907,human
+seurat_cross,CAFs,5,12132,0.8720720852233029,human
+seurat_cross,Cancer Epithelial,5,0,NA,human
+seurat_cross,Endothelial,5,2176,0.9916664793740131,human
+seurat_cross,Myeloid,5,7637,0.9468316908687933,human
+seurat_cross,Normal Epithelial,4,37314,0.5025780121149152,human
+seurat_cross,Plasmablasts,4,0,NA,human
+seurat_cross,PVL,4,0,NA,human
+seurat_cross,T-cells,5,9597,0.6111526885032982,human
+singleR_cross,B-cells,4,1947,0.606484488472724,human
+singleR_cross,CAFs,5,15267,0.8159508362692628,human
+singleR_cross,Cancer Epithelial,5,0,NA,human
+singleR_cross,Endothelial,5,3256,0.907169865568238,human
+singleR_cross,Myeloid,5,8943,0.8999736306061079,human
+singleR_cross,Normal Epithelial,4,36983,0.5017263946118404,human
+singleR_cross,Plasmablasts,4,0,NA,human
+singleR_cross,PVL,4,0,NA,human
+singleR_cross,T-cells,5,2846,0.8724417030896671,human
+ebcc,B-cells,4,932,0.6099095683733238,human
+ebcc,CAFs,5,15150,0.8692672865254836,human
+ebcc,Cancer Epithelial,5,34453,0.9331576517071508,human
+ebcc,Endothelial,5,2681,0.9506938073827313,human
+ebcc,Myeloid,5,8216,0.9323215866590072,human
+ebcc,Normal Epithelial,4,2929,0.5073414330460317,human
+ebcc,Plasmablasts,4,440,0.9828022491274312,human
+ebcc,PVL,4,1158,0.9628734131677288,human
+ebcc,T-cells,5,3530,0.8209503053381904,human
+seurat,B-cells,0,3950,NA,mouse
+seurat,CAFs,12,28720,0.8856400629721405,mouse
+seurat,Cancer Epithelial,3,0,NA,mouse
+seurat,Endothelial,3,6108,0.9519020957743234,mouse
+seurat,Myeloid,11,2355,0.849411104966216,mouse
+seurat,Normal Epithelial,5,418671,0.582769112510025,mouse
+seurat,Plasmablasts,0,0,NA,mouse
+seurat,PVL,3,0,NA,mouse
+seurat,T-cells,11,17217,0.4606740312608189,mouse
+singleR,B-cells,0,1828,NA,mouse
+singleR,CAFs,12,40891,0.8314717575278733,mouse
+singleR,Cancer Epithelial,3,0,NA,mouse
+singleR,Endothelial,3,7002,0.8709893815349815,mouse
+singleR,Myeloid,11,685,0.7391625854835094,mouse
+singleR,Normal Epithelial,5,424683,0.5789875541903314,mouse
+singleR,Plasmablasts,0,0,NA,mouse
+singleR,PVL,3,0,NA,mouse
+singleR,T-cells,11,1470,0.6637286435826139,mouse
+seurat_cross,B-cells,0,107,NA,mouse
+seurat_cross,CAFs,12,18656,0.9163895995978809,mouse
+seurat_cross,Cancer Epithelial,3,424846,0.5831958067881395,mouse
+seurat_cross,Endothelial,3,14106,0.8447627631304696,mouse
+seurat_cross,Myeloid,11,5865,0.9058346031237949,mouse
+seurat_cross,Normal Epithelial,5,7712,0.7684429139558487,mouse
+seurat_cross,Plasmablasts,0,1722,NA,mouse
+seurat_cross,PVL,3,2417,0.8971250764267583,mouse
+seurat_cross,T-cells,11,1590,0.5352624594361775,mouse
+singleR_cross,B-cells,0,2003,NA,mouse
+singleR_cross,CAFs,12,24048,0.9071276257251183,mouse
+singleR_cross,Cancer Epithelial,3,361993,0.5916890282808965,mouse
+singleR_cross,Endothelial,3,13958,0.8102741562650486,mouse
+singleR_cross,Myeloid,11,2954,0.8079700416058029,mouse
+singleR_cross,Normal Epithelial,5,59047,0.6217934418174886,mouse
+singleR_cross,Plasmablasts,0,5181,NA,mouse
+singleR_cross,PVL,3,6411,0.7196707219896626,mouse
+singleR_cross,T-cells,11,1263,0.7164590894547836,mouse
+ebcc,B-cells,0,2156,NA,mouse
+ebcc,CAFs,12,26428,0.915160141023936,mouse
+ebcc,Cancer Epithelial,3,352120,0.5919429893235183,mouse
+ebcc,Endothelial,3,10691,0.8905452249014134,mouse
+ebcc,Myeloid,11,3094,0.9068917452748966,mouse
+ebcc,Normal Epithelial,5,73166,0.6021272528174115,mouse
+ebcc,Plasmablasts,0,1426,NA,mouse
+ebcc,PVL,3,2450,0.915361070034509,mouse
+ebcc,T-cells,11,5490,0.5039921065712392,mouse

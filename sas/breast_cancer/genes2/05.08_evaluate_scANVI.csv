@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes2,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,177683,0.505049325945743,1385,69237,2,27946.345674037933,27953.665322065353

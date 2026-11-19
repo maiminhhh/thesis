@@ -1,0 +1,18 @@
+,FastMNN scVI-latent
+NMI_cluster/label,0.22032569879652164
+ARI_cluster/label,0.1343202935042439
+ASW_label,0.4934249885710647
+ASW_label/batch,0.9114985662368409
+PCR_batch,0.9392967308077949
+cell_cycle_conservation,
+isolated_label_F1,0.0365296803652968
+isolated_label_silhouette,0.4861045952494013
+graph_conn,0.6609040421751431
+kBET,
+iLISI,0.5810920932471202
+cLISI,0.9034250440645231
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,444.2798273563385
+_n_cells,20007.0

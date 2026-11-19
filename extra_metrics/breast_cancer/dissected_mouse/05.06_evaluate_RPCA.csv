@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,177883,0.7239449556329792,1779,604.1811726093292,0.19631155216327867,1779,1120.3274478912354,1126.446762084961

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,genes2,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,282299,0.770891873958587,1153,57664,2,420.73353385925293,432.09577536582947

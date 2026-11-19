@@ -1,0 +1,17 @@
+,scANVI
+NMI_cluster/label,0.46286627581034523
+ARI_cluster/label,0.44406999649734574
+ASW_label,0.5312647335231304
+ASW_label/batch,0.8702637545522295
+PCR_batch,0.028592053510317426
+cell_cycle_conservation,
+isolated_label_F1,0.11627906976744186
+isolated_label_silhouette,0.5486680716276169
+graph_conn,0.7949214251892943
+kBET,
+iLISI,0.04183704597783078
+cLISI,0.9122622136885544
+hvg_overlap,
+trajectory,
+_seconds,281.4968886375427
+_n_cells,19989.0

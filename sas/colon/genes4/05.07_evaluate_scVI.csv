@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes4,05.07_evaluate_scVI.py,scVI,embed,X_scvi,301332,0.5264735645336238,767,38371,2,414.56452322006226,420.19749426841736

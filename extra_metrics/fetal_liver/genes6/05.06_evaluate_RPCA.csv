@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes6,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,281608,0.4544387221669295,2816,1686.8375535011292,0.32061247377117563,2816,3898.7670669555664,3905.806720495224

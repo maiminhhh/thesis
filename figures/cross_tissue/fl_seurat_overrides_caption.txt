@@ -1,0 +1,3 @@
+Human fetal liver, evaluation half: the 7,211 cells in the top two fifths of Seurat's prediction score (score >= 0.950) whose EBCC label differs from Seurat's.
+A: number of the other three annotators (SingleR, Seurat cross-species, SingleR cross-species) whose label is EBCC's label;
+a pruned SingleR call counts as not matching. B: EBCC's labels for these cells, coloured by the same count; totals at the bar ends.

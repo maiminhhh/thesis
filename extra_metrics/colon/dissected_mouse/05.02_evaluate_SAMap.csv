@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+colon,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,309256,,,6.198883056640625e-06,17.46518349647522

@@ -1,0 +1,21 @@
+labels,method,n_first,share
+"Best-labeller labels (human Seurat, mouse EBCC)",CCA UINMF,3,0.11538461538461539
+"Best-labeller labels (human Seurat, mouse EBCC)",FastMNN UINMF,2,0.07692307692307693
+"Best-labeller labels (human Seurat, mouse EBCC)",Harmony UINMF,1,0.038461538461538464
+"Best-labeller labels (human Seurat, mouse EBCC)",RPCA UINMF,2,0.07692307692307693
+"Best-labeller labels (human Seurat, mouse EBCC)",SAMap,5,0.19230769230769232
+"Best-labeller labels (human Seurat, mouse EBCC)",Scanorama UINMF,2,0.07692307692307693
+"Best-labeller labels (human Seurat, mouse EBCC)",Unintegrated UINMF,2,0.07692307692307693
+"Best-labeller labels (human Seurat, mouse EBCC)",scANVI,9,0.34615384615384615
+EBCC labels,BBKNN UINMF,3,0.11538461538461539
+EBCC labels,Harmony UINMF,2,0.07692307692307693
+EBCC labels,RPCA UINMF,6,0.23076923076923078
+EBCC labels,SAMap,2,0.07692307692307693
+EBCC labels,Scanorama UINMF,4,0.15384615384615385
+EBCC labels,Unintegrated UINMF,3,0.11538461538461539
+EBCC labels,scANVI,6,0.23076923076923078
+EBCC labels,FastMNN UINMF,0,0
+EBCC labels,CCA UINMF,0,0
+EBCC labels,LIGER UINMF,0,0
+"Best-labeller labels (human Seurat, mouse EBCC)",LIGER UINMF,0,0
+"Best-labeller labels (human Seurat, mouse EBCC)",BBKNN UINMF,0,0

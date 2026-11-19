@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes6,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,290766,0.46870938809824236,2908,1990.0226655006409,0.4917956717396359,2908,4939.686656713486,4945.252459764481

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,genes6,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,281608,0.4544535060346137,2816,1411.969484090805,0.17167370943242855,2816,3582.165997982025,3591.4765009880066

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+fetal_liver,genes8,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,280334,0.4132011122137192,0.45328529258527206,2803,14,14,1086.5345339775085,1093.6260178089142

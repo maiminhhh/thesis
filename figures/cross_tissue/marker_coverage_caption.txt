@@ -1,0 +1,3 @@
+Number of genes in each dataset's gene panel that are markers of each cell type in the annotation (used for marker AUROC).
+Panel headings: panel genes that are a marker of at least one type (a gene can mark several types), out of all panel genes.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type.

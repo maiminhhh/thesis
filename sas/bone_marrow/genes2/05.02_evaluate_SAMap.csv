@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+bone_marrow,genes2,05.02_evaluate_SAMap.py,SAMap,knn,,48691,,5.245208740234375e-06,1.9619011878967285

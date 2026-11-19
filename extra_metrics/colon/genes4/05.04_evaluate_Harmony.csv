@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes4,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,301332,0.5125090552485788,3013,2690.9268929958344,0.766917204634667,3013,6648.622210979462,6657.437327861786

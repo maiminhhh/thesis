@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+bone_marrow,mouse,1,5657,16,0.3715750397737317,0.16528195156443345,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,2,5654,33,0.17757339936328262,0.3956490979837283,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,3,5652,43,0.17126680820948337,0.4002123142250531,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,4,5651,53,0.1812068660414086,0.4232879136436029,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,5,5651,70,0.19235533533887808,0.4045301716510352,SingleR pulls into its dominant label,Erythroid
+bone_marrow,mouse,1,4835,19,0.13174767321613237,0.3811789038262668,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,2,4834,34,0.12019031857674803,0.42718245759205625,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,3,4834,44,0.10095159288374017,0.44290442697558957,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,4,4834,53,0.059164253206454284,0.4439387670666115,Seurat pulls into its dominant label,Erythroid
+bone_marrow,mouse,5,4828,69,0.01843413421706711,0.3972659486329743,Seurat pulls into its dominant label,Erythroid

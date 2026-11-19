@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes8,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,172530,0.6882705629172691,1725,530.2130851745605,0.6106103299239052,1725,1115.752964258194,1118.6017241477966

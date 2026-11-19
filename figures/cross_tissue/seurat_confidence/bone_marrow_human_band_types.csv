@@ -1,0 +1,50 @@
+tissue,species,band,type,n_type,auroc
+bone_marrow,human,< 0.5,hspc,118,0.624744910192403
+bone_marrow,human,< 0.5,erythroid,540,0.5573866000832293
+bone_marrow,human,< 0.5,granulocyte,197,0.900814768268057
+bone_marrow,human,< 0.5,monocyte,1329,0.4811441754229164
+bone_marrow,human,< 0.5,dc,159,0.6597664543524416
+bone_marrow,human,< 0.5,b_cell,156,0.5716039713812542
+bone_marrow,human,< 0.5,plasma,36,0.7801997139646542
+bone_marrow,human,< 0.5,t_cell,487,0.5329348991269449
+bone_marrow,human,< 0.5,nk_ilc,101,0.733809497272429
+bone_marrow,human,< 0.5,msc,142,0.795068637992032
+bone_marrow,human,0.5–0.7,hspc,119,0.7654120067270894
+bone_marrow,human,0.5–0.7,erythroid,829,0.6147117017377607
+bone_marrow,human,0.5–0.7,granulocyte,316,0.8947867749986087
+bone_marrow,human,0.5–0.7,monocyte,3450,0.47123694088207696
+bone_marrow,human,0.5–0.7,dc,153,0.7043863017205126
+bone_marrow,human,0.5–0.7,b_cell,112,0.7109728903002849
+bone_marrow,human,0.5–0.7,plasma,83,0.9126922526612061
+bone_marrow,human,0.5–0.7,t_cell,640,0.6201640764758497
+bone_marrow,human,0.5–0.7,nk_ilc,180,0.7934816345270891
+bone_marrow,human,0.5–0.7,msc,316,0.8807902723852006
+bone_marrow,human,0.7–0.9,hspc,78,0.8861920674253345
+bone_marrow,human,0.7–0.9,erythroid,1143,0.724828129839296
+bone_marrow,human,0.7–0.9,granulocyte,381,0.9188242931588145
+bone_marrow,human,0.7–0.9,monocyte,8645,0.47791024066448684
+bone_marrow,human,0.7–0.9,dc,70,0.8377689282323787
+bone_marrow,human,0.7–0.9,b_cell,127,0.8572969521481107
+bone_marrow,human,0.7–0.9,plasma,85,0.9294564974278685
+bone_marrow,human,0.7–0.9,t_cell,709,0.7169059351219484
+bone_marrow,human,0.7–0.9,nk_ilc,152,0.8578847297513666
+bone_marrow,human,0.7–0.9,msc,226,0.9385634700856157
+bone_marrow,human,0.9–1,hspc,33,0.9509116621669654
+bone_marrow,human,0.9–1,erythroid,1734,0.849821207076955
+bone_marrow,human,0.9–1,granulocyte,246,0.9247352590818563
+bone_marrow,human,0.9–1,monocyte,4903,0.5921011711166088
+bone_marrow,human,0.9–1,dc,27,0.8842708044703057
+bone_marrow,human,0.9–1,b_cell,183,0.9310060648511026
+bone_marrow,human,0.9–1,plasma,97,0.992660312520262
+bone_marrow,human,0.9–1,t_cell,493,0.9006019405379309
+bone_marrow,human,0.9–1,nk_ilc,96,0.9863362312916615
+bone_marrow,human,0.9–1,msc,193,0.9720864323119733
+bone_marrow,human,= 1,erythroid,2741,0.9794311379560402
+bone_marrow,human,= 1,granulocyte,20,0.9926631578947368
+bone_marrow,human,= 1,monocyte,1241,0.8660484134107883
+bone_marrow,human,= 1,dc,25,0.9988619599578503
+bone_marrow,human,= 1,b_cell,173,0.9906976276309883
+bone_marrow,human,= 1,plasma,95,0.9888443568815086
+bone_marrow,human,= 1,t_cell,260,0.9602950707828757
+bone_marrow,human,= 1,nk_ilc,36,0.9999706614091912
+bone_marrow,human,= 1,msc,102,0.9898663407093772

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,genes6,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,41058,0.6695083318321531,326,16313,2,12.689520835876465,13.511837005615234

@@ -1,0 +1,17 @@
+,RPCA UINMF
+NMI_cluster/label,0.2067332188057087
+ARI_cluster/label,0.03782021272945719
+ASW_label,0.5458017352715859
+ASW_label/batch,0.8477452682920252
+PCR_batch,0.924969867268945
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.6273477931833664
+kBET,
+iLISI,0.1795647221002441
+cLISI,0.9130098928246306
+hvg_overlap,
+trajectory,
+_seconds,190.73588681221008
+_n_cells,19990.0

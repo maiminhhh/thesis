@@ -1,0 +1,20 @@
+change,backing,n,total
+Erythrocyte → Erythroblast,All three,108,284
+Erythrocyte → Erythroblast,SingleR,6,284
+Erythrocyte → Erythroblast,SingleR + SingleR (cross),170,284
+Fibroblast → Megakaryocyte,Other pairs,3,338
+Fibroblast → Megakaryocyte,Seurat (cross),335,338
+Hepatocyte → Erythroblast,SingleR,58,3214
+Hepatocyte → Erythroblast,SingleR + SingleR (cross),3156,3214
+Hepatocyte → Erythroid progenitor,SingleR (cross),2920,2921
+Hepatocyte → Erythroid progenitor,SingleR + SingleR (cross),1,2921
+Hepatocyte → Fibroblast,SingleR,74,74
+Other changes,All three,13,304
+Other changes,Other pairs,83,304
+Other changes,Seurat (cross),133,304
+Other changes,SingleR,35,304
+Other changes,SingleR (cross),11,304
+Other changes,SingleR + SingleR (cross),29,304
+T/NK/ILC → Granulocyte,Other pairs,3,42
+T/NK/ILC → Granulocyte,Seurat (cross),39,42
+T/NK/ILC → HSPC,Seurat (cross),34,34

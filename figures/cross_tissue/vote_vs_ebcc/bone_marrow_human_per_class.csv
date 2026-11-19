@@ -1,0 +1,78 @@
+tissue,species,chosen_frac,n_held,label_set,celltype,n_markers,n_cells,auroc,n_common
+bone_marrow,human,5,17002,Seurat,HSPC,3,133,0.7972628185485607,12009
+bone_marrow,human,5,17002,Seurat,MkP,0,93,NA,12009
+bone_marrow,human,5,17002,Seurat,Erythroid,4,3417,0.83000701253291,12009
+bone_marrow,human,5,17002,Seurat,Granulocyte,3,492,0.9244789074616456,12009
+bone_marrow,human,5,17002,Seurat,Monocyte,4,5793,0.5341336518511557,12009
+bone_marrow,human,5,17002,Seurat,DC,4,155,0.727752711756478,12009
+bone_marrow,human,5,17002,Seurat,B cell,4,332,0.8330069872708269,12009
+bone_marrow,human,5,17002,Seurat,Plasma,3,109,0.9331651376146789,12009
+bone_marrow,human,5,17002,Seurat,T cell,5,951,0.7615158026343841,12009
+bone_marrow,human,5,17002,Seurat,NK/ILC,4,177,0.8655267435242167,12009
+bone_marrow,human,5,17002,Seurat,MSC,3,357,0.9261593926963164,12009
+bone_marrow,human,5,17002,SingleR,HSPC,3,143,0.5898447583092787,12009
+bone_marrow,human,5,17002,SingleR,MkP,0,286,NA,12009
+bone_marrow,human,5,17002,SingleR,Erythroid,4,3807,0.8617107585604286,12009
+bone_marrow,human,5,17002,SingleR,Granulocyte,3,3366,0.7410942530641573,12009
+bone_marrow,human,5,17002,SingleR,Monocyte,4,1286,0.7319561272124903,12009
+bone_marrow,human,5,17002,SingleR,DC,4,284,0.570845971350491,12009
+bone_marrow,human,5,17002,SingleR,B cell,4,377,0.7519051304550878,12009
+bone_marrow,human,5,17002,SingleR,Plasma,3,203,0.8066391890572465,12009
+bone_marrow,human,5,17002,SingleR,T cell,5,1291,0.7028049486092949,12009
+bone_marrow,human,5,17002,SingleR,NK/ILC,4,250,0.8814293732460243,12009
+bone_marrow,human,5,17002,SingleR,MSC,3,716,0.8682423407588722,12009
+bone_marrow,human,5,17002,Seurat (cross),HSPC,3,1204,0.5132354591589657,12009
+bone_marrow,human,5,17002,Seurat (cross),MkP,0,99,NA,12009
+bone_marrow,human,5,17002,Seurat (cross),Erythroid,4,4731,0.7726319576624427,12009
+bone_marrow,human,5,17002,Seurat (cross),Granulocyte,3,3818,0.48724094383830674,12009
+bone_marrow,human,5,17002,Seurat (cross),Monocyte,4,662,0.8518688278068095,12009
+bone_marrow,human,5,17002,Seurat (cross),DC,4,188,0.5708097921657634,12009
+bone_marrow,human,5,17002,Seurat (cross),B cell,4,334,0.7896605931605739,12009
+bone_marrow,human,5,17002,Seurat (cross),Plasma,3,0,NA,12009
+bone_marrow,human,5,17002,Seurat (cross),T cell,5,300,0.8680887920972471,12009
+bone_marrow,human,5,17002,Seurat (cross),NK/ILC,4,673,0.6428785832404438,12009
+bone_marrow,human,5,17002,Seurat (cross),MSC,3,0,NA,12009
+bone_marrow,human,5,17002,SingleR (cross),HSPC,3,381,0.5582644210237394,12009
+bone_marrow,human,5,17002,SingleR (cross),MkP,0,434,NA,12009
+bone_marrow,human,5,17002,SingleR (cross),Erythroid,4,3690,0.8470014603980636,12009
+bone_marrow,human,5,17002,SingleR (cross),Granulocyte,3,2114,0.6411587754678619,12009
+bone_marrow,human,5,17002,SingleR (cross),Monocyte,4,1135,0.5372074924708252,12009
+bone_marrow,human,5,17002,SingleR (cross),DC,4,356,0.530602742988496,12009
+bone_marrow,human,5,17002,SingleR (cross),B cell,4,1659,0.5338395168499737,12009
+bone_marrow,human,5,17002,SingleR (cross),Plasma,3,0,NA,12009
+bone_marrow,human,5,17002,SingleR (cross),T cell,5,1217,0.7406750214559858,12009
+bone_marrow,human,5,17002,SingleR (cross),NK/ILC,4,1023,0.5460930992061522,12009
+bone_marrow,human,5,17002,SingleR (cross),MSC,3,0,NA,12009
+bone_marrow,human,5,17002,Majority vote,HSPC,3,237,0.6316638852687705,12009
+bone_marrow,human,5,17002,Majority vote,MkP,0,166,NA,12009
+bone_marrow,human,5,17002,Majority vote,Erythroid,4,4333,0.8172146494533331,12009
+bone_marrow,human,5,17002,Majority vote,Granulocyte,3,2927,0.6269915631086829,12009
+bone_marrow,human,5,17002,Majority vote,Monocyte,4,2034,0.6818683877836184,12009
+bone_marrow,human,5,17002,Majority vote,DC,4,157,0.6431884967679942,12009
+bone_marrow,human,5,17002,Majority vote,B cell,4,437,0.7644464148845038,12009
+bone_marrow,human,5,17002,Majority vote,Plasma,3,77,0.942491216460375,12009
+bone_marrow,human,5,17002,Majority vote,T cell,5,1022,0.7747791955516901,12009
+bone_marrow,human,5,17002,Majority vote,NK/ILC,4,387,0.6943921956798498,12009
+bone_marrow,human,5,17002,Majority vote,MSC,3,232,0.9344439263555792,12009
+bone_marrow,human,5,17002,EBCC (f = 0),HSPC,3,320,0.5714721105312687,12009
+bone_marrow,human,5,17002,EBCC (f = 0),MkP,0,185,NA,12009
+bone_marrow,human,5,17002,EBCC (f = 0),Erythroid,4,4049,0.8384940260700886,12009
+bone_marrow,human,5,17002,EBCC (f = 0),Granulocyte,3,2328,0.6521091105225775,12009
+bone_marrow,human,5,17002,EBCC (f = 0),Monocyte,4,2139,0.6034463926320331,12009
+bone_marrow,human,5,17002,EBCC (f = 0),DC,4,177,0.602955262564796,12009
+bone_marrow,human,5,17002,EBCC (f = 0),B cell,4,716,0.6507514790147849,12009
+bone_marrow,human,5,17002,EBCC (f = 0),Plasma,3,83,0.9395398127812272,12009
+bone_marrow,human,5,17002,EBCC (f = 0),T cell,5,1117,0.775997496047299,12009
+bone_marrow,human,5,17002,EBCC (f = 0),NK/ILC,4,481,0.6239882718890353,12009
+bone_marrow,human,5,17002,EBCC (f = 0),MSC,3,414,0.9271414673574525,12009
+bone_marrow,human,5,17002,EBCC (chosen f),HSPC,3,173,0.639740470437013,12009
+bone_marrow,human,5,17002,EBCC (chosen f),MkP,0,323,NA,12009
+bone_marrow,human,5,17002,EBCC (chosen f),Erythroid,4,3492,0.8627940870499416,12009
+bone_marrow,human,5,17002,EBCC (chosen f),Granulocyte,3,3228,0.7414246986459867,12009
+bone_marrow,human,5,17002,EBCC (chosen f),Monocyte,4,2077,0.6282692457967913,12009
+bone_marrow,human,5,17002,EBCC (chosen f),DC,4,310,0.5858111666560969,12009
+bone_marrow,human,5,17002,EBCC (chosen f),B cell,4,704,0.6522432627357163,12009
+bone_marrow,human,5,17002,EBCC (chosen f),Plasma,3,126,0.9213435493415296,12009
+bone_marrow,human,5,17002,EBCC (chosen f),T cell,5,625,0.8785033028812368,12009
+bone_marrow,human,5,17002,EBCC (chosen f),NK/ILC,4,442,0.7377524491385424,12009
+bone_marrow,human,5,17002,EBCC (chosen f),MSC,3,509,0.9121503374049714,12009

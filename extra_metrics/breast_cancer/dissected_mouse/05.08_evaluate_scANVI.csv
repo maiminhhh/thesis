@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,177883,0.8328078930977937,1779,840.900634765625,0.07051176343285544,1779,1583.7890450954437,1590.319450378418

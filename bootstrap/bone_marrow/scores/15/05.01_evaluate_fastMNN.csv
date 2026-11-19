@@ -1,0 +1,17 @@
+,FastMNN
+NMI_cluster/label,0.18151380500552486
+ARI_cluster/label,0.03545380305315184
+ASW_label,0.5019355479629036
+ASW_label/batch,0.762557216521441
+PCR_batch,0.0
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.4183888649422508
+kBET,
+iLISI,0.14421214857272435
+cLISI,0.9107103486495411
+hvg_overlap,
+trajectory,
+_seconds,137.88034963607788
+_n_cells,19990.0

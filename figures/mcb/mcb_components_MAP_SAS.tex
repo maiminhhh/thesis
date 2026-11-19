@@ -1,0 +1,29 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{2}{c}{Overall} & \multicolumn{2}{c}{Bio-conservation} & \multicolumn{2}{c}{Batch correction} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Method & Mean & MCB interval & Mean & MCB interval & Mean & MCB interval \\
+\midrule
+LIGER UINMF & \textbf{0.179} & \textbf{[-0.074, 0.083]} & 0.035 & [-0.189, 0.000] & \textbf{0.394} & \textbf{[-0.147, 0.124]} \\
+Harmony scVI-latent & \textbf{0.174} & \textbf{[-0.083, 0.074]} & 0.045 & [-0.179, 0.000] & \textbf{0.367} & \textbf{[-0.173, 0.098]} \\
+FastMNN scVI-latent & \textbf{0.171} & \textbf{[-0.086, 0.071]} & 0.015 & [-0.209, 0.000] & \textbf{0.405} & \textbf{[-0.124, 0.147]} \\
+RPCA (Seurat) scVI-latent & \textbf{0.166} & \textbf{[-0.091, 0.065]} & 0.026 & [-0.198, 0.000] & \textbf{0.375} & \textbf{[-0.165, 0.106]} \\
+Scanorama scVI-latent & \textbf{0.160} & \textbf{[-0.097, 0.060]} & 0.007 & [-0.217, 0.000] & \textbf{0.389} & \textbf{[-0.151, 0.120]} \\
+Harmony UINMF & \textbf{0.156} & \textbf{[-0.101, 0.055]} & 0.052 & [-0.172, 0.000] & \textbf{0.311} & \textbf{[-0.229, 0.042]} \\
+FastMNN UINMF & \textbf{0.154} & \textbf{[-0.103, 0.054]} & 0.053 & [-0.171, 0.000] & \textbf{0.305} & \textbf{[-0.235, 0.036]} \\
+scANVI$^\dagger$ & \textbf{0.151} & \textbf{[-0.106, 0.050]} & \textbf{0.156} & \textbf{[0.000, 0.161]} & 0.142 & [-0.398, 0.000] \\
+RPCA (Seurat) UINMF & \textbf{0.148} & \textbf{[-0.108, 0.048]} & 0.059 & [-0.165, 0.000] & \textbf{0.283} & \textbf{[-0.257, 0.013]} \\
+LIGER & \textbf{0.145} & \textbf{[-0.112, 0.045]} & -0.016 & [-0.239, 0.000] & \textbf{0.386} & \textbf{[-0.154, 0.116]} \\
+CCA (Seurat) scVI-latent & \textbf{0.138} & \textbf{[-0.119, 0.038]} & 0.015 & [-0.209, 0.000] & \textbf{0.322} & \textbf{[-0.218, 0.053]} \\
+RPCA (Seurat) & \textbf{0.134} & \textbf{[-0.123, 0.034]} & 0.039 & [-0.185, 0.000] & \textbf{0.276} & \textbf{[-0.264, 0.007]} \\
+CCA (Seurat) & \textbf{0.133} & \textbf{[-0.124, 0.033]} & 0.022 & [-0.202, 0.000] & \textbf{0.300} & \textbf{[-0.240, 0.031]} \\
+Harmony & \textbf{0.133} & \textbf{[-0.124, 0.033]} & -0.006 & [-0.230, 0.000] & \textbf{0.342} & \textbf{[-0.199, 0.072]} \\
+Scanorama & \textbf{0.131} & \textbf{[-0.126, 0.031]} & -0.010 & [-0.234, 0.000] & \textbf{0.343} & \textbf{[-0.197, 0.074]} \\
+Scanorama UINMF & \textbf{0.124} & \textbf{[-0.133, 0.024]} & 0.047 & [-0.177, 0.000] & 0.240 & [-0.300, 0.000] \\
+scVI & \textbf{0.121} & \textbf{[-0.136, 0.020]} & 0.063 & [-0.161, 0.000] & 0.207 & [-0.333, 0.000] \\
+CCA (Seurat) UINMF & \textbf{0.108} & \textbf{[-0.149, 0.008]} & 0.062 & [-0.162, 0.000] & 0.176 & [-0.364, 0.000] \\
+FastMNN & 0.054 & [-0.203, 0.000] & 0.021 & [-0.203, 0.000] & 0.103 & [-0.437, 0.000] \\
+\midrule
+Could be best & \multicolumn{2}{c}{18 of 19} & \multicolumn{2}{c}{1 of 19} & \multicolumn{2}{c}{14 of 19} \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+fetal_liver,dissected_mouse,05.14_evaluate_Harmony_uinmf.py,Harmony UINMF,embed,X_harmony,282334,0.8311848500220917,1153,57664,2,442.34823417663574,451.2670998573303

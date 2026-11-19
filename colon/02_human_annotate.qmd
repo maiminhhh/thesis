@@ -1,0 +1,659 @@
+---
+title: "02_human_annotate"
+format: html
+---
+
+```{r}
+source('../library.R')
+source('../source.R')
+human = readRDS('data/01_processed_data/01_human_processed.rds')
+```
+
+# Within-species reference-based annotation
+
+Reference: <https://cellxgene.cziscience.com/collections/f11cb29c-b546-4738-9bd8-66ea621a7bd5>
+
+```{r}
+human_ref = read_h5ad('data/02_annotation_refs/human.h5ad')
+human_ref = human_ref$as_Seurat()
+human_ref = human_ref |> 
+  subset(control_vs_disease == 'control') |> 
+  subset(organ_unified |> str_detect('colon')) |> 
+  subset(donor_disease %in% c('control', 'organ_donor')) |> 
+  subset(!sample_retrieval %in% c('Medical_termination', 'Oral sample', 'Unspecified')) |> 
+  subset(sample_category == 'Non_pathological')
+# human.h5ad (CELLxGENE) X is log1p(CP10k): undo the log so NormalizeData() below gives back X
+human_ref@assays$RNA$counts = expm1(human_ref@assays$RNA$X)
+human_ref = human_ref |> 
+  NormalizeData()
+rownames(human) = human@assays$Xenium@meta.data$ensembl_id
+human_shared_genes = rownames(human_ref) |> 
+  intersect(rownames(human))
+human_ref = human_ref[human_shared_genes,]
+
+human_cells = human_ref$level_2_annot
+human_ref$cell_type_regroup = case_when(
+  human_cells %in% c('Absorptive') ~ 'Epithelial: Absorptive',
+  
+  human_cells %in% c('Secretory', 'Enteroendocrine') ~ 'Epithelial: Secretory',
+  
+  human_cells %in% c('Epithelial_stem', 'Transit_amplifying') ~ 'Epithelial: Stem/Progenitor',
+  
+  human_cells %in% c('Vascular_endothelia', 'Lymphatic_endothelia', 'Cycling_endothelia') ~ 'Endothelial',
+  
+  human_cells %in% c('Fibroblast', 'Myofibroblast', 'Pericyte', 'Mesothelium', 'Lymphoid_stromal_cell') ~ 'Stromal/Mesenchymal',
+  
+  human_cells %in% c('Smooth_muscle') ~ 'Smooth muscle',
+  
+  human_cells %in% c('Glia', 'Neuron', 'Neuron_progenitor') ~ 'Neural/Glial',
+  
+  human_cells %in% c('Mature_B', 'Immature_B', 'B_plasma') ~ 'B/Plasma',
+  
+  human_cells %in% c('Conventional_CD4', 'Conventional_CD8', 'Treg', 'NK', 'Unconventional_T/ILC', 'Cycling_T/NK', 'DC', 'Macrophage', 'Monocyte', 'Granulocyte') ~ 'Immune',
+  
+  human_cells %in% c('Erythrocyte') ~ 'Erythroid'
+)
+
+SaveSeuratRds(human_ref, 'data/02_annotation_refs/human_processed_human_use.rds')
+```
+
+## Seurat
+
+```{r}
+human_ref = readRDS('data/02_annotation_refs/human_processed_human_use.rds')
+human = human |> 
+  NormalizeData() |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(human)) |> 
+  RunUMAP(dims = 1:20, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+human_ref = human_ref |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(human_ref)) |> 
+  RunUMAP(dims = 1:20, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+rownames(human) = human@assays$Xenium@meta.data$ensembl_id
+
+human_seurat_label = LabelTransfer(data = human, ref = human_ref)
+human$celltype_seurat = human_seurat_label$cell_type_transfer
+human$labelscore_seurat = human_seurat_label$score_transfer
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+ImageDimPlot(human, group.by = 'celltype_seurat')
+ImageFeaturePlot(human, features = 'labelscore_seurat')
+ggplot(human@meta.data, aes(x = labelscore_seurat)) +
+  geom_histogram()
+ggplot(human@meta.data, aes(x = celltype_seurat, y = labelscore_seurat)) +
+  geom_boxplot()
+DimPlot(human, reduction = 'umap', group.by = 'celltype_seurat',
+        shuffle = TRUE)
+```
+
+## SingleR
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+human_singleR_label = LabelSingleR(data = human, ref = human_ref) 
+human$celltype_singleR = human_singleR_label$cell_type_singleR
+human$labeldelta_singleR = human_singleR_label$delta_singleR
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+ImageDimPlot(human, group.by = 'celltype_singleR')
+ImageFeaturePlot(human, features = 'labeldelta_singleR')
+ggplot(human@meta.data, aes(x = labeldelta_singleR)) +
+  geom_histogram()
+ggplot(human@meta.data, aes(x = celltype_singleR, y = labeldelta_singleR)) +
+  geom_boxplot()
+DimPlot(human, reduction = 'umap', group.by = 'celltype_singleR',
+        shuffle = TRUE)
+```
+
+# Cross-species reference-based annotation
+
+Reference: <https://www.parsebiosciences.com/datasets/5-million-mouse-single-cell-atlas-from-7-tissues/>
+
+```{r}
+mouse_ref_adata = read_h5ad('data/02_annotation_refs/mouse.h5ad')
+mouse_count_matrix = t(mouse_ref_adata$X)
+colnames(mouse_count_matrix) = mouse_ref_adata$obs$cell_ids
+rownames(mouse_count_matrix) = mouse_ref_adata$var |> rownames()
+mouse_metadata = as.data.frame(mouse_ref_adata$obs)
+# the obs index (0, 1, ..., "0-1") is not cell_ids, and CreateSeuratObject matches
+# meta.data rows to cells by name: name them like the count matrix columns
+rownames(mouse_metadata) = mouse_ref_adata$obs$cell_ids
+stopifnot(identical(rownames(mouse_metadata), colnames(mouse_count_matrix)))
+mouse_metadata$barcode = mouse_metadata$barcode |> 
+  str_remove('_5d84e6de$')
+mouse_ref = CreateSeuratObject(counts = mouse_count_matrix,
+                               meta.data = mouse_metadata)
+# transfer dimensional reduction (umap)
+mouse_umap_coords = mouse_ref_adata$obsm$X_umap
+rownames(mouse_umap_coords) = mouse_ref_adata$obs$cell_ids
+colnames(mouse_umap_coords) = c('UMAP_1', 'UMAP_2')
+mouse_ref[['umap']] = CreateDimReducObject(embeddings = mouse_umap_coords,
+                                           key = 'UMAP_',
+                                           assay = 'RNA')
+mouse_ref = mouse_ref |> 
+  NormalizeData()
+
+homology_tbl = read.csv('../homology_tbl.csv')
+mouse_ref_human = concatenate(human_data = human, 
+                              mouse_data = mouse_ref, homology_tbl = homology_tbl,
+                              tech_mouse = 'RNA')
+# concatenate() already renames the mouse genes to their human orthologs;
+# renaming again from the Xenium feature metadata scrambles the gene names
+DefaultAssay(mouse_ref_human) = 'RNA'
+DefaultLayer(mouse_ref_human[['RNA']]) = 'data'
+mouse_ref_human = mouse_ref_human |> 
+  subset(orig.ident == 'mmusculus')
+
+mouse_ref_human$nCount_RNA = colSums(x = mouse_ref_human[['RNA']]$counts)
+mouse_ref_human = mouse_ref_human |> 
+  subset(nCount_RNA > 0)
+
+mouse_ref_human@meta.data = mouse_ref_human@meta.data |> 
+  mutate(across(c(B.Cell, Colonocyte.DCC, Enteric.Glial, Enteric.Neuron, Enterocyte,
+                  Fibroblast, Goblet, Immune, PCC, Mesothelial, `Plasma.Cell`, 
+                  `Smooth.Muscle`, `Stem.TA`, Tuft, `Vascular.Endothelial`, Unknown), 
+                ~ na_if(.x, 'None'))) |> 
+  mutate(cell_type_detailed = coalesce(B.Cell, Colonocyte.DCC, Enteric.Glial, 
+                                       Enterocyte, Enteric.Neuron, Fibroblast, Goblet, 
+                                       Immune, PCC, Mesothelial, Plasma.Cell, 
+                                       Smooth.Muscle, Stem.TA, Tuft, 
+                                       Vascular.Endothelial, Unknown))
+mouse_ref_human = mouse_ref_human |> 
+  subset(!is.na(cell_type_detailed) & !cell_type_detailed == 'Unknown')
+
+mouse_cells = mouse_ref_human$cell_type_detailed
+mouse_ref_human$cell_type_regroup = case_when(
+  mouse_cells %in% c('Colonocyte/DCC', 'PCC', 'Enterocyte') ~ 'Epithelial: Absorptive',
+  
+  mouse_cells %in% c('Goblet', 'Tuft') ~ 'Epithelial: Secretory',
+  
+  mouse_cells %in% c('Stem/TA') ~ 'Epithelial: Stem/Progenitor',
+  
+  mouse_cells %in% c('Vascular Endothelial') ~ 'Endothelial',
+  
+  mouse_cells %in% c('Fibroblast', 'Mesothelial') ~ 'Stromal/Mesenchymal',
+  
+  mouse_cells %in% c('Smooth Muscle') ~ 'Smooth muscle',
+  
+  mouse_cells %in% c('Enteric Glial', 'Enteric Neuron') ~ 'Neural/Glial',
+  
+  mouse_cells %in% c('B Cell', 'Plasma Cell') ~ 'B/Plasma',
+  
+  mouse_cells %in% c('Immune') ~ 'Immune'
+)
+
+SaveSeuratRds(mouse_ref_human, 'data/02_annotation_refs/mouse_processed_human_use.rds')
+```
+
+## Seurat
+
+```{r}
+human_ref = readRDS('data/02_annotation_refs/mouse_processed_human_use.rds')
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+
+human = human |> 
+  NormalizeData() |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(human)) |> 
+  RunUMAP(dims = 1:20, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+human_ref = human_ref |> 
+  ScaleData() |> 
+  RunPCA(features = rownames(human_ref)) |> 
+  RunUMAP(dims = 1:20, return.model = TRUE) |> 
+  FindNeighbors(reduction = 'pca', dims = 1:20)
+
+human_seurat_label = LabelTransfer(data = human, ref = human_ref)
+human$celltype_seurat_cross = human_seurat_label$cell_type_transfer
+human$labelscore_seurat_cross = human_seurat_label$score_transfer
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+ImageDimPlot(human, group.by = 'celltype_seurat_cross', cols = celltype_colors)
+ImageFeaturePlot(human, features = 'labelscore_seurat_cross')
+ggplot(human@meta.data, aes(x = labelscore_seurat_cross)) +
+  geom_histogram()
+ggplot(human@meta.data, aes(x = celltype_seurat_cross, y = labelscore_seurat_cross)) +
+  geom_boxplot()
+DimPlot(human, reduction = 'umap', group.by = 'celltype_seurat_cross',
+        shuffle = TRUE)
+```
+
+## SingleR
+
+```{r}
+human_ref = readRDS('data/02_annotation_refs/mouse_processed_human_use.rds')
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+human_singleR_label = LabelSingleR(data = human, ref = human_ref) 
+human$celltype_singleR_cross = human_singleR_label$cell_type_singleR
+human$labeldelta_singleR_cross = human_singleR_label$delta_singleR
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+ImageDimPlot(human, group.by = 'celltype_singleR_cross', cols = celltype_colors)
+ImageFeaturePlot(human, features = 'labeldelta_singleR_cross')
+ggplot(human@meta.data, aes(x = labeldelta_singleR_cross)) +
+  geom_histogram()
+ggplot(human@meta.data, aes(x = celltype_singleR_cross, y = labeldelta_singleR_cross)) +
+  geom_boxplot()
+DimPlot(human, reduction = 'umap', group.by = 'celltype_singleR_cross',
+        shuffle = TRUE)
+```
+
+# Evaluation
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+# markers given by claude
+human_colon_markers = list(
+  `Epithelial: Absorptive` = c(
+    "CA1", "CA2", "CA4", "SLC26A3", "GUCA2A", "GUCA2B",
+    "MS4A12", "CEACAM7", "AQP8", "FABP1", "KRT20", "SELENBP1"
+  ),
+  `Epithelial: Secretory` = c(
+    # Goblet
+    "MUC2", "TFF3", "FCGBP", "SPINK4", "ZG16", "CLCA1", "AGR2", "REG4",
+    # Enteroendocrine
+    "CHGA", "CHGB", "NEUROD1", "PYY",
+    # Tuft
+    "POU2F3", "TRPM5", "DCLK1", "AVIL"
+  ),
+  `Epithelial: Stem/Progenitor` = c(
+    "LGR5", "OLFM4", "ASCL2", "SMOC2", "RGMB", "SOX9",
+    "MKI67", "TOP2A", "PCNA"
+  ),
+  Endothelial = c(
+    "PECAM1", "CDH5", "VWF", "CLDN5", "PLVAP", "KDR",
+    "FLT1", "EGFL7", "CLEC14A", "RAMP2"
+  ),
+  `Stromal/Mesenchymal` = c(
+    "COL1A1", "COL1A2", "COL3A1", "COL6A2", "PDGFRA",
+    "DCN", "LUM", "DPT", "FBLN1", "THY1"
+  ),
+  `Smooth muscle` = c(
+    "ACTA2", "MYH11", "TAGLN", "DES", "MYLK",
+    "CNN1", "ACTG2", "PLN", "DSTN"
+  ),
+  `Neural/Glial` = c(
+    "S100B", "PLP1", "SOX10", "GFAP", "ELAVL4",
+    "STMN2", "NRXN1", "KCNMB4"
+  ),
+  `B/Plasma` = c(
+    # B cells
+    "MS4A1", "CD19", "CD79A", "CD79B", "BANK1",
+    # Plasma cells
+    "MZB1", "JCHAIN", "DERL3", "XBP1", "PRDM1", "SDC1", "IGHA1", "IGHG1"
+  ),
+  Immune = c(
+    "PTPRC",
+    # T / NK
+    "CD3D", "CD3E", "CD2", "CD8A", "NKG7",
+    # Myeloid
+    "LYZ", "CD68", "CD14", "C1QA", "ITGAM",
+    # Mast
+    "TPSAB1", "CPA3", "MS4A2"
+  ),
+  Erythroid = c(
+    # membrane / cytoskeleton
+    "SLC4A1", "SPTA1", "SPTB", "ANK1", "EPB41", "EPB42",
+    "RHAG", "RHCE", "GYPB", "GYPC", "DMTN", "ADD2", "TMOD1",
+    # heme / iron biosynthesis
+    "ALAS2", "SLC25A37", "FECH", "UROD", "BLVRB", "AHSP",
+    # transcription factors (less specific — don't use alone)
+    "KLF1", "GATA1", "TAL1", "HEMGN"
+  )
+)
+for (i in c(1:length(human_colon_markers))) {
+  human_colon_markers[[i]] = human_colon_markers[[i]][human_colon_markers[[i]] %in% human@assays$Xenium@meta.data$gene_name]
+}
+
+rownames(human) = human@assays$Xenium@meta.data$gene_name
+Idents(human) = 'celltype_seurat'
+DotPlot(human, features = human_colon_markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+human_singleR = subset(human, 
+                       subset = !is.na(celltype_singleR))
+Idents(human_singleR) = 'celltype_singleR'
+DotPlot(human_singleR, features = human_colon_markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+Idents(human) = 'celltype_seurat_cross'
+DotPlot(human, features = human_colon_markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+
+human_singleR_cross = subset(human, 
+                             subset = !is.na(celltype_singleR_cross))
+Idents(human_singleR_cross) = 'celltype_singleR_cross'
+DotPlot(human_singleR_cross, features = human_colon_markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+```
+
+## Dawid-Skene algorithm
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+human$celltype_seurat = human$celltype_seurat |> 
+  as.factor()
+human$celltype_singleR = human$celltype_singleR |> 
+  as.factor()
+human$celltype_seurat_cross = human$celltype_seurat_cross |> 
+  as.factor()
+human$celltype_singleR_cross = human$celltype_singleR_cross |> 
+  as.factor()
+human$majority_vote = human@meta.data |> 
+  dplyr::select(celltype_seurat,
+                celltype_singleR,
+                celltype_seurat_cross,
+                celltype_singleR_cross) |> 
+  apply(MARGIN = 1,
+        FUN = function(x) majorityVote(x)$majority) |> 
+  as.factor()
+```
+
+```{r}
+ann_cols = c("celltype_seurat", "celltype_singleR",
+             "celltype_seurat_cross", "celltype_singleR_cross")
+keep = with(human@meta.data,
+            !is.na(celltype_seurat) & !is.na(celltype_singleR) &
+              !is.na(celltype_seurat_cross) & !is.na(celltype_singleR_cross))
+X = lapply(ann_cols, function(col) as.character(human@meta.data[[col]][keep]))
+names(X) = ann_cols
+J = length(X)
+I = length(X[[1]])
+
+celltypes = X |> unlist() |> unique() |> sort()
+K = length(celltypes)
+
+# indicator matrix
+indicator = function(vec, classes) {
+  m = matrix(0, length(vec), length(classes), 
+             dimnames = list(NULL, classes))
+  m[cbind(seq_along(vec), match(vec, classes))] = 1
+  return(m)
+}
+Z = lapply(X, FUN = indicator, classes = celltypes)
+
+T_hat = human$majority_vote[keep] |>  
+  as.character() |> 
+  indicator(celltypes)
+
+eps = 0.5
+
+m_step = function(T_hat) {
+  p  = (colSums(T_hat) + eps) / (I + K * eps)
+  pi = lapply(Z, function(Zj) {
+    N  = t(T_hat) %*% Zj + eps
+    N/rowSums(N)
+  })
+  return(list(p = p, pi = pi))
+}
+
+e_step = function(p, pi) {
+  logT = matrix(log(p), nrow = I, ncol = K, byrow = TRUE,
+                dimnames = list(NULL, celltypes))
+  for (j in seq_len(J)) {
+    logT = logT + Z[[j]] %*% t(log(pi[[j]]))
+  }
+  logT = logT - apply(logT, 1, max)
+  T_hat = exp(logT)
+  return(T_hat/rowSums(T_hat))
+}
+
+loglik = function(p, pi) {
+  logS = matrix(log(p), nrow = I, ncol = K, byrow = TRUE)
+  for (j in seq_len(J)) logS = logS + Z[[j]] %*% t(log(pi[[j]]))
+  m = apply(logS, 1, max)
+  sum(m + log(rowSums(exp(logS - m))))
+}
+
+maxit = 1000
+tol = 1e-6
+prev_labels = max.col(T_hat)
+prev_ll = -Inf
+it = 1
+while (TRUE) {
+  par = m_step(T_hat)
+  T_hat = e_step(par$p, par$pi)
+  ll = loglik(par$p, par$pi)
+  labels = max.col(T_hat)
+  cat(sprintf("iter %3d | loglik %.2f | labels changed: %d\n",
+              it, ll, sum(!labels == prev_labels)))
+  if (all(labels == prev_labels) & abs(ll - prev_ll) < tol) break
+  prev_labels = labels
+  prev_ll = ll
+  it = it + 1
+}
+saveRDS(par, 'data/02_annotated_data/human_ds_params.rds')
+```
+
+```{r}
+final_labels = lapply(labels, function(x) celltypes[x]) |> unlist() |> as.factor()
+table(final_labels, human$celltype_singleR_cross[keep]) |> diag() |> sum()
+table(final_labels, human$celltype_seurat_cross[keep]) |> diag() |> sum()
+table(final_labels, human$celltype_seurat[keep]) |> diag() |> sum()
+table(final_labels, human$celltype_singleR[keep]) |> diag() |> sum()
+```
+
+```{r}
+human@meta.data$ds_label[keep] = lapply(labels, function(x) celltypes[x]) |> unlist()
+
+human$ds_label = as.factor(human$ds_label)
+
+human = human |> 
+  subset(!is.na(ds_label))
+
+human_cells = fread("data/00_raw_data/Xenium_V1_hColon_Non_diseased_Add_on_FFPE_outs/cells.csv.gz", 
+                    select = c("cell_id", "cell_area"))
+human_cells = human_cells |> 
+  as.data.frame()
+rownames(human_cells) = human_cells$cell_id
+human_cells = human_cells[colnames(human),]
+keep_cells = bg_filter(nCount_probe_controls = human$nCount_ControlProbe,
+                       nCount_transcripts = dim(human)[1],
+                       cell_areas = human_cells$cell_area,
+                       n_genes = dim(human)[1], n_total_probes = 20)
+human = human[,keep_cells]
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human_cells = fread('data/00_raw_data/Xenium_V1_hColon_Non_diseased_Add_on_FFPE_outs/cells.csv.gz')
+h = match(colnames(human), human_cells$cell_id)
+human$area = human_cells$cell_area[h]
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+```
+
+```{r}
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+human$ds_label = as.factor(human$ds_label)
+ImageDimPlot(human, group.by = 'ds_label')
+DimPlot(human, reduction = 'umap', group.by = 'ds_label',
+        shuffle = TRUE)
+rownames(human) = human@assays$Xenium@meta.data$gene_name
+human_ds = subset(human, 
+                  subset = !is.na(ds_label))
+Idents(human_ds) = 'ds_label'
+DotPlot(human_ds, features = human_colon_markers) +
+  theme(axis.text.x = element_text(size = 6, angle = 90, hjust = 1, vjust = 0.5))
+```
+
+```{r}
+write_h5ad(human, 'data/02_annotated_data/02_human_annotated.h5ad', mode = 'w')
+```
+
+# EBCC
+
+```{r}
+print('EBCC')
+human = readRDS('data/02_annotated_data/02_human_annotated.rds')
+rownames(human) = human[['Xenium']]@meta.data$gene_name
+
+markers = list(
+  `Epithelial: Absorptive` = c(
+    "CA1", "CA2", "CA4", "SLC26A3", "GUCA2A", "GUCA2B",
+    "MS4A12", "CEACAM7", "AQP8", "FABP1", "KRT20", "SELENBP1"
+  ),
+  `Epithelial: Secretory` = c(
+    # Goblet
+    "MUC2", "TFF3", "FCGBP", "SPINK4", "ZG16", "CLCA1", "AGR2", "REG4",
+    # Enteroendocrine
+    "CHGA", "CHGB", "NEUROD1", "PYY",
+    # Tuft
+    "POU2F3", "TRPM5", "DCLK1", "AVIL"
+  ),
+  `Epithelial: Stem/Progenitor` = c(
+    "LGR5", "OLFM4", "ASCL2", "SMOC2", "RGMB", "SOX9",
+    "MKI67", "TOP2A", "PCNA"
+  ),
+  Endothelial = c(
+    "PECAM1", "CDH5", "VWF", "CLDN5", "PLVAP", "KDR",
+    "FLT1", "EGFL7", "CLEC14A", "RAMP2"
+  ),
+  `Stromal/Mesenchymal` = c(
+    "COL1A1", "COL1A2", "COL3A1", "COL6A2", "PDGFRA",
+    "DCN", "LUM", "DPT", "FBLN1", "THY1"
+  ),
+  `Smooth muscle` = c(
+    "ACTA2", "MYH11", "TAGLN", "DES", "MYLK",
+    "CNN1", "ACTG2", "PLN", "DSTN"
+  ),
+  `Neural/Glial` = c(
+    "S100B", "PLP1", "SOX10", "GFAP", "ELAVL4",
+    "STMN2", "NRXN1", "KCNMB4"
+  ),
+  `B/Plasma` = c(
+    # B cells
+    "MS4A1", "CD19", "CD79A", "CD79B", "BANK1",
+    # Plasma cells
+    "MZB1", "JCHAIN", "DERL3", "XBP1", "PRDM1", "SDC1", "IGHA1", "IGHG1"
+  ),
+  Immune = c(
+    "PTPRC",
+    # T / NK
+    "CD3D", "CD3E", "CD2", "CD8A", "NKG7",
+    # Myeloid
+    "LYZ", "CD68", "CD14", "C1QA", "ITGAM",
+    # Mast
+    "TPSAB1", "CPA3", "MS4A2"
+  ),
+  Erythroid = c(
+    # membrane / cytoskeleton
+    "SLC4A1", "SPTA1", "SPTB", "ANK1", "EPB41", "EPB42",
+    "RHAG", "RHCE", "GYPB", "GYPC", "DMTN", "ADD2", "TMOD1",
+    # heme / iron biosynthesis
+    "ALAS2", "SLC25A37", "FECH", "UROD", "BLVRB", "AHSP",
+    # transcription factors (less specific — don't use alone)
+    "KLF1", "GATA1", "TAL1", "HEMGN"
+  )
+)
+
+# keep genes on the panel, each gene once (first group wins)
+present = lapply(markers, intersect, rownames(human))
+seen = character(0)
+for (g in names(present)) { present[[g]] = setdiff(present[[g]], seen); seen = c(seen, present[[g]]) }
+present = present[lengths(present) > 0]
+setdiff(unlist(markers), rownames(human))   # markers not on your panel
+
+ann_cols = c("celltype_seurat", "celltype_singleR", 
+  'celltype_seurat_cross', 'celltype_singleR_cross')
+# hide one random annotator's label for 10% of cells
+set.seed(1)
+meta_ho = human@meta.data
+ho = data.frame(cell = sample(nrow(meta_ho), round(0.1 * nrow(meta_ho))))
+ho$ann   = sample(ann_cols, nrow(ho), replace = TRUE)
+ho$truth = mapply(function(i, a) as.character(meta_ho[[a]][i]), ho$cell, ho$ann)
+for (a in ann_cols) {
+  meta_ho[[a]] = as.character(meta_ho[[a]])
+  meta_ho[[a]][ho$cell[ho$ann == a]] = NA
+}
+
+DotPlot(human, features = markers, group.by = 'celltype_seurat') + RotatedAxis()
+DotPlot(human[,!is.na(human$celltype_singleR)], features = markers, group.by = 'celltype_singleR') + RotatedAxis()
+DotPlot(human, features = markers, group.by = 'celltype_seurat_cross') + RotatedAxis()
+DotPlot(human[,!is.na(human$celltype_singleR_cross)], features = markers, group.by = 'celltype_singleR_cross') + RotatedAxis()
+
+trusted = list(
+celltype_seurat = c('Epithelial: Absorptive', 'Endothelial', 'Stromal/Mesenchymal', 'Smooth muscle', 'B/Plasma'),
+celltype_singleR  = c('Epithelial: Absorptive', 'Endothelial', 'Stromal/Mesenchymal', 'Smooth muscle', 'Neural/Glial', 'B/Plasma', 'Immune'),
+celltype_seurat_cross = c('Epithelial: Absorptive', 'Endothelial', 'Stromal/Mesenchymal', 'Smooth muscle', 'B/Plasma'),
+celltype_singleR_cross = c('Epithelial: Absorptive', 'Endothelial', 'Stromal/Mesenchymal', 'Smooth muscle', 'B/Plasma', 'Immune')
+)
+frac = 0.5
+n_k = list(
+  celltype_seurat = table(human$celltype_seurat),
+  celltype_singleR = table(human$celltype_singleR),
+  celltype_seurat_cross = table(human$celltype_seurat_cross),
+  celltype_singleR_cross = table(human$celltype_singleR_cross)
+)
+
+# fit with M subtypes, then score how well the hidden labels are predicted
+heldout_ll = function(M, R = 3) {
+  beta = make_beta_prior(unique(c(human$celltype_singleR, human$celltype_singleR_cross)), ann_cols)
+  for (a in names(trusted)) {for (k in trusted[[a]]){
+  beta[[a]][k, k] = 4 + frac * n_k[[a]][[k]] / M }}
+  f = run_ebcc(meta_ho, ann_cols, M = M, R = R, keep_rho = TRUE, beta = beta)
+  lp = unlist(lapply(ann_cols, function(a) {
+    s = ho[ho$ann == a, ]
+    l = match(s$truth, f$classes); ok = !is.na(l)
+    # P(hidden label) = sum over class-subtypes of P(cell in it) x P(annotator gives that label)
+    log(rowSums(f$rho[s$cell[ok], , drop = FALSE] *
+                t(f$par$v[[a]][, l[ok], drop = FALSE])))
+  }))
+  lp
+}
+
+Ms = c(1, 2, 3, 5, 10)
+ll = sapply(Ms, heldout_ll)
+mean(ll[,1])
+mean(ll[,2])
+mean(ll[,3])
+mean(ll[,4])
+mean(ll[,5])
+mean(ll[,4]) - sd(ll[,4])/sqrt(dim(ll)[1])
+
+# ---- fit ----
+M = 5
+beta = make_beta_prior(unique(c(human$celltype_singleR, human$celltype_singleR_cross)), ann_cols)
+for (a in names(trusted)) for (k in trusted[[a]])
+beta[[a]][k, k] = 4 + frac * n_k[[a]][[k]] / M 
+fit = run_ebcc(human@meta.data, ann_cols, M = M, R = 10, beta = beta)
+
+# ---- diagnostics ----
+# 1. restarts: distance of each restart's ELBO from the best (large spread = many local optima)
+round(fit$elbo_restarts - max(fit$elbo_restarts), 1)
+
+# ---- save ----
+human$ebcc_label   = fit$label
+human$ebcc_maxpost = rowMaxs(fit$posterior)
+human$ebcc_entropy = -rowSums(fit$posterior * log(fit$posterior + 1e-12))
+human$celltype   = human$ebcc_label   # switch over only once the diagnostics look sound
+
+VariableFeatures(human) = rownames(human)
+human = human |> 
+NormalizeData()  |> 
+ScaleData()
+human$celltype = human$ebcc_label
+saveRDS(fit$par,       'data/02_annotated_data/human_ebcc_params.rds')
+saveRDS(fit$posterior, 'data/02_annotated_data/human_ebcc_posterior.rds')
+SaveSeuratRds(human, 'data/02_annotated_data/02_human_annotated.rds')
+as.anndata(human, file_path = 'data/02_annotated_data/',
+           file_name = '02_human_annotated.h5ad', assay = 'Xenium',
+           main_layer = 'counts', other_layers = c('data', 'scale.data'))
+```

@@ -1,0 +1,11 @@
+tissue,species,q,n,median_genes,to_dominant,agree,direction,dominant
+breast_cancer,human,1,6386,22,0.04008769182586909,0.7237707485123708,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,2,6383,44,0.01331662227792574,0.8284505718314272,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,3,6383,67,0.010653297822340592,0.8502271659094469,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,4,6381,90,0.009246199655226453,0.8558219714778248,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,5,6380,127,0.010815047021943573,0.8394984326018808,SingleR pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,1,6595,22,0.06429112964366945,0.7176648976497346,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,2,6593,44,0.052783254967389656,0.7755194903685727,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,3,6592,65,0.032311893203883495,0.8244842233009708,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,4,6589,89,0.029139474882379723,0.8543026255881013,Seurat pulls into its dominant label,Cancer Epithelial
+breast_cancer,human,5,6587,128,0.044633368756641874,0.8082586913617732,Seurat pulls into its dominant label,Cancer Epithelial

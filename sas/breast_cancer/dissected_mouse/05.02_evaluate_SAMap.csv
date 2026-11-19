@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+breast_cancer,dissected_mouse,05.02_evaluate_SAMap.py,SAMap,knn,,177883,,8.106231689453125e-06,30.82899808883667

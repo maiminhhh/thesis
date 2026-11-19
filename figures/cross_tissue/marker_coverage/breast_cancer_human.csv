@@ -1,0 +1,10 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+breast_cancer,human,815,B-cells,4,4,4,359,,
+breast_cancer,human,815,CAFs,5,5,4,16336,,FAP
+breast_cancer,human,815,Cancer Epithelial,5,5,3,37084,,MKI67;TOP2A
+breast_cancer,human,815,Endothelial,5,5,5,2351,,
+breast_cancer,human,815,Myeloid,5,5,4,7371,,CD68
+breast_cancer,human,815,Normal Epithelial,4,4,4,148,,
+breast_cancer,human,815,Plasmablasts,4,4,4,464,,
+breast_cancer,human,815,PVL,4,4,4,1442,,
+breast_cancer,human,815,T-cells,5,5,3,3934,,PTPRC;NKG7

@@ -1,0 +1,12 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+bone_marrow,human,471,HSPC,4,3,2,349,SPINK2,CRHBP
+bone_marrow,human,471,MkP,4,0,0,225,ITGA2B;PF4;GP9;PPBP,
+bone_marrow,human,471,Erythroid,5,4,4,6987,HBB,
+bone_marrow,human,471,Granulocyte,8,3,2,1160,AZU1;LTF;CSF3R;FCGR3B;CXCR2,CAMP
+bone_marrow,human,471,Monocyte,5,4,2,19568,CSF1R,CD14;FCGR3A
+bone_marrow,human,471,DC,6,4,3,434,CLEC4C;CLEC9A,CD1C
+bone_marrow,human,471,B cell,5,4,4,751,VPREB1,
+bone_marrow,human,471,Plasma,5,3,3,396,JCHAIN;SDC1,
+bone_marrow,human,471,T cell,5,5,4,2589,,CD4
+bone_marrow,human,471,NK/ILC,5,4,4,565,KLRF1,
+bone_marrow,human,471,MSC,5,3,3,979,LEPR;KITLG,

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+bone_marrow,dissected,05.18_evaluate_scvi_latent.py,Unintegrated scVI-latent,embed,X_scvi_latent,50042,0.5758254899231185,0.6296506239778477,500,11,11,25.91295051574707,27.231595993041992

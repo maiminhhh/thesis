@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+colon,genes8,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,268306,,2.002716064453125e-05,6.046977758407593

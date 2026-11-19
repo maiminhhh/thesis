@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.01_evaluate_fastMNN.py,FastMNN,embed,X_mnn,177883,0.7321215896707557,1779,425.0267586708069,0.0670764758931125,1779,888.5669341087341,894.4898624420166

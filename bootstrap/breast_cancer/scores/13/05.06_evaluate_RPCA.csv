@@ -1,0 +1,17 @@
+,RPCA
+NMI_cluster/label,0.1745874303426298
+ARI_cluster/label,0.12173325386734335
+ASW_label,0.5194703684012456
+ASW_label/batch,0.8895418266567403
+PCR_batch,0.904732275785928
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.7341392720152317
+kBET,
+iLISI,0.4790152660859346
+cLISI,0.953392043127229
+hvg_overlap,
+trajectory,
+_seconds,143.5221860408783
+_n_cells,19991.0

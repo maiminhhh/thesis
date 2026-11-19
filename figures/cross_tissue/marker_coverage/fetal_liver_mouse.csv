@@ -1,0 +1,15 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+fetal_liver,mouse,477,Hepatocyte,5,5,5,53886,,
+fetal_liver,mouse,477,HSPC,5,5,3,784,,Ly6a;Slamf1
+fetal_liver,mouse,477,Erythroid progenitor,4,4,4,68,,
+fetal_liver,mouse,477,Erythroblast,5,5,5,17270,,
+fetal_liver,mouse,477,Erythrocyte,1,1,1,17480,,
+fetal_liver,mouse,477,Megakaryocyte,3,3,3,9157,,
+fetal_liver,mouse,477,Mast cell,2,2,0,0,,
+fetal_liver,mouse,477,Granulocyte,5,5,4,2502,,Ly6g
+fetal_liver,mouse,477,Mono/Macrophage,5,5,5,8461,,
+fetal_liver,mouse,477,Dendritic cell,3,3,0,0,,
+fetal_liver,mouse,477,B cell,2,2,0,0,,
+fetal_liver,mouse,477,T/NK/ILC,4,4,0,0,,
+fetal_liver,mouse,477,Endothelial,5,5,5,7720,,
+fetal_liver,mouse,477,Fibroblast,5,5,0,0,,

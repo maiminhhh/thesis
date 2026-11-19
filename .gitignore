@@ -1,0 +1,32 @@
+# large data objects and raw inputs (kept on the university server, not in the repository)
+*.rds
+*.RData
+*.h5ad
+*.h5
+*.parquet
+*.zarr
+*.pkl
+*.pt
+*.zip
+*.tar
+*.tar.gz
+*/data/00_raw_data/
+*/data/01_processed_data/
+*/data/04_integrated_data/
+figures/*/umap/
+
+# run-time leftovers
+*.log
+*.out
+logs/**/*.txt
+ntfy_topic
+__pycache__/
+*.pyc
+.Rhistory
+.Rproj.user/
+.quarto/
+Rplots.pdf
+*_files/
+*.html
+.ipynb_checkpoints/
+jax_cache/

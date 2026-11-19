@@ -1,0 +1,5 @@
+name,xmin,xmax,ymin,ymax
+current,8560,11745,920,5455
+A_upper_core,4000,9500,500,6000
+B_central,4500,8500,1500,5500
+C_whole_tumour,3750,10500,250,9500

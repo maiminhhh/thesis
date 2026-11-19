@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+breast_cancer,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,177683,0.7610033089400614,1385,69237,2,26734.982439756393,26741.08714413643

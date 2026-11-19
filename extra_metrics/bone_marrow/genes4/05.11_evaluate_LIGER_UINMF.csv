@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes4,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,45575,0.501139797619443,456,19.320009469985962,0.11039380237381705,456,51.19011640548706,52.4893012046814

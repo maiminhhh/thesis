@@ -1,0 +1,82 @@
+{
+  "rule": "per species, annotator with the highest mean marker AUROC over the types it calls (ties -> EBCC); EBCC kept where it is best; check skipped if EBCC is best in both",
+  "mean_auroc": [
+    {
+      "species": "human",
+      "annotator": "ebcc",
+      "mean_auroc": 0.841035255703009,
+      "n_types": 9
+    },
+    {
+      "species": "human",
+      "annotator": "seurat",
+      "mean_auroc": 0.878042891346447,
+      "n_types": 9
+    },
+    {
+      "species": "human",
+      "annotator": "seurat_cross",
+      "mean_auroc": 0.764672153364038,
+      "n_types": 6
+    },
+    {
+      "species": "human",
+      "annotator": "singleR",
+      "mean_auroc": 0.850583628133846,
+      "n_types": 9
+    },
+    {
+      "species": "human",
+      "annotator": "singleR_cross",
+      "mean_auroc": 0.767291153102973,
+      "n_types": 6
+    },
+    {
+      "species": "mouse",
+      "annotator": "ebcc",
+      "mean_auroc": 0.760860075706703,
+      "n_types": 7
+    },
+    {
+      "species": "mouse",
+      "annotator": "seurat",
+      "mean_auroc": 0.746079281496705,
+      "n_types": 5
+    },
+    {
+      "species": "mouse",
+      "annotator": "seurat_cross",
+      "mean_auroc": 0.77871617463701,
+      "n_types": 7
+    },
+    {
+      "species": "mouse",
+      "annotator": "singleR",
+      "mean_auroc": 0.736867984463862,
+      "n_types": 5
+    },
+    {
+      "species": "mouse",
+      "annotator": "singleR_cross",
+      "mean_auroc": 0.739283443591257,
+      "n_types": 7
+    }
+  ],
+  "choice": [
+    {
+      "species": "human",
+      "annotator": "seurat",
+      "column": "celltype_seurat",
+      "mean_auroc": 0.878042891346447
+    },
+    {
+      "species": "mouse",
+      "annotator": "seurat_cross",
+      "column": "celltype_seurat_cross",
+      "mean_auroc": 0.77871617463701
+    }
+  ],
+  "skip": false,
+  "label_set": "best_annotator",
+  "label_cols": "hsapiens=celltype_seurat,mmusculus=celltype_seurat_cross"
+}

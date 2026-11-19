@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+colon,genes2,05.11_evaluate_LIGER_UINMF.py,LIGER UINMF,embed,X_inmf,307493,0.8439438668877557,770,38495,2,162.47022914886475,168.47467494010925

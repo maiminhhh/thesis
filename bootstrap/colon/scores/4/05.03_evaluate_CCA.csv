@@ -1,0 +1,17 @@
+,CCA
+NMI_cluster/label,0.21245855481821038
+ARI_cluster/label,0.039894565059802656
+ASW_label,0.5150462924642397
+ASW_label/batch,0.915071526986119
+PCR_batch,0.7471407837041179
+cell_cycle_conservation,
+isolated_label_F1,0.06521739130434782
+isolated_label_silhouette,0.44110209452771293
+graph_conn,0.7133316377012012
+kBET,
+iLISI,0.06462828354783712
+cLISI,0.8571467888932354
+hvg_overlap,
+trajectory,
+_seconds,203.1122031211853
+_n_cells,19989.0

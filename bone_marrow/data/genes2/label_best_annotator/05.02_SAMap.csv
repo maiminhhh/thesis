@@ -1,0 +1,15 @@
+,SAMap
+NMI_cluster/label,0.24602513669650472
+ARI_cluster/label,0.29172478376552613
+ASW_label,
+ASW_label/batch,
+PCR_batch,
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.34839876824372856
+kBET,
+iLISI,0.19741231437532036
+cLISI,0.9720458011439238
+hvg_overlap,
+trajectory,

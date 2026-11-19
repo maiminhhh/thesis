@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+bone_marrow,genes4,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,45575,,,1.71661376953125e-05,1.481095314025879

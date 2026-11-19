@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.07_evaluate_scVI.py,scVI,embed,X_scvi,177883,0.7529793918065615,1779,1129.1991362571716,0.05212975049793326,1779,1985.8259868621826,1992.95281624794

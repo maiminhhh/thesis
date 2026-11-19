@@ -1,0 +1,286 @@
+metric,column,method,score,col_rank
+batch,bone_marrow,FastMNN scVI-latent,0.7959710911401,1
+batch,bone_marrow,Harmony scVI-latent,0.7805246278983456,2
+batch,bone_marrow,LIGER UINMF,0.7761821452253544,3
+batch,bone_marrow,Scanorama scVI-latent,0.7755471274116297,4
+batch,bone_marrow,LIGER,0.7602165701033627,5
+batch,bone_marrow,Scanorama,0.7305476981386675,6
+batch,bone_marrow,RPCA scVI-latent,0.7260702021662343,7
+batch,bone_marrow,Harmony,0.715897051941474,8
+batch,bone_marrow,CCA scVI-latent,0.7115376115341228,9
+batch,bone_marrow,scVI,0.7082397200623726,10
+batch,bone_marrow,FastMNN UINMF,0.6918137805185414,11
+batch,bone_marrow,CCA,0.6685120290687852,12
+batch,bone_marrow,Harmony UINMF,0.6542982816188427,13
+batch,bone_marrow,Scanorama UINMF,0.6338455424670162,14
+batch,bone_marrow,RPCA UINMF,0.5940028945836868,15
+batch,bone_marrow,RPCA,0.5871705757881068,16
+batch,bone_marrow,CCA UINMF,0.5145828734847159,17
+batch,bone_marrow,scANVI,0.3561696323939831,18
+batch,bone_marrow,FastMNN,0.32826855263106075,19
+batch,breast_cancer,Scanorama scVI-latent,0.8601631859225571,1
+batch,breast_cancer,FastMNN scVI-latent,0.8072165825651172,2
+batch,breast_cancer,RPCA scVI-latent,0.8001220654978793,3
+batch,breast_cancer,Harmony,0.7901035382156282,4
+batch,breast_cancer,LIGER,0.7844280630078645,5
+batch,breast_cancer,Scanorama,0.7628898884558306,6
+batch,breast_cancer,CCA scVI-latent,0.7531031989731407,7
+batch,breast_cancer,Harmony scVI-latent,0.7382092695748611,8
+batch,breast_cancer,LIGER UINMF,0.7321480275507422,9
+batch,breast_cancer,CCA,0.7176391074009729,10
+batch,breast_cancer,RPCA,0.6834267487085954,11
+batch,breast_cancer,RPCA UINMF,0.6825306369385379,12
+batch,breast_cancer,scVI,0.6444057364479088,13
+batch,breast_cancer,Harmony UINMF,0.6362604978356707,14
+batch,breast_cancer,scANVI,0.60955082228145,15
+batch,breast_cancer,FastMNN,0.5676691427806501,16
+batch,breast_cancer,FastMNN UINMF,0.5636666308798879,17
+batch,breast_cancer,CCA UINMF,0.5117821660733528,18
+batch,breast_cancer,Scanorama UINMF,0.4458281224937006,19
+batch,colon,LIGER UINMF,0.7140765274690526,1
+batch,colon,LIGER,0.6787461333490797,2
+batch,colon,FastMNN UINMF,0.6713204806423063,3
+batch,colon,FastMNN scVI-latent,0.6613829595954505,4
+batch,colon,Harmony UINMF,0.6565715809546386,5
+batch,colon,Harmony scVI-latent,0.6438987447354525,6
+batch,colon,RPCA scVI-latent,0.6423226160144675,7
+batch,colon,Scanorama UINMF,0.6402282146874372,8
+batch,colon,RPCA UINMF,0.6190586920626632,9
+batch,colon,Scanorama scVI-latent,0.58665324204931,10
+batch,colon,CCA,0.5796776088247685,11
+batch,colon,Harmony,0.5525574693242671,12
+batch,colon,RPCA,0.5410223387240859,13
+batch,colon,CCA scVI-latent,0.5296874411019679,14
+batch,colon,CCA UINMF,0.5193450225412032,15
+batch,colon,Scanorama,0.501635357181648,16
+batch,colon,FastMNN,0.4500932010491435,17
+batch,colon,scANVI,0.42396220314905997,18
+batch,colon,scVI,0.4162050727000066,19
+batch,fetal_liver,Scanorama,0.787139156059097,1
+batch,fetal_liver,FastMNN scVI-latent,0.7637495965746222,2
+batch,fetal_liver,LIGER UINMF,0.7614610151811066,3
+batch,fetal_liver,Scanorama scVI-latent,0.7426671161337364,4
+batch,fetal_liver,RPCA scVI-latent,0.7412199932872722,5
+batch,fetal_liver,LIGER,0.7286489380527517,6
+batch,fetal_liver,Harmony,0.7173442096257351,7
+batch,fetal_liver,Harmony scVI-latent,0.7153790319591935,8
+batch,fetal_liver,Harmony UINMF,0.7071478844337136,9
+batch,fetal_liver,CCA scVI-latent,0.7028601708651563,10
+batch,fetal_liver,RPCA,0.7023910888872815,11
+batch,fetal_liver,FastMNN UINMF,0.7022184137854416,12
+batch,fetal_liver,Scanorama UINMF,0.6485132981317181,13
+batch,fetal_liver,CCA,0.6453354224289198,14
+batch,fetal_liver,RPCA UINMF,0.6444414833100147,15
+batch,fetal_liver,scANVI,0.5878656199104197,16
+batch,fetal_liver,CCA UINMF,0.5690554744108762,17
+batch,fetal_liver,FastMNN,0.47510863087615285,18
+batch,fetal_liver,scVI,0.4679376250629595,19
+batch,mean,FastMNN scVI-latent,0.7570800574688225,1
+batch,mean,LIGER UINMF,0.745966928856564,2
+batch,mean,Scanorama scVI-latent,0.7412576678793084,3
+batch,mean,LIGER,0.7380099261282647,4
+batch,mean,RPCA scVI-latent,0.7274337192414633,5
+batch,mean,Harmony scVI-latent,0.7195029185419632,6
+batch,mean,Scanorama,0.6955530249588108,7
+batch,mean,Harmony,0.6939755672767761,8
+batch,mean,CCA scVI-latent,0.6742971056185969,9
+batch,mean,Harmony UINMF,0.6635695612107164,10
+batch,mean,FastMNN UINMF,0.6572548264565443,11
+batch,mean,CCA,0.6527910419308616,12
+batch,mean,RPCA UINMF,0.6350084267237257,13
+batch,mean,RPCA,0.6285026880270175,14
+batch,mean,Scanorama UINMF,0.592103794444968,15
+batch,mean,scVI,0.5591970385683118,16
+batch,mean,CCA UINMF,0.528691384127537,17
+batch,mean,scANVI,0.4943870694337282,18
+batch,mean,FastMNN,0.4552848818342518,19
+bio,bone_marrow,scANVI,0.5554035846225371,1
+bio,bone_marrow,scVI,0.5122251851412246,2
+bio,bone_marrow,CCA UINMF,0.49667515309400356,3
+bio,bone_marrow,RPCA,0.4789002553937794,4
+bio,bone_marrow,FastMNN UINMF,0.47612777314583654,5
+bio,bone_marrow,RPCA UINMF,0.4664612112711594,6
+bio,bone_marrow,Scanorama UINMF,0.46135244940666953,7
+bio,bone_marrow,Harmony UINMF,0.45499206302642464,8
+bio,bone_marrow,FastMNN,0.4499730904263891,9
+bio,bone_marrow,RPCA scVI-latent,0.44690314628733163,10
+bio,bone_marrow,FastMNN scVI-latent,0.4342273394781503,11
+bio,bone_marrow,CCA scVI-latent,0.4318607309725649,12
+bio,bone_marrow,CCA,0.4313356438809215,13
+bio,bone_marrow,LIGER UINMF,0.42957299599909304,14
+bio,bone_marrow,Harmony scVI-latent,0.4187250524709825,15
+bio,bone_marrow,Harmony,0.39723955937897254,16
+bio,bone_marrow,LIGER,0.3940920290565025,17
+bio,bone_marrow,Scanorama,0.3928920260954112,18
+bio,bone_marrow,Scanorama scVI-latent,0.3867966184977396,19
+bio,breast_cancer,scANVI,0.6997359000929567,1
+bio,breast_cancer,Harmony scVI-latent,0.6012469734726557,2
+bio,breast_cancer,scVI,0.5812514215438879,3
+bio,breast_cancer,RPCA,0.549566547876197,4
+bio,breast_cancer,CCA,0.5217483085303835,5
+bio,breast_cancer,CCA UINMF,0.49481825576862126,6
+bio,breast_cancer,Scanorama scVI-latent,0.4919374451232245,7
+bio,breast_cancer,Scanorama UINMF,0.48446678155509326,8
+bio,breast_cancer,Harmony UINMF,0.4819995457461684,9
+bio,breast_cancer,FastMNN scVI-latent,0.480694741401295,10
+bio,breast_cancer,Harmony,0.4795207940872933,11
+bio,breast_cancer,RPCA UINMF,0.4756562819018158,12
+bio,breast_cancer,RPCA scVI-latent,0.4740860940285311,13
+bio,breast_cancer,FastMNN UINMF,0.4729472665635106,14
+bio,breast_cancer,FastMNN,0.46933854303326294,15
+bio,breast_cancer,Scanorama,0.4664930392710007,16
+bio,breast_cancer,LIGER UINMF,0.46087718122440086,17
+bio,breast_cancer,CCA scVI-latent,0.45936171612748083,18
+bio,breast_cancer,LIGER,0.429990183990417,19
+bio,colon,scANVI,0.5823612466322262,1
+bio,colon,Harmony UINMF,0.5598843889685474,2
+bio,colon,RPCA UINMF,0.540769820846277,3
+bio,colon,CCA UINMF,0.5389283599873378,4
+bio,colon,LIGER UINMF,0.537160496586914,5
+bio,colon,Scanorama UINMF,0.5308532593888823,6
+bio,colon,FastMNN UINMF,0.5226046262784969,7
+bio,colon,FastMNN,0.46065267291209966,8
+bio,colon,scVI,0.45989742528803534,9
+bio,colon,CCA scVI-latent,0.4530594532927603,10
+bio,colon,Scanorama scVI-latent,0.4493838925615872,11
+bio,colon,RPCA scVI-latent,0.4473332549211649,12
+bio,colon,Harmony scVI-latent,0.44565851430079223,13
+bio,colon,LIGER,0.43954827696358123,14
+bio,colon,FastMNN scVI-latent,0.4365619025537129,15
+bio,colon,CCA,0.4317113699689501,16
+bio,colon,RPCA,0.43119312887003686,17
+bio,colon,Harmony,0.4298194834791957,18
+bio,colon,Scanorama,0.42860206826758607,19
+bio,fetal_liver,scANVI,0.5111212938358184,1
+bio,fetal_liver,RPCA UINMF,0.47626534234002205,2
+bio,fetal_liver,FastMNN UINMF,0.46369119331132513,3
+bio,fetal_liver,RPCA scVI-latent,0.4587544960675393,4
+bio,fetal_liver,CCA UINMF,0.44131439394874883,5
+bio,fetal_liver,CCA scVI-latent,0.43829003523555804,6
+bio,fetal_liver,Harmony scVI-latent,0.43655353339645137,7
+bio,fetal_liver,LIGER UINMF,0.43619949614203357,8
+bio,fetal_liver,Scanorama UINMF,0.4358607353620621,9
+bio,fetal_liver,Harmony UINMF,0.4336889487194339,10
+bio,fetal_liver,FastMNN scVI-latent,0.4312494439306791,11
+bio,fetal_liver,FastMNN,0.4286983568699163,12
+bio,fetal_liver,CCA,0.42666288904841965,13
+bio,fetal_liver,Scanorama scVI-latent,0.42396477649766606,14
+bio,fetal_liver,scVI,0.4217844354701385,15
+bio,fetal_liver,RPCA,0.4202999104566522,16
+bio,fetal_liver,LIGER,0.39732933720956803,17
+bio,fetal_liver,Scanorama,0.3937424106745957,18
+bio,fetal_liver,Harmony,0.3934613930195877,19
+bio,mean,scANVI,0.5871555062958846,1
+bio,mean,scVI,0.49378961686082157,2
+bio,mean,CCA UINMF,0.49293404069967783,3
+bio,mean,RPCA UINMF,0.48978816408981857,4
+bio,mean,FastMNN UINMF,0.4838427148247923,5
+bio,mean,Harmony UINMF,0.4826412366151436,6
+bio,mean,Scanorama UINMF,0.4781333064281768,7
+bio,mean,Harmony scVI-latent,0.47554601841022043,8
+bio,mean,RPCA,0.46998996064916637,9
+bio,mean,LIGER UINMF,0.46595254248811036,10
+bio,mean,RPCA scVI-latent,0.4567692478261417,11
+bio,mean,CCA,0.45286455285716865,12
+bio,mean,FastMNN,0.452165665810417,13
+bio,mean,FastMNN scVI-latent,0.44568335684095933,14
+bio,mean,CCA scVI-latent,0.445642983907091,15
+bio,mean,Scanorama scVI-latent,0.4380206831700543,16
+bio,mean,Harmony,0.42501030749126234,17
+bio,mean,Scanorama,0.4204323860771484,18
+bio,mean,LIGER,0.4152399568050172,19
+overall,bone_marrow,scVI,0.5906309991096839,1
+overall,bone_marrow,FastMNN scVI-latent,0.5789248401429302,2
+overall,bone_marrow,LIGER UINMF,0.5682166556895976,3
+overall,bone_marrow,Harmony scVI-latent,0.5634448826419278,4
+overall,bone_marrow,FastMNN UINMF,0.5624021760949185,5
+overall,bone_marrow,RPCA scVI-latent,0.5585699686388927,6
+overall,bone_marrow,CCA scVI-latent,0.543731483197188,7
+overall,bone_marrow,Scanorama scVI-latent,0.5422968220632957,8
+overall,bone_marrow,LIGER,0.5405418454752466,9
+overall,bone_marrow,Harmony UINMF,0.5347145504633919,10
+overall,bone_marrow,Scanorama UINMF,0.5303496866308082,11
+overall,bone_marrow,Scanorama,0.5279542949127137,12
+overall,bone_marrow,CCA,0.5262061979560669,13
+overall,bone_marrow,Harmony,0.5247025564039731,14
+overall,bone_marrow,RPCA,0.5222083835515103,15
+overall,bone_marrow,RPCA UINMF,0.5174778845961704,16
+overall,bone_marrow,CCA UINMF,0.5038382412502884,17
+overall,bone_marrow,scANVI,0.4757100037311155,18
+overall,bone_marrow,FastMNN,0.4012912753082577,19
+overall,breast_cancer,scANVI,0.663661868968354,1
+overall,breast_cancer,Harmony scVI-latent,0.6560318919135378,2
+overall,breast_cancer,Scanorama scVI-latent,0.6392277414429576,3
+overall,breast_cancer,FastMNN scVI-latent,0.6113034778668238,4
+overall,breast_cancer,scVI,0.6065131475054962,5
+overall,breast_cancer,RPCA scVI-latent,0.6045004826162703,6
+overall,breast_cancer,Harmony,0.6037538917386273,7
+overall,breast_cancer,RPCA,0.6031106282091563,8
+overall,breast_cancer,CCA,0.6001046280786192,9
+overall,breast_cancer,Scanorama,0.5850517789449327,10
+overall,breast_cancer,CCA scVI-latent,0.5768583092657448,11
+overall,breast_cancer,LIGER,0.571765335597396,12
+overall,breast_cancer,LIGER UINMF,0.5693855197549373,13
+overall,breast_cancer,RPCA UINMF,0.5584060239165047,14
+overall,breast_cancer,Harmony UINMF,0.5437039265819693,15
+overall,breast_cancer,FastMNN UINMF,0.5092350122900615,16
+overall,breast_cancer,FastMNN,0.5086707829322178,17
+overall,breast_cancer,CCA UINMF,0.5016038198905138,18
+overall,breast_cancer,Scanorama UINMF,0.4690113179305362,19
+overall,colon,LIGER UINMF,0.6079269089397694,1
+overall,colon,Harmony UINMF,0.5985592657629839,2
+overall,colon,FastMNN UINMF,0.5820909680240207,3
+overall,colon,Scanorama UINMF,0.5746032415083042,4
+overall,colon,RPCA UINMF,0.5720853693328315,5
+overall,colon,LIGER,0.5352274195177806,6
+overall,colon,CCA UINMF,0.531095025008884,7
+overall,colon,FastMNN scVI-latent,0.526490325370408,8
+overall,colon,RPCA scVI-latent,0.525328999358486,9
+overall,colon,Harmony scVI-latent,0.5249546064746564,10
+overall,colon,scANVI,0.5190016292389596,11
+overall,colon,Scanorama scVI-latent,0.5042916323566764,12
+overall,colon,CCA,0.49089786551127745,13
+overall,colon,CCA scVI-latent,0.4837106484164433,14
+overall,colon,Harmony,0.47891467781722424,15
+overall,colon,RPCA,0.47512481281165647,16
+overall,colon,Scanorama,0.45781538383321085,17
+overall,colon,FastMNN,0.4564288841669172,18
+overall,colon,scVI,0.4424204842528238,19
+overall,fetal_liver,RPCA scVI-latent,0.5717406949554324,1
+overall,fetal_liver,LIGER UINMF,0.5663041037576628,2
+overall,fetal_liver,FastMNN scVI-latent,0.5642495049882563,3
+overall,fetal_liver,FastMNN UINMF,0.5591020815009717,4
+overall,fetal_liver,Scanorama scVI-latent,0.5514457123520942,5
+overall,fetal_liver,Scanorama,0.5511011088283962,6
+overall,fetal_liver,Harmony scVI-latent,0.5480837328215482,7
+overall,fetal_liver,CCA scVI-latent,0.5441180894873974,8
+overall,fetal_liver,RPCA UINMF,0.5435357987280192,9
+overall,fetal_liver,Harmony UINMF,0.5430725230051457,10
+overall,fetal_liver,scANVI,0.541819024265659,11
+overall,fetal_liver,RPCA,0.5331363818289039,12
+overall,fetal_liver,LIGER,0.5298571775468415,13
+overall,fetal_liver,Harmony,0.5230145196620467,14
+overall,fetal_liver,Scanorama UINMF,0.5209217604699246,15
+overall,fetal_liver,CCA,0.5141319024006197,16
+overall,fetal_liver,CCA UINMF,0.49241082613359977,17
+overall,fetal_liver,FastMNN,0.4472624664724109,18
+overall,fetal_liver,scVI,0.4402457113072669,19
+overall,mean,LIGER UINMF,0.5779582970354917,1
+overall,mean,Harmony scVI-latent,0.5731287784629175,2
+overall,mean,FastMNN scVI-latent,0.5702420370921046,3
+overall,mean,RPCA scVI-latent,0.5650350363922704,4
+overall,mean,Scanorama scVI-latent,0.559315477053756,5
+overall,mean,Harmony UINMF,0.5550125664533727,6
+overall,mean,FastMNN UINMF,0.5532075594774931,7
+overall,mean,scANVI,0.5500481315510221,8
+overall,mean,RPCA UINMF,0.5478762691433814,9
+overall,mean,LIGER,0.5443479445343162,10
+overall,mean,CCA scVI-latent,0.5371046325916934,11
+overall,mean,RPCA,0.5333950516003068,12
+overall,mean,CCA,0.5328351484866458,13
+overall,mean,Harmony,0.5325964114054679,14
+overall,mean,Scanorama,0.5304806416298133,15
+overall,mean,Scanorama UINMF,0.5237215016348933,16
+overall,mean,scVI,0.5199525855438177,17
+overall,mean,CCA UINMF,0.5072369780708215,18
+overall,mean,FastMNN,0.4534133522199509,19

@@ -1,0 +1,2 @@
+Bars: held-out evaluation half, with 95% bootstrap intervals (200 resamples of cells). Tick: selection half, the values that choose the annotator.
+SingleR scored on the cells it labels (pruned calls excluded).

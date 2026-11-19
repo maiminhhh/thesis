@@ -1,0 +1,24 @@
+strategy,input,method,imp
+Balancing species in a shared space,UINMF,BBKNN UINMF,0.1831954454313
+Learning a joint representation,Native,scANVI,0.17170200730816648
+Balancing species in a shared space,scVI-latent,BBKNN scVI-latent,0.16230852898804854
+Balancing species in a shared space,Native,BBKNN,0.14897866703013668
+Balancing species in a shared space,scVI-latent,Harmony scVI-latent,0.13003002003447056
+Matching corresponding cells,Native,SAMap,0.1258130344656662
+Matching corresponding cells,scVI-latent,Scanorama scVI-latent,0.12452928870273844
+Learning a joint representation,UINMF,LIGER UINMF,0.1226961062763826
+Matching corresponding cells,scVI-latent,RPCA scVI-latent,0.12007235409728752
+Matching corresponding cells,scVI-latent,FastMNN scVI-latent,0.11834550555481489
+Learning a joint representation,Native,scVI,0.10459676897044352
+Matching corresponding cells,scVI-latent,CCA scVI-latent,0.09419734916548407
+Matching corresponding cells,UINMF,FastMNN UINMF,0.09210182070981525
+Balancing species in a shared space,UINMF,Harmony UINMF,0.0762142842613218
+Matching corresponding cells,UINMF,Scanorama UINMF,0.07578067322509696
+Matching corresponding cells,UINMF,RPCA UINMF,0.07301989754751884
+Matching corresponding cells,Native,RPCA,0.07259402281760345
+Matching corresponding cells,Native,Scanorama,0.0724066336096715
+Matching corresponding cells,Native,CCA,0.06080836369310055
+Matching corresponding cells,UINMF,CCA UINMF,0.06039752339451897
+Learning a joint representation,Native,LIGER,0.059440834606287574
+Balancing species in a shared space,Native,Harmony,0.055013392750042286
+Matching corresponding cells,Native,FastMNN,0.014520197917407524

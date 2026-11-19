@@ -1,0 +1,5 @@
+tissue,species,annotator,n_select,n_labelled,n_types,mean_auroc,score_col,score_saved,score_na
+breast_cancer,human,Seurat,34744,34744,9,0.8763988695545977,labelscore_seurat,TRUE,0
+breast_cancer,human,SingleR,34744,34357,9,0.8479735663437421,labeldelta_singleR,TRUE,0
+breast_cancer,human,Seurat (cross),34744,34744,6,0.7664268523666989,labelscore_seurat_cross,TRUE,0
+breast_cancer,human,SingleR (cross),34744,34631,6,0.7691658017275247,labeldelta_singleR_cross,TRUE,0

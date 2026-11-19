@@ -1,0 +1,101 @@
+annotator,celltype,n_markers,n_cells,auroc,species
+seurat,Epithelial: Absorptive,10,65621,0.940524675892768,human
+seurat,Epithelial: Secretory,7,19857,0.9058616958968512,human
+seurat,Epithelial: Stem/Progenitor,8,20651,0.9245900310697425,human
+seurat,Endothelial,3,14140,0.9424444441055658,human
+seurat,Stromal/Mesenchymal,2,75617,0.8357365771260951,human
+seurat,Smooth muscle,3,25397,0.9509654585810166,human
+seurat,Neural/Glial,1,6738,0.6600877593976483,human
+seurat,B/Plasma,5,12774,0.9368655985644535,human
+seurat,Immune,9,34906,0.8745163531556793,human
+seurat,Erythroid,0,0,NA,human
+singleR,Epithelial: Absorptive,10,73571,0.977871700678088,human
+singleR,Epithelial: Secretory,7,9128,0.875540314593109,human
+singleR,Epithelial: Stem/Progenitor,8,49379,0.7976669268431805,human
+singleR,Endothelial,3,10797,0.957950601354916,human
+singleR,Stromal/Mesenchymal,2,24366,0.825096643422566,human
+singleR,Smooth muscle,3,60338,0.984690501526954,human
+singleR,Neural/Glial,1,19735,0.7309099313544439,human
+singleR,B/Plasma,5,16274,0.9753637794910142,human
+singleR,Immune,9,10152,0.9151046208869273,human
+singleR,Erythroid,0,1289,NA,human
+seurat_cross,Epithelial: Absorptive,10,75223,0.9136552468814003,human
+seurat_cross,Epithelial: Secretory,7,9387,0.8880567197130029,human
+seurat_cross,Epithelial: Stem/Progenitor,8,24546,0.9085842820331237,human
+seurat_cross,Endothelial,3,8980,0.9731122731961626,human
+seurat_cross,Stromal/Mesenchymal,2,61842,0.8364101762204537,human
+seurat_cross,Smooth muscle,3,69896,0.9630667655159293,human
+seurat_cross,Neural/Glial,1,5745,0.6275109294476652,human
+seurat_cross,B/Plasma,5,8730,0.918408460845778,human
+seurat_cross,Immune,9,11352,0.7720803492817842,human
+seurat_cross,Erythroid,0,0,NA,human
+singleR_cross,Epithelial: Absorptive,10,94944,0.9094755959517796,human
+singleR_cross,Epithelial: Secretory,7,13167,0.8656963571573072,human
+singleR_cross,Epithelial: Stem/Progenitor,8,16243,0.9617740007732365,human
+singleR_cross,Endothelial,3,19448,0.9176436123807958,human
+singleR_cross,Stromal/Mesenchymal,2,26579,0.8255047866091085,human
+singleR_cross,Smooth muscle,3,69797,0.9774739611929247,human
+singleR_cross,Neural/Glial,1,1361,0.8479875241870666,human
+singleR_cross,B/Plasma,5,19749,0.9255315366836062,human
+singleR_cross,Immune,9,13892,0.80228002873347,human
+singleR_cross,Erythroid,0,0,NA,human
+ebcc,Epithelial: Absorptive,10,66882,0.9598576560858333,human
+ebcc,Epithelial: Secretory,7,13486,0.9036309499353505,human
+ebcc,Epithelial: Stem/Progenitor,8,31591,0.8736797042853058,human
+ebcc,Endothelial,3,13135,0.9705747325926204,human
+ebcc,Stromal/Mesenchymal,2,41438,0.8524058251634342,human
+ebcc,Smooth muscle,3,60393,0.9842478432208064,human
+ebcc,Neural/Glial,1,11661,0.7489430082024432,human
+ebcc,B/Plasma,5,15600,0.9654455830718225,human
+ebcc,Immune,9,21141,0.8724841332949868,human
+ebcc,Erythroid,0,374,NA,human
+seurat,Stromal_Mesenchymal,33,25339,0.8863821716167586,mouse
+seurat,Epithelial_Stem_Progenitor,5,13377,0.8816355277838074,mouse
+seurat,Epithelial_Absorptive,18,76126,0.7829830663103549,mouse
+seurat,Epithelial_Secretory,20,38510,0.8171996235758016,mouse
+seurat,Endothelial,21,5514,0.9817889754302029,mouse
+seurat,Smooth_Muscle,11,55816,0.9709320288618939,mouse
+seurat,Immune,41,3,0.6268435839788342,mouse
+seurat,Neural_Glial,34,5044,0.8957094904200698,mouse
+seurat,B_Plasma,1,0,NA,mouse
+seurat,Erythroid,7,0,NA,mouse
+singleR,Stromal_Mesenchymal,33,5319,0.8562310462318227,mouse
+singleR,Epithelial_Stem_Progenitor,5,756,0.7315111146290437,mouse
+singleR,Epithelial_Absorptive,18,132262,0.888289558571915,mouse
+singleR,Epithelial_Secretory,20,13548,0.8478786990376875,mouse
+singleR,Endothelial,21,5843,0.9796375032306799,mouse
+singleR,Smooth_Muscle,11,53875,0.9831012453328184,mouse
+singleR,Immune,41,454,0.9370693970885012,mouse
+singleR,Neural_Glial,34,965,0.9572762472518848,mouse
+singleR,B_Plasma,1,1905,0.48706742573703343,mouse
+singleR,Erythroid,7,0,NA,mouse
+seurat_cross,Stromal_Mesenchymal,33,53815,0.9189363499485446,mouse
+seurat_cross,Epithelial_Stem_Progenitor,5,26183,0.9240893475087051,mouse
+seurat_cross,Epithelial_Absorptive,18,83298,0.8030849057395503,mouse
+seurat_cross,Epithelial_Secretory,20,16089,0.7780181039471573,mouse
+seurat_cross,Endothelial,21,9829,0.9701670974812698,mouse
+seurat_cross,Smooth_Muscle,11,26096,0.9605829266688474,mouse
+seurat_cross,Immune,41,2290,0.9519413867235084,mouse
+seurat_cross,Neural_Glial,34,748,0.940818840606077,mouse
+seurat_cross,B_Plasma,1,1381,0.34799966629809914,mouse
+seurat_cross,Erythroid,7,0,NA,mouse
+singleR_cross,Stromal_Mesenchymal,33,2412,0.9499310875778824,mouse
+singleR_cross,Epithelial_Stem_Progenitor,5,30123,0.8828416975453713,mouse
+singleR_cross,Epithelial_Absorptive,18,109759,0.8782407887339825,mouse
+singleR_cross,Epithelial_Secretory,20,5226,0.46854129753467655,mouse
+singleR_cross,Endothelial,21,7125,0.9836166430083518,mouse
+singleR_cross,Smooth_Muscle,11,49973,0.9845194441606232,mouse
+singleR_cross,Immune,41,91,0.9332500302000524,mouse
+singleR_cross,Neural_Glial,34,1423,0.9717225830710707,mouse
+singleR_cross,B_Plasma,1,1573,0.4369061545851502,mouse
+singleR_cross,Erythroid,7,158,0.2810671415368498,mouse
+ebcc,Stromal_Mesenchymal,33,25312,0.872899865175697,mouse
+ebcc,Epithelial_Stem_Progenitor,5,19088,0.9247817812488092,mouse
+ebcc,Epithelial_Absorptive,18,94239,0.8166166400817593,mouse
+ebcc,Epithelial_Secretory,20,17420,0.8214727919385392,mouse
+ebcc,Endothelial,21,8523,0.9820379234223794,mouse
+ebcc,Smooth_Muscle,11,50827,0.9799801479617173,mouse
+ebcc,Immune,41,765,0.9687816978419946,mouse
+ebcc,Neural_Glial,34,1914,0.9758196461095235,mouse
+ebcc,B_Plasma,1,1641,0.44412171832709924,mouse
+ebcc,Erythroid,7,0,NA,mouse

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes8,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,172530,0.723059815677196,1725,617.0230121612549,0.2145243733864463,1725,1276.550880432129,1280.8549010753632

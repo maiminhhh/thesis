@@ -1,0 +1,5 @@
+Hand-picked markers of each cell type (the lists used for marker AUROC) that the gene panel measures, split by whether SingleR
+(same-species reference, retrained exactly as in the annotation) uses them to identify that type: SingleR picks the 10 genes
+most up-regulated in the type against each other type; a marker it picks only for other types still enters the correlation
+over all types' genes. Labels: used for this type / hand-picked markers in the panel. Only types in the SingleR reference.
+Breast cancer mouse left blank: its reference has no Cancer Epithelial type.

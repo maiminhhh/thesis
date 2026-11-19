@@ -1,0 +1,18 @@
+,CCA scVI-latent
+NMI_cluster/label,0.21687422638774476
+ARI_cluster/label,0.2266768934453126
+ASW_label,0.49010226351676983
+ASW_label/batch,0.7994910469955236
+PCR_batch,0.9761144496257786
+cell_cycle_conservation,
+isolated_label_F1,0.03409090909090909
+isolated_label_silhouette,0.4528720637415794
+graph_conn,0.6919158440192915
+kBET,
+iLISI,0.6933967520177897
+cLISI,0.9050364666881833
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,476.5547342300415
+_n_cells,20007.0

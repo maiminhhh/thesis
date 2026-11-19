@@ -1,0 +1,17 @@
+,BBKNN UINMF
+NMI_cluster/label,0.21768675723836586
+ARI_cluster/label,0.052493512511206875
+ASW_label,
+ASW_label/batch,
+PCR_batch,
+cell_cycle_conservation,
+isolated_label_F1,
+isolated_label_silhouette,
+graph_conn,0.14100475199515294
+kBET,
+iLISI,0.7353569673466431
+cLISI,0.9159362998264262
+hvg_overlap,
+trajectory,
+_seconds,50.15794849395752
+_n_cells,19990.0

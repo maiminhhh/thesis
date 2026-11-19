@@ -1,0 +1,60 @@
+label,n,pct,set
+B-cells,2003,0.41989765649730304,mouse: whole section
+CAFs,24048,5.04128749048784,mouse: whole section
+Cancer Epithelial,361993,75.88617691883586,mouse: whole section
+Endothelial,13958,2.926076629750053,mouse: whole section
+Myeloid,2954,0.6192599487234315,mouse: whole section
+Normal Epithelial,59047,12.37828104003807,mouse: whole section
+PVL,6411,1.3439659889187268,mouse: whole section
+Plasmablasts,5181,1.0861157055978667,mouse: whole section
+T-cells,1263,0.26476821775141973,mouse: whole section
+NA,163,0.03417040339943105,mouse: whole section
+B-cells,443,0.6561018957345972,mouse: current
+CAFs,3472,5.14218009478673,mouse: current
+Cancer Epithelial,48096,71.23222748815166,mouse: current
+Endothelial,2160,3.199052132701422,mouse: current
+Myeloid,632,0.9360189573459715,mouse: current
+Normal Epithelial,10401,15.404324644549764,mouse: current
+PVL,1050,1.555094786729858,mouse: current
+Plasmablasts,1010,1.4958530805687205,mouse: current
+T-cells,239,0.3539691943127962,mouse: current
+NA,17,0.025177725118483412,mouse: current
+B-cells,544,0.27556023827855897,mouse: A_upper_core
+CAFs,4640,2.3503667382582973,mouse: A_upper_core
+Cancer Epithelial,159865,80.97874539044454,mouse: A_upper_core
+Endothelial,4534,2.2966730153584307,mouse: A_upper_core
+Myeloid,730,0.3697775256311545,mouse: A_upper_core
+Normal Epithelial,23276,11.790331077521579,mouse: A_upper_core
+PVL,1854,0.9391336061920007,mouse: A_upper_core
+Plasmablasts,1601,0.8109778336102443,mouse: A_upper_core
+T-cells,330,0.1671597033675082,mouse: A_upper_core
+NA,42,0.02127487133768286,mouse: A_upper_core
+B-cells,241,0.22202977594339623,mouse: B_central
+CAFs,2368,2.181603773584906,mouse: B_central
+Cancer Epithelial,90592,83.46108490566037,mouse: B_central
+Endothelial,2308,2.1263266509433962,mouse: B_central
+Myeloid,324,0.29849646226415094,mouse: B_central
+Normal Epithelial,10974,10.110185731132075,mouse: B_central
+PVL,929,0.8558741155660378,mouse: B_central
+Plasmablasts,626,0.5767246462264151,mouse: B_central
+T-cells,157,0.14464180424528303,mouse: B_central
+NA,25,0.023032134433962265,mouse: B_central
+B-cells,1320,0.36420725600183207,mouse: C_whole_tumour
+CAFs,11774,3.24861835770119,mouse: C_whole_tumour
+Cancer Epithelial,289851,79.97411921165684,mouse: C_whole_tumour
+Endothelial,8456,2.333133755114767,mouse: C_whole_tumour
+Myeloid,1618,0.4464298031901245,mouse: C_whole_tumour
+Normal Epithelial,41119,11.34533193904495,mouse: C_whole_tumour
+PVL,3834,1.0578565299325942,mouse: C_whole_tumour
+Plasmablasts,3578,0.987222395435269,mouse: C_whole_tumour
+T-cells,783,0.21604112231017766,mouse: C_whole_tumour
+NA,98,0.02703962961225723,mouse: C_whole_tumour
+B-cells,932,1.3412194735857474,human (EBCC)
+CAFs,15150,21.80201182921038,human (EBCC)
+Cancer Epithelial,34453,49.58050914533236,human (EBCC)
+Endothelial,2681,3.8581646015916187,human (EBCC)
+Myeloid,8216,11.82345407186749,human (EBCC)
+Normal Epithelial,2929,4.215055620314007,human (EBCC)
+PVL,1158,1.6664508051634073,human (EBCC)
+Plasmablasts,440,0.6331937428945589,human (EBCC)
+T-cells,3530,5.079940710040438,human (EBCC)

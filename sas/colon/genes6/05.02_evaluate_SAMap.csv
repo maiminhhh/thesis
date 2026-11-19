@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+colon,genes6,05.02_evaluate_SAMap.py,SAMap,knn,,290764,,8.58306884765625e-06,23.61883044242859

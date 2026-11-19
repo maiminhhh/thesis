@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+bone_marrow,genes8,05.07_evaluate_scVI.py,scVI,embed,X_scvi,36663,0.5553042401903947,367,22.844877004623413,0.3732820826897331,367,50.79146385192871,51.76803278923035

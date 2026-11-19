@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,k,min_species_cells,n_species,sas_seconds,seconds
+bone_marrow,dissected,05.08_evaluate_scANVI.py,scANVI,embed,X_scanvi,50042,0.2629433394238925,496,24796,2,132.46890115737915,133.50315260887146

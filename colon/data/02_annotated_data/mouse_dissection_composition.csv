@@ -1,0 +1,29 @@
+"group","label","n","pct"
+"mouse_whole_section","B/Plasma",1641,0.746829048509755
+"mouse_whole_section","Endothelial",8523,3.87886897041356
+"mouse_whole_section","Epithelial: Absorptive",94239,42.8887402209085
+"mouse_whole_section","Epithelial: Secretory",17420,7.92794760819009
+"mouse_whole_section","Epithelial: Stem/Progenitor",19088,8.68706452038648
+"mouse_whole_section","Immune",765,0.348156137787911
+"mouse_whole_section","Neural/Glial",1914,0.87107300356348
+"mouse_whole_section","Smooth muscle",50827,23.1316758370538
+"mouse_whole_section","Stromal/Mesenchymal",25312,11.5196446531864
+"mouse_dissected","B/Plasma",347,0.899942943098708
+"mouse_dissected","Endothelial",1595,4.13662534363816
+"mouse_dissected","Epithelial: Absorptive",14249,36.9547175683386
+"mouse_dissected","Epithelial: Secretory",3538,9.17578712588827
+"mouse_dissected","Epithelial: Stem/Progenitor",3678,9.53887649774366
+"mouse_dissected","Immune",155,0.401991804554178
+"mouse_dissected","Neural/Glial",364,0.944032366824005
+"mouse_dissected","Smooth muscle",10207,26.4718087037709
+"mouse_dissected","Stromal/Mesenchymal",4425,11.4762176461435
+"human","Epithelial: Absorptive",66882,24.2588891589077
+"human","Smooth muscle",60393,21.9052524292621
+"human","Stromal/Mesenchymal",41438,15.0300506708354
+"human","Epithelial: Stem/Progenitor",31591,11.4584277895256
+"human","Immune",21141,7.66808970587702
+"human","B/Plasma",15600,5.65830374209742
+"human","Epithelial: Secretory",13486,4.89153104268755
+"human","Endothelial",13135,4.76421920849036
+"human","Neural/Glial",11661,4.22958204721782
+"human","Erythroid",374,0.135654205099002

@@ -1,0 +1,18 @@
+,RPCA scVI-latent
+NMI_cluster/label,0.22755198012420352
+ARI_cluster/label,0.148126868978806
+ASW_label,0.4923358306934373
+ASW_label/batch,0.8501939872548264
+PCR_batch,0.9793640573453579
+cell_cycle_conservation,
+isolated_label_F1,0.023166023166023165
+isolated_label_silhouette,0.45605104836567173
+graph_conn,0.6669342654606505
+kBET,
+iLISI,0.6793515948366589
+cLISI,0.9069123814003948
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,401.03360080718994
+_n_cells,20007.0

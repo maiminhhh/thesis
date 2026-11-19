@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP_ebcc,MAP_best_annotator,k_MAP,n_labels_ebcc,n_labels_alt,metric_seconds,seconds
+breast_cancer,genes8,05.00_evaluate_raw_uinmf.py,Unintegrated UINMF,embed,X_uinmf_h,172530,0.7363470652379482,0.8488093601703521,1725,9,9,649.4280867576599,655.6491708755493

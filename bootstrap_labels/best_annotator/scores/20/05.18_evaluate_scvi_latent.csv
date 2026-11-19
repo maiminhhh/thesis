@@ -1,0 +1,18 @@
+,Unintegrated scVI-latent
+NMI_cluster/label,0.21616928575940786
+ARI_cluster/label,0.13151663459834717
+ASW_label,0.49634873284958303
+ASW_label/batch,0.8833609889609424
+PCR_batch,0.0
+cell_cycle_conservation,
+isolated_label_F1,0.034229828850855744
+isolated_label_silhouette,0.47235020622611046
+graph_conn,0.6557759695421395
+kBET,
+iLISI,0.03708238688784493
+cLISI,0.9075328617905493
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,487.0285589694977
+_n_cells,20007.0

@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,genes6,05.04_evaluate_Harmony.py,Harmony,embed,X_harmony,176449,0.6673847088911031,1764,553.0855646133423,0.3200040466711852,1764,1180.9960443973541,1187.173525094986

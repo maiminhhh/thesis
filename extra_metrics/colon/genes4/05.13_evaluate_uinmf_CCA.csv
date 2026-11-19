@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+colon,genes4,05.13_evaluate_uinmf_CCA.py,CCA UINMF,embed,X_cca_uinmf,301332,0.6131755308081616,3013,2723.058121204376,0.22673875895027168,3013,6863.506446838379,6870.284077644348

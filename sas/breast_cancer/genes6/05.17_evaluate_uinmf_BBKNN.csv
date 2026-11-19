@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+breast_cancer,genes6,05.17_evaluate_uinmf_BBKNN.py,BBKNN UINMF,knn,,176449,,3.457069396972656e-05,4.421520948410034

@@ -1,0 +1,11 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+colon,human,425,Epithelial: Absorptive,12,10,10,65621,FABP1;KRT20,
+colon,human,425,Epithelial: Secretory,16,7,3,19857,MUC2;TFF3;FCGBP;SPINK4;ZG16;AGR2;PYY;POU2F3;DCLK1,CHGB;NEUROD1;TRPM5;AVIL
+colon,human,425,Epithelial: Stem/Progenitor,9,8,8,20651,PCNA,
+colon,human,425,Endothelial,10,3,3,14140,CDH5;CLDN5;KDR;FLT1;EGFL7;CLEC14A;RAMP2,
+colon,human,425,Stromal/Mesenchymal,10,2,2,75617,COL1A2;COL3A1;COL6A2;DCN;LUM;DPT;FBLN1;THY1,
+colon,human,425,Smooth muscle,9,3,3,25397,MYH11;DES;MYLK;CNN1;ACTG2;DSTN,
+colon,human,425,Neural/Glial,8,1,1,6738,S100B;PLP1;SOX10;GFAP;ELAVL4;STMN2;KCNMB4,
+colon,human,425,B/Plasma,13,5,5,12774,CD19;MZB1;JCHAIN;XBP1;PRDM1;SDC1;IGHA1;IGHG1,
+colon,human,425,Immune,14,9,6,34906,PTPRC;LYZ;CD68;ITGAM;TPSAB1,CD8A;NKG7;MS4A2
+colon,human,425,Erythroid,23,0,0,0,SLC4A1;SPTA1;SPTB;ANK1;EPB41;EPB42;RHAG;RHCE;GYPB;GYPC;DMTN;ADD2;TMOD1;ALAS2;SLC25A37;FECH;UROD;BLVRB;AHSP;KLF1;GATA1;TAL1;HEMGN,

@@ -1,0 +1,25 @@
+tissue,species,band,type,n_type,auroc
+breast_cancer,mouse,< 0.5,cafs,1868,0.6933230351015927
+breast_cancer,mouse,< 0.5,endothelial,409,0.7693381906077189
+breast_cancer,mouse,< 0.5,myeloid,593,0.8146132496623035
+breast_cancer,mouse,< 0.5,normal_epithelial,2805,0.5228345693531695
+breast_cancer,mouse,< 0.5,t_cells,4043,0.4753059167862137
+breast_cancer,mouse,0.5–0.7,cafs,4586,0.7856793939335941
+breast_cancer,mouse,0.5–0.7,endothelial,996,0.8942984240158166
+breast_cancer,mouse,0.5–0.7,myeloid,773,0.8769732336964084
+breast_cancer,mouse,0.5–0.7,normal_epithelial,8951,0.5418197419055829
+breast_cancer,mouse,0.5–0.7,t_cells,8245,0.462827220622531
+breast_cancer,mouse,0.7–0.9,cafs,6154,0.8428794273426901
+breast_cancer,mouse,0.7–0.9,endothelial,1292,0.9286950379690352
+breast_cancer,mouse,0.7–0.9,myeloid,627,0.9109903017295734
+breast_cancer,mouse,0.7–0.9,normal_epithelial,17566,0.5443168219946277
+breast_cancer,mouse,0.7–0.9,t_cells,4190,0.4812503187547494
+breast_cancer,mouse,0.9–1,cafs,9941,0.8928147681083597
+breast_cancer,mouse,0.9–1,endothelial,1673,0.975600979564249
+breast_cancer,mouse,0.9–1,myeloid,355,0.9243686418102995
+breast_cancer,mouse,0.9–1,normal_epithelial,93650,0.6083516805132185
+breast_cancer,mouse,0.9–1,t_cells,713,0.5898608873324045
+breast_cancer,mouse,= 1,cafs,6171,0.9684384087144425
+breast_cancer,mouse,= 1,endothelial,1738,0.9945996713132016
+breast_cancer,mouse,= 1,normal_epithelial,295699,0.5812022425981206
+breast_cancer,mouse,= 1,t_cells,26,0.7153404045356024

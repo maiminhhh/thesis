@@ -1,0 +1,337 @@
+---
+title: "Fetal liver: integration benchmark figures"
+---
+
+Run after the whole pipeline (01-05). Every figure is written under `figures/`:
+
+```
+figures/
+  scores/scores.csv                    batch / bio score of every method in every case
+  scores/scores_<case>.png             batch removal vs biological conservation, one per case
+  scores/scores_all_cases.png          all cases side by side, shared axes
+  pareto/pareto_<case>.png             same scatter with the Pareto front, one per case
+  umap/<case>/<NN>_<method>.png        UMAP coloured by species | EBCC label
+  spatial/<section>/<NN>_<annotator>.png  ImageDimPlot per cell-type annotator
+```
+
+Cases: `full_mouse`, `dissected_mouse`, and `genes2`-`genes8` (the dissected section
+with 20-80% of the shared genes dropped).
+
+```{r setup}
+source('../library.R')
+source('../source.R')
+source('integration_datasets.R')   # the six cases: concat / out (04) / scores (05) paths
+library(rhdf5)
+library(patchwork)   # side-by-side UMAP panels
+
+fig_dir = Sys.getenv('FIG_DIR', 'figures')
+overwrite = TRUE                    # FALSE: skip UMAP / spatial images that already exist
+
+case_titles = c(full_mouse      = 'Full mouse section',
+                dissected_mouse = 'Dissected mouse section',
+                genes2          = 'Dissected, 20% of shared genes dropped',
+                genes4          = 'Dissected, 40% of shared genes dropped',
+                genes6          = 'Dissected, 60% of shared genes dropped',
+                genes8          = 'Dissected, 80% of shared genes dropped')
+
+# methods: 04 output file and the obsm key holding that method's own UMAP
+# (a plain X_umap in most 04 files is the unintegrated UMAP carried over)
+methods = tribble(
+  ~method,              ~file,                        ~umap_key,
+  'Unintegrated',       NA,                           'X_umap',
+  'Unintegrated UINMF', NA,                           NA,          # UMAP of the raw UINMF H matrix
+  'FastMNN',            '04.01_FastMNN.h5ad',         'X_umap_mnn',
+  'SAMap',              '04.02_SAMap.h5ad',           'X_umap',
+  'CCA',                '04.03_CCA.h5ad',             'X_umap_cca',
+  'Harmony',            '04.04_Harmony.h5ad',         'X_umap_harmony',
+  'Scanorama',          '04.05_Scanorama.h5ad',       'X_umap_scanorama',
+  'RPCA',               '04.06_RPCA.h5ad',            'X_umap_rpca',
+  'scVI',               '04.07_scVI.h5ad',            'X_umap_scvi',
+  'scANVI',             '04.08_scANVI.h5ad',          'X_umap_scanvi',
+  'BBKNN',              '04.09_BBKNN.h5ad',           'X_umap_bbknn',
+  'LIGER',              '04.10_LIGER.h5ad',           'X_umap_liger',
+  'LIGER UINMF',        '04.11_LIGER_UINMF.h5ad',     'X_umap',
+  'FastMNN UINMF',      '04.12_FastMNN_UINMF.h5ad',   'X_umap_mnn_uinmf',
+  'CCA UINMF',          '04.13_CCA_UINMF.h5ad',       'X_umap_cca_uinmf',
+  'Harmony UINMF',      '04.14_Harmony_UINMF.h5ad',   'X_umap_harmony_uinmf',
+  'Scanorama UINMF',    '04.15_Scanorama_UINMF.h5ad', 'X_umap_scanorama_uinmf',
+  'RPCA UINMF',         '04.16_RPCA_UINMF.h5ad',      'X_umap_rpca_uinmf',
+  'BBKNN UINMF',        '04.17_BBKNN_UINMF.h5ad',     'X_umap_bbknn_uinmf'
+) |>
+  mutate(base  = str_remove(method, ' UINMF'),
+         uinmf = if_else(str_detect(method, 'UINMF'), 'UINMF', 'Base'),
+         # file-name prefix: the 04.xx number, 00 / 00b for the two unintegrated baselines
+         id    = coalesce(str_extract(file, '^04\\.\\d+'),
+                          if_else(method == 'Unintegrated', '04.00', '04.00b')))
+
+base_cols = c(Unintegrated = '#000000', FastMNN = '#E69F00', SAMap = '#0072B2',
+              CCA = '#009E73', Scanorama = '#D55E00', RPCA = '#332288',
+              Harmony = '#AA4499', BBKNN = '#999933', scVI = '#882255',
+              scANVI = '#CC6677', LIGER = '#8C510A')
+species_cols = c(hsapiens = '#4477AA', mmusculus = '#EE6677')
+
+# one colour per cell type, shared by every UMAP and spatial plot
+celltypes = c('Hepatocyte', 'HSPC', 'Erythroid progenitor', 'Erythroblast', 'Erythrocyte',
+              'Megakaryocyte', 'Mast cell', 'Granulocyte', 'Mono/Macrophage',
+              'Dendritic cell', 'B cell', 'T/NK/ILC', 'Endothelial', 'Fibroblast')
+celltype_cols = setNames(c('#1F77B4', '#AEC7E8', '#FF7F0E', '#FFBB78', '#D62728', '#2CA02C',
+                           '#98DF8A', '#9467BD', '#C5B0D5', '#8C564B', '#E377C2', '#17BECF',
+                           '#BCBD22', '#7F7F7F'), celltypes)
+
+save_plot = function(p, file, width = 11, height = 7) {
+  dir.create(dirname(file), showWarnings = FALSE, recursive = TRUE)
+  ggsave(file, p, width = width, height = height, dpi = 300, bg = 'white')
+}
+```
+
+## Batch removal vs biological conservation
+
+Each axis is the plain mean of the scib metrics available for a method (all are
+already on 0-1). Graph-only methods (BBKNN, SAMap) have no embedding, so their
+PCR / ASW metrics are missing and they are averaged over the rest.
+
+```{r scores-functions}
+batch_metrics = c('PCR_batch', 'ASW_label/batch', 'iLISI', 'graph_conn')
+bio_metrics   = c('NMI_cluster/label', 'ARI_cluster/label', 'ASW_label',
+                  'isolated_label_F1', 'isolated_label_silhouette', 'cLISI')
+
+# one 05 csv (rows = metrics, one column named after the method) -> long format
+read_metrics = function(f) {
+  df = read_csv(f, show_col_types = FALSE, name_repair = "unique_quiet")
+  tibble(metric = df[[1]], value = as.numeric(df[[2]]), method = names(df)[2])
+}
+
+# per method and case: mean of the available batch / bio metrics. Score files older
+# than the case's 03 data come from an earlier run of the pipeline and are left out.
+case_scores = function() {
+  imap_dfr(datasets, function(d, case) {
+    files = list.files(d$scores, pattern = '^05\\..*\\.csv$', full.names = TRUE)
+    stale = file.mtime(files) < file.mtime(paste0(d$concat, '.h5ad'))
+    if (any(stale)) warning(case, ': skipping score files from an earlier run: ',
+                            paste(basename(files[stale]), collapse = ', '), call. = FALSE)
+    map_dfr(files[!stale], read_metrics) |>
+      mutate(group = case_when(metric %in% batch_metrics ~ 'batch',
+                               metric %in% bio_metrics   ~ 'bio')) |>
+      filter(!is.na(group), !is.na(value)) |>
+      group_by(method, group) |>
+      summarise(score = mean(value), n_metrics = n(), .groups = 'drop') |>
+      pivot_wider(names_from = group, values_from = c(score, n_metrics)) |>
+      rename(batch = score_batch, bio = score_bio) |>
+      mutate(case = case)
+  }) |>
+    left_join(select(methods, method, base, uinmf), by = 'method') |>
+    mutate(base  = factor(base, levels = names(base_cols)),
+           uinmf = factor(uinmf, levels = c('Base', 'UINMF')),
+           case  = factor(case, levels = names(datasets)))
+}
+
+shape_scale = scale_shape_manual(values = c(Base = 16, UINMF = 2), name = 'Gene set', drop = FALSE,
+                                 labels = c(Base = 'Shared orthologs', UINMF = 'Shared + unshared (UINMF)'))
+
+# colour = base algorithm, shape = gene set, dashed cross = Unintegrated's scores
+plot_scores = function(s, title = NULL) {
+  ref = s |> filter(method == 'Unintegrated')
+  ggplot(s, aes(batch, bio)) +
+    geom_vline(data = ref, aes(xintercept = batch, linetype = 'Unintegrated'), colour = 'grey40') +
+    geom_hline(data = ref, aes(yintercept = bio,   linetype = 'Unintegrated'), colour = 'grey40') +
+    geom_point(aes(colour = base, shape = uinmf), size = 3.5, stroke = 1.2) +
+    scale_colour_manual(values = base_cols, name = 'Base algorithm', drop = FALSE) +
+    shape_scale +
+    scale_linetype_manual(values = c(Unintegrated = 'dashed'), name = NULL) +
+    guides(colour = guide_legend(order = 1), shape = guide_legend(order = 2),
+           linetype = guide_legend(order = 3)) +
+    labs(title = title, x = 'Batch removal score', y = 'Biological conservation score') +
+    theme_classic(base_size = 14) +
+    theme(strip.background = element_blank())
+}
+
+# Pareto front: a method is on it if no other method in the same case is at least as
+# good on both scores and strictly better on one. Front points are full size and
+# labelled, the rest dimmed; the line is the staircase edge of what the front dominates.
+pareto_flag = function(batch, bio) {
+  map2_lgl(batch, bio, \(b, s) !any(batch >= b & bio >= s & (batch > b | bio > s)))
+}
+
+plot_pareto = function(s, title = NULL) {
+  s = s |> mutate(pareto = pareto_flag(batch, bio))
+  front = s |> filter(pareto) |> arrange(batch)
+  ref = s |> filter(method == 'Unintegrated')
+  ggplot(s, aes(batch, bio)) +
+    geom_vline(data = ref, aes(xintercept = batch, linetype = 'Unintegrated'), colour = 'grey40') +
+    geom_hline(data = ref, aes(yintercept = bio,   linetype = 'Unintegrated'), colour = 'grey40') +
+    geom_step(data = front, direction = 'hv', colour = 'grey30', linewidth = 0.7) +
+    geom_point(data = filter(s, !pareto), aes(colour = base, shape = uinmf),
+               size = 3, stroke = 1, alpha = 0.25) +
+    geom_point(data = front, aes(colour = base, shape = uinmf), size = 4.5, stroke = 1.6) +
+    ggrepel::geom_text_repel(data = front, aes(label = method, colour = base),
+                             size = 4.5, fontface = 'bold', show.legend = FALSE,
+                             max.overlaps = Inf, min.segment.length = 0,
+                             box.padding = 0.6, seed = 1) +
+    scale_colour_manual(values = base_cols, name = 'Base algorithm', drop = FALSE) +
+    shape_scale +
+    scale_linetype_manual(values = c(Unintegrated = 'dashed'), name = NULL) +
+    guides(colour = guide_legend(order = 1, override.aes = list(alpha = 1, size = 3.5, stroke = 1.2)),
+           shape = guide_legend(order = 2, override.aes = list(alpha = 1, size = 3.5, stroke = 1.2)),
+           linetype = guide_legend(order = 3)) +
+    labs(title = title, x = 'Batch removal score', y = 'Biological conservation score',
+         caption = 'Line: Pareto front. Labelled points are Pareto-optimal; dimmed points are dominated.') +
+    theme_classic(base_size = 14) +
+    theme(plot.caption = element_text(hjust = 0, size = 10))
+}
+```
+
+```{r scores}
+scores = case_scores()
+dir.create(file.path(fig_dir, 'scores'), showWarnings = FALSE, recursive = TRUE)
+write_csv(scores, file.path(fig_dir, 'scores', 'scores.csv'))
+
+# every method should have a score in every case
+missing = expand_grid(case = names(datasets), method = methods$method) |>
+  anti_join(mutate(scores, case = as.character(case)), by = c('case', 'method'))
+if (nrow(missing) > 0) warning('no scores for:\n',
+                               paste(missing$case, missing$method, sep = ': ', collapse = '\n'))
+
+for (case in names(datasets)) {
+  s = filter(scores, case == !!case)
+  save_plot(plot_scores(s, title = case_titles[[case]]),
+            file.path(fig_dir, 'scores', str_glue('scores_{case}.png')))
+  save_plot(plot_pareto(s, title = case_titles[[case]]),
+            file.path(fig_dir, 'pareto', str_glue('pareto_{case}.png')))
+}
+save_plot(plot_scores(mutate(scores, case = factor(case_titles[as.character(case)],
+                                                   levels = case_titles))) +
+            facet_wrap(~ case, nrow = 2),
+          file.path(fig_dir, 'scores', 'scores_all_cases.png'), width = 18, height = 10)
+```
+
+## UMAPs: species | EBCC label
+
+```{r umap-functions}
+# one obs column of an h5ad (plain or categorical), without loading the whole file
+read_h5ad_obs = function(file, col) {
+  if (col == '_index') col = h5readAttributes(file, 'obs')[['_index']]
+  path = paste0('obs/', col)
+  # categorical columns are a group of categories + integer codes (-1 = NA)
+  is_categorical = with(h5ls(file, recursive = 2), any(group == '/obs' & name == col & otype == 'H5I_GROUP'))
+  x = if (is_categorical) {
+    cats = as.character(h5read(file, paste0(path, '/categories')))
+    codes = as.integer(h5read(file, paste0(path, '/codes')))
+    ifelse(codes < 0, NA, cats[codes + 1])
+  } else as.character(h5read(file, path))
+  h5closeAll()
+  x
+}
+
+read_h5ad_umap = function(file, key) {
+  emb = t(h5read(file, paste0('obsm/', key)))[, 1:2]
+  h5closeAll()
+  data.frame(cell = read_h5ad_obs(file, '_index'), umap_1 = emb[, 1], umap_2 = emb[, 2])
+}
+
+# UMAP of the raw UINMF H matrix (no integration on top)
+uinmf_h_umap = function(out_dir) {
+  H = as.matrix(read.csv(file.path(out_dir, 'uinmf_H_raw.csv'), row.names = 1, check.names = FALSE))
+  H = H[rowSums(abs(H)) > 0 & apply(is.finite(H), 1, all), ]   # same cells the UINMF methods keep
+  emb = uwot::umap(H, n_neighbors = 30, metric = 'cosine', min_dist = 0.3, seed = 42,
+                   init = 'pca', n_threads = n_threads)
+  data.frame(cell = rownames(H), umap_1 = emb[, 1], umap_2 = emb[, 2])
+}
+
+plot_umap = function(d, title) {
+  d = slice_sample(d, prop = 1)                   # random draw order: no species on top
+  # zoom to the central 99% of cells on each axis; a few scattered outliers would
+  # otherwise shrink the main structure (the subtitle reports how many are cut)
+  xl = quantile(d$umap_1, c(0.005, 0.995)); yl = quantile(d$umap_2, c(0.005, 0.995))
+  xl = xl + c(-0.05, 0.05) * diff(xl);      yl = yl + c(-0.05, 0.05) * diff(yl)
+  n_out = sum(d$umap_1 < xl[1] | d$umap_1 > xl[2] | d$umap_2 < yl[1] | d$umap_2 > yl[2])
+  panel = function(col, values, name) {
+    ggplot(d, aes(umap_1, umap_2, colour = .data[[col]])) +
+      geom_point(size = 0.3, stroke = 0) +
+      scale_colour_manual(values = values, name = name, na.value = 'grey80') +
+      guides(colour = guide_legend(override.aes = list(size = 3))) +
+      coord_equal(xlim = xl, ylim = yl) +
+      theme_void(base_size = 12)
+  }
+  (panel('species', species_cols, 'Species') | panel('celltype', celltype_cols, 'EBCC label')) +
+    patchwork::plot_annotation(title = title,
+                    subtitle = sprintf('%d cells (%d outside the view)', nrow(d), n_out))
+}
+
+umap_case = function(case) {
+  d = datasets[[case]]
+  concat = paste0(d$concat, '.h5ad')
+  meta = data.frame(cell     = read_h5ad_obs(concat, '_index'),
+                    species  = read_h5ad_obs(concat, 'orig.ident'),
+                    celltype = read_h5ad_obs(concat, 'celltype'))
+  for (k in seq_len(nrow(methods))) {
+    m = methods[k, ]
+    out = file.path(fig_dir, 'umap', case, sprintf('%s_%s.png', m$id, str_replace_all(m$method, ' ', '_')))
+    if (file.exists(out) && !overwrite) next
+    emb = if (m$method == 'Unintegrated') {
+      read_h5ad_umap(concat, m$umap_key)
+    } else if (m$method == 'Unintegrated UINMF') {
+      uinmf_h_umap(d$out)
+    } else {
+      f = file.path(d$out, m$file)
+      e = read_h5ad_umap(f, m$umap_key)
+      # SAMap names cells by bare barcode ('hs'/'mm' in orig.ident); barcodes repeat
+      # across species, so rebuild the '<species>_<barcode>' names from it
+      if (m$method == 'SAMap')
+        e$cell = paste0(c(hs = 'hsapiens_', mm = 'mmusculus_')[read_h5ad_obs(f, 'orig.ident')], e$cell)
+      e
+    }
+    dd = inner_join(emb, meta, by = 'cell')
+    if (nrow(dd) < 0.95 * nrow(emb)) warning(case, ' / ', m$method, ': only ', nrow(dd), ' of ',
+                                             nrow(emb), ' cells matched the concatenated data')
+    save_plot(plot_umap(dd, sprintf('%s - %s', m$method, case_titles[[case]])), out, width = 14, height = 6)
+    message('saved ', out)
+  }
+}
+```
+
+```{r umap}
+for (case in names(datasets)) umap_case(case)
+```
+
+## Spatial plots per cell-type annotator
+
+The human section and the full and dissected mouse sections, coloured by each of the
+five annotations from 02: same-species reference (Seurat, SingleR), cross-species
+reference (Seurat, SingleR), and the EBCC consensus. One image per annotator.
+
+```{r spatial}
+sections = c(human           = 'data/02_annotated_data/02_human_annotated.rds',
+             mouse_full      = 'data/02_annotated_data/02_mouse_annotated.rds',
+             mouse_dissected = 'data/02_annotated_data/02_mouse_subset_annotated.rds')
+annotators = c('01_same_species_seurat'   = 'celltype_seurat',
+               '02_same_species_singleR'  = 'celltype_singleR',
+               '03_cross_species_seurat'  = 'celltype_seurat_cross',
+               '04_cross_species_singleR' = 'celltype_singleR_cross',
+               '05_ebcc'                  = 'ebcc_label')
+annotator_titles = c(celltype_seurat = 'Same-species reference: Seurat',
+                     celltype_singleR = 'Same-species reference: SingleR',
+                     celltype_seurat_cross = 'Cross-species reference: Seurat',
+                     celltype_singleR_cross = 'Cross-species reference: SingleR',
+                     ebcc_label = 'EBCC consensus')
+spatial_cols = c(celltype_cols, Unassigned = 'grey50')   # SingleR's pruned (NA) labels
+
+for (section in names(sections)) {
+  obj = readRDS(sections[[section]])
+  for (file_id in names(annotators)) {
+    col = annotators[[file_id]]
+    out = file.path(fig_dir, 'spatial', section, paste0(file_id, '.png'))
+    if (file.exists(out) && !overwrite) next
+    labs = as.character(obj@meta.data[[col]])
+    labs[is.na(labs)] = 'Unassigned'
+    obj$plot_label = factor(labs, levels = intersect(names(spatial_cols), unique(labs)))
+    p = ImageDimPlot(obj, group.by = 'plot_label', cols = spatial_cols, size = 0.9,
+                     dark.background = FALSE) +
+      labs(title = sprintf('%s - %s', str_replace(section, '_', ' '), annotator_titles[[col]]),
+           fill = 'Cell type') +
+      guides(fill = guide_legend(override.aes = list(size = 4)))
+    save_plot(p, out, width = 11, height = 9)
+    message('saved ', out)
+  }
+  rm(obj); gc()
+}
+```

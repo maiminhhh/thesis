@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+fetal_liver,genes4,05.17_evaluate_BBKNN_uinmf.py,BBKNN UINMF,knn,,282117,,,2.384185791015625e-05,7.093254566192627

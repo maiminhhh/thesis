@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,sas,sas_seconds,seconds
+breast_cancer,genes2,05.24_evaluate_BBKNN_scvi.py,BBKNN scVI-latent,knn,,177683,,2.1696090698242188e-05,5.076950788497925

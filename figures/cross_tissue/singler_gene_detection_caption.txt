@@ -1,0 +1,7 @@
+One point per reference cell type (same-species reference). SingleR genes: the genes SingleR selects as up-regulated in the type
+in any pairwise comparison with another type (retrained exactly as in the annotation: de.method = t, genes shared with the
+query; the retrained model reproduces the saved SingleR labels for 100% of 3,000 sampled cells per dataset).
+x: mean over those genes of the share of query cells detecting the gene (count > 0). y: share of cells SingleR assigns the type
+minus the share Seurat assigns it (cells both annotators label). Labelled: types with a difference of at least 5 points, the
+dominant SingleR label and the type with the most detected genes. Breast cancer mouse left blank: its reference has no Cancer
+Epithelial type.

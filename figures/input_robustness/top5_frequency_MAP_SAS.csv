@@ -1,0 +1,381 @@
+tissue,case,method,p_top
+bone_marrow,dissected,CCA,0
+bone_marrow,dissected,CCA UINMF,0
+bone_marrow,dissected,CCA scVI-latent,0.04
+bone_marrow,dissected,FastMNN,0
+bone_marrow,dissected,FastMNN UINMF,0.28
+bone_marrow,dissected,FastMNN scVI-latent,0.86
+bone_marrow,dissected,Harmony,0
+bone_marrow,dissected,Harmony UINMF,0.46
+bone_marrow,dissected,Harmony scVI-latent,0.46
+bone_marrow,dissected,LIGER,0
+bone_marrow,dissected,LIGER UINMF,1
+bone_marrow,dissected,RPCA,0
+bone_marrow,dissected,RPCA UINMF,0
+bone_marrow,dissected,RPCA scVI-latent,0.78
+bone_marrow,dissected,Scanorama,0
+bone_marrow,dissected,Scanorama UINMF,0
+bone_marrow,dissected,Scanorama scVI-latent,0.16
+bone_marrow,dissected,scANVI,0
+bone_marrow,dissected,scVI,0.96
+bone_marrow,genes2,CCA,0
+bone_marrow,genes2,CCA UINMF,0
+bone_marrow,genes2,CCA scVI-latent,0.04
+bone_marrow,genes2,FastMNN,0
+bone_marrow,genes2,FastMNN UINMF,0.32
+bone_marrow,genes2,FastMNN scVI-latent,0.5
+bone_marrow,genes2,Harmony,0
+bone_marrow,genes2,Harmony UINMF,0.68
+bone_marrow,genes2,Harmony scVI-latent,0.52
+bone_marrow,genes2,LIGER,0
+bone_marrow,genes2,LIGER UINMF,1
+bone_marrow,genes2,RPCA,0
+bone_marrow,genes2,RPCA UINMF,0
+bone_marrow,genes2,RPCA scVI-latent,0.46
+bone_marrow,genes2,Scanorama,0
+bone_marrow,genes2,Scanorama UINMF,0.04
+bone_marrow,genes2,Scanorama scVI-latent,0.52
+bone_marrow,genes2,scANVI,0
+bone_marrow,genes2,scVI,0.92
+bone_marrow,genes4,CCA,0
+bone_marrow,genes4,CCA UINMF,0
+bone_marrow,genes4,CCA scVI-latent,0.5
+bone_marrow,genes4,FastMNN,0
+bone_marrow,genes4,FastMNN UINMF,0
+bone_marrow,genes4,FastMNN scVI-latent,0.18
+bone_marrow,genes4,Harmony,0
+bone_marrow,genes4,Harmony UINMF,0.04
+bone_marrow,genes4,Harmony scVI-latent,0.76
+bone_marrow,genes4,LIGER,0
+bone_marrow,genes4,LIGER UINMF,0.38
+bone_marrow,genes4,RPCA,0.02
+bone_marrow,genes4,RPCA UINMF,0
+bone_marrow,genes4,RPCA scVI-latent,0.26
+bone_marrow,genes4,Scanorama,0.9
+bone_marrow,genes4,Scanorama UINMF,0
+bone_marrow,genes4,Scanorama scVI-latent,1
+bone_marrow,genes4,scANVI,0
+bone_marrow,genes4,scVI,0.96
+bone_marrow,genes6,CCA,0
+bone_marrow,genes6,CCA UINMF,0
+bone_marrow,genes6,CCA scVI-latent,0.06
+bone_marrow,genes6,FastMNN,0
+bone_marrow,genes6,FastMNN UINMF,0.04
+bone_marrow,genes6,FastMNN scVI-latent,0
+bone_marrow,genes6,Harmony,0
+bone_marrow,genes6,Harmony UINMF,0.94
+bone_marrow,genes6,Harmony scVI-latent,0.06
+bone_marrow,genes6,LIGER,0.94
+bone_marrow,genes6,LIGER UINMF,1
+bone_marrow,genes6,RPCA,0
+bone_marrow,genes6,RPCA UINMF,0
+bone_marrow,genes6,RPCA scVI-latent,0.12
+bone_marrow,genes6,Scanorama,0.98
+bone_marrow,genes6,Scanorama UINMF,0
+bone_marrow,genes6,Scanorama scVI-latent,0.76
+bone_marrow,genes6,scANVI,0
+bone_marrow,genes6,scVI,0.1
+bone_marrow,genes8,CCA,0
+bone_marrow,genes8,CCA UINMF,0.38
+bone_marrow,genes8,CCA scVI-latent,0
+bone_marrow,genes8,FastMNN,0
+bone_marrow,genes8,FastMNN UINMF,0
+bone_marrow,genes8,FastMNN scVI-latent,0
+bone_marrow,genes8,Harmony,1
+bone_marrow,genes8,Harmony UINMF,0
+bone_marrow,genes8,Harmony scVI-latent,1
+bone_marrow,genes8,LIGER,0.02
+bone_marrow,genes8,LIGER UINMF,0.14
+bone_marrow,genes8,RPCA,0
+bone_marrow,genes8,RPCA UINMF,1
+bone_marrow,genes8,RPCA scVI-latent,0.46
+bone_marrow,genes8,Scanorama,0
+bone_marrow,genes8,Scanorama UINMF,0
+bone_marrow,genes8,Scanorama scVI-latent,0
+bone_marrow,genes8,scANVI,0
+bone_marrow,genes8,scVI,1
+breast_cancer,dissected,CCA,0.12
+breast_cancer,dissected,CCA UINMF,0
+breast_cancer,dissected,CCA scVI-latent,0
+breast_cancer,dissected,FastMNN,0
+breast_cancer,dissected,FastMNN UINMF,0
+breast_cancer,dissected,FastMNN scVI-latent,1
+breast_cancer,dissected,Harmony,0.02
+breast_cancer,dissected,Harmony UINMF,0
+breast_cancer,dissected,Harmony scVI-latent,0.96
+breast_cancer,dissected,LIGER,0
+breast_cancer,dissected,LIGER UINMF,0
+breast_cancer,dissected,RPCA,0.06
+breast_cancer,dissected,RPCA UINMF,0
+breast_cancer,dissected,RPCA scVI-latent,0.24
+breast_cancer,dissected,Scanorama,0
+breast_cancer,dissected,Scanorama UINMF,0
+breast_cancer,dissected,Scanorama scVI-latent,0.66
+breast_cancer,dissected,scANVI,1
+breast_cancer,dissected,scVI,0.94
+breast_cancer,genes2,CCA,0.02
+breast_cancer,genes2,CCA UINMF,0
+breast_cancer,genes2,CCA scVI-latent,0
+breast_cancer,genes2,FastMNN,0
+breast_cancer,genes2,FastMNN UINMF,0
+breast_cancer,genes2,FastMNN scVI-latent,0.9
+breast_cancer,genes2,Harmony,0.94
+breast_cancer,genes2,Harmony UINMF,0
+breast_cancer,genes2,Harmony scVI-latent,0.5
+breast_cancer,genes2,LIGER,0
+breast_cancer,genes2,LIGER UINMF,0
+breast_cancer,genes2,RPCA,0
+breast_cancer,genes2,RPCA UINMF,0
+breast_cancer,genes2,RPCA scVI-latent,0.08
+breast_cancer,genes2,Scanorama,0.06
+breast_cancer,genes2,Scanorama UINMF,0
+breast_cancer,genes2,Scanorama scVI-latent,0.58
+breast_cancer,genes2,scANVI,1
+breast_cancer,genes2,scVI,0.92
+breast_cancer,genes4,CCA,0
+breast_cancer,genes4,CCA UINMF,0
+breast_cancer,genes4,CCA scVI-latent,0
+breast_cancer,genes4,FastMNN,0
+breast_cancer,genes4,FastMNN UINMF,0
+breast_cancer,genes4,FastMNN scVI-latent,1
+breast_cancer,genes4,Harmony,0.8
+breast_cancer,genes4,Harmony UINMF,0
+breast_cancer,genes4,Harmony scVI-latent,1
+breast_cancer,genes4,LIGER,0
+breast_cancer,genes4,LIGER UINMF,0
+breast_cancer,genes4,RPCA,0
+breast_cancer,genes4,RPCA UINMF,0
+breast_cancer,genes4,RPCA scVI-latent,0.16
+breast_cancer,genes4,Scanorama,0
+breast_cancer,genes4,Scanorama UINMF,0
+breast_cancer,genes4,Scanorama scVI-latent,1
+breast_cancer,genes4,scANVI,1
+breast_cancer,genes4,scVI,0.04
+breast_cancer,genes6,CCA,0
+breast_cancer,genes6,CCA UINMF,0
+breast_cancer,genes6,CCA scVI-latent,0.64
+breast_cancer,genes6,FastMNN,0
+breast_cancer,genes6,FastMNN UINMF,0
+breast_cancer,genes6,FastMNN scVI-latent,1
+breast_cancer,genes6,Harmony,0.18
+breast_cancer,genes6,Harmony UINMF,0
+breast_cancer,genes6,Harmony scVI-latent,1
+breast_cancer,genes6,LIGER,0
+breast_cancer,genes6,LIGER UINMF,0.9
+breast_cancer,genes6,RPCA,0
+breast_cancer,genes6,RPCA UINMF,0
+breast_cancer,genes6,RPCA scVI-latent,0
+breast_cancer,genes6,Scanorama,0
+breast_cancer,genes6,Scanorama UINMF,0
+breast_cancer,genes6,Scanorama scVI-latent,1
+breast_cancer,genes6,scANVI,0.28
+breast_cancer,genes6,scVI,0
+breast_cancer,genes8,CCA,0
+breast_cancer,genes8,CCA UINMF,0.02
+breast_cancer,genes8,CCA scVI-latent,0.98
+breast_cancer,genes8,FastMNN,0
+breast_cancer,genes8,FastMNN UINMF,0
+breast_cancer,genes8,FastMNN scVI-latent,1
+breast_cancer,genes8,Harmony,1
+breast_cancer,genes8,Harmony UINMF,0
+breast_cancer,genes8,Harmony scVI-latent,0
+breast_cancer,genes8,LIGER,0
+breast_cancer,genes8,LIGER UINMF,1
+breast_cancer,genes8,RPCA,0
+breast_cancer,genes8,RPCA UINMF,0
+breast_cancer,genes8,RPCA scVI-latent,0.86
+breast_cancer,genes8,Scanorama,0.14
+breast_cancer,genes8,Scanorama UINMF,0
+breast_cancer,genes8,Scanorama scVI-latent,0
+breast_cancer,genes8,scANVI,0
+breast_cancer,genes8,scVI,0
+colon,dissected,CCA,0
+colon,dissected,CCA UINMF,0
+colon,dissected,CCA scVI-latent,0
+colon,dissected,FastMNN,0
+colon,dissected,FastMNN UINMF,1
+colon,dissected,FastMNN scVI-latent,0
+colon,dissected,Harmony,0
+colon,dissected,Harmony UINMF,1
+colon,dissected,Harmony scVI-latent,0
+colon,dissected,LIGER,0
+colon,dissected,LIGER UINMF,1
+colon,dissected,RPCA,0
+colon,dissected,RPCA UINMF,0.96
+colon,dissected,RPCA scVI-latent,0.04
+colon,dissected,Scanorama,0
+colon,dissected,Scanorama UINMF,1
+colon,dissected,Scanorama scVI-latent,0
+colon,dissected,scANVI,0
+colon,dissected,scVI,0
+colon,genes2,CCA,0
+colon,genes2,CCA UINMF,0
+colon,genes2,CCA scVI-latent,0
+colon,genes2,FastMNN,0
+colon,genes2,FastMNN UINMF,1
+colon,genes2,FastMNN scVI-latent,0
+colon,genes2,Harmony,0
+colon,genes2,Harmony UINMF,1
+colon,genes2,Harmony scVI-latent,0
+colon,genes2,LIGER,0
+colon,genes2,LIGER UINMF,1
+colon,genes2,RPCA,0
+colon,genes2,RPCA UINMF,1
+colon,genes2,RPCA scVI-latent,0
+colon,genes2,Scanorama,0
+colon,genes2,Scanorama UINMF,1
+colon,genes2,Scanorama scVI-latent,0
+colon,genes2,scANVI,0
+colon,genes2,scVI,0
+colon,genes4,CCA,0
+colon,genes4,CCA UINMF,0.94
+colon,genes4,CCA scVI-latent,0
+colon,genes4,FastMNN,0
+colon,genes4,FastMNN UINMF,0.12
+colon,genes4,FastMNN scVI-latent,0
+colon,genes4,Harmony,0
+colon,genes4,Harmony UINMF,0
+colon,genes4,Harmony scVI-latent,0.94
+colon,genes4,LIGER,1
+colon,genes4,LIGER UINMF,1
+colon,genes4,RPCA,0
+colon,genes4,RPCA UINMF,1
+colon,genes4,RPCA scVI-latent,0
+colon,genes4,Scanorama,0
+colon,genes4,Scanorama UINMF,0
+colon,genes4,Scanorama scVI-latent,0
+colon,genes4,scANVI,0
+colon,genes4,scVI,0
+colon,genes6,CCA,0
+colon,genes6,CCA UINMF,1
+colon,genes6,CCA scVI-latent,0
+colon,genes6,FastMNN,0
+colon,genes6,FastMNN UINMF,0.26
+colon,genes6,FastMNN scVI-latent,0
+colon,genes6,Harmony,0
+colon,genes6,Harmony UINMF,1
+colon,genes6,Harmony scVI-latent,0
+colon,genes6,LIGER,0.74
+colon,genes6,LIGER UINMF,1
+colon,genes6,RPCA,0
+colon,genes6,RPCA UINMF,1
+colon,genes6,RPCA scVI-latent,0
+colon,genes6,Scanorama,0
+colon,genes6,Scanorama UINMF,0
+colon,genes6,Scanorama scVI-latent,0
+colon,genes6,scANVI,0
+colon,genes6,scVI,0
+colon,genes8,CCA,0
+colon,genes8,CCA UINMF,1
+colon,genes8,CCA scVI-latent,0
+colon,genes8,FastMNN,0
+colon,genes8,FastMNN UINMF,0.98
+colon,genes8,FastMNN scVI-latent,0
+colon,genes8,Harmony,0
+colon,genes8,Harmony UINMF,1
+colon,genes8,Harmony scVI-latent,0
+colon,genes8,LIGER,0
+colon,genes8,LIGER UINMF,1
+colon,genes8,RPCA,0
+colon,genes8,RPCA UINMF,1
+colon,genes8,RPCA scVI-latent,0
+colon,genes8,Scanorama,0
+colon,genes8,Scanorama UINMF,0.02
+colon,genes8,Scanorama scVI-latent,0
+colon,genes8,scANVI,0
+colon,genes8,scVI,0
+fetal_liver,dissected,CCA,0
+fetal_liver,dissected,CCA UINMF,0
+fetal_liver,dissected,CCA scVI-latent,1
+fetal_liver,dissected,FastMNN,0
+fetal_liver,dissected,FastMNN UINMF,0.02
+fetal_liver,dissected,FastMNN scVI-latent,0.96
+fetal_liver,dissected,Harmony,0
+fetal_liver,dissected,Harmony UINMF,0.98
+fetal_liver,dissected,Harmony scVI-latent,0
+fetal_liver,dissected,LIGER,0
+fetal_liver,dissected,LIGER UINMF,0.98
+fetal_liver,dissected,RPCA,0
+fetal_liver,dissected,RPCA UINMF,0
+fetal_liver,dissected,RPCA scVI-latent,1
+fetal_liver,dissected,Scanorama,0
+fetal_liver,dissected,Scanorama UINMF,0
+fetal_liver,dissected,Scanorama scVI-latent,0.04
+fetal_liver,dissected,scANVI,0.02
+fetal_liver,dissected,scVI,0
+fetal_liver,genes2,CCA,0
+fetal_liver,genes2,CCA UINMF,0
+fetal_liver,genes2,CCA scVI-latent,1
+fetal_liver,genes2,FastMNN,0
+fetal_liver,genes2,FastMNN UINMF,0
+fetal_liver,genes2,FastMNN scVI-latent,0.96
+fetal_liver,genes2,Harmony,0
+fetal_liver,genes2,Harmony UINMF,0.56
+fetal_liver,genes2,Harmony scVI-latent,0.12
+fetal_liver,genes2,LIGER,0
+fetal_liver,genes2,LIGER UINMF,0.88
+fetal_liver,genes2,RPCA,0
+fetal_liver,genes2,RPCA UINMF,0
+fetal_liver,genes2,RPCA scVI-latent,1
+fetal_liver,genes2,Scanorama,0
+fetal_liver,genes2,Scanorama UINMF,0
+fetal_liver,genes2,Scanorama scVI-latent,0.48
+fetal_liver,genes2,scANVI,0
+fetal_liver,genes2,scVI,0
+fetal_liver,genes4,CCA,0
+fetal_liver,genes4,CCA UINMF,0
+fetal_liver,genes4,CCA scVI-latent,1
+fetal_liver,genes4,FastMNN,0
+fetal_liver,genes4,FastMNN UINMF,0
+fetal_liver,genes4,FastMNN scVI-latent,1
+fetal_liver,genes4,Harmony,0
+fetal_liver,genes4,Harmony UINMF,0.02
+fetal_liver,genes4,Harmony scVI-latent,0.6
+fetal_liver,genes4,LIGER,0
+fetal_liver,genes4,LIGER UINMF,0.98
+fetal_liver,genes4,RPCA,0
+fetal_liver,genes4,RPCA UINMF,0
+fetal_liver,genes4,RPCA scVI-latent,1
+fetal_liver,genes4,Scanorama,0
+fetal_liver,genes4,Scanorama UINMF,0
+fetal_liver,genes4,Scanorama scVI-latent,0.4
+fetal_liver,genes4,scANVI,0
+fetal_liver,genes4,scVI,0
+fetal_liver,genes6,CCA,0
+fetal_liver,genes6,CCA UINMF,0
+fetal_liver,genes6,CCA scVI-latent,0.02
+fetal_liver,genes6,FastMNN,0
+fetal_liver,genes6,FastMNN UINMF,0.02
+fetal_liver,genes6,FastMNN scVI-latent,1
+fetal_liver,genes6,Harmony,0.98
+fetal_liver,genes6,Harmony UINMF,1
+fetal_liver,genes6,Harmony scVI-latent,0
+fetal_liver,genes6,LIGER,0
+fetal_liver,genes6,LIGER UINMF,1
+fetal_liver,genes6,RPCA,0
+fetal_liver,genes6,RPCA UINMF,0
+fetal_liver,genes6,RPCA scVI-latent,0
+fetal_liver,genes6,Scanorama,0.98
+fetal_liver,genes6,Scanorama UINMF,0
+fetal_liver,genes6,Scanorama scVI-latent,0
+fetal_liver,genes6,scANVI,0
+fetal_liver,genes6,scVI,0
+fetal_liver,genes8,CCA,0
+fetal_liver,genes8,CCA UINMF,0.98
+fetal_liver,genes8,CCA scVI-latent,0
+fetal_liver,genes8,FastMNN,0
+fetal_liver,genes8,FastMNN UINMF,0
+fetal_liver,genes8,FastMNN scVI-latent,0.76
+fetal_liver,genes8,Harmony,0.3
+fetal_liver,genes8,Harmony UINMF,0
+fetal_liver,genes8,Harmony scVI-latent,0.52
+fetal_liver,genes8,LIGER,0.44
+fetal_liver,genes8,LIGER UINMF,1
+fetal_liver,genes8,RPCA,0
+fetal_liver,genes8,RPCA UINMF,1
+fetal_liver,genes8,RPCA scVI-latent,0
+fetal_liver,genes8,Scanorama,0
+fetal_liver,genes8,Scanorama UINMF,0
+fetal_liver,genes8,Scanorama scVI-latent,0
+fetal_liver,genes8,scANVI,0
+fetal_liver,genes8,scVI,0

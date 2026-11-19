@@ -1,0 +1,64 @@
+tissue,species,chosen_frac,n_held,label_set,celltype,n_markers,n_cells,auroc,n_common
+breast_cancer,mouse,0,238511,Seurat,B-cells,0,1369,NA,64491
+breast_cancer,mouse,0,238511,Seurat,CAFs,12,12292,0.8754592201898356,64491
+breast_cancer,mouse,0,238511,Seurat,Cancer Epithelial,3,0,NA,64491
+breast_cancer,mouse,0,238511,Seurat,Endothelial,3,2990,0.949660907708002,64491
+breast_cancer,mouse,0,238511,Seurat,Myeloid,11,995,0.8588035775450263,64491
+breast_cancer,mouse,0,238511,Seurat,Normal Epithelial,5,40645,0.6387073791977631,64491
+breast_cancer,mouse,0,238511,Seurat,Plasmablasts,0,0,NA,64491
+breast_cancer,mouse,0,238511,Seurat,PVL,3,0,NA,64491
+breast_cancer,mouse,0,238511,Seurat,T-cells,11,6200,0.4520515727266036,64491
+breast_cancer,mouse,0,238511,SingleR,B-cells,0,613,NA,64491
+breast_cancer,mouse,0,238511,SingleR,CAFs,12,16604,0.8318192315567117,64491
+breast_cancer,mouse,0,238511,SingleR,Cancer Epithelial,3,0,NA,64491
+breast_cancer,mouse,0,238511,SingleR,Endothelial,3,3241,0.8936629133109585,64491
+breast_cancer,mouse,0,238511,SingleR,Myeloid,11,280,0.7752495400209577,64491
+breast_cancer,mouse,0,238511,SingleR,Normal Epithelial,5,43225,0.6289088625244683,64491
+breast_cancer,mouse,0,238511,SingleR,Plasmablasts,0,0,NA,64491
+breast_cancer,mouse,0,238511,SingleR,PVL,3,0,NA,64491
+breast_cancer,mouse,0,238511,SingleR,T-cells,11,528,0.6799741203366151,64491
+breast_cancer,mouse,0,238511,Seurat (cross),B-cells,0,35,NA,64491
+breast_cancer,mouse,0,238511,Seurat (cross),CAFs,12,8945,0.8903890745899183,64491
+breast_cancer,mouse,0,238511,Seurat (cross),Cancer Epithelial,3,42071,0.5123030502724134,64491
+breast_cancer,mouse,0,238511,Seurat (cross),Endothelial,3,5742,0.8647644677963022,64491
+breast_cancer,mouse,0,238511,Seurat (cross),Myeloid,11,2179,0.928653063495306,64491
+breast_cancer,mouse,0,238511,Seurat (cross),Normal Epithelial,5,3833,0.7643894369063672,64491
+breast_cancer,mouse,0,238511,Seurat (cross),Plasmablasts,0,542,NA,64491
+breast_cancer,mouse,0,238511,Seurat (cross),PVL,3,491,0.8662305721741345,64491
+breast_cancer,mouse,0,238511,Seurat (cross),T-cells,11,653,0.5416801703316113,64491
+breast_cancer,mouse,0,238511,SingleR (cross),B-cells,0,709,NA,64491
+breast_cancer,mouse,0,238511,SingleR (cross),CAFs,12,11403,0.8950885274908621,64491
+breast_cancer,mouse,0,238511,SingleR (cross),Cancer Epithelial,3,12580,0.5143784546676884,64491
+breast_cancer,mouse,0,238511,SingleR (cross),Endothelial,3,5442,0.8385495410973971,64491
+breast_cancer,mouse,0,238511,SingleR (cross),Myeloid,11,1000,0.8490050400844215,64491
+breast_cancer,mouse,0,238511,SingleR (cross),Normal Epithelial,5,29306,0.6511199113564174,64491
+breast_cancer,mouse,0,238511,SingleR (cross),Plasmablasts,0,1637,NA,64491
+breast_cancer,mouse,0,238511,SingleR (cross),PVL,3,1929,0.7529924529485724,64491
+breast_cancer,mouse,0,238511,SingleR (cross),T-cells,11,485,0.7206602087239888,64491
+breast_cancer,mouse,0,238511,Majority vote,B-cells,0,306,NA,64491
+breast_cancer,mouse,0,238511,Majority vote,CAFs,12,12878,0.8983990234922021,64491
+breast_cancer,mouse,0,238511,Majority vote,Cancer Epithelial,3,7436,0.5136737062173382,64491
+breast_cancer,mouse,0,238511,Majority vote,Endothelial,3,4346,0.9068684794076227,64491
+breast_cancer,mouse,0,238511,Majority vote,Myeloid,11,942,0.913414415925067,64491
+breast_cancer,mouse,0,238511,Majority vote,Normal Epithelial,5,37508,0.6522514144962,64491
+breast_cancer,mouse,0,238511,Majority vote,Plasmablasts,0,144,NA,64491
+breast_cancer,mouse,0,238511,Majority vote,PVL,3,283,0.9018810277816178,64491
+breast_cancer,mouse,0,238511,Majority vote,T-cells,11,648,0.6197285083798353,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),B-cells,0,540,NA,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),CAFs,12,11962,0.9080932799219459,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),Cancer Epithelial,3,8002,0.5064916954655546,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),Endothelial,3,4287,0.9125060305419547,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),Myeloid,11,1044,0.9155686599857352,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),Normal Epithelial,5,36647,0.6417116504069563,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),Plasmablasts,0,130,NA,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),PVL,3,502,0.8773112709424223,64491
+breast_cancer,mouse,0,238511,EBCC (f = 0),T-cells,11,1377,0.5248887737326026,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),B-cells,0,540,NA,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),CAFs,12,11962,0.9080932799219459,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),Cancer Epithelial,3,8002,0.5064916954655546,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),Endothelial,3,4287,0.9125060305419547,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),Myeloid,11,1044,0.9155686599857352,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),Normal Epithelial,5,36647,0.6417116504069563,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),Plasmablasts,0,130,NA,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),PVL,3,502,0.8773112709424223,64491
+breast_cancer,mouse,0,238511,EBCC (chosen f),T-cells,11,1377,0.5248887737326026,64491

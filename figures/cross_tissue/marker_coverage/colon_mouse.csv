@@ -1,0 +1,11 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+colon,mouse,379,Stromal_Mesenchymal,33,33,23,25339,,Pi16;Col8a1;Pcolce2;Sostdc1;Wif1;Colec11;Ecrg4;Itga8;Coch;Otor
+colon,mouse,379,Epithelial_Stem_Progenitor,5,5,5,13377,,
+colon,mouse,379,Epithelial_Absorptive,18,18,14,76126,,Car3;Cd36;Ttc36;Ace2
+colon,mouse,379,Epithelial_Secretory,20,20,7,38510,,Tff2;Chgb;Scg3;Scg5;Neurod1;Insm1;Ascl1;Sct;Nts;Ppp1r1a;Alox5ap;Ltc4s;Gp2
+colon,mouse,379,Endothelial,21,21,16,5514,,Angpt2;Lipg;Prox1;Lyve1;Mmrn1
+colon,mouse,379,Smooth_Muscle,11,11,10,55816,,Higd1b
+colon,mouse,379,Immune,41,41,10,3,,Marco;Folr2;Ms4a6b;Ms4a6c;Ms4a7;Cd300lf;Cybb;Ncf4;Retnla;Ccl12;Il1r2;Lamp3;Mpo;Mmp8;Mmp9;Csf3r;Cxcr2;Pglyrp1;Bst1;Fcnb;Stfa2l1;Prg2;Cpa3;Mrgpra2a;Ctsg;Cd3d;Cd8a;Ctla4;Ctla2a;Satb1;Klra8
+colon,mouse,379,Neural_Glial,34,34,26,5044,,Mlc1;Aif1l;Cldn11;Gad1;Slc17a7;Pvalb;Calb1;Chodl
+colon,mouse,379,B_Plasma,1,1,0,0,,
+colon,mouse,379,Erythroid,7,7,0,0,,

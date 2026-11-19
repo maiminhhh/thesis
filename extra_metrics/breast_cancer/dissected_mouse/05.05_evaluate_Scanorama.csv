@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+breast_cancer,dissected_mouse,05.05_evaluate_Scanorama.py,Scanorama,embed,X_scanorama,177883,0.6930206863240842,1779,492.06484818458557,0.18743163712610472,1779,1082.3860864639282,1088.7831699848175

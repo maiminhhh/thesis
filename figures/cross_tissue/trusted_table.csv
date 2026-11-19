@@ -1,0 +1,353 @@
+tissue,label,ebcc,species,annotator,trusted,M,frac
+colon,B/Plasma,TRUE,human,celltype_seurat,TRUE,5,0.25
+colon,B/Plasma,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,B/Plasma,TRUE,human,celltype_seurat_cross,TRUE,5,0.25
+colon,B/Plasma,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,B/Plasma,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,B/Plasma,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,B/Plasma,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,B/Plasma,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Endothelial,TRUE,human,celltype_seurat,TRUE,5,0.25
+colon,Endothelial,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Endothelial,TRUE,human,celltype_seurat_cross,TRUE,5,0.25
+colon,Endothelial,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,Endothelial,TRUE,mouse,celltype_seurat,TRUE,5,0
+colon,Endothelial,TRUE,mouse,celltype_singleR,TRUE,5,0
+colon,Endothelial,TRUE,mouse,celltype_seurat_cross,TRUE,5,0
+colon,Endothelial,TRUE,mouse,celltype_singleR_cross,TRUE,5,0
+colon,Epithelial: Absorptive,TRUE,human,celltype_seurat,TRUE,5,0.25
+colon,Epithelial: Absorptive,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Epithelial: Absorptive,TRUE,human,celltype_seurat_cross,TRUE,5,0.25
+colon,Epithelial: Absorptive,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,Epithelial: Absorptive,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Epithelial: Absorptive,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Epithelial: Absorptive,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Epithelial: Absorptive,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Epithelial: Secretory,TRUE,human,celltype_seurat,FALSE,5,0.25
+colon,Epithelial: Secretory,TRUE,human,celltype_singleR,FALSE,5,0.25
+colon,Epithelial: Secretory,TRUE,human,celltype_seurat_cross,FALSE,5,0.25
+colon,Epithelial: Secretory,TRUE,human,celltype_singleR_cross,FALSE,5,0.25
+colon,Epithelial: Secretory,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Epithelial: Secretory,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Epithelial: Secretory,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Epithelial: Secretory,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Epithelial: Stem/Progenitor,TRUE,human,celltype_seurat,FALSE,5,0.25
+colon,Epithelial: Stem/Progenitor,TRUE,human,celltype_singleR,FALSE,5,0.25
+colon,Epithelial: Stem/Progenitor,TRUE,human,celltype_seurat_cross,FALSE,5,0.25
+colon,Epithelial: Stem/Progenitor,TRUE,human,celltype_singleR_cross,FALSE,5,0.25
+colon,Epithelial: Stem/Progenitor,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Epithelial: Stem/Progenitor,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Epithelial: Stem/Progenitor,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Epithelial: Stem/Progenitor,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Erythroid,TRUE,human,celltype_seurat,FALSE,5,0.25
+colon,Erythroid,TRUE,human,celltype_singleR,FALSE,5,0.25
+colon,Erythroid,TRUE,human,celltype_seurat_cross,FALSE,5,0.25
+colon,Erythroid,TRUE,human,celltype_singleR_cross,FALSE,5,0.25
+colon,Erythroid,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Erythroid,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Erythroid,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Erythroid,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Immune,TRUE,human,celltype_seurat,FALSE,5,0.25
+colon,Immune,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Immune,TRUE,human,celltype_seurat_cross,FALSE,5,0.25
+colon,Immune,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,Immune,TRUE,mouse,celltype_seurat,TRUE,5,0
+colon,Immune,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Immune,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Immune,TRUE,mouse,celltype_singleR_cross,FALSE,5,0
+colon,Neural/Glial,TRUE,human,celltype_seurat,FALSE,5,0.25
+colon,Neural/Glial,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Neural/Glial,TRUE,human,celltype_seurat_cross,FALSE,5,0.25
+colon,Neural/Glial,TRUE,human,celltype_singleR_cross,FALSE,5,0.25
+colon,Neural/Glial,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Neural/Glial,TRUE,mouse,celltype_singleR,TRUE,5,0
+colon,Neural/Glial,TRUE,mouse,celltype_seurat_cross,TRUE,5,0
+colon,Neural/Glial,TRUE,mouse,celltype_singleR_cross,TRUE,5,0
+colon,Smooth muscle,TRUE,human,celltype_seurat,TRUE,5,0.25
+colon,Smooth muscle,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Smooth muscle,TRUE,human,celltype_seurat_cross,TRUE,5,0.25
+colon,Smooth muscle,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,Smooth muscle,TRUE,mouse,celltype_seurat,TRUE,5,0
+colon,Smooth muscle,TRUE,mouse,celltype_singleR,TRUE,5,0
+colon,Smooth muscle,TRUE,mouse,celltype_seurat_cross,TRUE,5,0
+colon,Smooth muscle,TRUE,mouse,celltype_singleR_cross,TRUE,5,0
+colon,Stromal/Mesenchymal,TRUE,human,celltype_seurat,TRUE,5,0.25
+colon,Stromal/Mesenchymal,TRUE,human,celltype_singleR,TRUE,5,0.25
+colon,Stromal/Mesenchymal,TRUE,human,celltype_seurat_cross,TRUE,5,0.25
+colon,Stromal/Mesenchymal,TRUE,human,celltype_singleR_cross,TRUE,5,0.25
+colon,Stromal/Mesenchymal,TRUE,mouse,celltype_seurat,FALSE,5,0
+colon,Stromal/Mesenchymal,TRUE,mouse,celltype_singleR,FALSE,5,0
+colon,Stromal/Mesenchymal,TRUE,mouse,celltype_seurat_cross,FALSE,5,0
+colon,Stromal/Mesenchymal,TRUE,mouse,celltype_singleR_cross,TRUE,5,0
+bone_marrow,B cell,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,B cell,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,B cell,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,B cell,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,B cell,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,B cell,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,B cell,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,B cell,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,DC,TRUE,human,celltype_seurat,FALSE,5,5
+bone_marrow,DC,TRUE,human,celltype_singleR,FALSE,5,5
+bone_marrow,DC,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,DC,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,DC,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,DC,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,DC,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,DC,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,Erythroid,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,Erythroid,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,Erythroid,TRUE,human,celltype_seurat_cross,TRUE,5,5
+bone_marrow,Erythroid,TRUE,human,celltype_singleR_cross,TRUE,5,5
+bone_marrow,Erythroid,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,Erythroid,TRUE,mouse,celltype_singleR,TRUE,3,5
+bone_marrow,Erythroid,TRUE,mouse,celltype_seurat_cross,TRUE,3,5
+bone_marrow,Erythroid,TRUE,mouse,celltype_singleR_cross,TRUE,3,5
+bone_marrow,Granulocyte,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,Granulocyte,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,Granulocyte,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,Granulocyte,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,Granulocyte,TRUE,mouse,celltype_seurat,TRUE,3,5
+bone_marrow,Granulocyte,TRUE,mouse,celltype_singleR,TRUE,3,5
+bone_marrow,Granulocyte,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,Granulocyte,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,HSPC,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,HSPC,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,HSPC,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,HSPC,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,HSPC,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,HSPC,TRUE,mouse,celltype_singleR,TRUE,3,5
+bone_marrow,HSPC,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,HSPC,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,MSC,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,MSC,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,MSC,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,MSC,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,MSC,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,MSC,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,MSC,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,MSC,TRUE,mouse,celltype_singleR_cross,TRUE,3,5
+bone_marrow,MkP,TRUE,human,celltype_seurat,FALSE,5,5
+bone_marrow,MkP,TRUE,human,celltype_singleR,FALSE,5,5
+bone_marrow,MkP,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,MkP,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,MkP,TRUE,mouse,celltype_seurat,TRUE,3,5
+bone_marrow,MkP,TRUE,mouse,celltype_singleR,TRUE,3,5
+bone_marrow,MkP,TRUE,mouse,celltype_seurat_cross,TRUE,3,5
+bone_marrow,MkP,TRUE,mouse,celltype_singleR_cross,TRUE,3,5
+bone_marrow,Monocyte,TRUE,human,celltype_seurat,FALSE,5,5
+bone_marrow,Monocyte,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,Monocyte,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,Monocyte,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,Monocyte,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,Monocyte,TRUE,mouse,celltype_singleR,TRUE,3,5
+bone_marrow,Monocyte,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,Monocyte,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,NK/ILC,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,NK/ILC,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,NK/ILC,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,NK/ILC,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,NK/ILC,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,NK/ILC,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,NK/ILC,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,NK/ILC,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+bone_marrow,Plasma,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,Plasma,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,Plasma,TRUE,human,celltype_seurat_cross,FALSE,5,5
+bone_marrow,Plasma,TRUE,human,celltype_singleR_cross,FALSE,5,5
+bone_marrow,Plasma,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,Plasma,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,Plasma,TRUE,mouse,celltype_seurat_cross,TRUE,3,5
+bone_marrow,Plasma,TRUE,mouse,celltype_singleR_cross,TRUE,3,5
+bone_marrow,T cell,TRUE,human,celltype_seurat,TRUE,5,5
+bone_marrow,T cell,TRUE,human,celltype_singleR,TRUE,5,5
+bone_marrow,T cell,TRUE,human,celltype_seurat_cross,TRUE,5,5
+bone_marrow,T cell,TRUE,human,celltype_singleR_cross,TRUE,5,5
+bone_marrow,T cell,TRUE,mouse,celltype_seurat,FALSE,3,5
+bone_marrow,T cell,TRUE,mouse,celltype_singleR,FALSE,3,5
+bone_marrow,T cell,TRUE,mouse,celltype_seurat_cross,FALSE,3,5
+bone_marrow,T cell,TRUE,mouse,celltype_singleR_cross,FALSE,3,5
+fetal_liver,B cell,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,B cell,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,B cell,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,B cell,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,B cell,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,B cell,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,B cell,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,B cell,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Dendritic cell,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Dendritic cell,TRUE,human,celltype_singleR,FALSE,5,0
+fetal_liver,Dendritic cell,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Dendritic cell,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Dendritic cell,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Dendritic cell,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,Dendritic cell,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,Dendritic cell,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Endothelial,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Endothelial,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Endothelial,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Endothelial,TRUE,human,celltype_singleR_cross,TRUE,5,0
+fetal_liver,Endothelial,TRUE,mouse,celltype_seurat,TRUE,3,0
+fetal_liver,Endothelial,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Endothelial,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Endothelial,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,Erythroblast,TRUE,human,celltype_seurat,FALSE,5,0
+fetal_liver,Erythroblast,TRUE,human,celltype_singleR,FALSE,5,0
+fetal_liver,Erythroblast,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Erythroblast,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Erythroblast,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Erythroblast,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Erythroblast,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,Erythroblast,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Erythrocyte,TRUE,human,celltype_seurat,FALSE,5,0
+fetal_liver,Erythrocyte,TRUE,human,celltype_singleR,FALSE,5,0
+fetal_liver,Erythrocyte,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Erythrocyte,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Erythrocyte,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Erythrocyte,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,Erythrocyte,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,Erythrocyte,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Erythroid progenitor,TRUE,human,celltype_seurat,FALSE,5,0
+fetal_liver,Erythroid progenitor,TRUE,human,celltype_singleR,FALSE,5,0
+fetal_liver,Erythroid progenitor,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Erythroid progenitor,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Erythroid progenitor,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Erythroid progenitor,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,Erythroid progenitor,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,Erythroid progenitor,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Fibroblast,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Fibroblast,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Fibroblast,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Fibroblast,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Fibroblast,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Fibroblast,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,Fibroblast,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Fibroblast,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,Granulocyte,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Granulocyte,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Granulocyte,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Granulocyte,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Granulocyte,TRUE,mouse,celltype_seurat,TRUE,3,0
+fetal_liver,Granulocyte,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Granulocyte,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Granulocyte,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,HSPC,TRUE,human,celltype_seurat,FALSE,5,0
+fetal_liver,HSPC,TRUE,human,celltype_singleR,FALSE,5,0
+fetal_liver,HSPC,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,HSPC,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,HSPC,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,HSPC,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,HSPC,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,HSPC,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,Hepatocyte,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Hepatocyte,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Hepatocyte,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Hepatocyte,TRUE,human,celltype_singleR_cross,TRUE,5,0
+fetal_liver,Hepatocyte,TRUE,mouse,celltype_seurat,TRUE,3,0
+fetal_liver,Hepatocyte,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Hepatocyte,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Hepatocyte,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,Mast cell,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Mast cell,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Mast cell,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Mast cell,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Mast cell,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Mast cell,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,Mast cell,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Mast cell,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,Megakaryocyte,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Megakaryocyte,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Megakaryocyte,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,Megakaryocyte,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Megakaryocyte,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,Megakaryocyte,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Megakaryocyte,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Megakaryocyte,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+fetal_liver,Mono/Macrophage,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,Mono/Macrophage,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,Mono/Macrophage,TRUE,human,celltype_seurat_cross,TRUE,5,0
+fetal_liver,Mono/Macrophage,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,Mono/Macrophage,TRUE,mouse,celltype_seurat,TRUE,3,0
+fetal_liver,Mono/Macrophage,TRUE,mouse,celltype_singleR,TRUE,3,0
+fetal_liver,Mono/Macrophage,TRUE,mouse,celltype_seurat_cross,TRUE,3,0
+fetal_liver,Mono/Macrophage,TRUE,mouse,celltype_singleR_cross,TRUE,3,0
+fetal_liver,T/NK/ILC,TRUE,human,celltype_seurat,TRUE,5,0
+fetal_liver,T/NK/ILC,TRUE,human,celltype_singleR,TRUE,5,0
+fetal_liver,T/NK/ILC,TRUE,human,celltype_seurat_cross,FALSE,5,0
+fetal_liver,T/NK/ILC,TRUE,human,celltype_singleR_cross,FALSE,5,0
+fetal_liver,T/NK/ILC,TRUE,mouse,celltype_seurat,FALSE,3,0
+fetal_liver,T/NK/ILC,TRUE,mouse,celltype_singleR,FALSE,3,0
+fetal_liver,T/NK/ILC,TRUE,mouse,celltype_seurat_cross,FALSE,3,0
+fetal_liver,T/NK/ILC,TRUE,mouse,celltype_singleR_cross,FALSE,3,0
+breast_cancer,B-cells,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,B-cells,TRUE,human,celltype_singleR,FALSE,3,0.5
+breast_cancer,B-cells,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,B-cells,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,B-cells,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,B-cells,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,B-cells,TRUE,mouse,celltype_seurat_cross,FALSE,2,0
+breast_cancer,B-cells,TRUE,mouse,celltype_singleR_cross,FALSE,2,0
+breast_cancer,CAFs,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,CAFs,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,CAFs,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,CAFs,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,CAFs,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,CAFs,TRUE,mouse,celltype_singleR,TRUE,2,0
+breast_cancer,CAFs,TRUE,mouse,celltype_seurat_cross,TRUE,2,0
+breast_cancer,CAFs,TRUE,mouse,celltype_singleR_cross,TRUE,2,0
+breast_cancer,Cancer Epithelial,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,Cancer Epithelial,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,Cancer Epithelial,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,Cancer Epithelial,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,Cancer Epithelial,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,Cancer Epithelial,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,Cancer Epithelial,TRUE,mouse,celltype_seurat_cross,TRUE,2,0
+breast_cancer,Cancer Epithelial,TRUE,mouse,celltype_singleR_cross,TRUE,2,0
+breast_cancer,Endothelial,TRUE,human,celltype_seurat,FALSE,3,0.5
+breast_cancer,Endothelial,TRUE,human,celltype_singleR,FALSE,3,0.5
+breast_cancer,Endothelial,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,Endothelial,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,Endothelial,TRUE,mouse,celltype_seurat,TRUE,2,0
+breast_cancer,Endothelial,TRUE,mouse,celltype_singleR,TRUE,2,0
+breast_cancer,Endothelial,TRUE,mouse,celltype_seurat_cross,FALSE,2,0
+breast_cancer,Endothelial,TRUE,mouse,celltype_singleR_cross,TRUE,2,0
+breast_cancer,Myeloid,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,Myeloid,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,Myeloid,TRUE,human,celltype_seurat_cross,TRUE,3,0.5
+breast_cancer,Myeloid,TRUE,human,celltype_singleR_cross,TRUE,3,0.5
+breast_cancer,Myeloid,TRUE,mouse,celltype_seurat,TRUE,2,0
+breast_cancer,Myeloid,TRUE,mouse,celltype_singleR,TRUE,2,0
+breast_cancer,Myeloid,TRUE,mouse,celltype_seurat_cross,TRUE,2,0
+breast_cancer,Myeloid,TRUE,mouse,celltype_singleR_cross,FALSE,2,0
+breast_cancer,Normal Epithelial,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,Normal Epithelial,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,Normal Epithelial,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,Normal Epithelial,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,Normal Epithelial,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,Normal Epithelial,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,Normal Epithelial,TRUE,mouse,celltype_seurat_cross,TRUE,2,0
+breast_cancer,Normal Epithelial,TRUE,mouse,celltype_singleR_cross,FALSE,2,0
+breast_cancer,PVL,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,PVL,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,PVL,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,PVL,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,PVL,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,PVL,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,PVL,TRUE,mouse,celltype_seurat_cross,TRUE,2,0
+breast_cancer,PVL,TRUE,mouse,celltype_singleR_cross,TRUE,2,0
+breast_cancer,Plasmablasts,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,Plasmablasts,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,Plasmablasts,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,Plasmablasts,TRUE,human,celltype_singleR_cross,FALSE,3,0.5
+breast_cancer,Plasmablasts,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,Plasmablasts,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,Plasmablasts,TRUE,mouse,celltype_seurat_cross,FALSE,2,0
+breast_cancer,Plasmablasts,TRUE,mouse,celltype_singleR_cross,FALSE,2,0
+breast_cancer,T-cells,TRUE,human,celltype_seurat,TRUE,3,0.5
+breast_cancer,T-cells,TRUE,human,celltype_singleR,TRUE,3,0.5
+breast_cancer,T-cells,TRUE,human,celltype_seurat_cross,FALSE,3,0.5
+breast_cancer,T-cells,TRUE,human,celltype_singleR_cross,TRUE,3,0.5
+breast_cancer,T-cells,TRUE,mouse,celltype_seurat,FALSE,2,0
+breast_cancer,T-cells,TRUE,mouse,celltype_singleR,FALSE,2,0
+breast_cancer,T-cells,TRUE,mouse,celltype_seurat_cross,FALSE,2,0
+breast_cancer,T-cells,TRUE,mouse,celltype_singleR_cross,TRUE,2,0

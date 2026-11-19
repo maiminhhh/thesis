@@ -1,0 +1,65 @@
+tissue,species,band,type,n_type,auroc
+fetal_liver,human,< 0.5,hepatocyte,6153,0.6607518987860981
+fetal_liver,human,< 0.5,hspc,87,0.8569246016583524
+fetal_liver,human,< 0.5,erythroid_progenitor,2622,0.6836293998701634
+fetal_liver,human,< 0.5,erythroblast,4615,0.6503005726667699
+fetal_liver,human,< 0.5,erythrocyte,3873,0.4446609346660419
+fetal_liver,human,< 0.5,megakaryocyte,199,0.8760405625660832
+fetal_liver,human,< 0.5,mast_cell,21,0.9974623883145122
+fetal_liver,human,< 0.5,granulocyte,212,0.9773441521961684
+fetal_liver,human,< 0.5,mono_macrophage,389,0.9107992973086242
+fetal_liver,human,< 0.5,dendritic_cell,36,0.9443416378236981
+fetal_liver,human,< 0.5,b_cell,33,0.9623419786600133
+fetal_liver,human,< 0.5,t_nk_ilc,25,0.9953269971744156
+fetal_liver,human,< 0.5,endothelial,533,0.9207783963727132
+fetal_liver,human,< 0.5,fibroblast,692,0.9215679152314199
+fetal_liver,human,0.5–0.7,hepatocyte,11013,0.8300081072837989
+fetal_liver,human,0.5–0.7,hspc,99,0.9445574320957104
+fetal_liver,human,0.5–0.7,erythroid_progenitor,2849,0.7439422432307647
+fetal_liver,human,0.5–0.7,erythroblast,12835,0.7343673032173131
+fetal_liver,human,0.5–0.7,erythrocyte,15469,0.46005850240991564
+fetal_liver,human,0.5–0.7,megakaryocyte,273,0.9323052294557097
+fetal_liver,human,0.5–0.7,mast_cell,25,0.9994093167438107
+fetal_liver,human,0.5–0.7,granulocyte,324,0.9933497774432766
+fetal_liver,human,0.5–0.7,mono_macrophage,1162,0.9599115144430803
+fetal_liver,human,0.5–0.7,dendritic_cell,35,0.9718029464589097
+fetal_liver,human,0.5–0.7,b_cell,64,0.9980035035806115
+fetal_liver,human,0.5–0.7,t_nk_ilc,55,0.9980030825807149
+fetal_liver,human,0.5–0.7,endothelial,1500,0.9632687679459921
+fetal_liver,human,0.5–0.7,fibroblast,1420,0.9647340699118898
+fetal_liver,human,0.7–0.9,hepatocyte,12506,0.9224523421051415
+fetal_liver,human,0.7–0.9,hspc,77,0.9545378564873637
+fetal_liver,human,0.7–0.9,erythroid_progenitor,335,0.7001405213541582
+fetal_liver,human,0.7–0.9,erythroblast,13367,0.8466930888956815
+fetal_liver,human,0.7–0.9,erythrocyte,18181,0.48162972641792023
+fetal_liver,human,0.7–0.9,megakaryocyte,264,0.9339013794284915
+fetal_liver,human,0.7–0.9,mast_cell,39,0.9999710362763017
+fetal_liver,human,0.7–0.9,granulocyte,245,0.9962872208877581
+fetal_liver,human,0.7–0.9,mono_macrophage,1409,0.972000283825671
+fetal_liver,human,0.7–0.9,dendritic_cell,32,0.9946544097249742
+fetal_liver,human,0.7–0.9,b_cell,73,0.9911760415367827
+fetal_liver,human,0.7–0.9,t_nk_ilc,94,0.9989508594468237
+fetal_liver,human,0.7–0.9,endothelial,2026,0.9817772625872324
+fetal_liver,human,0.7–0.9,fibroblast,1852,0.9793636729831223
+fetal_liver,human,0.9–1,hepatocyte,13582,0.9741680987160607
+fetal_liver,human,0.9–1,hspc,109,0.9679567855983032
+fetal_liver,human,0.9–1,erythroblast,10876,0.9336496188601785
+fetal_liver,human,0.9–1,erythrocyte,17725,0.4800627840399578
+fetal_liver,human,0.9–1,megakaryocyte,354,0.970814969714127
+fetal_liver,human,0.9–1,mast_cell,28,0.9999925847049157
+fetal_liver,human,0.9–1,granulocyte,28,0.9977294366452019
+fetal_liver,human,0.9–1,mono_macrophage,918,0.9895941881548639
+fetal_liver,human,0.9–1,b_cell,137,0.998920694146093
+fetal_liver,human,0.9–1,t_nk_ilc,268,0.9997144439727784
+fetal_liver,human,0.9–1,endothelial,2015,0.9897583407276336
+fetal_liver,human,0.9–1,fibroblast,2147,0.9928200196268392
+fetal_liver,human,= 1,hepatocyte,47167,0.9972426237648879
+fetal_liver,human,= 1,hspc,58,0.9970903196122901
+fetal_liver,human,= 1,erythroblast,3798,0.9794698910156935
+fetal_liver,human,= 1,erythrocyte,5831,0.461512453871384
+fetal_liver,human,= 1,megakaryocyte,414,0.9869659174847466
+fetal_liver,human,= 1,mono_macrophage,152,0.9968389698440983
+fetal_liver,human,= 1,b_cell,40,0.9993692284402281
+fetal_liver,human,= 1,t_nk_ilc,56,0.9998599911067313
+fetal_liver,human,= 1,endothelial,1613,0.9985897447625205
+fetal_liver,human,= 1,fibroblast,362,0.9951588665254703

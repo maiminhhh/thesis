@@ -1,0 +1,8 @@
+published_method,our_method,rank,source
+Seurat v4 CCA,CCA,3,"Zhong et al. 2025 (NAR, doi:10.1093/nar/gkae1316), Fig. 2A: cross-genus, methods ranked by average overall score; SATURN (1) and scGen (2) not in our benchmark"
+scVI,scVI,4,
+fastMNN,FastMNN,5,
+Scanorama,Scanorama,6,
+BBKNN,BBKNN,7,
+SAMap,SAMap,8,
+Harmony,Harmony,9,

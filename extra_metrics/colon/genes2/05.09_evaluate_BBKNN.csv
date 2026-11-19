@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,NC,metric_seconds,seconds
+colon,genes2,05.09_evaluate_BBKNN.py,BBKNN,knn,,307493,,,3.2901763916015625e-05,9.455082893371582

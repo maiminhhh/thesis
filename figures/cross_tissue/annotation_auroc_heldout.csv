@@ -1,0 +1,57 @@
+tissue,species,chosen_f,labelling,mean_auroc,n_types,n_cells
+bone_marrow,human,5,Seurat,0.8055152163460159,10,17002
+bone_marrow,human,5,SingleR,0.727043076674998,10,17002
+bone_marrow,human,5,Seurat (cross),0.667262392581599,8,17002
+bone_marrow,human,5,SingleR (cross),0.6014341539840148,8,17001
+bone_marrow,human,5,Majority vote,0.7004397692961388,10,17002
+bone_marrow,human,5,EBCC (f = 0),0.696973743349412,NA,17002
+bone_marrow,human,5,EBCC (chosen f),0.744016401870811,NA,17002
+bone_marrow,mouse,5,Seurat,0.6777823470819563,9,26023
+bone_marrow,mouse,5,SingleR,0.7010066892941963,9,26023
+bone_marrow,mouse,5,Seurat (cross),0.7284087888128251,11,26023
+bone_marrow,mouse,5,SingleR (cross),0.700605203916391,11,26023
+bone_marrow,mouse,5,Majority vote,0.7336952570086159,11,26023
+bone_marrow,mouse,5,EBCC (f = 0),0.729915308935846,NA,26023
+bone_marrow,mouse,5,EBCC (chosen f),0.759162057697865,NA,26023
+colon,human,0.25,Seurat,0.8852878235358228,9,137851
+colon,human,0.25,SingleR,0.8931373911791187,9,137534
+colon,human,0.25,Seurat (cross),0.8667975290917461,9,137851
+colon,human,0.25,SingleR (cross),0.8939095932656447,9,137595
+colon,human,0.25,Majority vote,0.9073744600217168,9,137851
+colon,human,0.25,EBCC (f = 0),0.902369379385454,NA,137851
+colon,human,0.25,EBCC (chosen f),0.902918627503711,NA,137851
+colon,mouse,0,Seurat,0.8880361142268554,7,109865
+colon,mouse,0,SingleR,0.849949644929846,9,107517
+colon,mouse,0,Seurat (cross),0.8426428575040826,9,109865
+colon,mouse,0,SingleR (cross),0.774285712917552,10,103883
+colon,mouse,0,Majority vote,0.8611603055700178,10,109865
+colon,mouse,0,EBCC (f = 0),0.865370345670419,NA,109865
+colon,mouse,0,EBCC (chosen f),0.865370345670419,NA,109865
+breast_cancer,human,0.5,Seurat,0.879456074542408,9,34745
+breast_cancer,human,0.5,SingleR,0.853070138350447,9,34332
+breast_cancer,human,0.5,Seurat (cross),0.7630588299618457,6,34745
+breast_cancer,human,0.5,SingleR (cross),0.765425975863958,6,34611
+breast_cancer,human,0.5,Majority vote,0.8233734517944559,9,34745
+breast_cancer,human,0.5,EBCC (f = 0),0.787384521886672,NA,34745
+breast_cancer,human,0.5,EBCC (chosen f),0.840734726680434,NA,34745
+breast_cancer,mouse,0,Seurat,0.7439940843932086,5,238511
+breast_cancer,mouse,0,SingleR,0.7337431951496284,5,238262
+breast_cancer,mouse,0,Seurat (cross),0.781467204835405,7,238511
+breast_cancer,mouse,0,SingleR (cross),0.7381121211716274,7,238422
+breast_cancer,mouse,0,Majority vote,0.732107686395514,7,238511
+breast_cancer,mouse,0,EBCC (f = 0),0.759132652055961,NA,238511
+breast_cancer,mouse,0,EBCC (chosen f),0.759132652055961,NA,238511
+fetal_liver,human,0,Seurat,0.9162401585846638,14,112398
+fetal_liver,human,0,SingleR,0.8380914522688538,14,111536
+fetal_liver,human,0,Seurat (cross),0.6814266666383865,9,112398
+fetal_liver,human,0,SingleR (cross),0.7472095903729726,9,112373
+fetal_liver,human,0,Majority vote,0.8403346659369604,14,112398
+fetal_liver,human,0,EBCC (f = 0),0.8323352080725132,NA,112398
+fetal_liver,human,0,EBCC (chosen f),0.8323352080725132,NA,112398
+fetal_liver,mouse,0,Seurat,0.7717460748965899,9,58664
+fetal_liver,mouse,0,SingleR,0.7595791142335405,9,56482
+fetal_liver,mouse,0,Seurat (cross),0.8522543493508697,14,58664
+fetal_liver,mouse,0,SingleR (cross),0.8239286827433564,14,57735
+fetal_liver,mouse,0,Majority vote,0.8307198685150688,14,58664
+fetal_liver,mouse,0,EBCC (f = 0),0.8501547893539535,NA,58664
+fetal_liver,mouse,0,EBCC (chosen f),0.8501547893539535,NA,58664

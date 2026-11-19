@@ -1,0 +1,18 @@
+,Unintegrated UINMF
+NMI_cluster/label,0.2210308935733263
+ARI_cluster/label,0.17818531432720466
+ASW_label,0.5159852829062389
+ASW_label/batch,0.8223033861432961
+PCR_batch,0.6925699496477671
+cell_cycle_conservation,
+isolated_label_F1,0.17518248175182483
+isolated_label_silhouette,0.7104220103474304
+graph_conn,0.7308862569474349
+kBET,
+iLISI,0.27367693145403926
+cLISI,0.9262536779528137
+hvg_overlap,
+trajectory,
+PCR_batch_within_species,0.0
+_seconds,304.7974247932434
+_n_cells,20007.0

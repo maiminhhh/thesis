@@ -1,0 +1,2 @@
+tissue,dataset,script,method,output_type,embed,n_cells,MAP,k_MAP,MAP_seconds,NC,k_NC,metric_seconds,seconds
+fetal_liver,dissected_mouse,05.06_evaluate_RPCA.py,RPCA,embed,X_rpca,282334,0.5283316442412999,2823,964.4981803894043,0.290645574230316,2823,2151.54394030571,2158.588679790497

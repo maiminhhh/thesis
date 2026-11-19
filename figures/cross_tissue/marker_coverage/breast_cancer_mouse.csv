@@ -1,0 +1,10 @@
+tissue,species,n_panel_genes,type,n_specified,n_in_panel,n_detected,n_cells_seurat,missing,in_panel_not_detected
+breast_cancer,mouse,258,B-cells,13,0,0,3950,Cd79b;Cd22;Ebf1;Cr2;Fcer2a;Bank1;Blk;Cd37;Cd72;Ighm;Ighd;Spib;Tnfrsf13c,
+breast_cancer,mouse,258,CAFs,22,12,10,28720,Col1a2;Col5a1;Col6a3;Col14a1;Fbln1;Fbln2;Pdpn;Cxcl12;Ly6a;Twist2,Sfrp4;Prrx1
+breast_cancer,mouse,258,Cancer Epithelial,10,3,0,0,Lalba;Csn3;Ccnb1;Birc5;Pcna;Mcm2;Cdk1,
+breast_cancer,mouse,258,Endothelial,16,3,2,6108,Flt1;Tek;Plvap;Vwf;Esam;Ptprb;Cd34;Egfl7;Ramp2;Sox17;Clec14a;Prox1;Flt4,Lyve1
+breast_cancer,mouse,258,Myeloid,29,11,6,2355,Itgam;Fcgr1;Fcgr3;Mrc1;Itgax;C1qb;C1qc;Tyrobp;Aif1;Spp1;Trem2;Apoe;Ly6g;H2-Ab1;Cd74;Marco;Msr1;Mertk,Ccr2;Ly6c2;Arg1;S100a8;S100a9
+breast_cancer,mouse,258,Normal Epithelial,10,5,3,418671,Myh11;Cnn1;Cdh3;Itga6;Itgb4,Krt17;Acta2
+breast_cancer,mouse,258,Plasmablasts,14,0,0,0,Prdm1;Tnfrsf17;Igkc;Ighg1;Ighg2b;Ighg2c;Igha;Derl3;Sec11c;Fkbp11;Txndc5;Slamf7;Irf4;Pou2af1,
+breast_cancer,mouse,258,PVL,9,3,0,0,Cspg4;Des;Mcam;Higd1b;Ndufa4l2;Vtn,
+breast_cancer,mouse,258,T-cells,24,11,0,17217,Cd8b1;Cd247;Trac;Trbc2;Cd5;Cd6;Cd28;Lck;Zap70;Itk;Il7r;Nkg7;Cd27,Ptprc;Cd8a;Cd4;Cd3g;Cd7;Foxp3;Ctla4;Pdcd1;Gzma;Gzmb;Tcf7
