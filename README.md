@@ -1,11 +1,12 @@
-# Cross-species integration benchmark on spatial transcriptomics (human and mouse)
+# Benchmarking single-cell cross-species integration methods on spatial transcriptomics data
+
+**Author:** Minh Mai  
+**Supervisor:** A/Prof Ellis Patrick
 
 Code, result tables and figures for my thesis. The project benchmarks methods for integrating
 human and mouse single-cell spatial transcriptomics data across four tissues (bone marrow, breast cancer,
 colon, fetal liver). Cell types are annotated by combining several automatic annotators with an EBCC
 consensus model, and each integration is then scored for batch correction and conservation of biology.
-
-> Thesis title, author, supervisor and submission date: _fill in before submission._
 
 ## What is in this repository
 
