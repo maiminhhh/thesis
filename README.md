@@ -92,7 +92,6 @@ export CONDA_ENVS=/path/to/miniconda3/envs        # folder that holds the conda 
 | `envs/torch.yml` | scVI, scANVI, Scanorama, BBKNN; AnnData conversion from R |
 | `envs/scib.yml` | Evaluation (stage 05) and the Python analysis scripts |
 | `envs/samap.yml` | SAMap |
-| `envs/tacco_env.yml` | TACCO annotation (fetal liver) |
 | `envs/r45.yml` | Statistics and figure scripts that do not need Seurat (`Rscript --vanilla`) |
 
 Create one with `conda env create -f envs/scib.yml`.

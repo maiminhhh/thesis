@@ -1,0 +1,144 @@
+\chapter{Software and computational details} \label{app:software}
+
+\section{Languages and environments}
+
+The pipelines (quality control, annotation, concatenation and the R-based integration methods) were run in R version 4.5.3, with packages installed in a project-specific library.
+%
+The Python-based methods and the evaluation were run in Python 3.11, in separate conda environments (Miniconda) for integration (\texttt{torch}), SAMap (\texttt{samap}) and evaluation (\texttt{scib}).
+%
+The statistical analyses and figures that do not depend on Seurat were run in a conda environment with R 4.5.3 (\texttt{r45}).
+%
+The conda environment files and the list of R package versions are in the \texttt{envs/} folder of the code repository (Section~\ref{app:availability}).
+%
+Package versions are listed in Table~\ref{tab:software}.
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\caption{Software used in this study. Versions were read from the installed environments.}
+\label{tab:software}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Package & Version & Language & Purpose \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Pre-processing and annotation}} \\
+Seurat \parencite{CITE_seurat}            & 5.6.0   & R      & Quality control, label transfer \\
+SeuratObject                              & 5.4.0   & R      & Data container for Seurat \\
+SingleR \parencite{CITE_singler}          & 2.12.0  & R      & Annotation \\
+EBCC \parencite{CITE_ebcc}                & --      & R      & Consensus annotation; own implementation (\texttt{source.R}) \\
+scanpy \parencite{CITE_scanpy}            & 1.11.5  & Python & Pre-processing, neighbour graphs, UMAP \\
+anndata \parencite{CITE_anndata}          & 0.12.19 & Python & Data container \\
+anndataR                                  & 1.0.2   & R      & Conversion between Seurat and AnnData \\
+zellkonverter                             & 1.22.0  & R      & Conversion between Seurat and AnnData \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Integration}} \\
+Seurat \parencite{CITE_seurat}            & 5.6.0   & R      & Seurat CCA, Seurat RPCA \\
+batchelor \parencite{CITE_fastmnn}        & 1.26.0  & R      & fastMNN \\
+harmony \parencite{CITE_harmony}          & 2.0.5   & R      & Harmony \\
+rliger \parencite{CITE_liger,CITE_uinmf}  & 2.2.1   & R      & LIGER, LIGER UINMF, UINMF input \\
+scvi-tools \parencite{CITE_scvi,CITE_scanvi} & 1.4.2 & Python & scVI, scANVI, scVI-latent input \\
+PyTorch                                   & 2.6.0   & Python & Backend for scvi-tools (CUDA 12.4) \\
+Scanorama \parencite{CITE_scanorama}      & 1.7.4   & Python & Scanorama \\
+BBKNN \parencite{CITE_bbknn}              & 1.6.0   & Python & BBKNN \\
+SAMap \parencite{CITE_samap}              & 3.0.1   & Python & SAMap \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Evaluation and statistics}} \\
+scib \parencite{CITE_scib}                & 1.1.7   & Python & Integration metrics \\
+scikit-learn \parencite{CITE_sklearn}     & 1.9.1   & Python & Nearest neighbours, silhouette, AUROC \\
+lme4 \parencite{CITE_lme4}                & 2.0-6   & R      & Mixed models, variance components \\
+lmerTest \parencite{CITE_lmertest}        & 3.2-1   & R      & Tests for mixed models \\
+emmeans \parencite{CITE_emmeans}          & 2.0.4   & R      & Estimated marginal means and contrasts \\
+mvtnorm \parencite{CITE_mvtnorm}          & 1.4-2   & R      & Critical values for the MCB test \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Visualisation}} \\
+tidyverse \parencite{CITE_tidyverse}      & 2.0.0   & R      & Data handling; includes ggplot2 4.0.3 for figures \\
+patchwork                                 & 1.3.2   & R      & Figure layout \\
+uwot \parencite{CITE_umap}                & 0.2.5   & R      & UMAP \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Hardware}
+
+All computations were performed on a shared Linux server (Debian 13) of the School of Mathematics and Statistics at the University of Sydney.
+%
+The server has two Intel Xeon Gold 6148 processors (40 cores, 80 threads), 754 GB of RAM and two NVIDIA GeForce RTX 2080 Ti GPUs with 11 GB of memory each.
+%
+The GPUs were used for scVI, scANVI, the scVI-latent input and SAMap; all other methods ran on CPU, with four to eight threads per job.
+
+\section{Run times}
+
+Table~\ref{tab:runtime} gives the approximate run time of each method on the full dataset of each tissue.
+%
+The times were taken from the job logs.
+%
+They are wall-clock times that include reading the input, computing the UMAP and saving the output, and they were measured while several other jobs were running on the same server.
+%
+They are therefore suitable for separating methods that take minutes from methods that take hours, but not for ranking methods with similar run times.
+
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\caption{Approximate wall-clock run time in minutes of each integration method on the full dataset of each tissue. Methods on UINMF or scVI-latent input also require the corresponding input step, which is timed in its own row. Times marked with $^{*}$ were measured under heavy server load and overstate the run time. A dash means the job was repeated after a failure and could not be timed from its log.}
+\label{tab:runtime}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Method & Device & Bone marrow & Breast cancer & Colon & Fetal liver \\
+       &        & 78{,}004 cells & 546{,}290 cells & 490{,}744 cells & 342{,}037 cells \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{PCA input or own input}} \\
+fastMNN      & CPU & 4  & 88  & 20        & 13  \\
+SAMap        & GPU & 10 & --  & 341$^{*}$ & 458 \\
+Seurat CCA   & CPU & 5  & 123 & 32        & 21  \\
+Harmony      & CPU & 4  & 76  & 25        & 15  \\
+Scanorama    & CPU & 4  & 86  & 46$^{*}$  & 26  \\
+Seurat RPCA  & CPU & 5  & 81  & 32        & 23  \\
+scVI         & GPU & 24 & 203 & 77$^{*}$  & 93  \\
+scANVI       & GPU & 7  & 110 & 96        & 25  \\
+BBKNN        & CPU & 1  & 25  & 5         & 5   \\
+LIGER        & CPU & 5  & 116 & 31        & 18  \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{UINMF input}} \\
+LIGER UINMF (input step) & CPU & 15 & --  & 126 & 56 \\
+fastMNN      & CPU & 3  & 48  & 19        & 16  \\
+Seurat CCA   & CPU & 3  & 48  & 20        & 20  \\
+Harmony      & CPU & 4  & 52  & 21        & 25  \\
+Scanorama    & CPU & 3  & 39  & 42$^{*}$  & 41  \\
+Seurat RPCA  & CPU & 5  & 57  & 22        & 22  \\
+BBKNN        & CPU & 1  & 16  & 5         & 7   \\
+\midrule
+\multicolumn{6}{@{}l}{\textit{scVI-latent input}} \\
+scVI latent (input step) & GPU & 31 & 111 & 66 & 65 \\
+fastMNN      & CPU & 7  & 54  & 33        & 34  \\
+Seurat CCA   & CPU & 7  & 48  & 29        & 27  \\
+Harmony      & CPU & 7  & 38  & 29        & 23  \\
+Scanorama    & CPU & 8  & 39  & 46        & 28  \\
+Seurat RPCA  & CPU & 8  & 52  & 36        & 28  \\
+BBKNN        & CPU & 3  & 16  & 9         & 8   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Reproducibility}
+
+All methods were run with default settings unless stated otherwise in Section~\ref{sec:integration_methods}.
+%
+Random seeds were fixed wherever a step in our own code was random.
+%
+In R, the seed was set to 1 before the annotation and EBCC model fitting, before the concatenation and gene-removal steps, and inside the functions that run fastMNN, Seurat CCA, Seurat RPCA and Harmony.
+%
+The scVI-latent input was trained with the scvi-tools seed set to 1.
+%
+In the subsampling analyses, each repeat used its own seed, derived from a fixed base seed and saved with the results.
+%
+For the remaining methods (scVI, scANVI, Scanorama, BBKNN, SAMap and LIGER) no seed was set explicitly, so these methods used the seeding behaviour of their packages.
+%
+Results of these methods, and of any method trained on a GPU, may therefore differ slightly between runs.
+
+\section{Data and code availability} \label{app:availability}
+
+All datasets used in this study are publicly available, and their sources are listed in Table~\ref{tab:datasets}.
+%
+The code for all pipelines and analyses, the environment files and the result tables behind the figures are available at \url{https://github.com/maiminhhh/thesis}.
+%
+The raw and processed data are not included in the repository because of their size (about 620 GB).
